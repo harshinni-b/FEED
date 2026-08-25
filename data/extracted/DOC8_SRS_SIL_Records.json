@@ -1,0 +1,1680 @@
+{
+  "filename": "DOC8_SRS_SIL_Records.docx",
+  "metadata": {
+    "source_path": "data\\raw\\DOC8_SRS_SIL_Records.docx",
+    "core_properties": {
+      "author": "Un-named",
+      "created": "2026-08-20T13:08:00+00:00",
+      "last_modified_by": "Srinivasan, Pratheep Kumar",
+      "modified": "2026-08-20T13:34:00+00:00",
+      "revision": 2
+    }
+  },
+  "headings": [
+    {
+      "text": "2. SIL DETERMINATION — RISK GRAPH METHOD",
+      "level": 1
+    },
+    {
+      "text": "2.1 Risk Graph Parameters",
+      "level": 2
+    },
+    {
+      "text": "2.2 SIF Risk Graph Assessment",
+      "level": 2
+    },
+    {
+      "text": "3. SAFETY REQUIREMENTS SPECIFICATION — SIF BY SIF",
+      "level": 1
+    },
+    {
+      "text": "SIF-01: Sulfur Furnace Temperature High-High",
+      "level": 2
+    },
+    {
+      "text": "SIF-02: Furnace Pressure High-High",
+      "level": 2
+    },
+    {
+      "text": "SIF-03: WHB Steam Drum Level Low-Low",
+      "level": 2
+    },
+    {
+      "text": "SIF-04: WHB Steam Drum Pressure High-High",
+      "level": 2
+    },
+    {
+      "text": "SIF-05: Converter Pass 1 Temperature High-High",
+      "level": 2
+    },
+    {
+      "text": "SIF-06: Stack SO₂ Emission High-High",
+      "level": 2
+    },
+    {
+      "text": "SIF-07: Product Tank Level High-High",
+      "level": 2
+    },
+    {
+      "text": "4. SIS ARCHITECTURE REQUIREMENTS",
+      "level": 1
+    },
+    {
+      "text": "5. SIL RECORD SUMMARY — CONSISTENCY CHECK",
+      "level": 1
+    }
+  ],
+  "sections": [
+    {
+      "heading": null,
+      "level": 0,
+      "paragraphs": [
+        {
+          "text": "FRONT-END ENGINEERING DESIGN (FEED)",
+          "style": "Normal"
+        },
+        {
+          "text": "100 t/d Sulfuric Acid Plant — DCDA / Elemental Sulfur",
+          "style": "Normal"
+        },
+        {
+          "text": "SAFETY REQUIREMENTS SPECIFICATION (SRS) & SIL RECORDS",
+          "style": "Normal"
+        },
+        {
+          "text": "IEC 61511 / IEC 61508 — FEED Stage SIL Determination & Consistency Check",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 0,
+          "rows": [
+            [
+              "Attribute",
+              "Value"
+            ],
+            [
+              "Document No.",
+              "PRJ-SA100-FEED-SRS-008"
+            ],
+            [
+              "Revision",
+              "A0 — Issued for Review"
+            ],
+            [
+              "Project",
+              "100 t/d H₂SO₄ Plant, DCDA Route"
+            ],
+            [
+              "Date",
+              "August 2026"
+            ],
+            [
+              "Status",
+              "FEED — Consistency-Checked Edition"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "2. SIL DETERMINATION — RISK GRAPH METHOD",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": []
+    },
+    {
+      "heading": {
+        "text": "2.1 Risk Graph Parameters",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [
+        {
+          "text": "The IEC 61511 Risk Graph uses four parameters: C = Consequence severity; F = Frequency/exposure of personnel; P = Probability of avoiding harm; W = Demand rate (without SIS). These parameters combine to yield a SIL target.",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 1,
+          "rows": [
+            [
+              "Parameter",
+              "Level",
+              "Definition Used in This Assessment"
+            ],
+            [
+              "C — Consequence",
+              "C1",
+              "Minor injury; first-aid level"
+            ],
+            [
+              "C — Consequence",
+              "C2",
+              "Serious irreversible injury to one or more persons; possible fatality"
+            ],
+            [
+              "C — Consequence",
+              "C3",
+              "Likely fatality to one or more persons"
+            ],
+            [
+              "C — Consequence",
+              "C4",
+              "Multiple fatalities"
+            ],
+            [
+              "F — Frequency",
+              "F1",
+              "Rare to more frequent exposure (<1 h/d in hazardous area)"
+            ],
+            [
+              "F — Frequency",
+              "F2",
+              "Frequent to continuous exposure (>1 h/d)"
+            ],
+            [
+              "P — Avoidance",
+              "P1",
+              "Possible under specified conditions (alarm, evacuation route clear)"
+            ],
+            [
+              "P — Avoidance",
+              "P2",
+              "Barely possible (fast hazard development, confined space)"
+            ],
+            [
+              "W — Demand rate",
+              "W1",
+              "Very low (<0.01/yr without SIS)"
+            ],
+            [
+              "W — Demand rate",
+              "W2",
+              "Low (0.01–0.1/yr without SIS)"
+            ],
+            [
+              "W — Demand rate",
+              "W3",
+              "High (>0.1/yr without SIS)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "2.2 SIF Risk Graph Assessment",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 2,
+          "rows": [
+            [
+              "SIF ID",
+              "SIF Description",
+              "Hazardous Event",
+              "C",
+              "F",
+              "P",
+              "W",
+              "SIL Target (Risk Graph)",
+              "SIL Assigned",
+              "Cross-Doc Consistency"
+            ],
+            [
+              "SIF-01",
+              "Sulfur Furnace Temperature HH",
+              "Furnace over-temperature → refractory failure → SO₂/S vapour release → fire/explosion",
+              "C3",
+              "F2",
+              "P2",
+              "W2",
+              "SIL 2",
+              "SIL 2",
+              "Matches C&E Doc 6; TSHH-201 range issue flagged in II Doc 4"
+            ],
+            [
+              "SIF-02",
+              "Furnace Pressure HH",
+              "Over-pressure → furnace seal/flange failure → SO₂ release → toxic cloud",
+              "C3",
+              "F2",
+              "P2",
+              "W2",
+              "SIL 2",
+              "SIL 2",
+              "Consistent across C&E, II, Alarm List"
+            ],
+            [
+              "SIF-03",
+              "WHB Steam Drum Level LL",
+              "Dry-fire → WHB tube rupture → steam explosion; high-pressure steam release",
+              "C3",
+              "F1",
+              "P1",
+              "W2",
+              "SIL 1",
+              "SIL 1",
+              "Consistent"
+            ],
+            [
+              "SIF-04",
+              "WHB Steam Drum Pressure HH",
+              "Over-pressure → PSV lift → steam release; if PSV fails → vessel rupture",
+              "C3",
+              "F1",
+              "P2",
+              "W2",
+              "SIL 2",
+              "SIL 2",
+              "Consistent; 3 barg alarm→trip gap flagged as MARGIN in C&E"
+            ],
+            [
+              "SIF-05",
+              "Converter Pass 1 Temp HH",
+              "Catalyst over-temp → catalyst sintering → conversion loss → SO₂ emission breach + process loss",
+              "C2",
+              "F1",
+              "P1",
+              "W2",
+              "SIL 1",
+              "SIL 2",
+              "FAIL: SIL 2 assigned but NOV=alarm setpoint. SIF integrity compromised by process design issue. Resolution mandatory before SRS can be approved."
+            ],
+            [
+              "SIF-06",
+              "Stack SO₂ Emission HH",
+              "Regulatory emission limit breach → environmental impact; potential community evacuation",
+              "C2",
+              "F2",
+              "P1",
+              "W2",
+              "SIL 1",
+              "SIL 1 (Environmental)",
+              "Consistent; 5-min delay timer must be documented in SRS"
+            ],
+            [
+              "SIF-07",
+              "Product Tank Level HH",
+              "Tank overflow → large H₂SO₄ spill → bund activation; personnel burn injury",
+              "C3",
+              "F1",
+              "P1",
+              "W2",
+              "SIL 1",
+              "SIL 2",
+              "SIL 2 assigned vs SIL 1 required — conservative; acceptable per IEC 61511 Cl. 3.2.4"
+            ],
+            [
+              "SIF-08",
+              "Area SO₂ F&G Monitor HH",
+              "Toxic SO₂ concentration > IDLH → personnel fatality if undetected",
+              "C4",
+              "F2",
+              "P2",
+              "W1",
+              "SIL 2",
+              "F&G (non-SIL)",
+              "F&G system classified separately per IEC 61511; not a SIS SIF. Ensure F&G coverage map reviewed at HAZOP."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "3. SAFETY REQUIREMENTS SPECIFICATION — SIF BY SIF",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": []
+    },
+    {
+      "heading": {
+        "text": "SIF-01: Sulfur Furnace Temperature High-High",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 3,
+          "rows": [
+            [
+              "SRS Attribute",
+              "Requirement"
+            ],
+            [
+              "SIF ID / Tag",
+              "SIF-01 / TSHH-201"
+            ],
+            [
+              "SIF Description",
+              "Shutdown sulfur feed and initiate plant ESD on high furnace temperature"
+            ],
+            [
+              "SIL Target",
+              "SIL 2"
+            ],
+            [
+              "Process Demand Condition",
+              "Furnace temperature exceeds 1,150°C"
+            ],
+            [
+              "Safe State",
+              "SDV-E01 Closed (sulfur isolated); steam trip SV-E06 closed; stack damper open (FO)"
+            ],
+            [
+              "Final Element(s)",
+              "SDV-E01 (FC, spring-return); SV-E06 (FC, spring-return)"
+            ],
+            [
+              "Initiator(s)",
+              "TSHH-201A and TSHH-201B (dual Type B thermocouples, 500–1,300°C range — see II FAIL resolution)"
+            ],
+            [
+              "Voting Logic",
+              "1oo2 — either TC reaching setpoint initiates trip (diverse, independent loops)"
+            ],
+            [
+              "Trip Setpoint",
+              "1,150°C"
+            ],
+            [
+              "Reset",
+              "Manual reset only at SIS panel; operator confirm + Process Engineer authorisation"
+            ],
+            [
+              "Response Time",
+              "Valve SDV-E01 to closed position ≤ 2 seconds from solenoid de-energisation"
+            ],
+            [
+              "Proof Test Interval",
+              "12 months (recommended); PFD to be calculated at DE stage"
+            ],
+            [
+              "Architecture Required",
+              "Minimum 1oo2 (IEC 61508 HFT=1) to achieve SIL 2 with single-channel sensors"
+            ],
+            [
+              "Functional Test Method",
+              "Trip test via SIS bypass switch with DCS permissive; verify valve closure by position feedback"
+            ],
+            [
+              "Bypasses / Inhibits",
+              "One bypass permitted during maintenance; second TC must remain active; time-limit 8 h; logged"
+            ],
+            [
+              "SRS Consistency Status",
+              "MARGIN — TC range must be changed to 500–1,300°C (see Instrument Index FAIL item)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "SIF-02: Furnace Pressure High-High",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 4,
+          "rows": [
+            [
+              "SRS Attribute",
+              "Requirement"
+            ],
+            [
+              "SIF ID / Tag",
+              "SIF-02 / PSHH-201"
+            ],
+            [
+              "SIL Target",
+              "SIL 2"
+            ],
+            [
+              "Process Demand Condition",
+              "Furnace chamber gauge pressure exceeds +300 mbar"
+            ],
+            [
+              "Safe State",
+              "SDV-E01 Closed (sulfur); SDV-E02 Open (air continues for purge); stack damper open"
+            ],
+            [
+              "Initiator(s)",
+              "PSHH-201 — dedicated SIL-rated pressure transmitter (−50 to +500 mbar)"
+            ],
+            [
+              "Voting Logic",
+              "1oo1 — single instrument; consider upgrading to 2oo3 at DE stage for SIL 2 proof"
+            ],
+            [
+              "Trip Setpoint",
+              "+300 mbar gauge"
+            ],
+            [
+              "Architecture Required",
+              "1oo1 with high diagnostic coverage (DC ≥ 90%); SFF ≥ 90% required for Type B SIL 2"
+            ],
+            [
+              "SRS Consistency Status",
+              "PASS — setpoint at 64% of transmitter span; meets IEC 61511 range criterion"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "SIF-03: WHB Steam Drum Level Low-Low",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 5,
+          "rows": [
+            [
+              "SRS Attribute",
+              "Requirement"
+            ],
+            [
+              "SIF ID / Tag",
+              "SIF-03 / LSLL-201"
+            ],
+            [
+              "SIL Target",
+              "SIL 1"
+            ],
+            [
+              "Process Demand Condition",
+              "WHB steam drum level falls below 20% of normal level gauge range"
+            ],
+            [
+              "Safe State",
+              "SDV-E01 Closed (sulfur isolated — removes heat source); SV-E06 steam trip closed"
+            ],
+            [
+              "Initiator(s)",
+              "LSLL-201 — guided-wave radar level transmitter, 0–100% range, SIL 1 rated"
+            ],
+            [
+              "Voting Logic",
+              "1oo1"
+            ],
+            [
+              "Trip Setpoint",
+              "20%"
+            ],
+            [
+              "Response Time",
+              "Within 3 seconds of setpoint reached"
+            ],
+            [
+              "SRS Consistency Status",
+              "PASS"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "SIF-04: WHB Steam Drum Pressure High-High",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 6,
+          "rows": [
+            [
+              "SRS Attribute",
+              "Requirement"
+            ],
+            [
+              "SIF ID / Tag",
+              "SIF-04 / PAHH-202"
+            ],
+            [
+              "SIL Target",
+              "SIL 2"
+            ],
+            [
+              "Process Demand Condition",
+              "Steam drum pressure exceeds 46 barg"
+            ],
+            [
+              "Safe State",
+              "SDV-E01 Closed; LCV-201 BFW valve fail-open (increase cooling); SV-E06 steam trip closed"
+            ],
+            [
+              "Initiator(s)",
+              "PAHH-202 — dedicated pressure transmitter 0–50 barg, SIL 2 rated"
+            ],
+            [
+              "Voting Logic",
+              "1oo1; recommend upgrade to 2oo3 at DE for SIL 2 confidence"
+            ],
+            [
+              "Trip Setpoint",
+              "46 barg (MAWP = 48 barg; PSV set at 47.5 barg as final mechanical layer)"
+            ],
+            [
+              "Mechanical Protection",
+              "PSV set at 47.5 barg — mandatory as independent final layer; confirms LOPA credit"
+            ],
+            [
+              "SRS Consistency Status",
+              "MARGIN — gap between DCS HIGH alarm (43 barg) and SIS trip (46 barg) is 3 barg; validated by dynamic simulation required"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "SIF-05: Converter Pass 1 Temperature High-High",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 7,
+          "rows": [
+            [
+              "SRS Attribute",
+              "Requirement"
+            ],
+            [
+              "SIF ID / Tag",
+              "SIF-05 / TSHH-401"
+            ],
+            [
+              "SIL Target",
+              "SIL 2"
+            ],
+            [
+              "Process Demand Condition",
+              "Converter Pass 1 outlet temperature exceeds 620°C"
+            ],
+            [
+              "Safe State",
+              "SDV-E01 Closed (sulfur isolated); SDV-E02 Open (air purge continues)"
+            ],
+            [
+              "CRITICAL SRS CONFLICT",
+              "At 110% surge load the Pass 1 outlet temperature reaches 621°C — 1°C above the SIS trip setpoint. This means: (a) the SIF will demand on every surge operation; (b) the protection layer hierarchy is broken (NOV = DCS alarm setpoint). This SRS record CANNOT be approved until the process design is corrected. The SIF cannot be considered functional in its current form."
+            ],
+            [
+              "Required Design Action",
+              "(1) Reduce Pass 1 catalyst bed height by ~5% OR increase cold bypass valve (TCV-401) maximum Cv by 20% to lower surge outlet temperature to ≤608°C. (2) Re-set: NOV = 600°C (normal) → DCS alarm TAH = 610°C → SIS trip TSHH = 625°C. (3) Update Instrument Index, Alarm List, C&E, and this SRS simultaneously under MOC."
+            ],
+            [
+              "Initiator(s)",
+              "TSHH-401A and TSHH-401B (dual TCs, Type K multipoint, 400–700°C range)"
+            ],
+            [
+              "Voting Logic",
+              "1oo2"
+            ],
+            [
+              "SRS Consistency Status",
+              "FAIL — SIF is non-functional at surge; SRS cannot be approved in current state"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "SIF-06: Stack SO₂ Emission High-High",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 8,
+          "rows": [
+            [
+              "SRS Attribute",
+              "Requirement"
+            ],
+            [
+              "SIF ID / Tag",
+              "SIF-06 / AT-403-HH"
+            ],
+            [
+              "SIL Target",
+              "SIL 1 (Environmental Safety Function)"
+            ],
+            [
+              "Process Demand Condition",
+              "Stack SO₂ concentration sustained above 600 mg/Nm³ for >5 minutes (confirmed high)"
+            ],
+            [
+              "Safe State",
+              "SDV-E01 Closed (sulfur isolated); stack damper XV-E04 Open (confirmed FO after C&E FAIL correction)"
+            ],
+            [
+              "Time Delay",
+              "5-minute confirmed-high timer to avoid spurious trips on analyser noise; timer logic in SIS PLC"
+            ],
+            [
+              "Initiator(s)",
+              "AT-403 — UV-DOAS CEMS analyser, 0–1,000 mg/Nm³, certified to EN 14181 (QAL1)"
+            ],
+            [
+              "QAL Requirements",
+              "Annual QAL2 calibration required; 3-point calibration gas certified traceable to NIST/NPL"
+            ],
+            [
+              "SRS Consistency Status",
+              "PASS"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "SIF-07: Product Tank Level High-High",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 9,
+          "rows": [
+            [
+              "SRS Attribute",
+              "Requirement"
+            ],
+            [
+              "SIF ID / Tag",
+              "SIF-07 / LSHH-701"
+            ],
+            [
+              "SIL Target",
+              "SIL 2 (conservative; risk graph requires SIL 1 minimum)"
+            ],
+            [
+              "Process Demand Condition",
+              "Product acid tank level exceeds 90% of gauge range"
+            ],
+            [
+              "Safe State",
+              "SDV-E05 Closed (product isolation); pump stopped; tanker loading halted"
+            ],
+            [
+              "Initiator(s)",
+              "LT-702 — guided-wave radar (SIL 2 rated), 0–100%; independent of process LT-701"
+            ],
+            [
+              "Voting Logic",
+              "1oo2 (LT-701 + LT-702 — two independent level transmitters on separate nozzles)"
+            ],
+            [
+              "SRS Consistency Status",
+              "PASS"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "4. SIS ARCHITECTURE REQUIREMENTS",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 10,
+          "rows": [
+            [
+              "Requirement",
+              "Specification",
+              "Standard Reference"
+            ],
+            [
+              "SIS hardware platform",
+              "Dedicated Safety PLC (TÜV-certified SIL 2 capable); e.g. Siemens S7-F, Rockwell GuardLogix, or Hima HIMax",
+              "IEC 61511-1 Cl. 11"
+            ],
+            [
+              "SIS / DCS separation",
+              "Physical and electrical separation; DCS read-only access to SIS I/O via hardwired or OPC-UA (IEC 62443 secured)",
+              "IEC 61511-1 Cl. 11.2"
+            ],
+            [
+              "Power supply",
+              "Dual redundant UPS-backed 24 VDC SIS power; minimum 1-hour battery autonomy on utility loss",
+              "IEC 61511-1 Cl. 11.4"
+            ],
+            [
+              "Solenoid valve type",
+              "Energise-to-trip (de-energised = safe state) for all ESD valves; spring-return actuators",
+              "IEC 61511-1 Cl. 11.5"
+            ],
+            [
+              "Proof test coverage",
+              "Minimum 90% proof test coverage (PTC) for all SIF elements to meet SIL 2 PFD targets",
+              "IEC 61508-2"
+            ],
+            [
+              "Spurious trip rate target",
+              "STR < 1 per 2 years per SIF (plant availability requirement)",
+              "IEC 61511-1 Cl. 11.9"
+            ],
+            [
+              "Bypass management",
+              "Hardwired key-switch bypass with automatic timer (maximum 8 h); alarm to DCS and SIS log",
+              "ISA-84"
+            ],
+            [
+              "SIS logic solver redundancy",
+              "1oo1D (simplex with diagnostics) minimum for SIL 1; 1oo2 or 2oo3 for SIL 2 functions",
+              "IEC 61508-6"
+            ],
+            [
+              "Common-cause failure (CCF)",
+              "Beta factor (β) = 10% minimum for duplicated sensors; diverse technology where feasible",
+              "IEC 61508-6 Annex D"
+            ],
+            [
+              "Cybersecurity",
+              "SIS network airgapped from corporate IT; IEC 62443 Zone-and-Conduit model",
+              "IEC 62443"
+            ],
+            [
+              "FAT/SIT requirements",
+              "Full Factory Acceptance Test per IEC 61511-1 Cl. 18 before site installation",
+              "IEC 61511-1 Cl. 18"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "5. SIL RECORD SUMMARY — CONSISTENCY CHECK",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 11,
+          "rows": [
+            [
+              "SIF",
+              "Description",
+              "SIL Target",
+              "SIL Assigned",
+              "Risk Graph Consistent?",
+              "Cross-Doc Consistent?",
+              "SRS Approvable?"
+            ],
+            [
+              "SIF-01",
+              "Furnace T HH",
+              "SIL 2",
+              "SIL 2",
+              "Yes",
+              "MARGIN (TC range)",
+              "Conditional — after TC range change"
+            ],
+            [
+              "SIF-02",
+              "Furnace P HH",
+              "SIL 2",
+              "SIL 2",
+              "Yes",
+              "Yes",
+              "Yes"
+            ],
+            [
+              "SIF-03",
+              "WHB Level LL",
+              "SIL 1",
+              "SIL 1",
+              "Yes",
+              "Yes",
+              "Yes"
+            ],
+            [
+              "SIF-04",
+              "WHB Steam P HH",
+              "SIL 2",
+              "SIL 2",
+              "Yes",
+              "MARGIN",
+              "Conditional — dynamic sim required"
+            ],
+            [
+              "SIF-05",
+              "Conv. P1 T HH",
+              "SIL 2",
+              "SIL 2",
+              "Yes",
+              "FAIL",
+              "NO — process design must be corrected"
+            ],
+            [
+              "SIF-06",
+              "Stack SO₂ HH",
+              "SIL 1",
+              "SIL 1",
+              "Yes",
+              "Yes",
+              "Yes"
+            ],
+            [
+              "SIF-07",
+              "Product Tank L HH",
+              "SIL 1",
+              "SIL 2",
+              "Conservative",
+              "Yes",
+              "Yes (conservative SIL acceptable)"
+            ],
+            [
+              "SIF-08",
+              "Area SO₂ F&G",
+              "N/A (F&G)",
+              "F&G",
+              "N/A",
+              "MARGIN",
+              "Conditional — confirm F&G coverage"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "text": "FRONT-END ENGINEERING DESIGN (FEED)",
+      "style": "Normal"
+    },
+    {
+      "text": "100 t/d Sulfuric Acid Plant — DCDA / Elemental Sulfur",
+      "style": "Normal"
+    },
+    {
+      "text": "SAFETY REQUIREMENTS SPECIFICATION (SRS) & SIL RECORDS",
+      "style": "Normal"
+    },
+    {
+      "text": "IEC 61511 / IEC 61508 — FEED Stage SIL Determination & Consistency Check",
+      "style": "Normal"
+    },
+    {
+      "text": "2. SIL DETERMINATION — RISK GRAPH METHOD",
+      "style": "Heading 1"
+    },
+    {
+      "text": "2.1 Risk Graph Parameters",
+      "style": "Heading 2"
+    },
+    {
+      "text": "The IEC 61511 Risk Graph uses four parameters: C = Consequence severity; F = Frequency/exposure of personnel; P = Probability of avoiding harm; W = Demand rate (without SIS). These parameters combine to yield a SIL target.",
+      "style": "Normal"
+    },
+    {
+      "text": "2.2 SIF Risk Graph Assessment",
+      "style": "Heading 2"
+    },
+    {
+      "text": "3. SAFETY REQUIREMENTS SPECIFICATION — SIF BY SIF",
+      "style": "Heading 1"
+    },
+    {
+      "text": "SIF-01: Sulfur Furnace Temperature High-High",
+      "style": "Heading 2"
+    },
+    {
+      "text": "SIF-02: Furnace Pressure High-High",
+      "style": "Heading 2"
+    },
+    {
+      "text": "SIF-03: WHB Steam Drum Level Low-Low",
+      "style": "Heading 2"
+    },
+    {
+      "text": "SIF-04: WHB Steam Drum Pressure High-High",
+      "style": "Heading 2"
+    },
+    {
+      "text": "SIF-05: Converter Pass 1 Temperature High-High",
+      "style": "Heading 2"
+    },
+    {
+      "text": "SIF-06: Stack SO₂ Emission High-High",
+      "style": "Heading 2"
+    },
+    {
+      "text": "SIF-07: Product Tank Level High-High",
+      "style": "Heading 2"
+    },
+    {
+      "text": "4. SIS ARCHITECTURE REQUIREMENTS",
+      "style": "Heading 1"
+    },
+    {
+      "text": "5. SIL RECORD SUMMARY — CONSISTENCY CHECK",
+      "style": "Heading 1"
+    }
+  ],
+  "tables": [
+    {
+      "index": 0,
+      "rows": [
+        [
+          "Attribute",
+          "Value"
+        ],
+        [
+          "Document No.",
+          "PRJ-SA100-FEED-SRS-008"
+        ],
+        [
+          "Revision",
+          "A0 — Issued for Review"
+        ],
+        [
+          "Project",
+          "100 t/d H₂SO₄ Plant, DCDA Route"
+        ],
+        [
+          "Date",
+          "August 2026"
+        ],
+        [
+          "Status",
+          "FEED — Consistency-Checked Edition"
+        ]
+      ]
+    },
+    {
+      "index": 1,
+      "rows": [
+        [
+          "Parameter",
+          "Level",
+          "Definition Used in This Assessment"
+        ],
+        [
+          "C — Consequence",
+          "C1",
+          "Minor injury; first-aid level"
+        ],
+        [
+          "C — Consequence",
+          "C2",
+          "Serious irreversible injury to one or more persons; possible fatality"
+        ],
+        [
+          "C — Consequence",
+          "C3",
+          "Likely fatality to one or more persons"
+        ],
+        [
+          "C — Consequence",
+          "C4",
+          "Multiple fatalities"
+        ],
+        [
+          "F — Frequency",
+          "F1",
+          "Rare to more frequent exposure (<1 h/d in hazardous area)"
+        ],
+        [
+          "F — Frequency",
+          "F2",
+          "Frequent to continuous exposure (>1 h/d)"
+        ],
+        [
+          "P — Avoidance",
+          "P1",
+          "Possible under specified conditions (alarm, evacuation route clear)"
+        ],
+        [
+          "P — Avoidance",
+          "P2",
+          "Barely possible (fast hazard development, confined space)"
+        ],
+        [
+          "W — Demand rate",
+          "W1",
+          "Very low (<0.01/yr without SIS)"
+        ],
+        [
+          "W — Demand rate",
+          "W2",
+          "Low (0.01–0.1/yr without SIS)"
+        ],
+        [
+          "W — Demand rate",
+          "W3",
+          "High (>0.1/yr without SIS)"
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "rows": [
+        [
+          "SIF ID",
+          "SIF Description",
+          "Hazardous Event",
+          "C",
+          "F",
+          "P",
+          "W",
+          "SIL Target (Risk Graph)",
+          "SIL Assigned",
+          "Cross-Doc Consistency"
+        ],
+        [
+          "SIF-01",
+          "Sulfur Furnace Temperature HH",
+          "Furnace over-temperature → refractory failure → SO₂/S vapour release → fire/explosion",
+          "C3",
+          "F2",
+          "P2",
+          "W2",
+          "SIL 2",
+          "SIL 2",
+          "Matches C&E Doc 6; TSHH-201 range issue flagged in II Doc 4"
+        ],
+        [
+          "SIF-02",
+          "Furnace Pressure HH",
+          "Over-pressure → furnace seal/flange failure → SO₂ release → toxic cloud",
+          "C3",
+          "F2",
+          "P2",
+          "W2",
+          "SIL 2",
+          "SIL 2",
+          "Consistent across C&E, II, Alarm List"
+        ],
+        [
+          "SIF-03",
+          "WHB Steam Drum Level LL",
+          "Dry-fire → WHB tube rupture → steam explosion; high-pressure steam release",
+          "C3",
+          "F1",
+          "P1",
+          "W2",
+          "SIL 1",
+          "SIL 1",
+          "Consistent"
+        ],
+        [
+          "SIF-04",
+          "WHB Steam Drum Pressure HH",
+          "Over-pressure → PSV lift → steam release; if PSV fails → vessel rupture",
+          "C3",
+          "F1",
+          "P2",
+          "W2",
+          "SIL 2",
+          "SIL 2",
+          "Consistent; 3 barg alarm→trip gap flagged as MARGIN in C&E"
+        ],
+        [
+          "SIF-05",
+          "Converter Pass 1 Temp HH",
+          "Catalyst over-temp → catalyst sintering → conversion loss → SO₂ emission breach + process loss",
+          "C2",
+          "F1",
+          "P1",
+          "W2",
+          "SIL 1",
+          "SIL 2",
+          "FAIL: SIL 2 assigned but NOV=alarm setpoint. SIF integrity compromised by process design issue. Resolution mandatory before SRS can be approved."
+        ],
+        [
+          "SIF-06",
+          "Stack SO₂ Emission HH",
+          "Regulatory emission limit breach → environmental impact; potential community evacuation",
+          "C2",
+          "F2",
+          "P1",
+          "W2",
+          "SIL 1",
+          "SIL 1 (Environmental)",
+          "Consistent; 5-min delay timer must be documented in SRS"
+        ],
+        [
+          "SIF-07",
+          "Product Tank Level HH",
+          "Tank overflow → large H₂SO₄ spill → bund activation; personnel burn injury",
+          "C3",
+          "F1",
+          "P1",
+          "W2",
+          "SIL 1",
+          "SIL 2",
+          "SIL 2 assigned vs SIL 1 required — conservative; acceptable per IEC 61511 Cl. 3.2.4"
+        ],
+        [
+          "SIF-08",
+          "Area SO₂ F&G Monitor HH",
+          "Toxic SO₂ concentration > IDLH → personnel fatality if undetected",
+          "C4",
+          "F2",
+          "P2",
+          "W1",
+          "SIL 2",
+          "F&G (non-SIL)",
+          "F&G system classified separately per IEC 61511; not a SIS SIF. Ensure F&G coverage map reviewed at HAZOP."
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "rows": [
+        [
+          "SRS Attribute",
+          "Requirement"
+        ],
+        [
+          "SIF ID / Tag",
+          "SIF-01 / TSHH-201"
+        ],
+        [
+          "SIF Description",
+          "Shutdown sulfur feed and initiate plant ESD on high furnace temperature"
+        ],
+        [
+          "SIL Target",
+          "SIL 2"
+        ],
+        [
+          "Process Demand Condition",
+          "Furnace temperature exceeds 1,150°C"
+        ],
+        [
+          "Safe State",
+          "SDV-E01 Closed (sulfur isolated); steam trip SV-E06 closed; stack damper open (FO)"
+        ],
+        [
+          "Final Element(s)",
+          "SDV-E01 (FC, spring-return); SV-E06 (FC, spring-return)"
+        ],
+        [
+          "Initiator(s)",
+          "TSHH-201A and TSHH-201B (dual Type B thermocouples, 500–1,300°C range — see II FAIL resolution)"
+        ],
+        [
+          "Voting Logic",
+          "1oo2 — either TC reaching setpoint initiates trip (diverse, independent loops)"
+        ],
+        [
+          "Trip Setpoint",
+          "1,150°C"
+        ],
+        [
+          "Reset",
+          "Manual reset only at SIS panel; operator confirm + Process Engineer authorisation"
+        ],
+        [
+          "Response Time",
+          "Valve SDV-E01 to closed position ≤ 2 seconds from solenoid de-energisation"
+        ],
+        [
+          "Proof Test Interval",
+          "12 months (recommended); PFD to be calculated at DE stage"
+        ],
+        [
+          "Architecture Required",
+          "Minimum 1oo2 (IEC 61508 HFT=1) to achieve SIL 2 with single-channel sensors"
+        ],
+        [
+          "Functional Test Method",
+          "Trip test via SIS bypass switch with DCS permissive; verify valve closure by position feedback"
+        ],
+        [
+          "Bypasses / Inhibits",
+          "One bypass permitted during maintenance; second TC must remain active; time-limit 8 h; logged"
+        ],
+        [
+          "SRS Consistency Status",
+          "MARGIN — TC range must be changed to 500–1,300°C (see Instrument Index FAIL item)"
+        ]
+      ]
+    },
+    {
+      "index": 4,
+      "rows": [
+        [
+          "SRS Attribute",
+          "Requirement"
+        ],
+        [
+          "SIF ID / Tag",
+          "SIF-02 / PSHH-201"
+        ],
+        [
+          "SIL Target",
+          "SIL 2"
+        ],
+        [
+          "Process Demand Condition",
+          "Furnace chamber gauge pressure exceeds +300 mbar"
+        ],
+        [
+          "Safe State",
+          "SDV-E01 Closed (sulfur); SDV-E02 Open (air continues for purge); stack damper open"
+        ],
+        [
+          "Initiator(s)",
+          "PSHH-201 — dedicated SIL-rated pressure transmitter (−50 to +500 mbar)"
+        ],
+        [
+          "Voting Logic",
+          "1oo1 — single instrument; consider upgrading to 2oo3 at DE stage for SIL 2 proof"
+        ],
+        [
+          "Trip Setpoint",
+          "+300 mbar gauge"
+        ],
+        [
+          "Architecture Required",
+          "1oo1 with high diagnostic coverage (DC ≥ 90%); SFF ≥ 90% required for Type B SIL 2"
+        ],
+        [
+          "SRS Consistency Status",
+          "PASS — setpoint at 64% of transmitter span; meets IEC 61511 range criterion"
+        ]
+      ]
+    },
+    {
+      "index": 5,
+      "rows": [
+        [
+          "SRS Attribute",
+          "Requirement"
+        ],
+        [
+          "SIF ID / Tag",
+          "SIF-03 / LSLL-201"
+        ],
+        [
+          "SIL Target",
+          "SIL 1"
+        ],
+        [
+          "Process Demand Condition",
+          "WHB steam drum level falls below 20% of normal level gauge range"
+        ],
+        [
+          "Safe State",
+          "SDV-E01 Closed (sulfur isolated — removes heat source); SV-E06 steam trip closed"
+        ],
+        [
+          "Initiator(s)",
+          "LSLL-201 — guided-wave radar level transmitter, 0–100% range, SIL 1 rated"
+        ],
+        [
+          "Voting Logic",
+          "1oo1"
+        ],
+        [
+          "Trip Setpoint",
+          "20%"
+        ],
+        [
+          "Response Time",
+          "Within 3 seconds of setpoint reached"
+        ],
+        [
+          "SRS Consistency Status",
+          "PASS"
+        ]
+      ]
+    },
+    {
+      "index": 6,
+      "rows": [
+        [
+          "SRS Attribute",
+          "Requirement"
+        ],
+        [
+          "SIF ID / Tag",
+          "SIF-04 / PAHH-202"
+        ],
+        [
+          "SIL Target",
+          "SIL 2"
+        ],
+        [
+          "Process Demand Condition",
+          "Steam drum pressure exceeds 46 barg"
+        ],
+        [
+          "Safe State",
+          "SDV-E01 Closed; LCV-201 BFW valve fail-open (increase cooling); SV-E06 steam trip closed"
+        ],
+        [
+          "Initiator(s)",
+          "PAHH-202 — dedicated pressure transmitter 0–50 barg, SIL 2 rated"
+        ],
+        [
+          "Voting Logic",
+          "1oo1; recommend upgrade to 2oo3 at DE for SIL 2 confidence"
+        ],
+        [
+          "Trip Setpoint",
+          "46 barg (MAWP = 48 barg; PSV set at 47.5 barg as final mechanical layer)"
+        ],
+        [
+          "Mechanical Protection",
+          "PSV set at 47.5 barg — mandatory as independent final layer; confirms LOPA credit"
+        ],
+        [
+          "SRS Consistency Status",
+          "MARGIN — gap between DCS HIGH alarm (43 barg) and SIS trip (46 barg) is 3 barg; validated by dynamic simulation required"
+        ]
+      ]
+    },
+    {
+      "index": 7,
+      "rows": [
+        [
+          "SRS Attribute",
+          "Requirement"
+        ],
+        [
+          "SIF ID / Tag",
+          "SIF-05 / TSHH-401"
+        ],
+        [
+          "SIL Target",
+          "SIL 2"
+        ],
+        [
+          "Process Demand Condition",
+          "Converter Pass 1 outlet temperature exceeds 620°C"
+        ],
+        [
+          "Safe State",
+          "SDV-E01 Closed (sulfur isolated); SDV-E02 Open (air purge continues)"
+        ],
+        [
+          "CRITICAL SRS CONFLICT",
+          "At 110% surge load the Pass 1 outlet temperature reaches 621°C — 1°C above the SIS trip setpoint. This means: (a) the SIF will demand on every surge operation; (b) the protection layer hierarchy is broken (NOV = DCS alarm setpoint). This SRS record CANNOT be approved until the process design is corrected. The SIF cannot be considered functional in its current form."
+        ],
+        [
+          "Required Design Action",
+          "(1) Reduce Pass 1 catalyst bed height by ~5% OR increase cold bypass valve (TCV-401) maximum Cv by 20% to lower surge outlet temperature to ≤608°C. (2) Re-set: NOV = 600°C (normal) → DCS alarm TAH = 610°C → SIS trip TSHH = 625°C. (3) Update Instrument Index, Alarm List, C&E, and this SRS simultaneously under MOC."
+        ],
+        [
+          "Initiator(s)",
+          "TSHH-401A and TSHH-401B (dual TCs, Type K multipoint, 400–700°C range)"
+        ],
+        [
+          "Voting Logic",
+          "1oo2"
+        ],
+        [
+          "SRS Consistency Status",
+          "FAIL — SIF is non-functional at surge; SRS cannot be approved in current state"
+        ]
+      ]
+    },
+    {
+      "index": 8,
+      "rows": [
+        [
+          "SRS Attribute",
+          "Requirement"
+        ],
+        [
+          "SIF ID / Tag",
+          "SIF-06 / AT-403-HH"
+        ],
+        [
+          "SIL Target",
+          "SIL 1 (Environmental Safety Function)"
+        ],
+        [
+          "Process Demand Condition",
+          "Stack SO₂ concentration sustained above 600 mg/Nm³ for >5 minutes (confirmed high)"
+        ],
+        [
+          "Safe State",
+          "SDV-E01 Closed (sulfur isolated); stack damper XV-E04 Open (confirmed FO after C&E FAIL correction)"
+        ],
+        [
+          "Time Delay",
+          "5-minute confirmed-high timer to avoid spurious trips on analyser noise; timer logic in SIS PLC"
+        ],
+        [
+          "Initiator(s)",
+          "AT-403 — UV-DOAS CEMS analyser, 0–1,000 mg/Nm³, certified to EN 14181 (QAL1)"
+        ],
+        [
+          "QAL Requirements",
+          "Annual QAL2 calibration required; 3-point calibration gas certified traceable to NIST/NPL"
+        ],
+        [
+          "SRS Consistency Status",
+          "PASS"
+        ]
+      ]
+    },
+    {
+      "index": 9,
+      "rows": [
+        [
+          "SRS Attribute",
+          "Requirement"
+        ],
+        [
+          "SIF ID / Tag",
+          "SIF-07 / LSHH-701"
+        ],
+        [
+          "SIL Target",
+          "SIL 2 (conservative; risk graph requires SIL 1 minimum)"
+        ],
+        [
+          "Process Demand Condition",
+          "Product acid tank level exceeds 90% of gauge range"
+        ],
+        [
+          "Safe State",
+          "SDV-E05 Closed (product isolation); pump stopped; tanker loading halted"
+        ],
+        [
+          "Initiator(s)",
+          "LT-702 — guided-wave radar (SIL 2 rated), 0–100%; independent of process LT-701"
+        ],
+        [
+          "Voting Logic",
+          "1oo2 (LT-701 + LT-702 — two independent level transmitters on separate nozzles)"
+        ],
+        [
+          "SRS Consistency Status",
+          "PASS"
+        ]
+      ]
+    },
+    {
+      "index": 10,
+      "rows": [
+        [
+          "Requirement",
+          "Specification",
+          "Standard Reference"
+        ],
+        [
+          "SIS hardware platform",
+          "Dedicated Safety PLC (TÜV-certified SIL 2 capable); e.g. Siemens S7-F, Rockwell GuardLogix, or Hima HIMax",
+          "IEC 61511-1 Cl. 11"
+        ],
+        [
+          "SIS / DCS separation",
+          "Physical and electrical separation; DCS read-only access to SIS I/O via hardwired or OPC-UA (IEC 62443 secured)",
+          "IEC 61511-1 Cl. 11.2"
+        ],
+        [
+          "Power supply",
+          "Dual redundant UPS-backed 24 VDC SIS power; minimum 1-hour battery autonomy on utility loss",
+          "IEC 61511-1 Cl. 11.4"
+        ],
+        [
+          "Solenoid valve type",
+          "Energise-to-trip (de-energised = safe state) for all ESD valves; spring-return actuators",
+          "IEC 61511-1 Cl. 11.5"
+        ],
+        [
+          "Proof test coverage",
+          "Minimum 90% proof test coverage (PTC) for all SIF elements to meet SIL 2 PFD targets",
+          "IEC 61508-2"
+        ],
+        [
+          "Spurious trip rate target",
+          "STR < 1 per 2 years per SIF (plant availability requirement)",
+          "IEC 61511-1 Cl. 11.9"
+        ],
+        [
+          "Bypass management",
+          "Hardwired key-switch bypass with automatic timer (maximum 8 h); alarm to DCS and SIS log",
+          "ISA-84"
+        ],
+        [
+          "SIS logic solver redundancy",
+          "1oo1D (simplex with diagnostics) minimum for SIL 1; 1oo2 or 2oo3 for SIL 2 functions",
+          "IEC 61508-6"
+        ],
+        [
+          "Common-cause failure (CCF)",
+          "Beta factor (β) = 10% minimum for duplicated sensors; diverse technology where feasible",
+          "IEC 61508-6 Annex D"
+        ],
+        [
+          "Cybersecurity",
+          "SIS network airgapped from corporate IT; IEC 62443 Zone-and-Conduit model",
+          "IEC 62443"
+        ],
+        [
+          "FAT/SIT requirements",
+          "Full Factory Acceptance Test per IEC 61511-1 Cl. 18 before site installation",
+          "IEC 61511-1 Cl. 18"
+        ]
+      ]
+    },
+    {
+      "index": 11,
+      "rows": [
+        [
+          "SIF",
+          "Description",
+          "SIL Target",
+          "SIL Assigned",
+          "Risk Graph Consistent?",
+          "Cross-Doc Consistent?",
+          "SRS Approvable?"
+        ],
+        [
+          "SIF-01",
+          "Furnace T HH",
+          "SIL 2",
+          "SIL 2",
+          "Yes",
+          "MARGIN (TC range)",
+          "Conditional — after TC range change"
+        ],
+        [
+          "SIF-02",
+          "Furnace P HH",
+          "SIL 2",
+          "SIL 2",
+          "Yes",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "SIF-03",
+          "WHB Level LL",
+          "SIL 1",
+          "SIL 1",
+          "Yes",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "SIF-04",
+          "WHB Steam P HH",
+          "SIL 2",
+          "SIL 2",
+          "Yes",
+          "MARGIN",
+          "Conditional — dynamic sim required"
+        ],
+        [
+          "SIF-05",
+          "Conv. P1 T HH",
+          "SIL 2",
+          "SIL 2",
+          "Yes",
+          "FAIL",
+          "NO — process design must be corrected"
+        ],
+        [
+          "SIF-06",
+          "Stack SO₂ HH",
+          "SIL 1",
+          "SIL 1",
+          "Yes",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "SIF-07",
+          "Product Tank L HH",
+          "SIL 1",
+          "SIL 2",
+          "Conservative",
+          "Yes",
+          "Yes (conservative SIL acceptable)"
+        ],
+        [
+          "SIF-08",
+          "Area SO₂ F&G",
+          "N/A (F&G)",
+          "F&G",
+          "N/A",
+          "MARGIN",
+          "Conditional — confirm F&G coverage"
+        ]
+      ]
+    }
+  ]
+}

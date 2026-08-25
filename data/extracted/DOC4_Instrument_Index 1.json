@@ -1,0 +1,1171 @@
+{
+  "filename": "DOC4_Instrument_Index 1.docx",
+  "metadata": {
+    "source_path": "data\\raw\\DOC4_Instrument_Index 1.docx",
+    "core_properties": {
+      "author": "Un-named",
+      "created": "2026-08-20T11:37:00+00:00",
+      "last_modified_by": "Srinivasan, Pratheep Kumar",
+      "modified": "2026-08-21T06:27:00+00:00",
+      "revision": 4
+    }
+  },
+  "headings": [
+    {
+      "text": "UNIT 100 — SULFUR HANDLING INSTRUMENTS",
+      "level": 1
+    },
+    {
+      "text": "UNIT 200 — FURNACE AND WHB INSTRUMENTS",
+      "level": 1
+    },
+    {
+      "text": "UNIT 300 — DRYING SYSTEM INSTRUMENTS",
+      "level": 1
+    },
+    {
+      "text": "UNIT 400 — CONVERTER INSTRUMENTS",
+      "level": 1
+    },
+    {
+      "text": "UNIT 500 — ABSORPTION SYSTEM INSTRUMENTS",
+      "level": 1
+    },
+    {
+      "text": "UNIT 700 — PRODUCT STORAGE AND ESD INSTRUMENTS",
+      "level": 1
+    }
+  ],
+  "sections": [
+    {
+      "heading": null,
+      "level": 0,
+      "paragraphs": [
+        {
+          "text": "FRONT-END ENGINEERING DESIGN (FEED)",
+          "style": "Normal"
+        },
+        {
+          "text": "100 t/d Sulfuric Acid Plant — DCDA / Elemental Sulfur",
+          "style": "Normal"
+        },
+        {
+          "text": "INSTRUMENT INDEX (II)",
+          "style": "Normal"
+        },
+        {
+          "text": "ISA-5.1 Tagged — Range vs Operating Envelope Consistency Check",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 0,
+          "rows": [
+            [
+              "Attribute",
+              "Value"
+            ],
+            [
+              "Document No.",
+              "PRJ-SA100-FEED-II-004"
+            ],
+            [
+              "Revision",
+              "A0 — Issued for Review"
+            ],
+            [
+              "Project",
+              "100 t/d H₂SO₄ Plant, DCDA Route"
+            ],
+            [
+              "Date",
+              "August 2026"
+            ],
+            [
+              "Status",
+              "FEED — Consistency-Checked Edition"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "UNIT 100 — SULFUR HANDLING INSTRUMENTS",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 1,
+          "rows": [
+            [
+              "Tag",
+              "Service",
+              "Instrument Range",
+              "Normal Op Value",
+              "Max Op (Surge)",
+              "Alarm HH or LL Setpoint"
+            ],
+            [
+              "FT-101",
+              "Molten Sulfur Flow",
+              "0–2,000 kg/h",
+              "1,363",
+              "1,499",
+              "FAH 1,700 / FAL 400"
+            ],
+            [
+              "TT-101",
+              "Tank Temperature",
+              "0–200°C",
+              "140",
+              "140",
+              "TAHH 155 / TALL 130"
+            ],
+            [
+              "TT-102",
+              "Transfer Line Temp.",
+              "0–250°C",
+              "140",
+              "142",
+              "TAHH 155 / TALL 130"
+            ],
+            [
+              "LT-101",
+              "Tank Level",
+              "0–100%",
+              "50",
+              "85",
+              "LSHH 92 / LSLL 15"
+            ],
+            [
+              "PT-101",
+              "Transfer Line Pressure",
+              "0–10 barg",
+              "0.4",
+              "0.5",
+              "PAH 2.0 / PAL 0.2"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "UNIT 200 — FURNACE AND WHB INSTRUMENTS",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 2,
+          "rows": [
+            [
+              "Tag",
+              "Service",
+              "Instrument Range",
+              "Normal Op Value",
+              "Max Op (Surge)",
+              "Alarm / Trip Setpoint"
+            ],
+            [
+              "TT-201",
+              "Furnace Temperature",
+              "500–1,200°C",
+              "1,050",
+              "1,080",
+              "TSHH 1,150"
+            ],
+            [
+              "TT-202",
+              "WHB Outlet Temperature",
+              "300–500°C",
+              "420",
+              "425",
+              "TAH 445 / TAL 380"
+            ],
+            [
+              "PT-201",
+              "Furnace Chamber Pressure",
+              "−50 to +500 mbar",
+              "−15",
+              "−18",
+              "PAHH +300 / PALL −40"
+            ],
+            [
+              "FT-201",
+              "Process Air Flow",
+              "0–15,000 Nm³/h",
+              "8,873",
+              "9,760",
+              "FAH 12,000 / FAL 3,500"
+            ],
+            [
+              "FT-202",
+              "WHB Steam Flow",
+              "0–10,000 kg/h",
+              "7,500",
+              "8,250",
+              "FAH 9,000"
+            ],
+            [
+              "PT-202",
+              "WHB Steam Pressure",
+              "0–50 barg",
+              "40",
+              "40",
+              "PAHH 46 / PAL 35"
+            ],
+            [
+              "LT-201",
+              "WHB Drum Level",
+              "0–100%",
+              "50",
+              "50",
+              "LSHH 90 / LSLL 20"
+            ],
+            [
+              "AT-201",
+              "SO₂ Concentration",
+              "0–15 vol%",
+              "10.5",
+              "10.5",
+              "AAH 12.0 / AAL 8.5"
+            ],
+            [
+              "AT-202",
+              "O₂ Concentration",
+              "0–25 vol%",
+              "10.5",
+              "10.5",
+              "AAL 8.0"
+            ],
+            [
+              "TSHH-201 (SIL)",
+              "Furnace T HH ESD",
+              "500–1,200°C",
+              "1,050",
+              "1,080",
+              "SIL trip 1,150°C"
+            ],
+            [
+              "PSHH-201 (SIL)",
+              "Furnace P HH ESD",
+              "−50 to +500 mbar",
+              "−15",
+              "−18",
+              "SIL trip +300 mbar"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "UNIT 300 — DRYING SYSTEM INSTRUMENTS",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 3,
+          "rows": [
+            [
+              "Tag",
+              "Service",
+              "Instrument Range",
+              "Normal Op Value",
+              "Max Op (Surge)",
+              "Alarm Setpoint"
+            ],
+            [
+              "AT-301",
+              "Moisture in Process Air",
+              "0–0.5 g/Nm³",
+              "0.05",
+              "0.07",
+              "AAH 0.15"
+            ],
+            [
+              "LT-301",
+              "DT Acid Sump Level",
+              "0–100%",
+              "50",
+              "50",
+              "LAL 25 / LAHH 90"
+            ],
+            [
+              "TT-301",
+              "DT Acid Temperature",
+              "0–120°C",
+              "65",
+              "70",
+              "TAH 80"
+            ],
+            [
+              "AT-302",
+              "DT H₂SO₄ Concentration",
+              "85–98 wt%",
+              "94.5",
+              "94.5",
+              "AAL 91 / AAH 97"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "UNIT 400 — CONVERTER INSTRUMENTS",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 4,
+          "rows": [
+            [
+              "Tag",
+              "Service",
+              "Instrument Range",
+              "Normal Op Value",
+              "Max Op (Surge)",
+              "Alarm / Trip Setpoint",
+              "Range Adequate?",
+              "SIL Setpoint within 90% Span?"
+            ],
+            [
+              "TT-401",
+              "Conv. Pass 1 Inlet T",
+              "350–500°C",
+              "420",
+              "420",
+              "TSLL 405 / TAH 450",
+              "Yes",
+              "N/A"
+            ],
+            [
+              "TT-402 (SIL)",
+              "Conv. P1 Outlet T",
+              "400–700°C",
+              "600",
+              "621",
+              "TSHH (SIL1) 620",
+              "Yes",
+              "620 = 73.3% of span — OK"
+            ],
+            [
+              "TT-403",
+              "Conv. Pass 2 Inlet T",
+              "400–500°C",
+              "440",
+              "442",
+              "TAH 465 / TSLL 410",
+              "Yes",
+              "N/A"
+            ],
+            [
+              "TT-404",
+              "Conv. Pass 2 Outlet T",
+              "400–600°C",
+              "520",
+              "526",
+              "TSHH 550",
+              "Yes",
+              "550 = 75% span — OK"
+            ],
+            [
+              "TT-405",
+              "Conv. Pass 3 Inlet T",
+              "400–500°C",
+              "430",
+              "432",
+              "TAH 450 / TSLL 410",
+              "Yes",
+              "N/A"
+            ],
+            [
+              "TT-406",
+              "Conv. Pass 3 Outlet T",
+              "400–530°C",
+              "480",
+              "484",
+              "TSHH 500",
+              "Yes",
+              "500 = 76.9% span — OK"
+            ],
+            [
+              "TT-407",
+              "Conv. Pass 4 Inlet T",
+              "380–460°C",
+              "415",
+              "416",
+              "TAH 435 / TSLL 400",
+              "Yes",
+              "N/A"
+            ],
+            [
+              "TT-408",
+              "Conv. Pass 4 Outlet T",
+              "380–460°C",
+              "430",
+              "432",
+              "TSHH 450",
+              "Yes",
+              "TSHH 450 = 87.5% span — OK"
+            ],
+            [
+              "PT-401",
+              "Converter Inlet Gas P",
+              "0–1.5 barg",
+              "0.08",
+              "0.10",
+              "PAH 0.5 / PAL 0.02",
+              "Yes; process uses <10% of range — marginal resolution",
+              "N/A"
+            ],
+            [
+              "AT-401",
+              "SO₂ — Converter Inlet",
+              "0–12 vol%",
+              "10.5",
+              "10.5",
+              "AAH 12.0",
+              "AAH at 100% full scale — FAIL",
+              "N/A"
+            ],
+            [
+              "AT-402",
+              "SO₃ — Post Pass 3",
+              "0–6 vol%",
+              "4.0",
+              "4.4",
+              "AAH 5.5",
+              "Yes",
+              "N/A"
+            ],
+            [
+              "AT-403 CEMS",
+              "Stack SO₂",
+              "0–1,000 mg/Nm³",
+              "250",
+              "480",
+              "AAH 500 / AAHH 600",
+              "Yes",
+              "N/A"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "UNIT 500 — ABSORPTION SYSTEM INSTRUMENTS",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 5,
+          "rows": [
+            [
+              "Tag",
+              "Service",
+              "Instrument Range",
+              "Normal Op Value",
+              "Max Op (Surge)",
+              "Alarm Setpoint"
+            ],
+            [
+              "LT-501",
+              "IPAT Sump Level",
+              "0–100%",
+              "50",
+              "50",
+              "LAHH 90 / LALL 20"
+            ],
+            [
+              "TT-501",
+              "IPAT Inlet Gas Temp",
+              "350–500°C",
+              "420",
+              "432",
+              "TAH 460"
+            ],
+            [
+              "TT-502",
+              "IPAT Acid Temperature",
+              "30–120°C",
+              "65",
+              "70",
+              "TAH 80 / TAL 40"
+            ],
+            [
+              "AT-501",
+              "IPAT H₂SO₄ Concentration",
+              "96–99 wt%",
+              "98.2",
+              "98.2",
+              "AAL 97.5 / AAH 98.8"
+            ],
+            [
+              "LT-502",
+              "FAT Sump Level",
+              "0–100%",
+              "50",
+              "50",
+              "LAHH 90 / LALL 20"
+            ],
+            [
+              "TT-503",
+              "FAT Inlet Gas Temp",
+              "390–460°C",
+              "415",
+              "420",
+              "TAH 445"
+            ],
+            [
+              "AT-502",
+              "FAT H₂SO₄ Concentration",
+              "96–99 wt%",
+              "98.2",
+              "98.2",
+              "AAL 97.5 / AAH 98.8"
+            ],
+            [
+              "FT-501 (SIL)",
+              "Dilution Water Flow",
+              "0–500 L/h",
+              "220",
+              "242",
+              "FALL 50 (SIL 1)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "UNIT 700 — PRODUCT STORAGE AND ESD INSTRUMENTS",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 6,
+          "rows": [
+            [
+              "Tag",
+              "Service",
+              "Instrument Range",
+              "Normal Op Value",
+              "Max Op (Surge)",
+              "Alarm / Trip Setpoint"
+            ],
+            [
+              "LT-701",
+              "Product Tank Level (process)",
+              "0–100%",
+              "50",
+              "85",
+              "LAH 80 / LAL 15"
+            ],
+            [
+              "LT-702 (SIL)",
+              "Product Tank Level ESD",
+              "0–100%",
+              "50",
+              "85",
+              "LSHH 90 (SIL 2 trip)"
+            ],
+            [
+              "TT-701",
+              "Product Acid Temperature",
+              "15–60°C",
+              "35",
+              "38",
+              "TAH 45 / TAL 20"
+            ],
+            [
+              "AT-701",
+              "Product Conc. In-line",
+              "96–99.5%",
+              "98.2",
+              "98.2",
+              "AAL 97.8 / AAH 98.6"
+            ],
+            [
+              "FT-701",
+              "Product Dispatch Flow",
+              "0–10,000 kg/h",
+              "4,167",
+              "5,417",
+              "FAH 8,000"
+            ],
+            [
+              "AA-901 (F&G)",
+              "Area SO₂ Monitor",
+              "0–50 ppm",
+              "0",
+              "~2",
+              "AAH 5 ppm / AAHH 25 ppm"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "text": "FRONT-END ENGINEERING DESIGN (FEED)",
+      "style": "Normal"
+    },
+    {
+      "text": "100 t/d Sulfuric Acid Plant — DCDA / Elemental Sulfur",
+      "style": "Normal"
+    },
+    {
+      "text": "INSTRUMENT INDEX (II)",
+      "style": "Normal"
+    },
+    {
+      "text": "ISA-5.1 Tagged — Range vs Operating Envelope Consistency Check",
+      "style": "Normal"
+    },
+    {
+      "text": "UNIT 100 — SULFUR HANDLING INSTRUMENTS",
+      "style": "Heading 1"
+    },
+    {
+      "text": "UNIT 200 — FURNACE AND WHB INSTRUMENTS",
+      "style": "Heading 1"
+    },
+    {
+      "text": "UNIT 300 — DRYING SYSTEM INSTRUMENTS",
+      "style": "Heading 1"
+    },
+    {
+      "text": "UNIT 400 — CONVERTER INSTRUMENTS",
+      "style": "Heading 1"
+    },
+    {
+      "text": "UNIT 500 — ABSORPTION SYSTEM INSTRUMENTS",
+      "style": "Heading 1"
+    },
+    {
+      "text": "UNIT 700 — PRODUCT STORAGE AND ESD INSTRUMENTS",
+      "style": "Heading 1"
+    }
+  ],
+  "tables": [
+    {
+      "index": 0,
+      "rows": [
+        [
+          "Attribute",
+          "Value"
+        ],
+        [
+          "Document No.",
+          "PRJ-SA100-FEED-II-004"
+        ],
+        [
+          "Revision",
+          "A0 — Issued for Review"
+        ],
+        [
+          "Project",
+          "100 t/d H₂SO₄ Plant, DCDA Route"
+        ],
+        [
+          "Date",
+          "August 2026"
+        ],
+        [
+          "Status",
+          "FEED — Consistency-Checked Edition"
+        ]
+      ]
+    },
+    {
+      "index": 1,
+      "rows": [
+        [
+          "Tag",
+          "Service",
+          "Instrument Range",
+          "Normal Op Value",
+          "Max Op (Surge)",
+          "Alarm HH or LL Setpoint"
+        ],
+        [
+          "FT-101",
+          "Molten Sulfur Flow",
+          "0–2,000 kg/h",
+          "1,363",
+          "1,499",
+          "FAH 1,700 / FAL 400"
+        ],
+        [
+          "TT-101",
+          "Tank Temperature",
+          "0–200°C",
+          "140",
+          "140",
+          "TAHH 155 / TALL 130"
+        ],
+        [
+          "TT-102",
+          "Transfer Line Temp.",
+          "0–250°C",
+          "140",
+          "142",
+          "TAHH 155 / TALL 130"
+        ],
+        [
+          "LT-101",
+          "Tank Level",
+          "0–100%",
+          "50",
+          "85",
+          "LSHH 92 / LSLL 15"
+        ],
+        [
+          "PT-101",
+          "Transfer Line Pressure",
+          "0–10 barg",
+          "0.4",
+          "0.5",
+          "PAH 2.0 / PAL 0.2"
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "rows": [
+        [
+          "Tag",
+          "Service",
+          "Instrument Range",
+          "Normal Op Value",
+          "Max Op (Surge)",
+          "Alarm / Trip Setpoint"
+        ],
+        [
+          "TT-201",
+          "Furnace Temperature",
+          "500–1,200°C",
+          "1,050",
+          "1,080",
+          "TSHH 1,150"
+        ],
+        [
+          "TT-202",
+          "WHB Outlet Temperature",
+          "300–500°C",
+          "420",
+          "425",
+          "TAH 445 / TAL 380"
+        ],
+        [
+          "PT-201",
+          "Furnace Chamber Pressure",
+          "−50 to +500 mbar",
+          "−15",
+          "−18",
+          "PAHH +300 / PALL −40"
+        ],
+        [
+          "FT-201",
+          "Process Air Flow",
+          "0–15,000 Nm³/h",
+          "8,873",
+          "9,760",
+          "FAH 12,000 / FAL 3,500"
+        ],
+        [
+          "FT-202",
+          "WHB Steam Flow",
+          "0–10,000 kg/h",
+          "7,500",
+          "8,250",
+          "FAH 9,000"
+        ],
+        [
+          "PT-202",
+          "WHB Steam Pressure",
+          "0–50 barg",
+          "40",
+          "40",
+          "PAHH 46 / PAL 35"
+        ],
+        [
+          "LT-201",
+          "WHB Drum Level",
+          "0–100%",
+          "50",
+          "50",
+          "LSHH 90 / LSLL 20"
+        ],
+        [
+          "AT-201",
+          "SO₂ Concentration",
+          "0–15 vol%",
+          "10.5",
+          "10.5",
+          "AAH 12.0 / AAL 8.5"
+        ],
+        [
+          "AT-202",
+          "O₂ Concentration",
+          "0–25 vol%",
+          "10.5",
+          "10.5",
+          "AAL 8.0"
+        ],
+        [
+          "TSHH-201 (SIL)",
+          "Furnace T HH ESD",
+          "500–1,200°C",
+          "1,050",
+          "1,080",
+          "SIL trip 1,150°C"
+        ],
+        [
+          "PSHH-201 (SIL)",
+          "Furnace P HH ESD",
+          "−50 to +500 mbar",
+          "−15",
+          "−18",
+          "SIL trip +300 mbar"
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "rows": [
+        [
+          "Tag",
+          "Service",
+          "Instrument Range",
+          "Normal Op Value",
+          "Max Op (Surge)",
+          "Alarm Setpoint"
+        ],
+        [
+          "AT-301",
+          "Moisture in Process Air",
+          "0–0.5 g/Nm³",
+          "0.05",
+          "0.07",
+          "AAH 0.15"
+        ],
+        [
+          "LT-301",
+          "DT Acid Sump Level",
+          "0–100%",
+          "50",
+          "50",
+          "LAL 25 / LAHH 90"
+        ],
+        [
+          "TT-301",
+          "DT Acid Temperature",
+          "0–120°C",
+          "65",
+          "70",
+          "TAH 80"
+        ],
+        [
+          "AT-302",
+          "DT H₂SO₄ Concentration",
+          "85–98 wt%",
+          "94.5",
+          "94.5",
+          "AAL 91 / AAH 97"
+        ]
+      ]
+    },
+    {
+      "index": 4,
+      "rows": [
+        [
+          "Tag",
+          "Service",
+          "Instrument Range",
+          "Normal Op Value",
+          "Max Op (Surge)",
+          "Alarm / Trip Setpoint",
+          "Range Adequate?",
+          "SIL Setpoint within 90% Span?"
+        ],
+        [
+          "TT-401",
+          "Conv. Pass 1 Inlet T",
+          "350–500°C",
+          "420",
+          "420",
+          "TSLL 405 / TAH 450",
+          "Yes",
+          "N/A"
+        ],
+        [
+          "TT-402 (SIL)",
+          "Conv. P1 Outlet T",
+          "400–700°C",
+          "600",
+          "621",
+          "TSHH (SIL1) 620",
+          "Yes",
+          "620 = 73.3% of span — OK"
+        ],
+        [
+          "TT-403",
+          "Conv. Pass 2 Inlet T",
+          "400–500°C",
+          "440",
+          "442",
+          "TAH 465 / TSLL 410",
+          "Yes",
+          "N/A"
+        ],
+        [
+          "TT-404",
+          "Conv. Pass 2 Outlet T",
+          "400–600°C",
+          "520",
+          "526",
+          "TSHH 550",
+          "Yes",
+          "550 = 75% span — OK"
+        ],
+        [
+          "TT-405",
+          "Conv. Pass 3 Inlet T",
+          "400–500°C",
+          "430",
+          "432",
+          "TAH 450 / TSLL 410",
+          "Yes",
+          "N/A"
+        ],
+        [
+          "TT-406",
+          "Conv. Pass 3 Outlet T",
+          "400–530°C",
+          "480",
+          "484",
+          "TSHH 500",
+          "Yes",
+          "500 = 76.9% span — OK"
+        ],
+        [
+          "TT-407",
+          "Conv. Pass 4 Inlet T",
+          "380–460°C",
+          "415",
+          "416",
+          "TAH 435 / TSLL 400",
+          "Yes",
+          "N/A"
+        ],
+        [
+          "TT-408",
+          "Conv. Pass 4 Outlet T",
+          "380–460°C",
+          "430",
+          "432",
+          "TSHH 450",
+          "Yes",
+          "TSHH 450 = 87.5% span — OK"
+        ],
+        [
+          "PT-401",
+          "Converter Inlet Gas P",
+          "0–1.5 barg",
+          "0.08",
+          "0.10",
+          "PAH 0.5 / PAL 0.02",
+          "Yes; process uses <10% of range — marginal resolution",
+          "N/A"
+        ],
+        [
+          "AT-401",
+          "SO₂ — Converter Inlet",
+          "0–12 vol%",
+          "10.5",
+          "10.5",
+          "AAH 12.0",
+          "AAH at 100% full scale — FAIL",
+          "N/A"
+        ],
+        [
+          "AT-402",
+          "SO₃ — Post Pass 3",
+          "0–6 vol%",
+          "4.0",
+          "4.4",
+          "AAH 5.5",
+          "Yes",
+          "N/A"
+        ],
+        [
+          "AT-403 CEMS",
+          "Stack SO₂",
+          "0–1,000 mg/Nm³",
+          "250",
+          "480",
+          "AAH 500 / AAHH 600",
+          "Yes",
+          "N/A"
+        ]
+      ]
+    },
+    {
+      "index": 5,
+      "rows": [
+        [
+          "Tag",
+          "Service",
+          "Instrument Range",
+          "Normal Op Value",
+          "Max Op (Surge)",
+          "Alarm Setpoint"
+        ],
+        [
+          "LT-501",
+          "IPAT Sump Level",
+          "0–100%",
+          "50",
+          "50",
+          "LAHH 90 / LALL 20"
+        ],
+        [
+          "TT-501",
+          "IPAT Inlet Gas Temp",
+          "350–500°C",
+          "420",
+          "432",
+          "TAH 460"
+        ],
+        [
+          "TT-502",
+          "IPAT Acid Temperature",
+          "30–120°C",
+          "65",
+          "70",
+          "TAH 80 / TAL 40"
+        ],
+        [
+          "AT-501",
+          "IPAT H₂SO₄ Concentration",
+          "96–99 wt%",
+          "98.2",
+          "98.2",
+          "AAL 97.5 / AAH 98.8"
+        ],
+        [
+          "LT-502",
+          "FAT Sump Level",
+          "0–100%",
+          "50",
+          "50",
+          "LAHH 90 / LALL 20"
+        ],
+        [
+          "TT-503",
+          "FAT Inlet Gas Temp",
+          "390–460°C",
+          "415",
+          "420",
+          "TAH 445"
+        ],
+        [
+          "AT-502",
+          "FAT H₂SO₄ Concentration",
+          "96–99 wt%",
+          "98.2",
+          "98.2",
+          "AAL 97.5 / AAH 98.8"
+        ],
+        [
+          "FT-501 (SIL)",
+          "Dilution Water Flow",
+          "0–500 L/h",
+          "220",
+          "242",
+          "FALL 50 (SIL 1)"
+        ]
+      ]
+    },
+    {
+      "index": 6,
+      "rows": [
+        [
+          "Tag",
+          "Service",
+          "Instrument Range",
+          "Normal Op Value",
+          "Max Op (Surge)",
+          "Alarm / Trip Setpoint"
+        ],
+        [
+          "LT-701",
+          "Product Tank Level (process)",
+          "0–100%",
+          "50",
+          "85",
+          "LAH 80 / LAL 15"
+        ],
+        [
+          "LT-702 (SIL)",
+          "Product Tank Level ESD",
+          "0–100%",
+          "50",
+          "85",
+          "LSHH 90 (SIL 2 trip)"
+        ],
+        [
+          "TT-701",
+          "Product Acid Temperature",
+          "15–60°C",
+          "35",
+          "38",
+          "TAH 45 / TAL 20"
+        ],
+        [
+          "AT-701",
+          "Product Conc. In-line",
+          "96–99.5%",
+          "98.2",
+          "98.2",
+          "AAL 97.8 / AAH 98.6"
+        ],
+        [
+          "FT-701",
+          "Product Dispatch Flow",
+          "0–10,000 kg/h",
+          "4,167",
+          "5,417",
+          "FAH 8,000"
+        ],
+        [
+          "AA-901 (F&G)",
+          "Area SO₂ Monitor",
+          "0–50 ppm",
+          "0",
+          "~2",
+          "AAH 5 ppm / AAHH 25 ppm"
+        ]
+      ]
+    }
+  ]
+}

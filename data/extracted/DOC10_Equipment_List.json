@@ -1,0 +1,1158 @@
+{
+  "filename": "DOC10_Equipment_List.docx",
+  "metadata": {
+    "source_path": "data\\raw\\DOC10_Equipment_List.docx",
+    "core_properties": {
+      "author": "Un-named",
+      "created": "2026-08-20T13:11:00+00:00",
+      "last_modified_by": "Srinivasan, Pratheep Kumar",
+      "modified": "2026-08-20T13:38:00+00:00",
+      "revision": 2
+    }
+  },
+  "headings": [
+    {
+      "text": "SECTION 1 — VESSELS AND COLUMNS",
+      "level": 1
+    },
+    {
+      "text": "SECTION 2 — HEAT EXCHANGERS",
+      "level": 1
+    },
+    {
+      "text": "SECTION 3 — ROTATING EQUIPMENT (PUMPS)",
+      "level": 1
+    },
+    {
+      "text": "SECTION 4 — ROTATING EQUIPMENT (BLOWERS AND COMPRESSORS)",
+      "level": 1
+    },
+    {
+      "text": "SECTION 5 — FIRED AND SPECIAL EQUIPMENT",
+      "level": 1
+    }
+  ],
+  "sections": [
+    {
+      "heading": null,
+      "level": 0,
+      "paragraphs": [
+        {
+          "text": "FRONT-END ENGINEERING DESIGN (FEED)",
+          "style": "Normal"
+        },
+        {
+          "text": "100 t/d Sulfuric Acid Plant — DCDA / Elemental Sulfur",
+          "style": "Normal"
+        },
+        {
+          "text": "EQUIPMENT LIST",
+          "style": "Normal"
+        },
+        {
+          "text": "Mechanical Equipment Register — Design vs Operating Capacity Consistency Check",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 0,
+          "rows": [
+            [
+              "Attribute",
+              "Value"
+            ],
+            [
+              "Document No.",
+              "PRJ-SA100-FEED-EL-010"
+            ],
+            [
+              "Revision",
+              "A0 — Issued for Review"
+            ],
+            [
+              "Project",
+              "100 t/d H₂SO₄ Plant, DCDA Route"
+            ],
+            [
+              "Date",
+              "August 2026"
+            ],
+            [
+              "Status",
+              "FEED — Consistency-Checked Edition"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "SECTION 1 — VESSELS AND COLUMNS",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 1,
+          "rows": [
+            [
+              "Tag No.",
+              "Equipment Name",
+              "Type",
+              "Size (m Dia × m H/L)",
+              "Design P (barg)",
+              "Design T (°C)",
+              "MAWP (barg)",
+              "Operating P (barg)",
+              "Operating T (°C)",
+              "Material",
+              "Capacity Basis"
+            ],
+            [
+              "TK-101A/B",
+              "Molten Sulfur Storage Tank (×2)",
+              "Fixed roof, heated",
+              "Ø12 × 8 H (each; 4,500 m³ total)",
+              "0.50",
+              "160",
+              "0.5",
+              "0.05",
+              "140",
+              "CS, rubber-lined",
+              "7-day storage @1,363 kg/h = 9,541 t; 2 × 4,500 t > req."
+            ],
+            [
+              "T-301",
+              "Air Drying Tower (DT)",
+              "Packed column",
+              "Ø2.8 × 18 H",
+              "1.0",
+              "120",
+              "1.5",
+              "0.2",
+              "65",
+              "CS + brick lining",
+              "Gas vel. at surge 2.0 m/s vs flooding 2.5 m/s"
+            ],
+            [
+              "T-501",
+              "Interpass Absorption Tower (IPAT)",
+              "Packed column",
+              "Ø3.2 × 22 H",
+              "2.0",
+              "480",
+              "2.5",
+              "0.15",
+              "420",
+              "CS + acid brick",
+              "Gas vel. at surge 1.65 m/s vs flood 2.0 m/s"
+            ],
+            [
+              "T-502",
+              "Final Absorption Tower (FAT)",
+              "Packed column",
+              "Ø2.8 × 20 H",
+              "2.0",
+              "450",
+              "2.5",
+              "0.12",
+              "415",
+              "CS + acid brick",
+              "Gas vel. at surge 1.5 m/s"
+            ],
+            [
+              "R-401",
+              "Catalytic Converter (DCDA)",
+              "Multi-bed vertical vessel",
+              "Ø4.5 × 28 H",
+              "0.5",
+              "700",
+              "0.75",
+              "0.15",
+              "max 621 at surge",
+              "CS shell, 316SS internals",
+              "Space vel. at surge 600 h⁻¹ vs max 700 h⁻¹"
+            ],
+            [
+              "TK-701A/B",
+              "Product H₂SO₄ Storage Tank (×2)",
+              "Fixed roof, N₂ blanket",
+              "Ø12 × 8 H (each; 2,000 t total)",
+              "0.05",
+              "60",
+              "0.1",
+              "0.01",
+              "35",
+              "CS + rubber lining",
+              "10-day storage @ 4,167 kg/h"
+            ],
+            [
+              "D-201",
+              "WHB Steam Drum",
+              "Horizontal pressure vessel",
+              "Ø1.4 × 4.5 L",
+              "50",
+              "250",
+              "50",
+              "40",
+              "250",
+              "SA-516 Gr.70",
+              "BFW in + steam out; level 40–60% NL"
+            ],
+            [
+              "V-301",
+              "Instrument Air Receiver",
+              "Pressure vessel",
+              "Ø1.0 × 3.0 L",
+              "9.0",
+              "60",
+              "9.0",
+              "7.0",
+              "ambient",
+              "CS",
+              "Buffer for IA system; ≥10 min autonomy"
+            ],
+            [
+              "V-702",
+              "Product Acid Weigh Vessel (loading)",
+              "Weigh-bridge vessel",
+              "Ø2.0 × 4.0 H",
+              "2.0",
+              "50",
+              "2.5",
+              "0.5",
+              "40",
+              "CS + rubber",
+              "Batch loading; 30 t per batch capacity"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "SECTION 2 — HEAT EXCHANGERS",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [
+        {
+          "text": "NOTE: MARGIN pattern — all interpass and acid heat exchangers: All exchangers are in MARGIN at surge (85–91% of rated duty). This is consistent with the 20% over-design factor applied at sizing. No upsizing is required but all exchangers must be ordered with rated duty clearly specified as the 110% surge duty × 1.1 additional vendor margin. Vendors must confirm that fouling allowance (Rf = 0.0002 m²K/W for acid service) is included in the area calculation.",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 2,
+          "rows": [
+            [
+              "Tag No.",
+              "Service",
+              "Type",
+              "Area (m²)",
+              "Shell Side Fluid / T (°C)",
+              "Tube Side Fluid / T (°C)",
+              "Design P Shell/Tube (barg)",
+              "Duty Normal (kW)",
+              "Duty Surge (kW)",
+              "Rated Duty (kW)"
+            ],
+            [
+              "WHB-201",
+              "Waste Heat Boiler",
+              "Fire-tube boiler (gas-in-tube)",
+              "350 m² (tube surface)",
+              "BFW/Steam 250°C",
+              "SO₂ gas 420–1,050°C",
+              "50 / 1.0",
+              "16,800",
+              "18,480",
+              "21,000"
+            ],
+            [
+              "E-401",
+              "Interpass HX (Pass 1–2)",
+              "Shell & tube (316SS, fixed TH)",
+              "85 m²",
+              "SO₂ gas (cold) 400°C",
+              "SO₂ gas (hot) 600°C",
+              "1.0 / 1.0",
+              "1,650",
+              "1,815",
+              "2,000"
+            ],
+            [
+              "E-402",
+              "Interpass HX (Pass 2–3)",
+              "Shell & tube (316SS)",
+              "55 m²",
+              "Cold gas 420°C",
+              "Hot gas 520°C",
+              "1.0 / 1.0",
+              "980",
+              "1,078",
+              "1,200"
+            ],
+            [
+              "E-403",
+              "Interpass HX (Pass 3–IPAT)",
+              "Shell & tube (316SS)",
+              "65 m²",
+              "Cold gas returning 415°C",
+              "Hot gas 480°C",
+              "1.0 / 1.0",
+              "1,100",
+              "1,210",
+              "1,400"
+            ],
+            [
+              "E-404",
+              "Interpass HX (Pass 4–FAT)",
+              "Shell & tube (316SS)",
+              "40 m²",
+              "Cold gas 390°C",
+              "Hot gas 430°C",
+              "1.0 / 1.0",
+              "620",
+              "682",
+              "800"
+            ],
+            [
+              "E-501",
+              "IPAT Acid Cooler",
+              "Shell & tube (Saramet/Hastelloy)",
+              "180 m²",
+              "CW 30–45°C",
+              "H₂SO₄ 65–95°C",
+              "6.0 / 6.0",
+              "2,650",
+              "2,915",
+              "3,200"
+            ],
+            [
+              "E-502",
+              "FAT Acid Cooler",
+              "Shell & tube (Saramet/Hastelloy)",
+              "60 m²",
+              "CW 30–45°C",
+              "H₂SO₄ 65–90°C",
+              "6.0 / 6.0",
+              "890",
+              "979",
+              "1,100"
+            ],
+            [
+              "E-301",
+              "DT Acid Cooler",
+              "Graphite block exchanger",
+              "25 m²",
+              "CW 30–45°C",
+              "H₂SO₄ 65–80°C",
+              "4.0 / 4.0",
+              "320",
+              "352",
+              "420"
+            ],
+            [
+              "E-701",
+              "Product Acid Cooler",
+              "Shell & tube (Hastelloy C-276)",
+              "28 m²",
+              "CW 30–40°C",
+              "H₂SO₄ 35–65°C",
+              "6.0 / 6.0",
+              "420",
+              "462",
+              "520"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "SECTION 3 — ROTATING EQUIPMENT (PUMPS)",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 3,
+          "rows": [
+            [
+              "Tag No.",
+              "Service",
+              "Type",
+              "Normal Flow (m³/h)",
+              "Design Flow (130% rated) (m³/h)",
+              "Surge Demand (110% plant) (m³/h)",
+              "Motor Power (kW)",
+              "Power at Surge (kW)",
+              "Motor Rated (kW)"
+            ],
+            [
+              "P-101A/B",
+              "Molten Sulfur Transfer (D+S)",
+              "Gear pump, ATEX, heated casing",
+              "0.75",
+              "0.98",
+              "0.82",
+              "7.5",
+              "5.8",
+              "7.5"
+            ],
+            [
+              "P-201A/B",
+              "BFW to WHB (D+S)",
+              "Multistage centrifugal",
+              "7.7",
+              "10.0",
+              "8.5",
+              "45",
+              "38",
+              "45"
+            ],
+            [
+              "P-301A/B",
+              "DT Acid Circulating (D+S)",
+              "Centrifugal, Saramet impeller",
+              "45",
+              "58.5",
+              "50",
+              "15",
+              "12",
+              "15"
+            ],
+            [
+              "P-501A/B",
+              "IPAT Acid Circulating (D+S)",
+              "Centrifugal, Saramet impeller",
+              "120",
+              "156",
+              "132",
+              "55",
+              "46",
+              "55"
+            ],
+            [
+              "P-502A/B",
+              "FAT Acid Circulating (D+S)",
+              "Centrifugal, Saramet impeller",
+              "110",
+              "143",
+              "121",
+              "45",
+              "40",
+              "45"
+            ],
+            [
+              "P-701A/B",
+              "Product Transfer/Storage (D+S)",
+              "Centrifugal, rubber-lined",
+              "3.0",
+              "3.9",
+              "3.3",
+              "11",
+              "9",
+              "11"
+            ],
+            [
+              "P-702A/B",
+              "Product Dispatch Pump (D+S)",
+              "Centrifugal, Saramet",
+              "3.0",
+              "3.9",
+              "3.75",
+              "22",
+              "21.8",
+              "22"
+            ],
+            [
+              "P-901A/B",
+              "Cooling Water Circ. (D+S)",
+              "Centrifugal, epoxy-lined",
+              "240",
+              "312",
+              "264",
+              "75",
+              "62",
+              "75"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "SECTION 4 — ROTATING EQUIPMENT (BLOWERS AND COMPRESSORS)",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 4,
+          "rows": [
+            [
+              "Tag No.",
+              "Service",
+              "Type",
+              "Normal Flow (Nm³/h)",
+              "Surge Demand (110%) (Nm³/h)",
+              "Rated Flow (Nm³/h)",
+              "Discharge P (barg)",
+              "Motor kW (normal)",
+              "Motor kW (surge)",
+              "Motor Rated kW"
+            ],
+            [
+              "K-301A",
+              "Main Air Blower — Duty",
+              "Centrifugal single-stage + VFD",
+              "8,873",
+              "9,760",
+              "11,000",
+              "0.5",
+              "520",
+              "572",
+              "630"
+            ],
+            [
+              "K-301B",
+              "Main Air Blower — Standby",
+              "Centrifugal single-stage + VFD",
+              "8,873",
+              "9,760",
+              "11,000",
+              "0.5",
+              "520",
+              "572",
+              "630"
+            ],
+            [
+              "K-901",
+              "Instrument Air Compressor",
+              "Reciprocating, oil-free, 2-stage",
+              "180 Nm³/h",
+              "200",
+              "250",
+              "7.5",
+              "18",
+              "20",
+              "22"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "SECTION 5 — FIRED AND SPECIAL EQUIPMENT",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 5,
+          "rows": [
+            [
+              "Tag No.",
+              "Equipment Name",
+              "Type / Description",
+              "Key Rating",
+              "Design T / P",
+              "Operating T / P @ Surge"
+            ],
+            [
+              "BU-201",
+              "Sulfur Furnace",
+              "Horizontal cylindrical, refractory-lined (high-alumina castable 1,400°C service)",
+              "Thermal input: 21,000 kW rated",
+              "1,200°C / 0.3 barg (design)",
+              "1,080°C / −0.018 barg (surge)"
+            ],
+            [
+              "F-101",
+              "Molten Sulfur Filter",
+              "Pressure leaf filter, SS316, traced",
+              "Flow: 2,000 kg/h rated",
+              "160°C / 6 barg",
+              "1,499 kg/h / 0.5 barg"
+            ],
+            [
+              "WESP-501",
+              "Wet Electrostatic Precipitator (tail gas mist elim.)",
+              "Vertical, 4-field, HDPE internals",
+              "Gas flow: 11,000 Nm³/h rated; mist removal >99.5%",
+              "100°C / 0.05 barg",
+              "9,760 Nm³/h / 0.05 barg (surge)"
+            ],
+            [
+              "MBU-501A/B",
+              "Acid Mist Eliminators (DT/IPAT/FAT exits)",
+              "Fibre-bed type (duty+standby)",
+              "Flow per bed: 6,000 Nm³/h",
+              "ambient / 0.1 barg",
+              "4,880 Nm³/h each (half total)"
+            ],
+            [
+              "LA-701",
+              "Tanker Loading Arm (×2)",
+              "Top-loading, dry-break, with N₂ blanket",
+              "30,000 kg/h rated per arm; weigh-bridge accuracy ±0.1%",
+              "atm / atm",
+              "25,000 kg/h max (1 arm operating)"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "text": "FRONT-END ENGINEERING DESIGN (FEED)",
+      "style": "Normal"
+    },
+    {
+      "text": "100 t/d Sulfuric Acid Plant — DCDA / Elemental Sulfur",
+      "style": "Normal"
+    },
+    {
+      "text": "EQUIPMENT LIST",
+      "style": "Normal"
+    },
+    {
+      "text": "Mechanical Equipment Register — Design vs Operating Capacity Consistency Check",
+      "style": "Normal"
+    },
+    {
+      "text": "SECTION 1 — VESSELS AND COLUMNS",
+      "style": "Heading 1"
+    },
+    {
+      "text": "SECTION 2 — HEAT EXCHANGERS",
+      "style": "Heading 1"
+    },
+    {
+      "text": "NOTE: MARGIN pattern — all interpass and acid heat exchangers: All exchangers are in MARGIN at surge (85–91% of rated duty). This is consistent with the 20% over-design factor applied at sizing. No upsizing is required but all exchangers must be ordered with rated duty clearly specified as the 110% surge duty × 1.1 additional vendor margin. Vendors must confirm that fouling allowance (Rf = 0.0002 m²K/W for acid service) is included in the area calculation.",
+      "style": "Normal"
+    },
+    {
+      "text": "SECTION 3 — ROTATING EQUIPMENT (PUMPS)",
+      "style": "Heading 1"
+    },
+    {
+      "text": "SECTION 4 — ROTATING EQUIPMENT (BLOWERS AND COMPRESSORS)",
+      "style": "Heading 1"
+    },
+    {
+      "text": "SECTION 5 — FIRED AND SPECIAL EQUIPMENT",
+      "style": "Heading 1"
+    }
+  ],
+  "tables": [
+    {
+      "index": 0,
+      "rows": [
+        [
+          "Attribute",
+          "Value"
+        ],
+        [
+          "Document No.",
+          "PRJ-SA100-FEED-EL-010"
+        ],
+        [
+          "Revision",
+          "A0 — Issued for Review"
+        ],
+        [
+          "Project",
+          "100 t/d H₂SO₄ Plant, DCDA Route"
+        ],
+        [
+          "Date",
+          "August 2026"
+        ],
+        [
+          "Status",
+          "FEED — Consistency-Checked Edition"
+        ]
+      ]
+    },
+    {
+      "index": 1,
+      "rows": [
+        [
+          "Tag No.",
+          "Equipment Name",
+          "Type",
+          "Size (m Dia × m H/L)",
+          "Design P (barg)",
+          "Design T (°C)",
+          "MAWP (barg)",
+          "Operating P (barg)",
+          "Operating T (°C)",
+          "Material",
+          "Capacity Basis"
+        ],
+        [
+          "TK-101A/B",
+          "Molten Sulfur Storage Tank (×2)",
+          "Fixed roof, heated",
+          "Ø12 × 8 H (each; 4,500 m³ total)",
+          "0.50",
+          "160",
+          "0.5",
+          "0.05",
+          "140",
+          "CS, rubber-lined",
+          "7-day storage @1,363 kg/h = 9,541 t; 2 × 4,500 t > req."
+        ],
+        [
+          "T-301",
+          "Air Drying Tower (DT)",
+          "Packed column",
+          "Ø2.8 × 18 H",
+          "1.0",
+          "120",
+          "1.5",
+          "0.2",
+          "65",
+          "CS + brick lining",
+          "Gas vel. at surge 2.0 m/s vs flooding 2.5 m/s"
+        ],
+        [
+          "T-501",
+          "Interpass Absorption Tower (IPAT)",
+          "Packed column",
+          "Ø3.2 × 22 H",
+          "2.0",
+          "480",
+          "2.5",
+          "0.15",
+          "420",
+          "CS + acid brick",
+          "Gas vel. at surge 1.65 m/s vs flood 2.0 m/s"
+        ],
+        [
+          "T-502",
+          "Final Absorption Tower (FAT)",
+          "Packed column",
+          "Ø2.8 × 20 H",
+          "2.0",
+          "450",
+          "2.5",
+          "0.12",
+          "415",
+          "CS + acid brick",
+          "Gas vel. at surge 1.5 m/s"
+        ],
+        [
+          "R-401",
+          "Catalytic Converter (DCDA)",
+          "Multi-bed vertical vessel",
+          "Ø4.5 × 28 H",
+          "0.5",
+          "700",
+          "0.75",
+          "0.15",
+          "max 621 at surge",
+          "CS shell, 316SS internals",
+          "Space vel. at surge 600 h⁻¹ vs max 700 h⁻¹"
+        ],
+        [
+          "TK-701A/B",
+          "Product H₂SO₄ Storage Tank (×2)",
+          "Fixed roof, N₂ blanket",
+          "Ø12 × 8 H (each; 2,000 t total)",
+          "0.05",
+          "60",
+          "0.1",
+          "0.01",
+          "35",
+          "CS + rubber lining",
+          "10-day storage @ 4,167 kg/h"
+        ],
+        [
+          "D-201",
+          "WHB Steam Drum",
+          "Horizontal pressure vessel",
+          "Ø1.4 × 4.5 L",
+          "50",
+          "250",
+          "50",
+          "40",
+          "250",
+          "SA-516 Gr.70",
+          "BFW in + steam out; level 40–60% NL"
+        ],
+        [
+          "V-301",
+          "Instrument Air Receiver",
+          "Pressure vessel",
+          "Ø1.0 × 3.0 L",
+          "9.0",
+          "60",
+          "9.0",
+          "7.0",
+          "ambient",
+          "CS",
+          "Buffer for IA system; ≥10 min autonomy"
+        ],
+        [
+          "V-702",
+          "Product Acid Weigh Vessel (loading)",
+          "Weigh-bridge vessel",
+          "Ø2.0 × 4.0 H",
+          "2.0",
+          "50",
+          "2.5",
+          "0.5",
+          "40",
+          "CS + rubber",
+          "Batch loading; 30 t per batch capacity"
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "rows": [
+        [
+          "Tag No.",
+          "Service",
+          "Type",
+          "Area (m²)",
+          "Shell Side Fluid / T (°C)",
+          "Tube Side Fluid / T (°C)",
+          "Design P Shell/Tube (barg)",
+          "Duty Normal (kW)",
+          "Duty Surge (kW)",
+          "Rated Duty (kW)"
+        ],
+        [
+          "WHB-201",
+          "Waste Heat Boiler",
+          "Fire-tube boiler (gas-in-tube)",
+          "350 m² (tube surface)",
+          "BFW/Steam 250°C",
+          "SO₂ gas 420–1,050°C",
+          "50 / 1.0",
+          "16,800",
+          "18,480",
+          "21,000"
+        ],
+        [
+          "E-401",
+          "Interpass HX (Pass 1–2)",
+          "Shell & tube (316SS, fixed TH)",
+          "85 m²",
+          "SO₂ gas (cold) 400°C",
+          "SO₂ gas (hot) 600°C",
+          "1.0 / 1.0",
+          "1,650",
+          "1,815",
+          "2,000"
+        ],
+        [
+          "E-402",
+          "Interpass HX (Pass 2–3)",
+          "Shell & tube (316SS)",
+          "55 m²",
+          "Cold gas 420°C",
+          "Hot gas 520°C",
+          "1.0 / 1.0",
+          "980",
+          "1,078",
+          "1,200"
+        ],
+        [
+          "E-403",
+          "Interpass HX (Pass 3–IPAT)",
+          "Shell & tube (316SS)",
+          "65 m²",
+          "Cold gas returning 415°C",
+          "Hot gas 480°C",
+          "1.0 / 1.0",
+          "1,100",
+          "1,210",
+          "1,400"
+        ],
+        [
+          "E-404",
+          "Interpass HX (Pass 4–FAT)",
+          "Shell & tube (316SS)",
+          "40 m²",
+          "Cold gas 390°C",
+          "Hot gas 430°C",
+          "1.0 / 1.0",
+          "620",
+          "682",
+          "800"
+        ],
+        [
+          "E-501",
+          "IPAT Acid Cooler",
+          "Shell & tube (Saramet/Hastelloy)",
+          "180 m²",
+          "CW 30–45°C",
+          "H₂SO₄ 65–95°C",
+          "6.0 / 6.0",
+          "2,650",
+          "2,915",
+          "3,200"
+        ],
+        [
+          "E-502",
+          "FAT Acid Cooler",
+          "Shell & tube (Saramet/Hastelloy)",
+          "60 m²",
+          "CW 30–45°C",
+          "H₂SO₄ 65–90°C",
+          "6.0 / 6.0",
+          "890",
+          "979",
+          "1,100"
+        ],
+        [
+          "E-301",
+          "DT Acid Cooler",
+          "Graphite block exchanger",
+          "25 m²",
+          "CW 30–45°C",
+          "H₂SO₄ 65–80°C",
+          "4.0 / 4.0",
+          "320",
+          "352",
+          "420"
+        ],
+        [
+          "E-701",
+          "Product Acid Cooler",
+          "Shell & tube (Hastelloy C-276)",
+          "28 m²",
+          "CW 30–40°C",
+          "H₂SO₄ 35–65°C",
+          "6.0 / 6.0",
+          "420",
+          "462",
+          "520"
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "rows": [
+        [
+          "Tag No.",
+          "Service",
+          "Type",
+          "Normal Flow (m³/h)",
+          "Design Flow (130% rated) (m³/h)",
+          "Surge Demand (110% plant) (m³/h)",
+          "Motor Power (kW)",
+          "Power at Surge (kW)",
+          "Motor Rated (kW)"
+        ],
+        [
+          "P-101A/B",
+          "Molten Sulfur Transfer (D+S)",
+          "Gear pump, ATEX, heated casing",
+          "0.75",
+          "0.98",
+          "0.82",
+          "7.5",
+          "5.8",
+          "7.5"
+        ],
+        [
+          "P-201A/B",
+          "BFW to WHB (D+S)",
+          "Multistage centrifugal",
+          "7.7",
+          "10.0",
+          "8.5",
+          "45",
+          "38",
+          "45"
+        ],
+        [
+          "P-301A/B",
+          "DT Acid Circulating (D+S)",
+          "Centrifugal, Saramet impeller",
+          "45",
+          "58.5",
+          "50",
+          "15",
+          "12",
+          "15"
+        ],
+        [
+          "P-501A/B",
+          "IPAT Acid Circulating (D+S)",
+          "Centrifugal, Saramet impeller",
+          "120",
+          "156",
+          "132",
+          "55",
+          "46",
+          "55"
+        ],
+        [
+          "P-502A/B",
+          "FAT Acid Circulating (D+S)",
+          "Centrifugal, Saramet impeller",
+          "110",
+          "143",
+          "121",
+          "45",
+          "40",
+          "45"
+        ],
+        [
+          "P-701A/B",
+          "Product Transfer/Storage (D+S)",
+          "Centrifugal, rubber-lined",
+          "3.0",
+          "3.9",
+          "3.3",
+          "11",
+          "9",
+          "11"
+        ],
+        [
+          "P-702A/B",
+          "Product Dispatch Pump (D+S)",
+          "Centrifugal, Saramet",
+          "3.0",
+          "3.9",
+          "3.75",
+          "22",
+          "21.8",
+          "22"
+        ],
+        [
+          "P-901A/B",
+          "Cooling Water Circ. (D+S)",
+          "Centrifugal, epoxy-lined",
+          "240",
+          "312",
+          "264",
+          "75",
+          "62",
+          "75"
+        ]
+      ]
+    },
+    {
+      "index": 4,
+      "rows": [
+        [
+          "Tag No.",
+          "Service",
+          "Type",
+          "Normal Flow (Nm³/h)",
+          "Surge Demand (110%) (Nm³/h)",
+          "Rated Flow (Nm³/h)",
+          "Discharge P (barg)",
+          "Motor kW (normal)",
+          "Motor kW (surge)",
+          "Motor Rated kW"
+        ],
+        [
+          "K-301A",
+          "Main Air Blower — Duty",
+          "Centrifugal single-stage + VFD",
+          "8,873",
+          "9,760",
+          "11,000",
+          "0.5",
+          "520",
+          "572",
+          "630"
+        ],
+        [
+          "K-301B",
+          "Main Air Blower — Standby",
+          "Centrifugal single-stage + VFD",
+          "8,873",
+          "9,760",
+          "11,000",
+          "0.5",
+          "520",
+          "572",
+          "630"
+        ],
+        [
+          "K-901",
+          "Instrument Air Compressor",
+          "Reciprocating, oil-free, 2-stage",
+          "180 Nm³/h",
+          "200",
+          "250",
+          "7.5",
+          "18",
+          "20",
+          "22"
+        ]
+      ]
+    },
+    {
+      "index": 5,
+      "rows": [
+        [
+          "Tag No.",
+          "Equipment Name",
+          "Type / Description",
+          "Key Rating",
+          "Design T / P",
+          "Operating T / P @ Surge"
+        ],
+        [
+          "BU-201",
+          "Sulfur Furnace",
+          "Horizontal cylindrical, refractory-lined (high-alumina castable 1,400°C service)",
+          "Thermal input: 21,000 kW rated",
+          "1,200°C / 0.3 barg (design)",
+          "1,080°C / −0.018 barg (surge)"
+        ],
+        [
+          "F-101",
+          "Molten Sulfur Filter",
+          "Pressure leaf filter, SS316, traced",
+          "Flow: 2,000 kg/h rated",
+          "160°C / 6 barg",
+          "1,499 kg/h / 0.5 barg"
+        ],
+        [
+          "WESP-501",
+          "Wet Electrostatic Precipitator (tail gas mist elim.)",
+          "Vertical, 4-field, HDPE internals",
+          "Gas flow: 11,000 Nm³/h rated; mist removal >99.5%",
+          "100°C / 0.05 barg",
+          "9,760 Nm³/h / 0.05 barg (surge)"
+        ],
+        [
+          "MBU-501A/B",
+          "Acid Mist Eliminators (DT/IPAT/FAT exits)",
+          "Fibre-bed type (duty+standby)",
+          "Flow per bed: 6,000 Nm³/h",
+          "ambient / 0.1 barg",
+          "4,880 Nm³/h each (half total)"
+        ],
+        [
+          "LA-701",
+          "Tanker Loading Arm (×2)",
+          "Top-loading, dry-break, with N₂ blanket",
+          "30,000 kg/h rated per arm; weigh-bridge accuracy ±0.1%",
+          "atm / atm",
+          "25,000 kg/h max (1 arm operating)"
+        ]
+      ]
+    }
+  ]
+}

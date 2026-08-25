@@ -1,0 +1,912 @@
+{
+  "filename": "DOC7_Control_Philosophy 1.docx",
+  "metadata": {
+    "source_path": "data\\raw\\DOC7_Control_Philosophy 1.docx",
+    "core_properties": {
+      "author": "Un-named",
+      "created": "2026-08-20T11:37:00+00:00",
+      "last_modified_by": "Srinivasan, Pratheep Kumar",
+      "modified": "2026-08-21T06:33:00+00:00",
+      "revision": 3
+    }
+  },
+  "headings": [
+    {
+      "text": "1. MASTER PRODUCTION RATE GOVERNOR",
+      "level": 1
+    },
+    {
+      "text": "2. REGULATORY PID CONTROL LOOPS — CONFIGURATION CONSISTENCY",
+      "level": 1
+    },
+    {
+      "text": "3. CASCADE AND RATIO LOOP CONSISTENCY CHECK",
+      "level": 1
+    },
+    {
+      "text": "4. CONTROL LOOP INTERACTION CHECK",
+      "level": 1
+    }
+  ],
+  "sections": [
+    {
+      "heading": null,
+      "level": 0,
+      "paragraphs": [
+        {
+          "text": "FRONT-END ENGINEERING DESIGN (FEED)",
+          "style": "Normal"
+        },
+        {
+          "text": "100 t/d Sulfuric Acid Plant — DCDA / Elemental Sulfur",
+          "style": "Normal"
+        },
+        {
+          "text": "CONTROL PHILOSOPHY",
+          "style": "Normal"
+        },
+        {
+          "text": "PID Loop Configuration & Control Range Consistency Verified",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 0,
+          "rows": [
+            [
+              "Attribute",
+              "Value"
+            ],
+            [
+              "Document No.",
+              "PRJ-SA100-FEED-CP-007"
+            ],
+            [
+              "Revision",
+              "A0 — Issued for Review"
+            ],
+            [
+              "Project",
+              "100 t/d H₂SO₄ Plant, DCDA Route"
+            ],
+            [
+              "Date",
+              "August 2026"
+            ],
+            [
+              "Status",
+              "FEED — Consistency-Checked Edition"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "1. MASTER PRODUCTION RATE GOVERNOR",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [
+        {
+          "text": "A \"Plant Load\" setpoint (expressed as % of 100 t/d nameplate, range: 50–110%) entered by the operator at the DCS cascades to all unit production-rate-dependent controllers. The Governor calculates the required sulfur mass flow and air volumetric flow targets for the current load and passes them as remote setpoints to FIC-101 and FIC-201 respectively, with lead/lag sequencing (air leads on load increase; sulfur leads on load reduction).",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 1,
+          "rows": [
+            [
+              "Parameter",
+              "Normal (100%)",
+              "Surge (110%)",
+              "Turndown (50%)",
+              "Governor Range (DCS)"
+            ],
+            [
+              "Plant Load setpoint (%)",
+              "100%",
+              "110%",
+              "50%",
+              "50–110% (hard cap)"
+            ],
+            [
+              "SO₂ target from Governor (vol%)",
+              "10.5",
+              "10.5",
+              "10.5",
+              "Fixed ratio 10.5%"
+            ],
+            [
+              "Sulfur feed target from Gov. (kg/h)",
+              "1,363",
+              "1,499",
+              "682",
+              "FIC-101 range 0–2,000"
+            ],
+            [
+              "Air flow target from Gov. (Nm³/h)",
+              "8,873",
+              "9,760",
+              "4,437",
+              "FIC-201 range 0–15,000"
+            ],
+            [
+              "Load ramp rate (% per min)",
+              "5%/min",
+              "5%/min",
+              "5%/min",
+              "Fixed DCS limit"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "2. REGULATORY PID CONTROL LOOPS — CONFIGURATION CONSISTENCY",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 2,
+          "rows": [
+            [
+              "Loop ID",
+              "Service",
+              "PV Tag",
+              "MV Tag",
+              "Control Mode",
+              "SP (Normal)",
+              "MV @ Normal (% output)",
+              "MV @ Surge (110%)",
+              "MV @ Turndown (50%)",
+              "Actuator Rated Range",
+              "MV Saturated at Surge?"
+            ],
+            [
+              "FIC-101",
+              "Sulfur Feed Rate",
+              "FT-101 (Coriolis)",
+              "FCV-101 (modulating valve)",
+              "Cascade from Governor; PID",
+              "1,363 kg/h",
+              "68%",
+              "75%",
+              "34%",
+              "FCV-101 Cv 0–100%",
+              "No"
+            ],
+            [
+              "FIC-201",
+              "Air Flow / SO₂ Ratio",
+              "AT-201 (SO₂ analyser)",
+              "Blower VFD (FCV-201)",
+              "Cascade; primary SO₂; secondary air flow",
+              "10.5 vol%",
+              "100% VFD at 50 Hz",
+              "110% VFD at 55 Hz",
+              "52% VFD at 26 Hz",
+              "VFD 0–60 Hz",
+              "VFD at 91.7% of rated max Hz"
+            ],
+            [
+              "TIC-401",
+              "Conv. P1 Inlet Temperature",
+              "TT-401",
+              "TCV-401 (cold bypass)",
+              "Split-range PID",
+              "420°C",
+              "45% bypass",
+              "52% bypass",
+              "22% bypass",
+              "0–100% valve open",
+              "No"
+            ],
+            [
+              "TIC-402",
+              "Conv. P2 Inlet Temperature",
+              "TT-403",
+              "TCV-402 (bypass)",
+              "PID Auto",
+              "440°C",
+              "40%",
+              "44%",
+              "20%",
+              "0–100%",
+              "No"
+            ],
+            [
+              "TIC-403",
+              "Conv. P3 Inlet Temperature",
+              "TT-405",
+              "TCV-403 (bypass)",
+              "PID Auto",
+              "430°C",
+              "38%",
+              "42%",
+              "18%",
+              "0–100%",
+              "No"
+            ],
+            [
+              "TIC-404",
+              "Conv. P4 Inlet Temperature",
+              "TT-407",
+              "TCV-404 (bypass)",
+              "PID Auto",
+              "415°C",
+              "35%",
+              "38%",
+              "17%",
+              "0–100%",
+              "No"
+            ],
+            [
+              "AIC-501",
+              "IPAT Acid Concentration",
+              "AT-501 (density)",
+              "FCV-501 (water valve)",
+              "Cascade PID (acid conc. → water flow)",
+              "98.2 wt%",
+              "44% FCV open",
+              "48% FCV open",
+              "22% FCV open",
+              "FCV 0–100% (0–500 L/h)",
+              "No"
+            ],
+            [
+              "AIC-502",
+              "FAT Acid Concentration",
+              "AT-502 (density)",
+              "FCV-502 (water valve)",
+              "Cascade PID",
+              "98.2 wt%",
+              "44%",
+              "48%",
+              "22%",
+              "0–100%",
+              "No"
+            ],
+            [
+              "LIC-201",
+              "WHB Steam Drum Level (3-element)",
+              "LT-201 + FT-202 + BFW FT",
+              "LCV-201 (BFW valve)",
+              "3-element control: Level + steam flow + BFW flow feed-forward",
+              "50% level",
+              "65%",
+              "72%",
+              "33%",
+              "0–100%",
+              "No"
+            ],
+            [
+              "PIC-202",
+              "WHB Steam Pressure",
+              "PT-202",
+              "PCV-202 (export valve)",
+              "PID Auto",
+              "40 barg",
+              "55%",
+              "60%",
+              "28%",
+              "0–100%",
+              "No"
+            ],
+            [
+              "LIC-501",
+              "IPAT Sump Level",
+              "LT-501",
+              "LCV-501 (acid transfer)",
+              "PID Auto",
+              "50%",
+              "50%",
+              "55%",
+              "25%",
+              "0–100%",
+              "No"
+            ],
+            [
+              "LIC-502",
+              "FAT Sump Level",
+              "LT-502",
+              "LCV-502 (acid transfer)",
+              "PID Auto",
+              "50%",
+              "50%",
+              "55%",
+              "25%",
+              "0–100%",
+              "No"
+            ],
+            [
+              "TIC-501",
+              "IPAT Acid Temperature",
+              "TT-502",
+              "TCV-501 (CW to acid cooler)",
+              "PID Auto",
+              "65°C",
+              "60%",
+              "68%",
+              "30%",
+              "0–100% (FO fail-safe)",
+              "No"
+            ],
+            [
+              "FIC-701",
+              "Product Dispatch Flow",
+              "FT-701 (Coriolis)",
+              "Dispatch pump VFD",
+              "Batch PID",
+              "Per order kg/h",
+              "Variable",
+              "85% pump VFD",
+              "N/A",
+              "Pump VFD 0–100%",
+              "No"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "3. CASCADE AND RATIO LOOP CONSISTENCY CHECK",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [
+        {
+          "text": "Cascade loops require that the primary (outer) loop responds significantly slower than the secondary (inner) loop. The ratio check confirms that the ratio of primary-to-secondary time constants is ≥5:1 for stable cascade operation.",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 3,
+          "rows": [
+            [
+              "Cascade Pair",
+              "Primary Loop / PV",
+              "Secondary Loop / PV",
+              "Primary Time Const. (est.)",
+              "Secondary Time Const. (est.)",
+              "Ratio P:S"
+            ],
+            [
+              "FIC-201 (Air/SO₂ ratio)",
+              "AT-201 SO₂ analyser (slow — analyser lag)",
+              "FT-201 Air flow (fast — DP transmitter)",
+              "~2–5 min (analyser + process lag)",
+              "~5–15 s (flow loop)",
+              "~10:1"
+            ],
+            [
+              "AIC-501 (IPAT acid conc.)",
+              "AT-501 density (moderate response)",
+              "FCV-501 water flow (fast — magnetic FM)",
+              "~3–8 min (dilution mixing)",
+              "~10–30 s (flow)",
+              "~8:1"
+            ],
+            [
+              "AIC-502 (FAT acid conc.)",
+              "AT-502 density",
+              "FCV-502 water flow",
+              "~3–8 min",
+              "~10–30 s",
+              "~8:1"
+            ],
+            [
+              "LIC-201 (3-element WHB)",
+              "LT-201 drum level (slow — integrating process)",
+              "BFW flow + steam flow (fast feed-forward)",
+              "Integrating — no time const.",
+              "~5–10 s",
+              "N/A — feed-forward + FB"
+            ],
+            [
+              "TIC-401 P1 bypass (split-range)",
+              "TT-401 inlet temp",
+              "TCV-401 bypass valve (split-range)",
+              "~1–3 min (gas residence time)",
+              "~5–20 s (valve stroke)",
+              "~10:1"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "4. CONTROL LOOP INTERACTION CHECK",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [
+        {
+          "text": "In a DCDA plant, several control loops interact. The matrix below identifies significant interactions and assesses whether the decoupling or sequencing strategy is adequate.",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 4,
+          "rows": [
+            [
+              "Loop Pair",
+              "Interaction Description",
+              "Interaction Severity",
+              "Decoupling Strategy",
+              "Adequately Addressed?"
+            ],
+            [
+              "FIC-101 ↔ FIC-201",
+              "Sulfur feed and air flow co-determine SO₂ concentration. Changing either affects the other.",
+              "HIGH",
+              "Governor ratio control: air leads on increase, sulfur leads on decrease (lead/lag)",
+              "Yes — Governor correctly sequences the changes"
+            ],
+            [
+              "AIC-501 ↔ AIC-502",
+              "Both absorption towers share a common product acid stream; concentration changes in IPAT circuit affect FAT circuit if acid is cross-transferred.",
+              "MEDIUM",
+              "Independent circuits with separate dilution water controls; only product overflow interconnects them",
+              "Yes — circuits are independent at FEED; confirm with detailed piping layout"
+            ],
+            [
+              "LIC-201 ↔ PIC-202",
+              "WHB drum level and steam header pressure interact: rapid steam header pressure drop causes drum level swell (shrink-and-swell phenomenon).",
+              "HIGH",
+              "3-element control on LIC-201 compensates for steam flow demand; PIC-202 uses steam let-down valve",
+              "Yes — but shrink/swell transient must be validated by dynamic simulation"
+            ],
+            [
+              "TIC-401 ↔ TIC-402",
+              "Pass 1 outlet temperature (TIC-401 bypass) directly affects Pass 2 inlet temperature (TIC-402). These loops are strongly coupled.",
+              "HIGH",
+              "Interpass heat exchangers are fixed-area; bypass valves are independently controlled. Detuned PID gains required for TIC-402.",
+              "MARGIN — cascade from TIC-401 output to TIC-402 setpoint should be considered to decouple the interaction"
+            ],
+            [
+              "FIC-201 ↔ TIC-401",
+              "Air flow rate affects converter inlet temperature through furnace heat release and WHB outlet conditions.",
+              "MEDIUM",
+              "Furnace temperature maintained by BPCS; interpass HX provides buffer",
+              "Yes — adequate for regulatory control"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "text": "FRONT-END ENGINEERING DESIGN (FEED)",
+      "style": "Normal"
+    },
+    {
+      "text": "100 t/d Sulfuric Acid Plant — DCDA / Elemental Sulfur",
+      "style": "Normal"
+    },
+    {
+      "text": "CONTROL PHILOSOPHY",
+      "style": "Normal"
+    },
+    {
+      "text": "PID Loop Configuration & Control Range Consistency Verified",
+      "style": "Normal"
+    },
+    {
+      "text": "1. MASTER PRODUCTION RATE GOVERNOR",
+      "style": "Heading 1"
+    },
+    {
+      "text": "A \"Plant Load\" setpoint (expressed as % of 100 t/d nameplate, range: 50–110%) entered by the operator at the DCS cascades to all unit production-rate-dependent controllers. The Governor calculates the required sulfur mass flow and air volumetric flow targets for the current load and passes them as remote setpoints to FIC-101 and FIC-201 respectively, with lead/lag sequencing (air leads on load increase; sulfur leads on load reduction).",
+      "style": "Normal"
+    },
+    {
+      "text": "2. REGULATORY PID CONTROL LOOPS — CONFIGURATION CONSISTENCY",
+      "style": "Heading 1"
+    },
+    {
+      "text": "3. CASCADE AND RATIO LOOP CONSISTENCY CHECK",
+      "style": "Heading 1"
+    },
+    {
+      "text": "Cascade loops require that the primary (outer) loop responds significantly slower than the secondary (inner) loop. The ratio check confirms that the ratio of primary-to-secondary time constants is ≥5:1 for stable cascade operation.",
+      "style": "Normal"
+    },
+    {
+      "text": "4. CONTROL LOOP INTERACTION CHECK",
+      "style": "Heading 1"
+    },
+    {
+      "text": "In a DCDA plant, several control loops interact. The matrix below identifies significant interactions and assesses whether the decoupling or sequencing strategy is adequate.",
+      "style": "Normal"
+    }
+  ],
+  "tables": [
+    {
+      "index": 0,
+      "rows": [
+        [
+          "Attribute",
+          "Value"
+        ],
+        [
+          "Document No.",
+          "PRJ-SA100-FEED-CP-007"
+        ],
+        [
+          "Revision",
+          "A0 — Issued for Review"
+        ],
+        [
+          "Project",
+          "100 t/d H₂SO₄ Plant, DCDA Route"
+        ],
+        [
+          "Date",
+          "August 2026"
+        ],
+        [
+          "Status",
+          "FEED — Consistency-Checked Edition"
+        ]
+      ]
+    },
+    {
+      "index": 1,
+      "rows": [
+        [
+          "Parameter",
+          "Normal (100%)",
+          "Surge (110%)",
+          "Turndown (50%)",
+          "Governor Range (DCS)"
+        ],
+        [
+          "Plant Load setpoint (%)",
+          "100%",
+          "110%",
+          "50%",
+          "50–110% (hard cap)"
+        ],
+        [
+          "SO₂ target from Governor (vol%)",
+          "10.5",
+          "10.5",
+          "10.5",
+          "Fixed ratio 10.5%"
+        ],
+        [
+          "Sulfur feed target from Gov. (kg/h)",
+          "1,363",
+          "1,499",
+          "682",
+          "FIC-101 range 0–2,000"
+        ],
+        [
+          "Air flow target from Gov. (Nm³/h)",
+          "8,873",
+          "9,760",
+          "4,437",
+          "FIC-201 range 0–15,000"
+        ],
+        [
+          "Load ramp rate (% per min)",
+          "5%/min",
+          "5%/min",
+          "5%/min",
+          "Fixed DCS limit"
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "rows": [
+        [
+          "Loop ID",
+          "Service",
+          "PV Tag",
+          "MV Tag",
+          "Control Mode",
+          "SP (Normal)",
+          "MV @ Normal (% output)",
+          "MV @ Surge (110%)",
+          "MV @ Turndown (50%)",
+          "Actuator Rated Range",
+          "MV Saturated at Surge?"
+        ],
+        [
+          "FIC-101",
+          "Sulfur Feed Rate",
+          "FT-101 (Coriolis)",
+          "FCV-101 (modulating valve)",
+          "Cascade from Governor; PID",
+          "1,363 kg/h",
+          "68%",
+          "75%",
+          "34%",
+          "FCV-101 Cv 0–100%",
+          "No"
+        ],
+        [
+          "FIC-201",
+          "Air Flow / SO₂ Ratio",
+          "AT-201 (SO₂ analyser)",
+          "Blower VFD (FCV-201)",
+          "Cascade; primary SO₂; secondary air flow",
+          "10.5 vol%",
+          "100% VFD at 50 Hz",
+          "110% VFD at 55 Hz",
+          "52% VFD at 26 Hz",
+          "VFD 0–60 Hz",
+          "VFD at 91.7% of rated max Hz"
+        ],
+        [
+          "TIC-401",
+          "Conv. P1 Inlet Temperature",
+          "TT-401",
+          "TCV-401 (cold bypass)",
+          "Split-range PID",
+          "420°C",
+          "45% bypass",
+          "52% bypass",
+          "22% bypass",
+          "0–100% valve open",
+          "No"
+        ],
+        [
+          "TIC-402",
+          "Conv. P2 Inlet Temperature",
+          "TT-403",
+          "TCV-402 (bypass)",
+          "PID Auto",
+          "440°C",
+          "40%",
+          "44%",
+          "20%",
+          "0–100%",
+          "No"
+        ],
+        [
+          "TIC-403",
+          "Conv. P3 Inlet Temperature",
+          "TT-405",
+          "TCV-403 (bypass)",
+          "PID Auto",
+          "430°C",
+          "38%",
+          "42%",
+          "18%",
+          "0–100%",
+          "No"
+        ],
+        [
+          "TIC-404",
+          "Conv. P4 Inlet Temperature",
+          "TT-407",
+          "TCV-404 (bypass)",
+          "PID Auto",
+          "415°C",
+          "35%",
+          "38%",
+          "17%",
+          "0–100%",
+          "No"
+        ],
+        [
+          "AIC-501",
+          "IPAT Acid Concentration",
+          "AT-501 (density)",
+          "FCV-501 (water valve)",
+          "Cascade PID (acid conc. → water flow)",
+          "98.2 wt%",
+          "44% FCV open",
+          "48% FCV open",
+          "22% FCV open",
+          "FCV 0–100% (0–500 L/h)",
+          "No"
+        ],
+        [
+          "AIC-502",
+          "FAT Acid Concentration",
+          "AT-502 (density)",
+          "FCV-502 (water valve)",
+          "Cascade PID",
+          "98.2 wt%",
+          "44%",
+          "48%",
+          "22%",
+          "0–100%",
+          "No"
+        ],
+        [
+          "LIC-201",
+          "WHB Steam Drum Level (3-element)",
+          "LT-201 + FT-202 + BFW FT",
+          "LCV-201 (BFW valve)",
+          "3-element control: Level + steam flow + BFW flow feed-forward",
+          "50% level",
+          "65%",
+          "72%",
+          "33%",
+          "0–100%",
+          "No"
+        ],
+        [
+          "PIC-202",
+          "WHB Steam Pressure",
+          "PT-202",
+          "PCV-202 (export valve)",
+          "PID Auto",
+          "40 barg",
+          "55%",
+          "60%",
+          "28%",
+          "0–100%",
+          "No"
+        ],
+        [
+          "LIC-501",
+          "IPAT Sump Level",
+          "LT-501",
+          "LCV-501 (acid transfer)",
+          "PID Auto",
+          "50%",
+          "50%",
+          "55%",
+          "25%",
+          "0–100%",
+          "No"
+        ],
+        [
+          "LIC-502",
+          "FAT Sump Level",
+          "LT-502",
+          "LCV-502 (acid transfer)",
+          "PID Auto",
+          "50%",
+          "50%",
+          "55%",
+          "25%",
+          "0–100%",
+          "No"
+        ],
+        [
+          "TIC-501",
+          "IPAT Acid Temperature",
+          "TT-502",
+          "TCV-501 (CW to acid cooler)",
+          "PID Auto",
+          "65°C",
+          "60%",
+          "68%",
+          "30%",
+          "0–100% (FO fail-safe)",
+          "No"
+        ],
+        [
+          "FIC-701",
+          "Product Dispatch Flow",
+          "FT-701 (Coriolis)",
+          "Dispatch pump VFD",
+          "Batch PID",
+          "Per order kg/h",
+          "Variable",
+          "85% pump VFD",
+          "N/A",
+          "Pump VFD 0–100%",
+          "No"
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "rows": [
+        [
+          "Cascade Pair",
+          "Primary Loop / PV",
+          "Secondary Loop / PV",
+          "Primary Time Const. (est.)",
+          "Secondary Time Const. (est.)",
+          "Ratio P:S"
+        ],
+        [
+          "FIC-201 (Air/SO₂ ratio)",
+          "AT-201 SO₂ analyser (slow — analyser lag)",
+          "FT-201 Air flow (fast — DP transmitter)",
+          "~2–5 min (analyser + process lag)",
+          "~5–15 s (flow loop)",
+          "~10:1"
+        ],
+        [
+          "AIC-501 (IPAT acid conc.)",
+          "AT-501 density (moderate response)",
+          "FCV-501 water flow (fast — magnetic FM)",
+          "~3–8 min (dilution mixing)",
+          "~10–30 s (flow)",
+          "~8:1"
+        ],
+        [
+          "AIC-502 (FAT acid conc.)",
+          "AT-502 density",
+          "FCV-502 water flow",
+          "~3–8 min",
+          "~10–30 s",
+          "~8:1"
+        ],
+        [
+          "LIC-201 (3-element WHB)",
+          "LT-201 drum level (slow — integrating process)",
+          "BFW flow + steam flow (fast feed-forward)",
+          "Integrating — no time const.",
+          "~5–10 s",
+          "N/A — feed-forward + FB"
+        ],
+        [
+          "TIC-401 P1 bypass (split-range)",
+          "TT-401 inlet temp",
+          "TCV-401 bypass valve (split-range)",
+          "~1–3 min (gas residence time)",
+          "~5–20 s (valve stroke)",
+          "~10:1"
+        ]
+      ]
+    },
+    {
+      "index": 4,
+      "rows": [
+        [
+          "Loop Pair",
+          "Interaction Description",
+          "Interaction Severity",
+          "Decoupling Strategy",
+          "Adequately Addressed?"
+        ],
+        [
+          "FIC-101 ↔ FIC-201",
+          "Sulfur feed and air flow co-determine SO₂ concentration. Changing either affects the other.",
+          "HIGH",
+          "Governor ratio control: air leads on increase, sulfur leads on decrease (lead/lag)",
+          "Yes — Governor correctly sequences the changes"
+        ],
+        [
+          "AIC-501 ↔ AIC-502",
+          "Both absorption towers share a common product acid stream; concentration changes in IPAT circuit affect FAT circuit if acid is cross-transferred.",
+          "MEDIUM",
+          "Independent circuits with separate dilution water controls; only product overflow interconnects them",
+          "Yes — circuits are independent at FEED; confirm with detailed piping layout"
+        ],
+        [
+          "LIC-201 ↔ PIC-202",
+          "WHB drum level and steam header pressure interact: rapid steam header pressure drop causes drum level swell (shrink-and-swell phenomenon).",
+          "HIGH",
+          "3-element control on LIC-201 compensates for steam flow demand; PIC-202 uses steam let-down valve",
+          "Yes — but shrink/swell transient must be validated by dynamic simulation"
+        ],
+        [
+          "TIC-401 ↔ TIC-402",
+          "Pass 1 outlet temperature (TIC-401 bypass) directly affects Pass 2 inlet temperature (TIC-402). These loops are strongly coupled.",
+          "HIGH",
+          "Interpass heat exchangers are fixed-area; bypass valves are independently controlled. Detuned PID gains required for TIC-402.",
+          "MARGIN — cascade from TIC-401 output to TIC-402 setpoint should be considered to decouple the interaction"
+        ],
+        [
+          "FIC-201 ↔ TIC-401",
+          "Air flow rate affects converter inlet temperature through furnace heat release and WHB outlet conditions.",
+          "MEDIUM",
+          "Furnace temperature maintained by BPCS; interpass HX provides buffer",
+          "Yes — adequate for regulatory control"
+        ]
+      ]
+    }
+  ]
+}

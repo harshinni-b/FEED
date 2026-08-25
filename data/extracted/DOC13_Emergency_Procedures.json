@@ -1,0 +1,1196 @@
+{
+  "filename": "DOC13_Emergency_Procedures.docx",
+  "metadata": {
+    "source_path": "data\\raw\\DOC13_Emergency_Procedures.docx",
+    "core_properties": {
+      "author": "Un-named",
+      "created": "2026-08-20T13:16:00+00:00",
+      "last_modified_by": "Srinivasan, Pratheep Kumar",
+      "modified": "2026-08-21T06:19:00+00:00",
+      "revision": 2
+    }
+  },
+  "headings": [
+    {
+      "text": "E1.1 Immediate Response (0–2 minutes)",
+      "level": 2
+    },
+    {
+      "text": "E1.2 SIF-Specific Response Checks",
+      "level": 2
+    },
+    {
+      "text": "E2.1 Recognition and Immediate Actions",
+      "level": 2
+    },
+    {
+      "text": "E2.2 SO₂ Exposure Limits (for field response planning)",
+      "level": 2
+    },
+    {
+      "text": "E3.1 Classification and Immediate Actions",
+      "level": 2
+    },
+    {
+      "text": "E4.1 Immediate Impact and Response",
+      "level": 2
+    },
+    {
+      "text": "EMERGENCY PROCEDURES — CONSISTENCY SUMMARY",
+      "level": 1
+    }
+  ],
+  "sections": [
+    {
+      "heading": null,
+      "level": 0,
+      "paragraphs": [
+        {
+          "text": "FRONT-END ENGINEERING DESIGN (FEED)",
+          "style": "Normal"
+        },
+        {
+          "text": "100 t/d Sulfuric Acid Plant — DCDA / Elemental Sulfur",
+          "style": "Normal"
+        },
+        {
+          "text": "EMERGENCY PROCEDURES",
+          "style": "Normal"
+        },
+        {
+          "text": "Emergency Response and Recovery — Setpoint & Response Time Consistency Verified",
+          "style": "Normal"
+        },
+        {
+          "text": "This document contains automated consistency status flags. Parameters marked FAIL require engineering review before progression to Detailed Engineering.",
+          "style": "Normal"
+        },
+        {
+          "text": "🚨  EMERGENCY: EMERGENCY 1 — AUTOMATIC ESD ACTUATION (any SIF trip)",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 0,
+          "rows": [
+            [
+              "Attribute",
+              "Value"
+            ],
+            [
+              "Document No.",
+              "PRJ-SA100-FEED-EP-013"
+            ],
+            [
+              "Revision",
+              "A0 — Issued for Review"
+            ],
+            [
+              "Project",
+              "100 t/d H₂SO₄ Plant, DCDA Route"
+            ],
+            [
+              "Date",
+              "August 2026"
+            ],
+            [
+              "Status",
+              "FEED — Consistency-Checked Edition"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "E1.1 Immediate Response (0–2 minutes)",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [
+        {
+          "text": "E1.1.1  [CRO]  Confirm ESD actuation on DCS: identify which SIF has tripped (SIS trip log on dedicated SIS screen). Announce on plant PA: \"ESD actuation — all field personnel muster at [muster point].\"",
+          "style": "Normal"
+        },
+        {
+          "text": "E1.1.2  [CRO]  Confirm that SDV-E01 (sulfur block) is CLOSED (position feedback on DCS). If position feedback shows OPEN, escalate to MANUAL ESD.",
+          "style": "Normal"
+        },
+        {
+          "text": "Verify: SDV-E01 \"Closed\" confirmation on DCS position indicator",
+          "style": "Normal"
+        },
+        {
+          "text": "E1.1.3  [CRO]  Confirm K-301A (air blower) continues running — air purge of furnace is ESSENTIAL post-ESD. Air flow FT-201 > 4,000 Nm³/h must be maintained.",
+          "style": "Normal"
+        },
+        {
+          "text": "Verify: FT-201 > 4,000 Nm³/h on DCS",
+          "style": "Normal"
+        },
+        {
+          "text": "E1.1.4  [Shift Supervisor]  Account for all personnel at muster point within 5 minutes of PA announcement.",
+          "style": "Normal"
+        },
+        {
+          "text": "Verify: All persons signed in to shift accounted for at muster",
+          "style": "Normal"
+        },
+        {
+          "text": "E1.1.5  [CRO]  Monitor TT-201 (furnace temperature). Confirm trend downward. If temperature rises after ESD, contact Process Engineer immediately — potential ignition source remaining.",
+          "style": "Normal"
+        },
+        {
+          "text": "Verify: TT-201 trending down within 3 minutes",
+          "style": "Normal"
+        }
+      ],
+      "tables": []
+    },
+    {
+      "heading": {
+        "text": "E1.2 SIF-Specific Response Checks",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [
+        {
+          "text": "🚨  EMERGENCY: EMERGENCY 2 — MAJOR SO₂ RELEASE / TOXIC GAS CLOUD",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 1,
+          "rows": [
+            [
+              "SIF Tripped",
+              "Likely Cause",
+              "First Response Action Beyond E1.1",
+              "Recovery Condition (before restart)"
+            ],
+            [
+              "SIF-01 (Furnace T HH 1,150°C)",
+              "Sulfur gun blockage → rich burn; air flow loss; refractory degradation",
+              "Check TT-201 trend: if still rising after ESD, evacuate 50 m radius and contact fire service. If declining: investigate root cause (check FT-201, AT-202 O₂, sulfur gun condition).",
+              "TT-201 < 200°C; root cause identified and corrected; HAZOP closeout of trip event; Shift Supervisor sign-off"
+            ],
+            [
+              "SIF-02 (Furnace P HH 300 mbar)",
+              "Air blower surge; outlet duct blockage; stack damper closed unintentionally",
+              "CHECK XV-E04 stack damper position: if CLOSED (pre-correction FAIL state), open manually at field — this is urgent. After correction: investigate duct blockage.",
+              "Stack damper open; duct clear; furnace pressure < −10 mbar before restart"
+            ],
+            [
+              "SIF-03 (WHB Drum Level LL 20%)",
+              "BFW pump failure; LCV-201 failure closed; large steam demand spike",
+              "Start standby BFW pump P-201B immediately. Set LIC-201 to manual — maximum BFW demand. Do not reduce steam demand until drum level recovers to 30%.",
+              "LT-201 > 40%; BFW pump confirmed duty/standby operational; LIC-201 3-element control verified"
+            ],
+            [
+              "SIF-04 (WHB Steam P HH 46 barg)",
+              "Steam export trip; PCV-202 failure closed; excessive steam generation",
+              "Open steam dump to atmosphere via manual bypass valve (PV-202-bypass) if available. Reduce BFW if steam generation continues rising. DO NOT vent to atmosphere without HSE notification.",
+              "PT-202 < 42 barg stable; PCV-202 operation verified"
+            ],
+            [
+              "SIF-05 (Converter P1 T HH 620°C)",
+              "Plant operating at 110% surge load — this is the DESIGN FAIL scenario. Temperature reached trip setpoint.",
+              "Confirm ESD actuation; reduce to 0% load; investigate root cause (confirm this is the design deficiency — bed height issue — per H&MB and SRS records). Do NOT attempt restart at 110% load until process design corrected.",
+              "Process design corrected per H&MB FAIL resolution; restart only at ≤100% load until redesign is implemented and validated"
+            ],
+            [
+              "SIF-06 (Stack SO₂ HH 600 mg/Nm³)",
+              "Catalyst degradation; absorption tower acid concentration low; IPAT/FAT pump failure",
+              "CHECK AT-501/502 acid concentration. If < 97.5 wt%, dilution water fault (check FCV-501/502). If acid OK, investigate catalyst performance (check all converter pass temperatures).",
+              "AT-403 < 400 mg/Nm³ stable; root cause identified; CEMS download for regulatory review"
+            ],
+            [
+              "SIF-07 (Product Tank L HH 90%)",
+              "Dispatch pump failure; tanker not available; over-production",
+              "Stop all product transfer from absorption to storage (close product transfer valve). Halt dispatching only if dispatch pump is failed — not if tanker is absent (continue dispatching). Contact dispatch coordinator immediately.",
+              "LT-701 < 70% before resuming production; dispatch pump confirmed operational"
+            ],
+            [
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              ""
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "E2.1 Recognition and Immediate Actions",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [
+        {
+          "text": "E2.1  [CRO]  On AA-901-HH (25 ppm): manually initiate TOTAL PLANT ESD via Control Room ESD button if automatic ESD has not actuated. Confirm PA system active.",
+          "style": "Normal"
+        },
+        {
+          "text": "Verify: Plant ESD confirmed; PA evacuation announcement active",
+          "style": "Normal"
+        },
+        {
+          "text": "E2.2  [Shift Supervisor]  Account for all personnel. Any person exposed to SO₂ > 5 ppm: escort to fresh air, administer O₂ if available, arrange medical assessment.",
+          "style": "Normal"
+        },
+        {
+          "text": "Verify: All personnel accounted for; no personnel in toxic zone",
+          "style": "Normal"
+        },
+        {
+          "text": "E2.3  [CRO]  Identify source: check if release is from furnace/converter (SO₂ gas) or from acid system (acid mist/SO₃). This determines the response priority.",
+          "style": "Normal"
+        },
+        {
+          "text": "Verify: Source identified from F&G node activation pattern on DCS F&G map",
+          "style": "Normal"
+        },
+        {
+          "text": "E2.4  [CRO]  Confirm K-301A continues running for air purge. Confirm AT-403 (CEMS) recording for regulatory evidence.",
+          "style": "Normal"
+        },
+        {
+          "text": "Verify: AT-403 recording; CEMS data logger confirmed active",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 2,
+          "rows": [
+            [
+              "Indicator",
+              "Source",
+              "Trigger Level",
+              "Required Action"
+            ],
+            [
+              "AA-901 area monitor HIGH",
+              "F&G system (DCS alarm)",
+              "5 ppm SO₂",
+              "CRO announces PA warning: \"SO₂ warning — upwind personnel stay clear of [affected area].\" Investigate source immediately."
+            ],
+            [
+              "AA-901 area monitor HH",
+              "F&G system (automatic)",
+              "25 ppm SO₂",
+              "AUTOMATIC ESD actuation + PA EVACUATION alarm. All non-essential personnel evacuate to upwind muster point. Emergency services: DIAL [site emergency number]."
+            ],
+            [
+              "Multiple AA-901 HH",
+              "F&G",
+              ">25 ppm multiple nodes",
+              "Indicates large release. Full site evacuation. Contact emergency services, site EHS Manager, and notify relevant Local Authority."
+            ],
+            [
+              "Visible acid mist cloud",
+              "Visual (any observer)",
+              "Any visible",
+              "Report to CRO immediately; CRO initiates PA warning; manual ESD if required."
+            ],
+            [
+              "Personnel H₂SO₄ exposure",
+              "Any",
+              "Any skin/eye contact",
+              "Flush immediately with copious water for minimum 20 minutes. Call site first-aider. Hospital evaluation for all acid exposures regardless of apparent severity."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "E2.2 SO₂ Exposure Limits (for field response planning)",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [
+        {
+          "text": "🚨  EMERGENCY: EMERGENCY 3 — SULFURIC ACID MAJOR SPILL",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 3,
+          "rows": [
+            [
+              "SO₂ Level",
+              "Classification",
+              "Personnel Action",
+              "PPE Required"
+            ],
+            [
+              "0–0.5 ppm",
+              "LTEL (8-hour TWA limit)",
+              "Normal work — routine monitoring",
+              "None (normal)"
+            ],
+            [
+              "0.5–2 ppm",
+              "STEL (15-minute limit)",
+              "Time-limit exposure; investigate source",
+              "Full face respirator minimum"
+            ],
+            [
+              "2–5 ppm",
+              "Detectable; discomfort",
+              "Leave area; report to CRO",
+              "SCBA required"
+            ],
+            [
+              "5 ppm",
+              "AA-901 HIGH alarm trigger",
+              "Non-essential personnel withdraw",
+              "SCBA required for all entry"
+            ],
+            [
+              "25 ppm",
+              "AA-901 HH — IDLH threshold",
+              "FULL EVACUATION; emergency services",
+              "SCBA — entry ONLY with trained team"
+            ],
+            [
+              ">100 ppm",
+              "Immediately dangerous to life",
+              "Extreme hazard; NO ENTRY without full SCBA and buddy system",
+              "SCBA + full chemical suit"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "E3.1 Classification and Immediate Actions",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [
+        {
+          "text": "⛔ DANGER: CONCENTRATED H₂SO₄ REACTS VIOLENTLY WITH WATER. NEVER add water directly to spilled acid. Only use water mist from a safe distance (>3 m). Risk of spattering and steam explosion if water is poured onto concentrated acid.",
+          "style": "Normal"
+        },
+        {
+          "text": "E3.1  [CRO]  On notification of major acid spill: initiate production shutdown (reduce to 0% load immediately — do not wait for ESD). Confirm SDV-E05 (product block) CLOSED.",
+          "style": "Normal"
+        },
+        {
+          "text": "Verify: SDV-E05 closed; production load at 0%",
+          "style": "Normal"
+        },
+        {
+          "text": "E3.2  [Shift Supervisor]  Confirm bund isolation valve for affected tank area is CLOSED. Confirm bund is containing the spill.",
+          "style": "Normal"
+        },
+        {
+          "text": "Verify: Visual confirmation from safe distance; CCTV if available",
+          "style": "Normal"
+        },
+        {
+          "text": "E3.3  [Field Operator (SCBA)]  If safe to do so: position spill response foam/neutralisation equipment at bund perimeter (outside bund). Do NOT enter bund without emergency team leader approval.",
+          "style": "Normal"
+        },
+        {
+          "text": "E3.4  [Shift Supervisor]  Initiate site emergency muster. Notify EHS Manager and site emergency coordinator.",
+          "style": "Normal"
+        },
+        {
+          "text": "Verify: All personnel at muster; emergency coordinator contacted",
+          "style": "Normal"
+        },
+        {
+          "text": "🚨  EMERGENCY: EMERGENCY 4 — LOSS OF INSTRUMENT AIR",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 4,
+          "rows": [
+            [
+              "Spill Scale",
+              "Volume",
+              "Classification",
+              "Immediate Action",
+              "External Notification"
+            ],
+            [
+              "Minor",
+              "< 20 litres",
+              "Near-miss / minor incident",
+              "Contain with dry sand/earth. Do NOT use water on concentrated H₂SO₄ (violent exotherm). PPE: face shield, acid gloves, acid apron. Recover with absorbent material.",
+              "Shift Supervisor log only"
+            ],
+            [
+              "Medium",
+              "20–1,000 litres",
+              "Significant incident",
+              "Activate spill kit. Ensure bund valve closed. Dilute carefully with water spray (fine mist from distance). Neutralise with Na₂CO₃ or lime slurry ONLY after initial containment.",
+              "EHS Manager + regulatory notification within 24 h"
+            ],
+            [
+              "Major",
+              "> 1,000 litres",
+              "Emergency — MAJOR RELEASE",
+              "ACTIVATE SITE EMERGENCY PLAN. Evacuate downwind area. Contact fire service. Do NOT approach without full chemical protection suit + SCBA. Contain within bund — verify bund isolation valve CLOSED.",
+              "Immediate notification to Environment Agency, Local Authority, and HSE within 1 hour"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "E4.1 Immediate Impact and Response",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [
+        {
+          "text": "Loss of instrument air (IA pressure < 5 barg) causes all pneumatic control valves to move to their fail-safe positions simultaneously. This is a significant process disturbance. The fail-safe positions defined in the C&E matrix (Doc 6) are:",
+          "style": "Normal"
+        },
+        {
+          "text": "E4.1  [CRO]  Check IA supply pressure PT-IA-001. If < 5 barg: confirm IA compressor K-901 status. Start standby compressor if available.",
+          "style": "Normal"
+        },
+        {
+          "text": "Verify: K-901B running; IA pressure recovering",
+          "style": "Normal"
+        },
+        {
+          "text": "E4.2  [CRO]  Monitor all valve positions via DCS: confirm fail-safe positions per table above. Note any valve NOT in expected fail-safe position — this indicates a valve actuator fault.",
+          "style": "Normal"
+        },
+        {
+          "text": "Verify: All fail-safe positions confirmed via DCS position feedback",
+          "style": "Normal"
+        },
+        {
+          "text": "E4.3  [CRO]  If IA not restored within 10 minutes: initiate controlled shutdown Procedure 3 (Planned Shutdown Phase 1 onwards). Do not attempt to hold plant on manual override beyond 10 minutes without IA.",
+          "style": "Normal"
+        },
+        {
+          "text": "Verify: Shutdown procedure initiated; Shift Supervisor notified",
+          "style": "Normal"
+        },
+        {
+          "text": "🚨  EMERGENCY: EMERGENCY 5 — POWER FAILURE (TOTAL ELECTRICAL)",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 5,
+          "rows": [
+            [
+              "Valve",
+              "Fail-Safe Position",
+              "Process Effect on IA Loss",
+              "Operator Response"
+            ],
+            [
+              "FCV-101 (Sulfur feed)",
+              "Fail CLOSED",
+              "Sulfur feed stops — furnace temperature drops",
+              "Monitor TT-201 declining. If IA restored within 5 min, restart sulfur gradually from Governor setpoint. If > 5 min, initiate controlled shutdown."
+            ],
+            [
+              "LCV-201 (BFW)",
+              "Fail OPEN",
+              "Maximum BFW flow to WHB — risk of drum overfill",
+              "Set LIC-201 to manual/override. Monitor LT-201. If drum > 80%, close BFW isolation manually."
+            ],
+            [
+              "FCV-501/502 (Dilution water)",
+              "Fail CLOSED",
+              "Dilution water stops — acid concentration rises",
+              "Monitor AT-501/502. If concentration > 98.8 wt%, manually adjust dilution water bypass valve."
+            ],
+            [
+              "TCV-501 (IPAT CW)",
+              "Fail OPEN",
+              "Maximum CW to acid cooler — acid cools below target",
+              "Non-critical; temperature will recover when IA restored."
+            ],
+            [
+              "SDV-E01 (Sulfur block, ESD)",
+              "Fail CLOSED (spring)",
+              "Sulfur isolated — plant shuts down",
+              "Confirm ESD actuation on SIS panel. If ESD trips, follow E1 procedure."
+            ],
+            [
+              "SDV-E02 (Air block, ESD)",
+              "Fail OPEN",
+              "Air continues — safe purge maintained",
+              "Correct and desirable fail-safe position."
+            ]
+          ]
+        },
+        {
+          "index": 6,
+          "rows": [
+            [
+              "Time After Failure",
+              "System State",
+              "Required Action"
+            ],
+            [
+              "0–10 seconds",
+              "UPS activates for DCS, SIS, F&G, emergency lighting. All MV motors (blower, BFW pump) coast to stop.",
+              "CRO: Confirm DCS alive on UPS. Confirm SIS alive — all SIFs remain armed. PA announcement: \"Power failure — all personnel muster.\""
+            ],
+            [
+              "10–30 seconds",
+              "K-301A air blower coasts to stop — no air purge. Furnace without air and sulfur (FCV-101 fails closed).",
+              "Furnace is dark — no ignition, no combustion. Key risk: residual SO₂ in system. Do NOT attempt manual restart of blower until DG is confirmed live."
+            ],
+            [
+              "0–3 minutes",
+              "Emergency diesel generator (DG) should energise MV bus.",
+              "CRO: Confirm DG has picked up MV bus. Restart K-301A on DG supply immediately for purge airflow. Confirm BFW pump P-201B available on DG."
+            ],
+            [
+              "3–15 minutes",
+              "DG running; air purge active. Plant is in safe shutdown state.",
+              "Maintain air purge. Monitor WHB drum level. Do NOT restart sulfur until utility power is restored and root cause identified."
+            ],
+            [
+              ">60 minutes without power",
+              "WHB will lose pressure; acid circuit may begin to cool and risk solidification in low spots.",
+              "Process Engineer decision: drain acid circuits if power restoration not expected within 2 hours. Follow Planned Shutdown Steps S.8–S.10."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "EMERGENCY PROCEDURES — CONSISTENCY SUMMARY",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 7,
+          "rows": [
+            [
+              "Emergency",
+              "Issue",
+              "Status",
+              "Action Required Before Procedures Can Be Relied Upon"
+            ],
+            [
+              "E1: Auto ESD",
+              "SIF-05 will trip on every 110% surge operation — not a genuine emergency but a design deficiency",
+              "FAIL",
+              "Resolve Pass 1 temperature (H&MB FAIL). Until resolved, 110% operation is PROHIBITED and this emergency procedure for SIF-05 is a routine event procedure."
+            ],
+            [
+              "E1 SIF-02",
+              "Stack damper XV-E04 Fail Closed during ESD blocks venting — manual compensating measure required",
+              "FAIL",
+              "Correct valve to Fail Open (C&E FAIL). Until corrected, add mandatory manual field step to open damper within 60 s of ESD in this procedure."
+            ],
+            [
+              "E2: SO₂ Release",
+              "F&G area monitors: threshold setpoints (5 ppm HIGH; 25 ppm HH) confirmed consistent with occupational exposure limits (WEL) and IDLH values",
+              "PASS",
+              "No action"
+            ],
+            [
+              "E3: Acid Spill",
+              "Bund sizing (110% of tank volume) confirmed per BoD environmental design criteria",
+              "PASS",
+              "No action"
+            ],
+            [
+              "E4: IA Failure",
+              "All fail-safe positions confirmed consistent with C&E matrix Doc 6",
+              "PASS",
+              "No action — verify at FAT testing"
+            ],
+            [
+              "E5: Power failure",
+              "DG transfer time and air blower restart timing needs dynamic simulation validation",
+              "MARGIN",
+              "Confirm DG auto-start time < 30 s; confirm blower coast-down time to confirm purge interruption duration"
+            ],
+            [
+              "All procedures",
+              "SIS trip setpoints in procedures match SRS Doc 8 and C&E Doc 6",
+              "PASS",
+              "All emergency ESD setpoints consistent"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "text": "FRONT-END ENGINEERING DESIGN (FEED)",
+      "style": "Normal"
+    },
+    {
+      "text": "100 t/d Sulfuric Acid Plant — DCDA / Elemental Sulfur",
+      "style": "Normal"
+    },
+    {
+      "text": "EMERGENCY PROCEDURES",
+      "style": "Normal"
+    },
+    {
+      "text": "Emergency Response and Recovery — Setpoint & Response Time Consistency Verified",
+      "style": "Normal"
+    },
+    {
+      "text": "This document contains automated consistency status flags. Parameters marked FAIL require engineering review before progression to Detailed Engineering.",
+      "style": "Normal"
+    },
+    {
+      "text": "🚨  EMERGENCY: EMERGENCY 1 — AUTOMATIC ESD ACTUATION (any SIF trip)",
+      "style": "Normal"
+    },
+    {
+      "text": "E1.1 Immediate Response (0–2 minutes)",
+      "style": "Heading 2"
+    },
+    {
+      "text": "E1.1.1  [CRO]  Confirm ESD actuation on DCS: identify which SIF has tripped (SIS trip log on dedicated SIS screen). Announce on plant PA: \"ESD actuation — all field personnel muster at [muster point].\"",
+      "style": "Normal"
+    },
+    {
+      "text": "E1.1.2  [CRO]  Confirm that SDV-E01 (sulfur block) is CLOSED (position feedback on DCS). If position feedback shows OPEN, escalate to MANUAL ESD.",
+      "style": "Normal"
+    },
+    {
+      "text": "Verify: SDV-E01 \"Closed\" confirmation on DCS position indicator",
+      "style": "Normal"
+    },
+    {
+      "text": "E1.1.3  [CRO]  Confirm K-301A (air blower) continues running — air purge of furnace is ESSENTIAL post-ESD. Air flow FT-201 > 4,000 Nm³/h must be maintained.",
+      "style": "Normal"
+    },
+    {
+      "text": "Verify: FT-201 > 4,000 Nm³/h on DCS",
+      "style": "Normal"
+    },
+    {
+      "text": "E1.1.4  [Shift Supervisor]  Account for all personnel at muster point within 5 minutes of PA announcement.",
+      "style": "Normal"
+    },
+    {
+      "text": "Verify: All persons signed in to shift accounted for at muster",
+      "style": "Normal"
+    },
+    {
+      "text": "E1.1.5  [CRO]  Monitor TT-201 (furnace temperature). Confirm trend downward. If temperature rises after ESD, contact Process Engineer immediately — potential ignition source remaining.",
+      "style": "Normal"
+    },
+    {
+      "text": "Verify: TT-201 trending down within 3 minutes",
+      "style": "Normal"
+    },
+    {
+      "text": "E1.2 SIF-Specific Response Checks",
+      "style": "Heading 2"
+    },
+    {
+      "text": "🚨  EMERGENCY: EMERGENCY 2 — MAJOR SO₂ RELEASE / TOXIC GAS CLOUD",
+      "style": "Normal"
+    },
+    {
+      "text": "E2.1 Recognition and Immediate Actions",
+      "style": "Heading 2"
+    },
+    {
+      "text": "E2.1  [CRO]  On AA-901-HH (25 ppm): manually initiate TOTAL PLANT ESD via Control Room ESD button if automatic ESD has not actuated. Confirm PA system active.",
+      "style": "Normal"
+    },
+    {
+      "text": "Verify: Plant ESD confirmed; PA evacuation announcement active",
+      "style": "Normal"
+    },
+    {
+      "text": "E2.2  [Shift Supervisor]  Account for all personnel. Any person exposed to SO₂ > 5 ppm: escort to fresh air, administer O₂ if available, arrange medical assessment.",
+      "style": "Normal"
+    },
+    {
+      "text": "Verify: All personnel accounted for; no personnel in toxic zone",
+      "style": "Normal"
+    },
+    {
+      "text": "E2.3  [CRO]  Identify source: check if release is from furnace/converter (SO₂ gas) or from acid system (acid mist/SO₃). This determines the response priority.",
+      "style": "Normal"
+    },
+    {
+      "text": "Verify: Source identified from F&G node activation pattern on DCS F&G map",
+      "style": "Normal"
+    },
+    {
+      "text": "E2.4  [CRO]  Confirm K-301A continues running for air purge. Confirm AT-403 (CEMS) recording for regulatory evidence.",
+      "style": "Normal"
+    },
+    {
+      "text": "Verify: AT-403 recording; CEMS data logger confirmed active",
+      "style": "Normal"
+    },
+    {
+      "text": "E2.2 SO₂ Exposure Limits (for field response planning)",
+      "style": "Heading 2"
+    },
+    {
+      "text": "🚨  EMERGENCY: EMERGENCY 3 — SULFURIC ACID MAJOR SPILL",
+      "style": "Normal"
+    },
+    {
+      "text": "E3.1 Classification and Immediate Actions",
+      "style": "Heading 2"
+    },
+    {
+      "text": "⛔ DANGER: CONCENTRATED H₂SO₄ REACTS VIOLENTLY WITH WATER. NEVER add water directly to spilled acid. Only use water mist from a safe distance (>3 m). Risk of spattering and steam explosion if water is poured onto concentrated acid.",
+      "style": "Normal"
+    },
+    {
+      "text": "E3.1  [CRO]  On notification of major acid spill: initiate production shutdown (reduce to 0% load immediately — do not wait for ESD). Confirm SDV-E05 (product block) CLOSED.",
+      "style": "Normal"
+    },
+    {
+      "text": "Verify: SDV-E05 closed; production load at 0%",
+      "style": "Normal"
+    },
+    {
+      "text": "E3.2  [Shift Supervisor]  Confirm bund isolation valve for affected tank area is CLOSED. Confirm bund is containing the spill.",
+      "style": "Normal"
+    },
+    {
+      "text": "Verify: Visual confirmation from safe distance; CCTV if available",
+      "style": "Normal"
+    },
+    {
+      "text": "E3.3  [Field Operator (SCBA)]  If safe to do so: position spill response foam/neutralisation equipment at bund perimeter (outside bund). Do NOT enter bund without emergency team leader approval.",
+      "style": "Normal"
+    },
+    {
+      "text": "E3.4  [Shift Supervisor]  Initiate site emergency muster. Notify EHS Manager and site emergency coordinator.",
+      "style": "Normal"
+    },
+    {
+      "text": "Verify: All personnel at muster; emergency coordinator contacted",
+      "style": "Normal"
+    },
+    {
+      "text": "🚨  EMERGENCY: EMERGENCY 4 — LOSS OF INSTRUMENT AIR",
+      "style": "Normal"
+    },
+    {
+      "text": "E4.1 Immediate Impact and Response",
+      "style": "Heading 2"
+    },
+    {
+      "text": "Loss of instrument air (IA pressure < 5 barg) causes all pneumatic control valves to move to their fail-safe positions simultaneously. This is a significant process disturbance. The fail-safe positions defined in the C&E matrix (Doc 6) are:",
+      "style": "Normal"
+    },
+    {
+      "text": "E4.1  [CRO]  Check IA supply pressure PT-IA-001. If < 5 barg: confirm IA compressor K-901 status. Start standby compressor if available.",
+      "style": "Normal"
+    },
+    {
+      "text": "Verify: K-901B running; IA pressure recovering",
+      "style": "Normal"
+    },
+    {
+      "text": "E4.2  [CRO]  Monitor all valve positions via DCS: confirm fail-safe positions per table above. Note any valve NOT in expected fail-safe position — this indicates a valve actuator fault.",
+      "style": "Normal"
+    },
+    {
+      "text": "Verify: All fail-safe positions confirmed via DCS position feedback",
+      "style": "Normal"
+    },
+    {
+      "text": "E4.3  [CRO]  If IA not restored within 10 minutes: initiate controlled shutdown Procedure 3 (Planned Shutdown Phase 1 onwards). Do not attempt to hold plant on manual override beyond 10 minutes without IA.",
+      "style": "Normal"
+    },
+    {
+      "text": "Verify: Shutdown procedure initiated; Shift Supervisor notified",
+      "style": "Normal"
+    },
+    {
+      "text": "🚨  EMERGENCY: EMERGENCY 5 — POWER FAILURE (TOTAL ELECTRICAL)",
+      "style": "Normal"
+    },
+    {
+      "text": "EMERGENCY PROCEDURES — CONSISTENCY SUMMARY",
+      "style": "Heading 1"
+    }
+  ],
+  "tables": [
+    {
+      "index": 0,
+      "rows": [
+        [
+          "Attribute",
+          "Value"
+        ],
+        [
+          "Document No.",
+          "PRJ-SA100-FEED-EP-013"
+        ],
+        [
+          "Revision",
+          "A0 — Issued for Review"
+        ],
+        [
+          "Project",
+          "100 t/d H₂SO₄ Plant, DCDA Route"
+        ],
+        [
+          "Date",
+          "August 2026"
+        ],
+        [
+          "Status",
+          "FEED — Consistency-Checked Edition"
+        ]
+      ]
+    },
+    {
+      "index": 1,
+      "rows": [
+        [
+          "SIF Tripped",
+          "Likely Cause",
+          "First Response Action Beyond E1.1",
+          "Recovery Condition (before restart)"
+        ],
+        [
+          "SIF-01 (Furnace T HH 1,150°C)",
+          "Sulfur gun blockage → rich burn; air flow loss; refractory degradation",
+          "Check TT-201 trend: if still rising after ESD, evacuate 50 m radius and contact fire service. If declining: investigate root cause (check FT-201, AT-202 O₂, sulfur gun condition).",
+          "TT-201 < 200°C; root cause identified and corrected; HAZOP closeout of trip event; Shift Supervisor sign-off"
+        ],
+        [
+          "SIF-02 (Furnace P HH 300 mbar)",
+          "Air blower surge; outlet duct blockage; stack damper closed unintentionally",
+          "CHECK XV-E04 stack damper position: if CLOSED (pre-correction FAIL state), open manually at field — this is urgent. After correction: investigate duct blockage.",
+          "Stack damper open; duct clear; furnace pressure < −10 mbar before restart"
+        ],
+        [
+          "SIF-03 (WHB Drum Level LL 20%)",
+          "BFW pump failure; LCV-201 failure closed; large steam demand spike",
+          "Start standby BFW pump P-201B immediately. Set LIC-201 to manual — maximum BFW demand. Do not reduce steam demand until drum level recovers to 30%.",
+          "LT-201 > 40%; BFW pump confirmed duty/standby operational; LIC-201 3-element control verified"
+        ],
+        [
+          "SIF-04 (WHB Steam P HH 46 barg)",
+          "Steam export trip; PCV-202 failure closed; excessive steam generation",
+          "Open steam dump to atmosphere via manual bypass valve (PV-202-bypass) if available. Reduce BFW if steam generation continues rising. DO NOT vent to atmosphere without HSE notification.",
+          "PT-202 < 42 barg stable; PCV-202 operation verified"
+        ],
+        [
+          "SIF-05 (Converter P1 T HH 620°C)",
+          "Plant operating at 110% surge load — this is the DESIGN FAIL scenario. Temperature reached trip setpoint.",
+          "Confirm ESD actuation; reduce to 0% load; investigate root cause (confirm this is the design deficiency — bed height issue — per H&MB and SRS records). Do NOT attempt restart at 110% load until process design corrected.",
+          "Process design corrected per H&MB FAIL resolution; restart only at ≤100% load until redesign is implemented and validated"
+        ],
+        [
+          "SIF-06 (Stack SO₂ HH 600 mg/Nm³)",
+          "Catalyst degradation; absorption tower acid concentration low; IPAT/FAT pump failure",
+          "CHECK AT-501/502 acid concentration. If < 97.5 wt%, dilution water fault (check FCV-501/502). If acid OK, investigate catalyst performance (check all converter pass temperatures).",
+          "AT-403 < 400 mg/Nm³ stable; root cause identified; CEMS download for regulatory review"
+        ],
+        [
+          "SIF-07 (Product Tank L HH 90%)",
+          "Dispatch pump failure; tanker not available; over-production",
+          "Stop all product transfer from absorption to storage (close product transfer valve). Halt dispatching only if dispatch pump is failed — not if tanker is absent (continue dispatching). Contact dispatch coordinator immediately.",
+          "LT-701 < 70% before resuming production; dispatch pump confirmed operational"
+        ],
+        [
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "rows": [
+        [
+          "Indicator",
+          "Source",
+          "Trigger Level",
+          "Required Action"
+        ],
+        [
+          "AA-901 area monitor HIGH",
+          "F&G system (DCS alarm)",
+          "5 ppm SO₂",
+          "CRO announces PA warning: \"SO₂ warning — upwind personnel stay clear of [affected area].\" Investigate source immediately."
+        ],
+        [
+          "AA-901 area monitor HH",
+          "F&G system (automatic)",
+          "25 ppm SO₂",
+          "AUTOMATIC ESD actuation + PA EVACUATION alarm. All non-essential personnel evacuate to upwind muster point. Emergency services: DIAL [site emergency number]."
+        ],
+        [
+          "Multiple AA-901 HH",
+          "F&G",
+          ">25 ppm multiple nodes",
+          "Indicates large release. Full site evacuation. Contact emergency services, site EHS Manager, and notify relevant Local Authority."
+        ],
+        [
+          "Visible acid mist cloud",
+          "Visual (any observer)",
+          "Any visible",
+          "Report to CRO immediately; CRO initiates PA warning; manual ESD if required."
+        ],
+        [
+          "Personnel H₂SO₄ exposure",
+          "Any",
+          "Any skin/eye contact",
+          "Flush immediately with copious water for minimum 20 minutes. Call site first-aider. Hospital evaluation for all acid exposures regardless of apparent severity."
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "rows": [
+        [
+          "SO₂ Level",
+          "Classification",
+          "Personnel Action",
+          "PPE Required"
+        ],
+        [
+          "0–0.5 ppm",
+          "LTEL (8-hour TWA limit)",
+          "Normal work — routine monitoring",
+          "None (normal)"
+        ],
+        [
+          "0.5–2 ppm",
+          "STEL (15-minute limit)",
+          "Time-limit exposure; investigate source",
+          "Full face respirator minimum"
+        ],
+        [
+          "2–5 ppm",
+          "Detectable; discomfort",
+          "Leave area; report to CRO",
+          "SCBA required"
+        ],
+        [
+          "5 ppm",
+          "AA-901 HIGH alarm trigger",
+          "Non-essential personnel withdraw",
+          "SCBA required for all entry"
+        ],
+        [
+          "25 ppm",
+          "AA-901 HH — IDLH threshold",
+          "FULL EVACUATION; emergency services",
+          "SCBA — entry ONLY with trained team"
+        ],
+        [
+          ">100 ppm",
+          "Immediately dangerous to life",
+          "Extreme hazard; NO ENTRY without full SCBA and buddy system",
+          "SCBA + full chemical suit"
+        ]
+      ]
+    },
+    {
+      "index": 4,
+      "rows": [
+        [
+          "Spill Scale",
+          "Volume",
+          "Classification",
+          "Immediate Action",
+          "External Notification"
+        ],
+        [
+          "Minor",
+          "< 20 litres",
+          "Near-miss / minor incident",
+          "Contain with dry sand/earth. Do NOT use water on concentrated H₂SO₄ (violent exotherm). PPE: face shield, acid gloves, acid apron. Recover with absorbent material.",
+          "Shift Supervisor log only"
+        ],
+        [
+          "Medium",
+          "20–1,000 litres",
+          "Significant incident",
+          "Activate spill kit. Ensure bund valve closed. Dilute carefully with water spray (fine mist from distance). Neutralise with Na₂CO₃ or lime slurry ONLY after initial containment.",
+          "EHS Manager + regulatory notification within 24 h"
+        ],
+        [
+          "Major",
+          "> 1,000 litres",
+          "Emergency — MAJOR RELEASE",
+          "ACTIVATE SITE EMERGENCY PLAN. Evacuate downwind area. Contact fire service. Do NOT approach without full chemical protection suit + SCBA. Contain within bund — verify bund isolation valve CLOSED.",
+          "Immediate notification to Environment Agency, Local Authority, and HSE within 1 hour"
+        ]
+      ]
+    },
+    {
+      "index": 5,
+      "rows": [
+        [
+          "Valve",
+          "Fail-Safe Position",
+          "Process Effect on IA Loss",
+          "Operator Response"
+        ],
+        [
+          "FCV-101 (Sulfur feed)",
+          "Fail CLOSED",
+          "Sulfur feed stops — furnace temperature drops",
+          "Monitor TT-201 declining. If IA restored within 5 min, restart sulfur gradually from Governor setpoint. If > 5 min, initiate controlled shutdown."
+        ],
+        [
+          "LCV-201 (BFW)",
+          "Fail OPEN",
+          "Maximum BFW flow to WHB — risk of drum overfill",
+          "Set LIC-201 to manual/override. Monitor LT-201. If drum > 80%, close BFW isolation manually."
+        ],
+        [
+          "FCV-501/502 (Dilution water)",
+          "Fail CLOSED",
+          "Dilution water stops — acid concentration rises",
+          "Monitor AT-501/502. If concentration > 98.8 wt%, manually adjust dilution water bypass valve."
+        ],
+        [
+          "TCV-501 (IPAT CW)",
+          "Fail OPEN",
+          "Maximum CW to acid cooler — acid cools below target",
+          "Non-critical; temperature will recover when IA restored."
+        ],
+        [
+          "SDV-E01 (Sulfur block, ESD)",
+          "Fail CLOSED (spring)",
+          "Sulfur isolated — plant shuts down",
+          "Confirm ESD actuation on SIS panel. If ESD trips, follow E1 procedure."
+        ],
+        [
+          "SDV-E02 (Air block, ESD)",
+          "Fail OPEN",
+          "Air continues — safe purge maintained",
+          "Correct and desirable fail-safe position."
+        ]
+      ]
+    },
+    {
+      "index": 6,
+      "rows": [
+        [
+          "Time After Failure",
+          "System State",
+          "Required Action"
+        ],
+        [
+          "0–10 seconds",
+          "UPS activates for DCS, SIS, F&G, emergency lighting. All MV motors (blower, BFW pump) coast to stop.",
+          "CRO: Confirm DCS alive on UPS. Confirm SIS alive — all SIFs remain armed. PA announcement: \"Power failure — all personnel muster.\""
+        ],
+        [
+          "10–30 seconds",
+          "K-301A air blower coasts to stop — no air purge. Furnace without air and sulfur (FCV-101 fails closed).",
+          "Furnace is dark — no ignition, no combustion. Key risk: residual SO₂ in system. Do NOT attempt manual restart of blower until DG is confirmed live."
+        ],
+        [
+          "0–3 minutes",
+          "Emergency diesel generator (DG) should energise MV bus.",
+          "CRO: Confirm DG has picked up MV bus. Restart K-301A on DG supply immediately for purge airflow. Confirm BFW pump P-201B available on DG."
+        ],
+        [
+          "3–15 minutes",
+          "DG running; air purge active. Plant is in safe shutdown state.",
+          "Maintain air purge. Monitor WHB drum level. Do NOT restart sulfur until utility power is restored and root cause identified."
+        ],
+        [
+          ">60 minutes without power",
+          "WHB will lose pressure; acid circuit may begin to cool and risk solidification in low spots.",
+          "Process Engineer decision: drain acid circuits if power restoration not expected within 2 hours. Follow Planned Shutdown Steps S.8–S.10."
+        ]
+      ]
+    },
+    {
+      "index": 7,
+      "rows": [
+        [
+          "Emergency",
+          "Issue",
+          "Status",
+          "Action Required Before Procedures Can Be Relied Upon"
+        ],
+        [
+          "E1: Auto ESD",
+          "SIF-05 will trip on every 110% surge operation — not a genuine emergency but a design deficiency",
+          "FAIL",
+          "Resolve Pass 1 temperature (H&MB FAIL). Until resolved, 110% operation is PROHIBITED and this emergency procedure for SIF-05 is a routine event procedure."
+        ],
+        [
+          "E1 SIF-02",
+          "Stack damper XV-E04 Fail Closed during ESD blocks venting — manual compensating measure required",
+          "FAIL",
+          "Correct valve to Fail Open (C&E FAIL). Until corrected, add mandatory manual field step to open damper within 60 s of ESD in this procedure."
+        ],
+        [
+          "E2: SO₂ Release",
+          "F&G area monitors: threshold setpoints (5 ppm HIGH; 25 ppm HH) confirmed consistent with occupational exposure limits (WEL) and IDLH values",
+          "PASS",
+          "No action"
+        ],
+        [
+          "E3: Acid Spill",
+          "Bund sizing (110% of tank volume) confirmed per BoD environmental design criteria",
+          "PASS",
+          "No action"
+        ],
+        [
+          "E4: IA Failure",
+          "All fail-safe positions confirmed consistent with C&E matrix Doc 6",
+          "PASS",
+          "No action — verify at FAT testing"
+        ],
+        [
+          "E5: Power failure",
+          "DG transfer time and air blower restart timing needs dynamic simulation validation",
+          "MARGIN",
+          "Confirm DG auto-start time < 30 s; confirm blower coast-down time to confirm purge interruption duration"
+        ],
+        [
+          "All procedures",
+          "SIS trip setpoints in procedures match SRS Doc 8 and C&E Doc 6",
+          "PASS",
+          "All emergency ESD setpoints consistent"
+        ]
+      ]
+    }
+  ]
+}

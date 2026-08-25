@@ -1,0 +1,1325 @@
+{
+  "filename": "DOC5_Alarm_List 1.docx",
+  "metadata": {
+    "source_path": "data\\raw\\DOC5_Alarm_List 1.docx",
+    "core_properties": {
+      "author": "Un-named",
+      "created": "2026-08-20T11:37:00+00:00",
+      "last_modified_by": "Srinivasan, Pratheep Kumar",
+      "modified": "2026-08-20T13:12:00+00:00",
+      "revision": 2
+    }
+  },
+  "headings": [
+    {
+      "text": "UNIT 100 — SULFUR HANDLING ALARMS",
+      "level": 1
+    },
+    {
+      "text": "UNIT 200 — FURNACE AND WHB ALARMS",
+      "level": 1
+    },
+    {
+      "text": "UNIT 300 — DRYING SYSTEM ALARMS",
+      "level": 1
+    },
+    {
+      "text": "UNIT 400 — CONVERTER ALARMS",
+      "level": 1
+    },
+    {
+      "text": "UNIT 500 — ABSORPTION ALARMS",
+      "level": 1
+    },
+    {
+      "text": "UNIT 700 AND GENERAL — ALARMS",
+      "level": 1
+    }
+  ],
+  "sections": [
+    {
+      "heading": null,
+      "level": 0,
+      "paragraphs": [
+        {
+          "text": "FRONT-END ENGINEERING DESIGN (FEED)",
+          "style": "Normal"
+        },
+        {
+          "text": "100 t/d Sulfuric Acid Plant — DCDA / Elemental Sulfur",
+          "style": "Normal"
+        },
+        {
+          "text": "ALARM LIST",
+          "style": "Normal"
+        },
+        {
+          "text": "ISA-18.2 Rationalised — Setpoint vs Operating Range Consistency Check",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 0,
+          "rows": [
+            [
+              "Attribute",
+              "Value"
+            ],
+            [
+              "Document No.",
+              "PRJ-SA100-FEED-AL-005"
+            ],
+            [
+              "Revision",
+              "A0 — Issued for Review"
+            ],
+            [
+              "Project",
+              "100 t/d H₂SO₄ Plant, DCDA Route"
+            ],
+            [
+              "Date",
+              "August 2026"
+            ],
+            [
+              "Status",
+              "FEED — Consistency-Checked Edition"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "UNIT 100 — SULFUR HANDLING ALARMS",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 1,
+          "rows": [
+            [
+              "Alarm Tag",
+              "Description",
+              "Priority",
+              "Setpoint",
+              "NOV",
+              "Gap (NOV to SP)",
+              "ORT Req.",
+              "Time to Consequence (est.)",
+              "Deadband"
+            ],
+            [
+              "TA-101-H",
+              "Transfer Line Temp High",
+              "MED",
+              "148°C",
+              "140",
+              "8°C",
+              "30 min",
+              "~60 min (solidification risk)",
+              "3°C"
+            ],
+            [
+              "TA-101-L",
+              "Transfer Line Temp Low",
+              "MED",
+              "130°C",
+              "140",
+              "10°C",
+              "30 min",
+              "~30 min (solidification start)",
+              "3°C"
+            ],
+            [
+              "LA-101-LL",
+              "Tank Level Low-Low",
+              "HIGH",
+              "15%",
+              "50%",
+              "35%",
+              "10 min",
+              "~2 h (based on 100 t storage)",
+              "2%"
+            ],
+            [
+              "LA-101-HH",
+              "Tank Level High-High",
+              "HIGH",
+              "92%",
+              "50%",
+              "42%",
+              "10 min",
+              "~1 h (remaining volume)",
+              "2%"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "UNIT 200 — FURNACE AND WHB ALARMS",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 2,
+          "rows": [
+            [
+              "Alarm Tag",
+              "Description",
+              "Priority",
+              "Setpoint",
+              "NOV",
+              "Gap (NOV to SP)",
+              "ORT Req.",
+              "Time to Consequence",
+              "Deadband"
+            ],
+            [
+              "TA-201-HH",
+              "Furnace Temp High-High (ESD)",
+              "CRITICAL",
+              "1,150°C",
+              "1,050",
+              "100°C",
+              "ESD auto",
+              "<30 s (refractory damage)",
+              "10°C"
+            ],
+            [
+              "TA-201-H",
+              "Furnace Temp High",
+              "HIGH",
+              "1,100°C",
+              "1,050",
+              "50°C",
+              "10 min",
+              "~5 min (before HH trip)",
+              "10°C"
+            ],
+            [
+              "TA-201-L",
+              "Furnace Temp Low",
+              "MED",
+              "950°C",
+              "1,050",
+              "100°C",
+              "30 min",
+              "~10 min (incomplete combustion)",
+              "15°C"
+            ],
+            [
+              "PA-201-HH",
+              "Furnace Pressure High-High",
+              "CRITICAL",
+              "300 mbar",
+              "−15",
+              "315 mbar",
+              "ESD auto",
+              "<10 s (seal failure risk)",
+              "10 mbar"
+            ],
+            [
+              "PA-201-H",
+              "Furnace Pressure High",
+              "HIGH",
+              "250 mbar",
+              "−15",
+              "265 mbar",
+              "10 min",
+              "~3 min (before HH trip)",
+              "10 mbar"
+            ],
+            [
+              "AA-201-H",
+              "SO₂ Conc. High",
+              "HIGH",
+              "12.0 vol%",
+              "10.5",
+              "1.5 vol%",
+              "10 min",
+              "~5 min (catalyst overload)",
+              "0.5%"
+            ],
+            [
+              "AA-201-L",
+              "SO₂ Conc. Low",
+              "MED",
+              "8.5 vol%",
+              "10.5",
+              "2.0 vol%",
+              "30 min",
+              "~15 min (under-combustion)",
+              "0.5%"
+            ],
+            [
+              "AA-202-L",
+              "O₂ Conc. Low",
+              "HIGH",
+              "8.0 vol%",
+              "10.5",
+              "2.5 vol%",
+              "10 min",
+              "~3 min (sub-stoichiometric)",
+              "0.5%"
+            ],
+            [
+              "LA-201-LL",
+              "WHB Drum Level Low-Low (SIL)",
+              "CRITICAL",
+              "20%",
+              "50",
+              "30%",
+              "ESD auto",
+              "<1 min (WHB dry-fire)",
+              "3%"
+            ],
+            [
+              "LA-201-L",
+              "WHB Drum Level Low",
+              "HIGH",
+              "30%",
+              "50",
+              "20%",
+              "10 min",
+              "~5 min before LL",
+              "3%"
+            ],
+            [
+              "LA-201-HH",
+              "WHB Drum Level High-High",
+              "HIGH",
+              "90%",
+              "50",
+              "40%",
+              "10 min",
+              "~30 min at max BFW",
+              "3%"
+            ],
+            [
+              "PA-202-HH",
+              "WHB Steam Pressure High-High",
+              "CRITICAL",
+              "46 barg",
+              "40",
+              "6 barg",
+              "ESD auto",
+              "<60 s (PSV lift)",
+              "1 barg"
+            ],
+            [
+              "PA-202-H",
+              "WHB Steam Pressure High",
+              "HIGH",
+              "43 barg",
+              "40",
+              "3 barg",
+              "10 min",
+              "~5 min (before HH)",
+              "1 barg"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "UNIT 300 — DRYING SYSTEM ALARMS",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 3,
+          "rows": [
+            [
+              "Alarm Tag",
+              "Description",
+              "Priority",
+              "Setpoint",
+              "NOV",
+              "Gap",
+              "ORT",
+              "Time to Consequence"
+            ],
+            [
+              "AA-301-H",
+              "Moisture High (process air)",
+              "HIGH",
+              "0.15 g/Nm³",
+              "0.05",
+              "0.10",
+              "10 min",
+              "~20 min (catalyst poisoning begins)"
+            ],
+            [
+              "AA-302-L",
+              "DT Acid Concentration Low",
+              "MED",
+              "91.0 wt%",
+              "94.5",
+              "3.5 wt%",
+              "30 min",
+              "~45 min (DT performance)"
+            ],
+            [
+              "LA-301-L",
+              "DT Acid Sump Level Low",
+              "HIGH",
+              "25%",
+              "50",
+              "25%",
+              "10 min",
+              "~15 min (pump cavitation)"
+            ],
+            [
+              "TA-301-H",
+              "DT Acid Temperature High",
+              "MED",
+              "80°C",
+              "65",
+              "15°C",
+              "30 min",
+              "~60 min (vapour increase)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "UNIT 400 — CONVERTER ALARMS",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 4,
+          "rows": [
+            [
+              "Alarm Tag",
+              "Description",
+              "Priority",
+              "Setpoint",
+              "NOV",
+              "Gap",
+              "ORT",
+              "Time to Consequence",
+              "Deadband"
+            ],
+            [
+              "TA-401-HH",
+              "Conv. P1 Temp HH (SIL ESD)",
+              "CRITICAL",
+              "620°C",
+              "600",
+              "20°C",
+              "ESD auto",
+              "<30 s (catalyst sintering)",
+              "10°C"
+            ],
+            [
+              "TA-401-H",
+              "Conv. P1 Temp High",
+              "HIGH",
+              "600°C",
+              "600",
+              "0°C",
+              "10 min",
+              "Immediate — NOV=setpoint!",
+              "10°C"
+            ],
+            [
+              "TA-401-L",
+              "Conv. P1 Temp Low",
+              "HIGH",
+              "410°C",
+              "420",
+              "10°C",
+              "10 min",
+              "~10 min (conversion loss)",
+              "10°C"
+            ],
+            [
+              "TA-402-HH",
+              "Conv. P2 Temp HH (ESD)",
+              "CRITICAL",
+              "560°C",
+              "520",
+              "40°C",
+              "ESD auto",
+              "<2 min",
+              "10°C"
+            ],
+            [
+              "TA-402-H",
+              "Conv. P2 Temp High",
+              "HIGH",
+              "540°C",
+              "520",
+              "20°C",
+              "10 min",
+              "~5 min",
+              "10°C"
+            ],
+            [
+              "TA-407-L",
+              "Conv. P4 Temp Low",
+              "MED",
+              "405°C",
+              "415",
+              "10°C",
+              "30 min",
+              "~30 min (conversion loss)",
+              "10°C"
+            ],
+            [
+              "AA-401-H",
+              "SO₂ to Converter High",
+              "HIGH",
+              "12.5 vol%",
+              "10.5",
+              "2.0 vol%",
+              "10 min",
+              "~5 min",
+              "0.3%"
+            ],
+            [
+              "AA-403-HH",
+              "Stack SO₂ High-High (Env/ESD)",
+              "CRITICAL",
+              "600 mg/Nm³",
+              "250",
+              "350",
+              "ESD+5 min delay",
+              "Regulatory breach if sustained",
+              "50 mg/Nm³"
+            ],
+            [
+              "AA-403-H",
+              "Stack SO₂ High (Env)",
+              "HIGH",
+              "500 mg/Nm³",
+              "250",
+              "250",
+              "10 min",
+              "~15 min (regulatory)",
+              "50 mg/Nm³"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "UNIT 500 — ABSORPTION ALARMS",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 5,
+          "rows": [
+            [
+              "Alarm Tag",
+              "Description",
+              "Priority",
+              "Setpoint",
+              "NOV",
+              "Gap",
+              "ORT",
+              "Time to Consequence"
+            ],
+            [
+              "LA-501-L",
+              "IPAT Level Low",
+              "HIGH",
+              "20%",
+              "50",
+              "30%",
+              "10 min",
+              "~10 min (pump loss)"
+            ],
+            [
+              "LA-501-HH",
+              "IPAT Level High-High",
+              "HIGH",
+              "90%",
+              "50",
+              "40%",
+              "10 min",
+              "~20 min (overflow)"
+            ],
+            [
+              "AA-501-L",
+              "IPAT Acid Concentration Low",
+              "MED",
+              "97.5 wt%",
+              "98.2",
+              "0.7 wt%",
+              "30 min",
+              "~30 min (SO₃ slip)"
+            ],
+            [
+              "AA-501-H",
+              "IPAT Acid Concentration High",
+              "MED",
+              "98.8 wt%",
+              "98.2",
+              "0.6 wt%",
+              "30 min",
+              "~20 min (mist risk)"
+            ],
+            [
+              "LA-502-L",
+              "FAT Level Low",
+              "HIGH",
+              "20%",
+              "50",
+              "30%",
+              "10 min",
+              "~10 min"
+            ],
+            [
+              "FA-501-L",
+              "Dilution Water Flow Low",
+              "HIGH",
+              "50 L/h",
+              "220",
+              "170 L/h",
+              "10 min",
+              "~8 min (acid rise)"
+            ],
+            [
+              "TA-502-H",
+              "IPAT Acid Temp High",
+              "MED",
+              "80°C",
+              "65",
+              "15°C",
+              "30 min",
+              "~45 min"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "UNIT 700 AND GENERAL — ALARMS",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 6,
+          "rows": [
+            [
+              "Alarm Tag",
+              "Description",
+              "Priority",
+              "Setpoint",
+              "NOV",
+              "Gap",
+              "ORT",
+              "Time to Consequence"
+            ],
+            [
+              "LA-701-HH",
+              "Product Tank Level HH (ESD)",
+              "CRITICAL",
+              "90%",
+              "50%",
+              "40%",
+              "ESD auto",
+              "<30 min (overflow at fill rate)"
+            ],
+            [
+              "LA-701-H",
+              "Product Tank Level High",
+              "HIGH",
+              "80%",
+              "50%",
+              "30%",
+              "10 min",
+              "~15 min before HH"
+            ],
+            [
+              "LA-701-L",
+              "Product Tank Level Low",
+              "MED",
+              "15%",
+              "50%",
+              "35%",
+              "30 min",
+              "~2 h at normal draw-off"
+            ],
+            [
+              "TA-701-H",
+              "Product Acid Temp High",
+              "MED",
+              "45°C",
+              "35",
+              "10°C",
+              "30 min",
+              "~60 min (vapour risk)"
+            ],
+            [
+              "AA-901-HH",
+              "Area SO₂ Evacuation HH",
+              "CRITICAL",
+              "25 ppm",
+              "0",
+              "25 ppm",
+              "Auto PA",
+              "IDLH immediate"
+            ],
+            [
+              "AA-901-H",
+              "Area SO₂ Warning",
+              "HIGH",
+              "5 ppm",
+              "0",
+              "5 ppm",
+              "10 min",
+              "~5–10 min to discomfort level"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "text": "FRONT-END ENGINEERING DESIGN (FEED)",
+      "style": "Normal"
+    },
+    {
+      "text": "100 t/d Sulfuric Acid Plant — DCDA / Elemental Sulfur",
+      "style": "Normal"
+    },
+    {
+      "text": "ALARM LIST",
+      "style": "Normal"
+    },
+    {
+      "text": "ISA-18.2 Rationalised — Setpoint vs Operating Range Consistency Check",
+      "style": "Normal"
+    },
+    {
+      "text": "UNIT 100 — SULFUR HANDLING ALARMS",
+      "style": "Heading 1"
+    },
+    {
+      "text": "UNIT 200 — FURNACE AND WHB ALARMS",
+      "style": "Heading 1"
+    },
+    {
+      "text": "UNIT 300 — DRYING SYSTEM ALARMS",
+      "style": "Heading 1"
+    },
+    {
+      "text": "UNIT 400 — CONVERTER ALARMS",
+      "style": "Heading 1"
+    },
+    {
+      "text": "UNIT 500 — ABSORPTION ALARMS",
+      "style": "Heading 1"
+    },
+    {
+      "text": "UNIT 700 AND GENERAL — ALARMS",
+      "style": "Heading 1"
+    }
+  ],
+  "tables": [
+    {
+      "index": 0,
+      "rows": [
+        [
+          "Attribute",
+          "Value"
+        ],
+        [
+          "Document No.",
+          "PRJ-SA100-FEED-AL-005"
+        ],
+        [
+          "Revision",
+          "A0 — Issued for Review"
+        ],
+        [
+          "Project",
+          "100 t/d H₂SO₄ Plant, DCDA Route"
+        ],
+        [
+          "Date",
+          "August 2026"
+        ],
+        [
+          "Status",
+          "FEED — Consistency-Checked Edition"
+        ]
+      ]
+    },
+    {
+      "index": 1,
+      "rows": [
+        [
+          "Alarm Tag",
+          "Description",
+          "Priority",
+          "Setpoint",
+          "NOV",
+          "Gap (NOV to SP)",
+          "ORT Req.",
+          "Time to Consequence (est.)",
+          "Deadband"
+        ],
+        [
+          "TA-101-H",
+          "Transfer Line Temp High",
+          "MED",
+          "148°C",
+          "140",
+          "8°C",
+          "30 min",
+          "~60 min (solidification risk)",
+          "3°C"
+        ],
+        [
+          "TA-101-L",
+          "Transfer Line Temp Low",
+          "MED",
+          "130°C",
+          "140",
+          "10°C",
+          "30 min",
+          "~30 min (solidification start)",
+          "3°C"
+        ],
+        [
+          "LA-101-LL",
+          "Tank Level Low-Low",
+          "HIGH",
+          "15%",
+          "50%",
+          "35%",
+          "10 min",
+          "~2 h (based on 100 t storage)",
+          "2%"
+        ],
+        [
+          "LA-101-HH",
+          "Tank Level High-High",
+          "HIGH",
+          "92%",
+          "50%",
+          "42%",
+          "10 min",
+          "~1 h (remaining volume)",
+          "2%"
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "rows": [
+        [
+          "Alarm Tag",
+          "Description",
+          "Priority",
+          "Setpoint",
+          "NOV",
+          "Gap (NOV to SP)",
+          "ORT Req.",
+          "Time to Consequence",
+          "Deadband"
+        ],
+        [
+          "TA-201-HH",
+          "Furnace Temp High-High (ESD)",
+          "CRITICAL",
+          "1,150°C",
+          "1,050",
+          "100°C",
+          "ESD auto",
+          "<30 s (refractory damage)",
+          "10°C"
+        ],
+        [
+          "TA-201-H",
+          "Furnace Temp High",
+          "HIGH",
+          "1,100°C",
+          "1,050",
+          "50°C",
+          "10 min",
+          "~5 min (before HH trip)",
+          "10°C"
+        ],
+        [
+          "TA-201-L",
+          "Furnace Temp Low",
+          "MED",
+          "950°C",
+          "1,050",
+          "100°C",
+          "30 min",
+          "~10 min (incomplete combustion)",
+          "15°C"
+        ],
+        [
+          "PA-201-HH",
+          "Furnace Pressure High-High",
+          "CRITICAL",
+          "300 mbar",
+          "−15",
+          "315 mbar",
+          "ESD auto",
+          "<10 s (seal failure risk)",
+          "10 mbar"
+        ],
+        [
+          "PA-201-H",
+          "Furnace Pressure High",
+          "HIGH",
+          "250 mbar",
+          "−15",
+          "265 mbar",
+          "10 min",
+          "~3 min (before HH trip)",
+          "10 mbar"
+        ],
+        [
+          "AA-201-H",
+          "SO₂ Conc. High",
+          "HIGH",
+          "12.0 vol%",
+          "10.5",
+          "1.5 vol%",
+          "10 min",
+          "~5 min (catalyst overload)",
+          "0.5%"
+        ],
+        [
+          "AA-201-L",
+          "SO₂ Conc. Low",
+          "MED",
+          "8.5 vol%",
+          "10.5",
+          "2.0 vol%",
+          "30 min",
+          "~15 min (under-combustion)",
+          "0.5%"
+        ],
+        [
+          "AA-202-L",
+          "O₂ Conc. Low",
+          "HIGH",
+          "8.0 vol%",
+          "10.5",
+          "2.5 vol%",
+          "10 min",
+          "~3 min (sub-stoichiometric)",
+          "0.5%"
+        ],
+        [
+          "LA-201-LL",
+          "WHB Drum Level Low-Low (SIL)",
+          "CRITICAL",
+          "20%",
+          "50",
+          "30%",
+          "ESD auto",
+          "<1 min (WHB dry-fire)",
+          "3%"
+        ],
+        [
+          "LA-201-L",
+          "WHB Drum Level Low",
+          "HIGH",
+          "30%",
+          "50",
+          "20%",
+          "10 min",
+          "~5 min before LL",
+          "3%"
+        ],
+        [
+          "LA-201-HH",
+          "WHB Drum Level High-High",
+          "HIGH",
+          "90%",
+          "50",
+          "40%",
+          "10 min",
+          "~30 min at max BFW",
+          "3%"
+        ],
+        [
+          "PA-202-HH",
+          "WHB Steam Pressure High-High",
+          "CRITICAL",
+          "46 barg",
+          "40",
+          "6 barg",
+          "ESD auto",
+          "<60 s (PSV lift)",
+          "1 barg"
+        ],
+        [
+          "PA-202-H",
+          "WHB Steam Pressure High",
+          "HIGH",
+          "43 barg",
+          "40",
+          "3 barg",
+          "10 min",
+          "~5 min (before HH)",
+          "1 barg"
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "rows": [
+        [
+          "Alarm Tag",
+          "Description",
+          "Priority",
+          "Setpoint",
+          "NOV",
+          "Gap",
+          "ORT",
+          "Time to Consequence"
+        ],
+        [
+          "AA-301-H",
+          "Moisture High (process air)",
+          "HIGH",
+          "0.15 g/Nm³",
+          "0.05",
+          "0.10",
+          "10 min",
+          "~20 min (catalyst poisoning begins)"
+        ],
+        [
+          "AA-302-L",
+          "DT Acid Concentration Low",
+          "MED",
+          "91.0 wt%",
+          "94.5",
+          "3.5 wt%",
+          "30 min",
+          "~45 min (DT performance)"
+        ],
+        [
+          "LA-301-L",
+          "DT Acid Sump Level Low",
+          "HIGH",
+          "25%",
+          "50",
+          "25%",
+          "10 min",
+          "~15 min (pump cavitation)"
+        ],
+        [
+          "TA-301-H",
+          "DT Acid Temperature High",
+          "MED",
+          "80°C",
+          "65",
+          "15°C",
+          "30 min",
+          "~60 min (vapour increase)"
+        ]
+      ]
+    },
+    {
+      "index": 4,
+      "rows": [
+        [
+          "Alarm Tag",
+          "Description",
+          "Priority",
+          "Setpoint",
+          "NOV",
+          "Gap",
+          "ORT",
+          "Time to Consequence",
+          "Deadband"
+        ],
+        [
+          "TA-401-HH",
+          "Conv. P1 Temp HH (SIL ESD)",
+          "CRITICAL",
+          "620°C",
+          "600",
+          "20°C",
+          "ESD auto",
+          "<30 s (catalyst sintering)",
+          "10°C"
+        ],
+        [
+          "TA-401-H",
+          "Conv. P1 Temp High",
+          "HIGH",
+          "600°C",
+          "600",
+          "0°C",
+          "10 min",
+          "Immediate — NOV=setpoint!",
+          "10°C"
+        ],
+        [
+          "TA-401-L",
+          "Conv. P1 Temp Low",
+          "HIGH",
+          "410°C",
+          "420",
+          "10°C",
+          "10 min",
+          "~10 min (conversion loss)",
+          "10°C"
+        ],
+        [
+          "TA-402-HH",
+          "Conv. P2 Temp HH (ESD)",
+          "CRITICAL",
+          "560°C",
+          "520",
+          "40°C",
+          "ESD auto",
+          "<2 min",
+          "10°C"
+        ],
+        [
+          "TA-402-H",
+          "Conv. P2 Temp High",
+          "HIGH",
+          "540°C",
+          "520",
+          "20°C",
+          "10 min",
+          "~5 min",
+          "10°C"
+        ],
+        [
+          "TA-407-L",
+          "Conv. P4 Temp Low",
+          "MED",
+          "405°C",
+          "415",
+          "10°C",
+          "30 min",
+          "~30 min (conversion loss)",
+          "10°C"
+        ],
+        [
+          "AA-401-H",
+          "SO₂ to Converter High",
+          "HIGH",
+          "12.5 vol%",
+          "10.5",
+          "2.0 vol%",
+          "10 min",
+          "~5 min",
+          "0.3%"
+        ],
+        [
+          "AA-403-HH",
+          "Stack SO₂ High-High (Env/ESD)",
+          "CRITICAL",
+          "600 mg/Nm³",
+          "250",
+          "350",
+          "ESD+5 min delay",
+          "Regulatory breach if sustained",
+          "50 mg/Nm³"
+        ],
+        [
+          "AA-403-H",
+          "Stack SO₂ High (Env)",
+          "HIGH",
+          "500 mg/Nm³",
+          "250",
+          "250",
+          "10 min",
+          "~15 min (regulatory)",
+          "50 mg/Nm³"
+        ]
+      ]
+    },
+    {
+      "index": 5,
+      "rows": [
+        [
+          "Alarm Tag",
+          "Description",
+          "Priority",
+          "Setpoint",
+          "NOV",
+          "Gap",
+          "ORT",
+          "Time to Consequence"
+        ],
+        [
+          "LA-501-L",
+          "IPAT Level Low",
+          "HIGH",
+          "20%",
+          "50",
+          "30%",
+          "10 min",
+          "~10 min (pump loss)"
+        ],
+        [
+          "LA-501-HH",
+          "IPAT Level High-High",
+          "HIGH",
+          "90%",
+          "50",
+          "40%",
+          "10 min",
+          "~20 min (overflow)"
+        ],
+        [
+          "AA-501-L",
+          "IPAT Acid Concentration Low",
+          "MED",
+          "97.5 wt%",
+          "98.2",
+          "0.7 wt%",
+          "30 min",
+          "~30 min (SO₃ slip)"
+        ],
+        [
+          "AA-501-H",
+          "IPAT Acid Concentration High",
+          "MED",
+          "98.8 wt%",
+          "98.2",
+          "0.6 wt%",
+          "30 min",
+          "~20 min (mist risk)"
+        ],
+        [
+          "LA-502-L",
+          "FAT Level Low",
+          "HIGH",
+          "20%",
+          "50",
+          "30%",
+          "10 min",
+          "~10 min"
+        ],
+        [
+          "FA-501-L",
+          "Dilution Water Flow Low",
+          "HIGH",
+          "50 L/h",
+          "220",
+          "170 L/h",
+          "10 min",
+          "~8 min (acid rise)"
+        ],
+        [
+          "TA-502-H",
+          "IPAT Acid Temp High",
+          "MED",
+          "80°C",
+          "65",
+          "15°C",
+          "30 min",
+          "~45 min"
+        ]
+      ]
+    },
+    {
+      "index": 6,
+      "rows": [
+        [
+          "Alarm Tag",
+          "Description",
+          "Priority",
+          "Setpoint",
+          "NOV",
+          "Gap",
+          "ORT",
+          "Time to Consequence"
+        ],
+        [
+          "LA-701-HH",
+          "Product Tank Level HH (ESD)",
+          "CRITICAL",
+          "90%",
+          "50%",
+          "40%",
+          "ESD auto",
+          "<30 min (overflow at fill rate)"
+        ],
+        [
+          "LA-701-H",
+          "Product Tank Level High",
+          "HIGH",
+          "80%",
+          "50%",
+          "30%",
+          "10 min",
+          "~15 min before HH"
+        ],
+        [
+          "LA-701-L",
+          "Product Tank Level Low",
+          "MED",
+          "15%",
+          "50%",
+          "35%",
+          "30 min",
+          "~2 h at normal draw-off"
+        ],
+        [
+          "TA-701-H",
+          "Product Acid Temp High",
+          "MED",
+          "45°C",
+          "35",
+          "10°C",
+          "30 min",
+          "~60 min (vapour risk)"
+        ],
+        [
+          "AA-901-HH",
+          "Area SO₂ Evacuation HH",
+          "CRITICAL",
+          "25 ppm",
+          "0",
+          "25 ppm",
+          "Auto PA",
+          "IDLH immediate"
+        ],
+        [
+          "AA-901-H",
+          "Area SO₂ Warning",
+          "HIGH",
+          "5 ppm",
+          "0",
+          "5 ppm",
+          "10 min",
+          "~5–10 min to discomfort level"
+        ]
+      ]
+    }
+  ]
+}

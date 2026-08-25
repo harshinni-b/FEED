@@ -1,0 +1,1791 @@
+{
+  "filename": "DOC14_Vendor_Datasheets.docx",
+  "metadata": {
+    "source_path": "data\\raw\\DOC14_Vendor_Datasheets.docx",
+    "core_properties": {
+      "author": "Un-named",
+      "created": "2026-08-20T13:18:00+00:00",
+      "last_modified_by": "Srinivasan, Pratheep Kumar",
+      "modified": "2026-08-21T06:21:00+00:00",
+      "revision": 2
+    }
+  },
+  "headings": [
+    {
+      "text": "VENDOR DATASHEET CONSISTENCY SUMMARY — ALL ITEMS",
+      "level": 1
+    }
+  ],
+  "sections": [
+    {
+      "heading": null,
+      "level": 0,
+      "paragraphs": [
+        {
+          "text": "FRONT-END ENGINEERING DESIGN (FEED)",
+          "style": "Normal"
+        },
+        {
+          "text": "100 t/d Sulfuric Acid Plant — DCDA / Elemental Sulfur",
+          "style": "Normal"
+        },
+        {
+          "text": "VENDOR DATASHEETS — EQUIPMENT PURCHASE SPECIFICATIONS",
+          "style": "Normal"
+        },
+        {
+          "text": "FEED-Stage Datasheets for All Major Equipment Items — Specified vs Operating Range Consistency Verified",
+          "style": "Normal"
+        },
+        {
+          "text": "This document contains automated consistency status flags. Parameters marked FAIL require engineering review before progression to Detailed Engineering.",
+          "style": "Normal"
+        },
+        {
+          "text": "BU-201 — SULFUR FURNACE",
+          "style": "Normal"
+        },
+        {
+          "text": "Datasheet Ref: DS-BU-201-001  |  Project: PRJ-SA100  |  Rev: A0 FEED",
+          "style": "Normal"
+        },
+        {
+          "text": "WHB-201 — WASTE HEAT BOILER",
+          "style": "Normal"
+        },
+        {
+          "text": "Datasheet Ref: DS-WHB-201-001  |  Project: PRJ-SA100  |  Rev: A0 FEED",
+          "style": "Normal"
+        },
+        {
+          "text": "R-401 — DCDA CATALYTIC CONVERTER",
+          "style": "Normal"
+        },
+        {
+          "text": "Datasheet Ref: DS-R-401-001  |  Project: PRJ-SA100  |  Rev: A0 FEED",
+          "style": "Normal"
+        },
+        {
+          "text": "P-702A/B — PRODUCT DISPATCH PUMP (DUTY + STANDBY)",
+          "style": "Normal"
+        },
+        {
+          "text": "Datasheet Ref: DS-P-702-001  |  Project: PRJ-SA100  |  Rev: A0 FEED",
+          "style": "Normal"
+        },
+        {
+          "text": "K-301A/B — MAIN PROCESS AIR BLOWER (DUTY + STANDBY)",
+          "style": "Normal"
+        },
+        {
+          "text": "Datasheet Ref: DS-K-301-001  |  Project: PRJ-SA100  |  Rev: A0 FEED",
+          "style": "Normal"
+        },
+        {
+          "text": "T-501 — INTERPASS ABSORPTION TOWER (IPAT)",
+          "style": "Normal"
+        },
+        {
+          "text": "Datasheet Ref: DS-T-501-001  |  Project: PRJ-SA100  |  Rev: A0 FEED",
+          "style": "Normal"
+        },
+        {
+          "text": "E-501 — IPAT ACID COOLER",
+          "style": "Normal"
+        },
+        {
+          "text": "Datasheet Ref: DS-E-501-001  |  Project: PRJ-SA100  |  Rev: A0 FEED",
+          "style": "Normal"
+        },
+        {
+          "text": "AT-201 — FURNACE EXIT SO₂ ANALYSER",
+          "style": "Normal"
+        },
+        {
+          "text": "Datasheet Ref: DS-AT-201-001  |  Project: PRJ-SA100  |  Rev: A0 FEED",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 0,
+          "rows": [
+            [
+              "Attribute",
+              "Value"
+            ],
+            [
+              "Document No.",
+              "PRJ-SA100-FEED-DS-014"
+            ],
+            [
+              "Revision",
+              "A0 — Issued for Review"
+            ],
+            [
+              "Project",
+              "100 t/d H₂SO₄ Plant, DCDA Route"
+            ],
+            [
+              "Date",
+              "August 2026"
+            ],
+            [
+              "Status",
+              "FEED — Consistency-Checked Edition"
+            ]
+          ]
+        },
+        {
+          "index": 1,
+          "rows": [
+            [
+              "Parameter",
+              "Specified Value / Requirement",
+              "Units / Notes",
+              "Consistency Check"
+            ],
+            [
+              "Equipment type",
+              "Horizontal cylindrical combustion chamber, refractory-lined",
+              "—",
+              "Consistent with process description"
+            ],
+            [
+              "Design code",
+              "EN 13445 (Pressure Vessels) or ASME VIII Div.1",
+              "—",
+              "—"
+            ],
+            [
+              "Shell material",
+              "Carbon steel SA-516 Gr.70; minimum 12 mm wall",
+              "mm",
+              "Consistent"
+            ],
+            [
+              "Refractory lining",
+              "High-alumina castable; service temp rating ≥1,400°C; minimum 200 mm thickness",
+              "°C / mm",
+              "NOV at surge 1,080°C vs lining 1,400°C: 77% utilisation"
+            ],
+            [
+              "Design temperature",
+              "1,200°C (shell inside refractory surface)",
+              "°C",
+              "Adequate: surge max 1,080°C = 90% of design T"
+            ],
+            [
+              "Design pressure",
+              "−50 mbar to +300 mbar gauge",
+              "mbar",
+              "Consistent with PSHH-201 trip at +300 mbar"
+            ],
+            [
+              "Rated thermal input",
+              "21,000 kW (based on sulfur LHV 9,164 kcal/kg × 1,800 kg/h max)",
+              "kW",
+              "Surge demand 18,480 kW = 88% of rating"
+            ],
+            [
+              "Number of sulfur spray guns",
+              "2 × 100% capacity spray guns (each rated 1,800 kg/h)",
+              "—",
+              "Each gun must handle surge at 1,499 kg/h = 83.3% of rating"
+            ],
+            [
+              "Gun material",
+              "316SS; gun body + nozzle; replaceable tip in Hastelloy C-276",
+              "—",
+              "Acid-resistant; consistent with sulfur service"
+            ],
+            [
+              "Flame detection",
+              "2 × UV flame scanners (1oo2 voting); fail-safe on loss of signal",
+              "—",
+              "Consistent with SIF start-up permissive"
+            ],
+            [
+              "Explosion relief panels",
+              "Required: 0.1 barg rupture disk; vent to safe location",
+              "—",
+              "Final area TBD at site layout stage"
+            ],
+            [
+              "Inspection access",
+              "Minimum 600 mm manway; inspection port at burner end and tail end",
+              "—",
+              "Required for annual refractory inspection"
+            ],
+            [
+              "Refractory anchor design",
+              "V-type anchors SA-240 304 SS at 150 mm pitch; explosion-proof design",
+              "—",
+              "—"
+            ],
+            [
+              "VENDOR CONFIRMATION REQUIRED",
+              "Confirm rated thermal input and gun capacity at 1,499 kg/h surge with refractory T profile",
+              "—",
+              "MARGIN: surge T approaches 90% of design envelope"
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "rows": [
+            [
+              "Parameter",
+              "Specified Value / Requirement",
+              "Units / Notes",
+              "Consistency Check"
+            ],
+            [
+              "Type",
+              "Fire-tube boiler (process gas in tubes, steam on shell side)",
+              "—",
+              "Consistent with process design"
+            ],
+            [
+              "Design code",
+              "ASME I (Power Boilers) or EN 12952",
+              "—",
+              "—"
+            ],
+            [
+              "Tube material",
+              "SA-106 Gr.B (carbon steel, seamless); minimum 4 mm wall",
+              "mm",
+              "Consistent with gas service"
+            ],
+            [
+              "Shell material",
+              "SA-516 Gr.70",
+              "—",
+              "—"
+            ],
+            [
+              "Gas inlet temperature",
+              "1,050°C normal; 1,080°C surge; 1,200°C design maximum",
+              "°C",
+              "Surge 1,080°C = 90% of design T"
+            ],
+            [
+              "Gas outlet temperature",
+              "420°C target (±10°C)",
+              "°C",
+              "Consistent with converter inlet requirement"
+            ],
+            [
+              "Rated steam capacity",
+              "9,500 kg/h at 40 barg / 400°C (minimum)",
+              "kg/h",
+              "Surge demand 8,250 kg/h = 86.8% of rating"
+            ],
+            [
+              "Steam drum MAWP",
+              "48 barg (minimum)",
+              "barg",
+              "SIS trip at 46 barg; PSV at 47.5 barg; MAWP 48 barg — consistent"
+            ],
+            [
+              "BFW inlet conditions",
+              "105°C, 45 barg minimum (pump delivery)",
+              "°C / barg",
+              "Consistent with P-201 pump specification"
+            ],
+            [
+              "Tube-side gas velocity",
+              "≤5.0 m/s at rated flow (erosion limit)",
+              "m/s",
+              "MARGIN: surge velocity 4.6 m/s = 92% of limit"
+            ],
+            [
+              "Soot blowing",
+              "Steam lance soot blowing; minimum 1 lance per 3 m tube length",
+              "—",
+              "Required for sulfur combustion products"
+            ],
+            [
+              "Thermal expansion",
+              "Floating tube sheet or U-tube design to accommodate 630°C ΔT",
+              "—",
+              "Required; fixed tubesheet NOT acceptable"
+            ],
+            [
+              "Three-element level control nozzles",
+              "3 × nozzles for LT (2 × LT; 1 × level gauge); steam flow nozzle (FT-202); BFW inlet nozzle",
+              "—",
+              "Consistent with LIC-201 three-element scheme"
+            ],
+            [
+              "VENDOR CONFIRMATION REQUIRED",
+              "Tube velocity at surge; erosion analysis; thermal cycling fatigue life (min 20 years)",
+              "—",
+              "MARGIN items must be vendor confirmed"
+            ]
+          ]
+        },
+        {
+          "index": 3,
+          "rows": [
+            [
+              "Parameter",
+              "Specified Value / Requirement",
+              "Units / Notes",
+              "Consistency Check"
+            ],
+            [
+              "Type",
+              "4-pass adiabatic catalytic converter; vertical cylindrical pressure vessel",
+              "—",
+              "—"
+            ],
+            [
+              "Shell material",
+              "SA-516 Gr.70 carbon steel; minimum 16 mm wall (due to size)",
+              "mm",
+              "—"
+            ],
+            [
+              "Internal components",
+              "316L SS trays, gas distributors, catalyst support grids; expansion joints between passes",
+              "—",
+              "Consistent with gas temperature range"
+            ],
+            [
+              "Design temperature",
+              "700°C (Pass 1 outlet — worst case)",
+              "°C",
+              "Surge actual 621°C = 88.7% of design T"
+            ],
+            [
+              "Design pressure",
+              "0.5 barg positive; −100 mbar vacuum design",
+              "barg",
+              "Consistent with process"
+            ],
+            [
+              "Catalyst type (Pass 1)",
+              "Cs-promoted V₂O₅ (e.g. Haldor Topsoe VK-701 or equivalent); low ignition temp ≥380°C",
+              "—",
+              "Consistent with start-up procedure P3 (400°C minimum)"
+            ],
+            [
+              "Catalyst type (Pass 2–4)",
+              "Standard V₂O₅/K₂S₂O₇ promoted (VK-38 or equivalent); ignition temp ≥400°C",
+              "—",
+              "—"
+            ],
+            [
+              "Catalyst bed depths",
+              "P1: 1.2 m; P2: 0.8 m; P3: 0.8 m; P4: 1.0 m (subject to final vendor optimisation)",
+              "m",
+              "MARGIN: P1 depth may need 5% reduction per H&MB FAIL"
+            ],
+            [
+              "Space velocity at design",
+              "P1: 550 h⁻¹; P2–P4: per catalyst vendor calculation at 100 t/d",
+              "h⁻¹",
+              "Max 700 h⁻¹; surge 600 h⁻¹ = 85.7% of max"
+            ],
+            [
+              "Bypass valve nozzles",
+              "P1 cold bypass: DN300 nozzle; P2/P3/P4 bypass: DN200 nozzle each",
+              "—",
+              "Must accommodate bypass flow for temperature control per TIC-401 to TIC-404"
+            ],
+            [
+              "Catalyst life",
+              "Minimum guaranteed 5 years at design operating conditions",
+              "yr",
+              "Vendor guarantee required; surge operation must be within guarantee scope"
+            ],
+            [
+              "CRITICAL VENDOR ACTION",
+              "P1 catalyst bed height must be reduced by ~5% (from 1.2 m to ~1.14 m) to prevent surge temperature exceeding 620°C TSHH. Vendor to recalculate and confirm.",
+              "—",
+              "FAIL — outstanding from H&MB; purchase spec cannot be finalised until resolved"
+            ]
+          ]
+        },
+        {
+          "index": 4,
+          "rows": [
+            [
+              "Parameter",
+              "Specified Value / Requirement",
+              "Units / Notes",
+              "Consistency Check"
+            ],
+            [
+              "Pump type",
+              "Centrifugal, horizontal, close-coupled or back pull-out",
+              "—",
+              "—"
+            ],
+            [
+              "Design code",
+              "ISO 2858 / API 685 (if magnetically coupled) or equivalent",
+              "—",
+              "—"
+            ],
+            [
+              "Fluid",
+              "98.5 wt% H₂SO₄",
+              "—",
+              "—"
+            ],
+            [
+              "Fluid temperature",
+              "35–45°C (normal); 50°C design maximum",
+              "°C",
+              "Consistent with product spec"
+            ],
+            [
+              "Fluid density",
+              "1,840 kg/m³ at 35°C",
+              "kg/m³",
+              "Used for hydraulic calculations"
+            ],
+            [
+              "Normal duty flow",
+              "3.0 m³/h (4,167 / 1,840 × 1.45 density factor)",
+              "m³/h",
+              "Consistent with H&MB 100% load"
+            ],
+            [
+              "RATED pump flow (REVISED)",
+              "4.5 m³/h (upsized from previous 3.0 — per FAIL resolution)",
+              "m³/h",
+              "Previous 3.0 m³/h was FAIL at surge. Now sized at 4.5 m³/h normal (130% = 5.85 m³/h rated). Surge demand 5,417 / 1,840 = 2.95 m³/h — well within new rating."
+            ],
+            [
+              "Differential head",
+              "30 m minimum (includes line losses to loading arm)",
+              "m H₂O",
+              "—"
+            ],
+            [
+              "Motor power (REVISED)",
+              "30 kW minimum (upsized from 22 kW with pump)",
+              "kW",
+              "22 kW was marginal at surge; 30 kW provides adequate margin"
+            ],
+            [
+              "Seal type",
+              "Double mechanical seal, pressurised barrier fluid (Plan 53B)",
+              "—",
+              "Required for H₂SO₄ — no single seal permitted on acid service"
+            ],
+            [
+              "Wetted materials",
+              "Impeller: Saramet 23 (high-Si iron) or Hastelloy B-3; Casing: high-Si cast iron",
+              "—",
+              "Consistent with 98.5% H₂SO₄ service"
+            ],
+            [
+              "Standby arrangement",
+              "Auto-start on duty pump low-flow alarm or manual selection",
+              "—",
+              "Consistent with DCS start/stop logic"
+            ],
+            [
+              "VENDOR CONFIRMATION",
+              "Hydraulic performance test (API 610 Type A) required before shipment",
+              "—",
+              "All FAIL items resolved by resizing"
+            ]
+          ]
+        },
+        {
+          "index": 5,
+          "rows": [
+            [
+              "Parameter",
+              "Specified Value / Requirement",
+              "Units / Notes",
+              "Consistency Check"
+            ],
+            [
+              "Type",
+              "Centrifugal single-stage radial blower with Variable Frequency Drive",
+              "—",
+              "—"
+            ],
+            [
+              "Inlet gas",
+              "Atmospheric air; moisture ≤ 25 g/Nm³ (pre-drying tower)",
+              "—",
+              "DT is downstream of blower; DT handles drying"
+            ],
+            [
+              "Rated inlet flow",
+              "11,000 Nm³/h at site conditions (50 m ASL, 45°C ambient)",
+              "Nm³/h",
+              "Surge demand 9,760 Nm³/h = 88.7% of rated"
+            ],
+            [
+              "Discharge pressure",
+              "0.65 barg minimum at rated flow",
+              "barg",
+              "Normal operating: 0.45 barg; surge: 0.50 barg; rated must cover max"
+            ],
+            [
+              "VFD frequency range",
+              "25–60 Hz (minimum); continuous duty at 55 Hz (110% surge) confirmed",
+              "Hz",
+              "Surge operation at 55 Hz = 91.7% of max; vendor must confirm continuous duty rating at 55 Hz"
+            ],
+            [
+              "Surge margin",
+              "Minimum 15% surge margin at all operating points (anti-surge controller)",
+              "%",
+              "Anti-surge recycle valve mandatory in scope of supply"
+            ],
+            [
+              "Motor rating",
+              "630 kW at rated flow; MV 11 kV, 50 Hz",
+              "kW",
+              "Surge demand 572 kW = 90.8% of motor rating"
+            ],
+            [
+              "Impeller material",
+              "Cast aluminium alloy (air service); statically balanced to ISO 1940 G2.5",
+              "—",
+              "—"
+            ],
+            [
+              "Casing material",
+              "Cast iron or fabricated steel; external epoxy coating",
+              "—",
+              "—"
+            ],
+            [
+              "Vibration monitoring",
+              "API 670 proximity probes on drive end and non-drive end; alarm + trip",
+              "—",
+              "Consistent with rotating equipment standard"
+            ],
+            [
+              "Acoustic enclosure",
+              "Required if noise at 1 m > 85 dB(A)",
+              "dB(A)",
+              "Plant boundary limit 70 dB(A) — vendor must provide noise data"
+            ],
+            [
+              "Performance test",
+              "ASME PTC 10 Type 2 test at factory; surge line determined at test",
+              "—",
+              "Required before shipment"
+            ],
+            [
+              "VENDOR CONFIRMATION",
+              "Continuous duty performance curve at 55 Hz; surge line at 110% flow; motor thermal class at VFD duty",
+              "—",
+              "MARGIN items require vendor confirmation"
+            ]
+          ]
+        },
+        {
+          "index": 6,
+          "rows": [
+            [
+              "Parameter",
+              "Specified Value / Requirement",
+              "Units / Notes",
+              "Consistency Check"
+            ],
+            [
+              "Type",
+              "Vertical packed column; acid-resistant brick-lined carbon steel shell",
+              "—",
+              "—"
+            ],
+            [
+              "Design code",
+              "ASME VIII Div.1 for pressure rating; additional brick lining per ASTM C395",
+              "—",
+              "—"
+            ],
+            [
+              "Shell material",
+              "SA-516 Gr.70; minimum 12 mm wall",
+              "mm",
+              "—"
+            ],
+            [
+              "Lining type",
+              "Monolithic acid-resistant brick (silicate-bonded); minimum 115 mm total thickness on carbon steel shell; rubber membrane between shell and brick",
+              "mm",
+              "Critical: rubber membrane prevents acid reaching shell"
+            ],
+            [
+              "Design gas inlet temp",
+              "480°C (maximum; normal 420°C; surge 432°C)",
+              "°C",
+              "Surge 432°C = 90% of design T"
+            ],
+            [
+              "Design pressure",
+              "2.5 barg / FV (full vacuum)",
+              "barg",
+              "Normal operating 0.15 barg; adequate margin"
+            ],
+            [
+              "Gas design flow",
+              "11,000 Nm³/h (at rated; surge 9,760 Nm³/h)",
+              "Nm³/h",
+              "Surge 88.7% of design — confirmed consistent"
+            ],
+            [
+              "Packing type",
+              "Ceramic Raschig rings (50 mm) or equivalent structured packing (Sulzer MellapakPlus 252.Y acid-resistant)",
+              "—",
+              "Vendor to confirm packing HETP and flooding characteristics at design conditions"
+            ],
+            [
+              "Acid inlet nozzle",
+              "DN200 (acid distribution header); DN300 (sump discharge)",
+              "mm",
+              "Sized for 132 m³/h circulating acid at surge"
+            ],
+            [
+              "Mist eliminator",
+              "Chevron-type acid-resistant mist eliminator at tower top; ΔP < 5 mbar at design flow",
+              "—",
+              "Required to prevent acid carryover to Pass 4"
+            ],
+            [
+              "Level measurement nozzles",
+              "2 × DN50 nozzles for LT-501 (process) and LT-501B (SIL instrument on separate nozzle)",
+              "—",
+              "Consistent with two independent level instruments"
+            ],
+            [
+              "Sampling point",
+              "DN25 sample valve at acid sump; DN25 on circulating acid line (for AT-501)",
+              "—",
+              "Consistent with AT-501 density analyser installation"
+            ],
+            [
+              "VENDOR CONFIRMATION",
+              "Gas flooding velocity at surge (9,760 Nm³/h); HETP of packing; brick lining inspection protocol",
+              "—",
+              "MARGIN: surge gas velocity at 82.5% of flooding — confirm"
+            ]
+          ]
+        },
+        {
+          "index": 7,
+          "rows": [
+            [
+              "Parameter",
+              "Specified Value / Requirement",
+              "Units / Notes",
+              "Consistency Check"
+            ],
+            [
+              "Type",
+              "Shell and tube heat exchanger; acid on tube side; CW on shell side",
+              "—",
+              "Consistent with process — acid in tubes for corrosion control"
+            ],
+            [
+              "Design code",
+              "ASME VIII Div.1 / TEMA R (heavy industrial service)",
+              "—",
+              "—"
+            ],
+            [
+              "Tube material",
+              "Saramet 23 (high-Si iron) or Hastelloy C-276 (vendor option)",
+              "—",
+              "Required for concentrated H₂SO₄ at 65–95°C"
+            ],
+            [
+              "Shell material",
+              "Carbon steel SA-516 Gr.70 (CW side)",
+              "—",
+              "—"
+            ],
+            [
+              "Tube design pressure",
+              "6.0 barg (acid side)",
+              "barg",
+              "Acid pump discharge: 4.0 barg max; 6.0 barg provides margin"
+            ],
+            [
+              "Shell design pressure",
+              "6.0 barg (CW side)",
+              "barg",
+              "CW system: 4.5 barg max; margin adequate"
+            ],
+            [
+              "Design acid inlet temp",
+              "100°C; acid outlet target 65°C (normal); 70°C at surge",
+              "°C",
+              "Surge outlet 70°C within design — consistent"
+            ],
+            [
+              "CW inlet temperature",
+              "30°C (normal); 35°C maximum (at high ambient 45°C)",
+              "°C",
+              "MARGIN: at 35°C CW inlet, cooler duty may not achieve 65°C outlet; vendor to confirm at 35°C CW"
+            ],
+            [
+              "Rated duty",
+              "3,200 kW (minimum at 35°C CW inlet)",
+              "kW",
+              "Surge demand 2,915 kW = 91.1% of rating at 35°C CW — consistent"
+            ],
+            [
+              "Heat transfer area",
+              "180 m² minimum (calculated at design fouling factor Rf = 0.0002 m²K/W each side)",
+              "m²",
+              "Vendor must confirm area includes fouling allowance in calculation"
+            ],
+            [
+              "Fouling factors",
+              "Tube side (acid): 0.0002; Shell side (CW): 0.0002 m²K/W",
+              "m²K/W",
+              "Standard TEMA fouling factors for this service"
+            ],
+            [
+              "Thermal expansion",
+              "Floating head (TEMA S) or U-tube design; no fixed tubesheet permitted",
+              "—",
+              "Required for acid-side temperature from 65°C to 100°C"
+            ],
+            [
+              "VENDOR CONFIRMATION",
+              "Performance at 35°C CW inlet (high ambient case); Saramet vs Hastelloy selection and cost trade-off",
+              "—",
+              "MARGIN: CW temperature sensitivity is key selection criterion"
+            ]
+          ]
+        },
+        {
+          "index": 8,
+          "rows": [
+            [
+              "Parameter",
+              "Specified Value / Requirement",
+              "Units / Notes",
+              "Consistency Check"
+            ],
+            [
+              "Type",
+              "Paramagnetic O₂ analyser (for O₂ reading) + UV photometric SO₂ analyser; combined extraction type",
+              "—",
+              "Consistent with instrument specification"
+            ],
+            [
+              "Measurement range (SO₂)",
+              "0–15 vol% (revised from original 0–15 — no change; but AT-401 changed 0–15 as per II FAIL correction)",
+              "vol%",
+              "NOV 10.5 vol%; alarm at 12.5 vol% = 83.3% of range — consistent"
+            ],
+            [
+              "Measurement range (O₂)",
+              "0–15 vol% (revised from 0–25 vol%; improved resolution)",
+              "vol%",
+              "NOV 10.5 vol%; alarm AAL 8.0 vol% = 53.3% of range — good resolution"
+            ],
+            [
+              "Sample conditioning",
+              "Stainless steel sample probe; 316SS sample line; heated (180°C) to prevent condensation; in-line filter; cooler to bring sample to 5°C before analyser",
+              "°C",
+              "Sample conditioning critical in SO₂/SO₃ duty — all wetted parts acid-resistant"
+            ],
+            [
+              "Response time",
+              "< 30 seconds to 90% of step change",
+              "s",
+              "Fast enough for DCS cascade ratio control on FIC-201"
+            ],
+            [
+              "Calibration",
+              "Minimum 2-point calibration (zero + span) via solenoid-switched calibration gas manifold; manual and automatic calibration modes",
+              "—",
+              "—"
+            ],
+            [
+              "Alarm outputs",
+              "4–20 mA HART; discrete alarm outputs for FAIL and maintenance mode",
+              "—",
+              "Consistent with DCS I/O specification"
+            ],
+            [
+              "Certification",
+              "ATEX Zone 2 certified analyser cabinet; IECEx equivalent accepted",
+              "—",
+              "Required for area classification at furnace exit"
+            ],
+            [
+              "VENDOR CONFIRMATION",
+              "Calibration gas concentration available locally (SO₂ certified reference gas); sample line trace heating spec",
+              "—",
+              "—"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "VENDOR DATASHEET CONSISTENCY SUMMARY — ALL ITEMS",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 9,
+          "rows": [
+            [
+              "Tag / Datasheet",
+              "Key Consistency Finding",
+              "Status",
+              "Purchase Specification Action"
+            ],
+            [
+              "BU-201 (Furnace)",
+              "Surge T (1,080°C) = 90% of design T (1,200°C); refractory lining must be confirmed for thermal cycling at this level",
+              "MARGIN",
+              "Include thermal cycling fatigue requirement in purchase spec"
+            ],
+            [
+              "WHB-201",
+              "Tube-side gas velocity 4.6 m/s vs limit 5.0 m/s at surge (92%); steam output 86.8% of rated",
+              "MARGIN",
+              "Vendor must confirm tube velocity and erosion life at 4.6 m/s continuous"
+            ],
+            [
+              "R-401 (Converter)",
+              "P1 catalyst bed height specification must be REDUCED by ~5% before purchase spec can be finalised",
+              "FAIL",
+              "Do NOT issue purchase specification until H&MB FAIL (Pass 1 temperature) is resolved. Withhold tender issue for R-401."
+            ],
+            [
+              "P-702 (Dispatch pump)",
+              "Resized from 3.0 to 4.5 m³/h normal; motor from 22 to 30 kW — FAIL now resolved",
+              "PASS (after resize)",
+              "Issue purchase specification at new size; confirm availability with vendors"
+            ],
+            [
+              "K-301 (Blower)",
+              "VFD at 55 Hz continuous (91.7% of 60 Hz); motor at 90.8% of rated at surge",
+              "MARGIN",
+              "Vendor must confirm continuous duty rating at 55 Hz; include anti-surge recycle in scope"
+            ],
+            [
+              "T-501 (IPAT)",
+              "Gas inlet design T (480°C) provides adequate margin over surge (432°C)",
+              "PASS",
+              "No critical action; confirm packing flooding at surge flow"
+            ],
+            [
+              "E-501 (IPAT cooler)",
+              "Cooler duty at 91.1% rated at surge; sensitive to CW inlet temperature at high ambient",
+              "MARGIN",
+              "Include 35°C CW inlet performance guarantee in purchase specification"
+            ],
+            [
+              "AT-201 (Analyser)",
+              "Range and calibration consistent after II corrections applied",
+              "PASS",
+              "No action"
+            ],
+            [
+              "All datasheets",
+              "Surge (110%) flows and temperatures included as mandatory vendor confirmation items",
+              "PASS",
+              "Vendor quotations must include surge performance confirmation"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "text": "FRONT-END ENGINEERING DESIGN (FEED)",
+      "style": "Normal"
+    },
+    {
+      "text": "100 t/d Sulfuric Acid Plant — DCDA / Elemental Sulfur",
+      "style": "Normal"
+    },
+    {
+      "text": "VENDOR DATASHEETS — EQUIPMENT PURCHASE SPECIFICATIONS",
+      "style": "Normal"
+    },
+    {
+      "text": "FEED-Stage Datasheets for All Major Equipment Items — Specified vs Operating Range Consistency Verified",
+      "style": "Normal"
+    },
+    {
+      "text": "This document contains automated consistency status flags. Parameters marked FAIL require engineering review before progression to Detailed Engineering.",
+      "style": "Normal"
+    },
+    {
+      "text": "BU-201 — SULFUR FURNACE",
+      "style": "Normal"
+    },
+    {
+      "text": "Datasheet Ref: DS-BU-201-001  |  Project: PRJ-SA100  |  Rev: A0 FEED",
+      "style": "Normal"
+    },
+    {
+      "text": "WHB-201 — WASTE HEAT BOILER",
+      "style": "Normal"
+    },
+    {
+      "text": "Datasheet Ref: DS-WHB-201-001  |  Project: PRJ-SA100  |  Rev: A0 FEED",
+      "style": "Normal"
+    },
+    {
+      "text": "R-401 — DCDA CATALYTIC CONVERTER",
+      "style": "Normal"
+    },
+    {
+      "text": "Datasheet Ref: DS-R-401-001  |  Project: PRJ-SA100  |  Rev: A0 FEED",
+      "style": "Normal"
+    },
+    {
+      "text": "P-702A/B — PRODUCT DISPATCH PUMP (DUTY + STANDBY)",
+      "style": "Normal"
+    },
+    {
+      "text": "Datasheet Ref: DS-P-702-001  |  Project: PRJ-SA100  |  Rev: A0 FEED",
+      "style": "Normal"
+    },
+    {
+      "text": "K-301A/B — MAIN PROCESS AIR BLOWER (DUTY + STANDBY)",
+      "style": "Normal"
+    },
+    {
+      "text": "Datasheet Ref: DS-K-301-001  |  Project: PRJ-SA100  |  Rev: A0 FEED",
+      "style": "Normal"
+    },
+    {
+      "text": "T-501 — INTERPASS ABSORPTION TOWER (IPAT)",
+      "style": "Normal"
+    },
+    {
+      "text": "Datasheet Ref: DS-T-501-001  |  Project: PRJ-SA100  |  Rev: A0 FEED",
+      "style": "Normal"
+    },
+    {
+      "text": "E-501 — IPAT ACID COOLER",
+      "style": "Normal"
+    },
+    {
+      "text": "Datasheet Ref: DS-E-501-001  |  Project: PRJ-SA100  |  Rev: A0 FEED",
+      "style": "Normal"
+    },
+    {
+      "text": "AT-201 — FURNACE EXIT SO₂ ANALYSER",
+      "style": "Normal"
+    },
+    {
+      "text": "Datasheet Ref: DS-AT-201-001  |  Project: PRJ-SA100  |  Rev: A0 FEED",
+      "style": "Normal"
+    },
+    {
+      "text": "VENDOR DATASHEET CONSISTENCY SUMMARY — ALL ITEMS",
+      "style": "Heading 1"
+    }
+  ],
+  "tables": [
+    {
+      "index": 0,
+      "rows": [
+        [
+          "Attribute",
+          "Value"
+        ],
+        [
+          "Document No.",
+          "PRJ-SA100-FEED-DS-014"
+        ],
+        [
+          "Revision",
+          "A0 — Issued for Review"
+        ],
+        [
+          "Project",
+          "100 t/d H₂SO₄ Plant, DCDA Route"
+        ],
+        [
+          "Date",
+          "August 2026"
+        ],
+        [
+          "Status",
+          "FEED — Consistency-Checked Edition"
+        ]
+      ]
+    },
+    {
+      "index": 1,
+      "rows": [
+        [
+          "Parameter",
+          "Specified Value / Requirement",
+          "Units / Notes",
+          "Consistency Check"
+        ],
+        [
+          "Equipment type",
+          "Horizontal cylindrical combustion chamber, refractory-lined",
+          "—",
+          "Consistent with process description"
+        ],
+        [
+          "Design code",
+          "EN 13445 (Pressure Vessels) or ASME VIII Div.1",
+          "—",
+          "—"
+        ],
+        [
+          "Shell material",
+          "Carbon steel SA-516 Gr.70; minimum 12 mm wall",
+          "mm",
+          "Consistent"
+        ],
+        [
+          "Refractory lining",
+          "High-alumina castable; service temp rating ≥1,400°C; minimum 200 mm thickness",
+          "°C / mm",
+          "NOV at surge 1,080°C vs lining 1,400°C: 77% utilisation"
+        ],
+        [
+          "Design temperature",
+          "1,200°C (shell inside refractory surface)",
+          "°C",
+          "Adequate: surge max 1,080°C = 90% of design T"
+        ],
+        [
+          "Design pressure",
+          "−50 mbar to +300 mbar gauge",
+          "mbar",
+          "Consistent with PSHH-201 trip at +300 mbar"
+        ],
+        [
+          "Rated thermal input",
+          "21,000 kW (based on sulfur LHV 9,164 kcal/kg × 1,800 kg/h max)",
+          "kW",
+          "Surge demand 18,480 kW = 88% of rating"
+        ],
+        [
+          "Number of sulfur spray guns",
+          "2 × 100% capacity spray guns (each rated 1,800 kg/h)",
+          "—",
+          "Each gun must handle surge at 1,499 kg/h = 83.3% of rating"
+        ],
+        [
+          "Gun material",
+          "316SS; gun body + nozzle; replaceable tip in Hastelloy C-276",
+          "—",
+          "Acid-resistant; consistent with sulfur service"
+        ],
+        [
+          "Flame detection",
+          "2 × UV flame scanners (1oo2 voting); fail-safe on loss of signal",
+          "—",
+          "Consistent with SIF start-up permissive"
+        ],
+        [
+          "Explosion relief panels",
+          "Required: 0.1 barg rupture disk; vent to safe location",
+          "—",
+          "Final area TBD at site layout stage"
+        ],
+        [
+          "Inspection access",
+          "Minimum 600 mm manway; inspection port at burner end and tail end",
+          "—",
+          "Required for annual refractory inspection"
+        ],
+        [
+          "Refractory anchor design",
+          "V-type anchors SA-240 304 SS at 150 mm pitch; explosion-proof design",
+          "—",
+          "—"
+        ],
+        [
+          "VENDOR CONFIRMATION REQUIRED",
+          "Confirm rated thermal input and gun capacity at 1,499 kg/h surge with refractory T profile",
+          "—",
+          "MARGIN: surge T approaches 90% of design envelope"
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "rows": [
+        [
+          "Parameter",
+          "Specified Value / Requirement",
+          "Units / Notes",
+          "Consistency Check"
+        ],
+        [
+          "Type",
+          "Fire-tube boiler (process gas in tubes, steam on shell side)",
+          "—",
+          "Consistent with process design"
+        ],
+        [
+          "Design code",
+          "ASME I (Power Boilers) or EN 12952",
+          "—",
+          "—"
+        ],
+        [
+          "Tube material",
+          "SA-106 Gr.B (carbon steel, seamless); minimum 4 mm wall",
+          "mm",
+          "Consistent with gas service"
+        ],
+        [
+          "Shell material",
+          "SA-516 Gr.70",
+          "—",
+          "—"
+        ],
+        [
+          "Gas inlet temperature",
+          "1,050°C normal; 1,080°C surge; 1,200°C design maximum",
+          "°C",
+          "Surge 1,080°C = 90% of design T"
+        ],
+        [
+          "Gas outlet temperature",
+          "420°C target (±10°C)",
+          "°C",
+          "Consistent with converter inlet requirement"
+        ],
+        [
+          "Rated steam capacity",
+          "9,500 kg/h at 40 barg / 400°C (minimum)",
+          "kg/h",
+          "Surge demand 8,250 kg/h = 86.8% of rating"
+        ],
+        [
+          "Steam drum MAWP",
+          "48 barg (minimum)",
+          "barg",
+          "SIS trip at 46 barg; PSV at 47.5 barg; MAWP 48 barg — consistent"
+        ],
+        [
+          "BFW inlet conditions",
+          "105°C, 45 barg minimum (pump delivery)",
+          "°C / barg",
+          "Consistent with P-201 pump specification"
+        ],
+        [
+          "Tube-side gas velocity",
+          "≤5.0 m/s at rated flow (erosion limit)",
+          "m/s",
+          "MARGIN: surge velocity 4.6 m/s = 92% of limit"
+        ],
+        [
+          "Soot blowing",
+          "Steam lance soot blowing; minimum 1 lance per 3 m tube length",
+          "—",
+          "Required for sulfur combustion products"
+        ],
+        [
+          "Thermal expansion",
+          "Floating tube sheet or U-tube design to accommodate 630°C ΔT",
+          "—",
+          "Required; fixed tubesheet NOT acceptable"
+        ],
+        [
+          "Three-element level control nozzles",
+          "3 × nozzles for LT (2 × LT; 1 × level gauge); steam flow nozzle (FT-202); BFW inlet nozzle",
+          "—",
+          "Consistent with LIC-201 three-element scheme"
+        ],
+        [
+          "VENDOR CONFIRMATION REQUIRED",
+          "Tube velocity at surge; erosion analysis; thermal cycling fatigue life (min 20 years)",
+          "—",
+          "MARGIN items must be vendor confirmed"
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "rows": [
+        [
+          "Parameter",
+          "Specified Value / Requirement",
+          "Units / Notes",
+          "Consistency Check"
+        ],
+        [
+          "Type",
+          "4-pass adiabatic catalytic converter; vertical cylindrical pressure vessel",
+          "—",
+          "—"
+        ],
+        [
+          "Shell material",
+          "SA-516 Gr.70 carbon steel; minimum 16 mm wall (due to size)",
+          "mm",
+          "—"
+        ],
+        [
+          "Internal components",
+          "316L SS trays, gas distributors, catalyst support grids; expansion joints between passes",
+          "—",
+          "Consistent with gas temperature range"
+        ],
+        [
+          "Design temperature",
+          "700°C (Pass 1 outlet — worst case)",
+          "°C",
+          "Surge actual 621°C = 88.7% of design T"
+        ],
+        [
+          "Design pressure",
+          "0.5 barg positive; −100 mbar vacuum design",
+          "barg",
+          "Consistent with process"
+        ],
+        [
+          "Catalyst type (Pass 1)",
+          "Cs-promoted V₂O₅ (e.g. Haldor Topsoe VK-701 or equivalent); low ignition temp ≥380°C",
+          "—",
+          "Consistent with start-up procedure P3 (400°C minimum)"
+        ],
+        [
+          "Catalyst type (Pass 2–4)",
+          "Standard V₂O₅/K₂S₂O₇ promoted (VK-38 or equivalent); ignition temp ≥400°C",
+          "—",
+          "—"
+        ],
+        [
+          "Catalyst bed depths",
+          "P1: 1.2 m; P2: 0.8 m; P3: 0.8 m; P4: 1.0 m (subject to final vendor optimisation)",
+          "m",
+          "MARGIN: P1 depth may need 5% reduction per H&MB FAIL"
+        ],
+        [
+          "Space velocity at design",
+          "P1: 550 h⁻¹; P2–P4: per catalyst vendor calculation at 100 t/d",
+          "h⁻¹",
+          "Max 700 h⁻¹; surge 600 h⁻¹ = 85.7% of max"
+        ],
+        [
+          "Bypass valve nozzles",
+          "P1 cold bypass: DN300 nozzle; P2/P3/P4 bypass: DN200 nozzle each",
+          "—",
+          "Must accommodate bypass flow for temperature control per TIC-401 to TIC-404"
+        ],
+        [
+          "Catalyst life",
+          "Minimum guaranteed 5 years at design operating conditions",
+          "yr",
+          "Vendor guarantee required; surge operation must be within guarantee scope"
+        ],
+        [
+          "CRITICAL VENDOR ACTION",
+          "P1 catalyst bed height must be reduced by ~5% (from 1.2 m to ~1.14 m) to prevent surge temperature exceeding 620°C TSHH. Vendor to recalculate and confirm.",
+          "—",
+          "FAIL — outstanding from H&MB; purchase spec cannot be finalised until resolved"
+        ]
+      ]
+    },
+    {
+      "index": 4,
+      "rows": [
+        [
+          "Parameter",
+          "Specified Value / Requirement",
+          "Units / Notes",
+          "Consistency Check"
+        ],
+        [
+          "Pump type",
+          "Centrifugal, horizontal, close-coupled or back pull-out",
+          "—",
+          "—"
+        ],
+        [
+          "Design code",
+          "ISO 2858 / API 685 (if magnetically coupled) or equivalent",
+          "—",
+          "—"
+        ],
+        [
+          "Fluid",
+          "98.5 wt% H₂SO₄",
+          "—",
+          "—"
+        ],
+        [
+          "Fluid temperature",
+          "35–45°C (normal); 50°C design maximum",
+          "°C",
+          "Consistent with product spec"
+        ],
+        [
+          "Fluid density",
+          "1,840 kg/m³ at 35°C",
+          "kg/m³",
+          "Used for hydraulic calculations"
+        ],
+        [
+          "Normal duty flow",
+          "3.0 m³/h (4,167 / 1,840 × 1.45 density factor)",
+          "m³/h",
+          "Consistent with H&MB 100% load"
+        ],
+        [
+          "RATED pump flow (REVISED)",
+          "4.5 m³/h (upsized from previous 3.0 — per FAIL resolution)",
+          "m³/h",
+          "Previous 3.0 m³/h was FAIL at surge. Now sized at 4.5 m³/h normal (130% = 5.85 m³/h rated). Surge demand 5,417 / 1,840 = 2.95 m³/h — well within new rating."
+        ],
+        [
+          "Differential head",
+          "30 m minimum (includes line losses to loading arm)",
+          "m H₂O",
+          "—"
+        ],
+        [
+          "Motor power (REVISED)",
+          "30 kW minimum (upsized from 22 kW with pump)",
+          "kW",
+          "22 kW was marginal at surge; 30 kW provides adequate margin"
+        ],
+        [
+          "Seal type",
+          "Double mechanical seal, pressurised barrier fluid (Plan 53B)",
+          "—",
+          "Required for H₂SO₄ — no single seal permitted on acid service"
+        ],
+        [
+          "Wetted materials",
+          "Impeller: Saramet 23 (high-Si iron) or Hastelloy B-3; Casing: high-Si cast iron",
+          "—",
+          "Consistent with 98.5% H₂SO₄ service"
+        ],
+        [
+          "Standby arrangement",
+          "Auto-start on duty pump low-flow alarm or manual selection",
+          "—",
+          "Consistent with DCS start/stop logic"
+        ],
+        [
+          "VENDOR CONFIRMATION",
+          "Hydraulic performance test (API 610 Type A) required before shipment",
+          "—",
+          "All FAIL items resolved by resizing"
+        ]
+      ]
+    },
+    {
+      "index": 5,
+      "rows": [
+        [
+          "Parameter",
+          "Specified Value / Requirement",
+          "Units / Notes",
+          "Consistency Check"
+        ],
+        [
+          "Type",
+          "Centrifugal single-stage radial blower with Variable Frequency Drive",
+          "—",
+          "—"
+        ],
+        [
+          "Inlet gas",
+          "Atmospheric air; moisture ≤ 25 g/Nm³ (pre-drying tower)",
+          "—",
+          "DT is downstream of blower; DT handles drying"
+        ],
+        [
+          "Rated inlet flow",
+          "11,000 Nm³/h at site conditions (50 m ASL, 45°C ambient)",
+          "Nm³/h",
+          "Surge demand 9,760 Nm³/h = 88.7% of rated"
+        ],
+        [
+          "Discharge pressure",
+          "0.65 barg minimum at rated flow",
+          "barg",
+          "Normal operating: 0.45 barg; surge: 0.50 barg; rated must cover max"
+        ],
+        [
+          "VFD frequency range",
+          "25–60 Hz (minimum); continuous duty at 55 Hz (110% surge) confirmed",
+          "Hz",
+          "Surge operation at 55 Hz = 91.7% of max; vendor must confirm continuous duty rating at 55 Hz"
+        ],
+        [
+          "Surge margin",
+          "Minimum 15% surge margin at all operating points (anti-surge controller)",
+          "%",
+          "Anti-surge recycle valve mandatory in scope of supply"
+        ],
+        [
+          "Motor rating",
+          "630 kW at rated flow; MV 11 kV, 50 Hz",
+          "kW",
+          "Surge demand 572 kW = 90.8% of motor rating"
+        ],
+        [
+          "Impeller material",
+          "Cast aluminium alloy (air service); statically balanced to ISO 1940 G2.5",
+          "—",
+          "—"
+        ],
+        [
+          "Casing material",
+          "Cast iron or fabricated steel; external epoxy coating",
+          "—",
+          "—"
+        ],
+        [
+          "Vibration monitoring",
+          "API 670 proximity probes on drive end and non-drive end; alarm + trip",
+          "—",
+          "Consistent with rotating equipment standard"
+        ],
+        [
+          "Acoustic enclosure",
+          "Required if noise at 1 m > 85 dB(A)",
+          "dB(A)",
+          "Plant boundary limit 70 dB(A) — vendor must provide noise data"
+        ],
+        [
+          "Performance test",
+          "ASME PTC 10 Type 2 test at factory; surge line determined at test",
+          "—",
+          "Required before shipment"
+        ],
+        [
+          "VENDOR CONFIRMATION",
+          "Continuous duty performance curve at 55 Hz; surge line at 110% flow; motor thermal class at VFD duty",
+          "—",
+          "MARGIN items require vendor confirmation"
+        ]
+      ]
+    },
+    {
+      "index": 6,
+      "rows": [
+        [
+          "Parameter",
+          "Specified Value / Requirement",
+          "Units / Notes",
+          "Consistency Check"
+        ],
+        [
+          "Type",
+          "Vertical packed column; acid-resistant brick-lined carbon steel shell",
+          "—",
+          "—"
+        ],
+        [
+          "Design code",
+          "ASME VIII Div.1 for pressure rating; additional brick lining per ASTM C395",
+          "—",
+          "—"
+        ],
+        [
+          "Shell material",
+          "SA-516 Gr.70; minimum 12 mm wall",
+          "mm",
+          "—"
+        ],
+        [
+          "Lining type",
+          "Monolithic acid-resistant brick (silicate-bonded); minimum 115 mm total thickness on carbon steel shell; rubber membrane between shell and brick",
+          "mm",
+          "Critical: rubber membrane prevents acid reaching shell"
+        ],
+        [
+          "Design gas inlet temp",
+          "480°C (maximum; normal 420°C; surge 432°C)",
+          "°C",
+          "Surge 432°C = 90% of design T"
+        ],
+        [
+          "Design pressure",
+          "2.5 barg / FV (full vacuum)",
+          "barg",
+          "Normal operating 0.15 barg; adequate margin"
+        ],
+        [
+          "Gas design flow",
+          "11,000 Nm³/h (at rated; surge 9,760 Nm³/h)",
+          "Nm³/h",
+          "Surge 88.7% of design — confirmed consistent"
+        ],
+        [
+          "Packing type",
+          "Ceramic Raschig rings (50 mm) or equivalent structured packing (Sulzer MellapakPlus 252.Y acid-resistant)",
+          "—",
+          "Vendor to confirm packing HETP and flooding characteristics at design conditions"
+        ],
+        [
+          "Acid inlet nozzle",
+          "DN200 (acid distribution header); DN300 (sump discharge)",
+          "mm",
+          "Sized for 132 m³/h circulating acid at surge"
+        ],
+        [
+          "Mist eliminator",
+          "Chevron-type acid-resistant mist eliminator at tower top; ΔP < 5 mbar at design flow",
+          "—",
+          "Required to prevent acid carryover to Pass 4"
+        ],
+        [
+          "Level measurement nozzles",
+          "2 × DN50 nozzles for LT-501 (process) and LT-501B (SIL instrument on separate nozzle)",
+          "—",
+          "Consistent with two independent level instruments"
+        ],
+        [
+          "Sampling point",
+          "DN25 sample valve at acid sump; DN25 on circulating acid line (for AT-501)",
+          "—",
+          "Consistent with AT-501 density analyser installation"
+        ],
+        [
+          "VENDOR CONFIRMATION",
+          "Gas flooding velocity at surge (9,760 Nm³/h); HETP of packing; brick lining inspection protocol",
+          "—",
+          "MARGIN: surge gas velocity at 82.5% of flooding — confirm"
+        ]
+      ]
+    },
+    {
+      "index": 7,
+      "rows": [
+        [
+          "Parameter",
+          "Specified Value / Requirement",
+          "Units / Notes",
+          "Consistency Check"
+        ],
+        [
+          "Type",
+          "Shell and tube heat exchanger; acid on tube side; CW on shell side",
+          "—",
+          "Consistent with process — acid in tubes for corrosion control"
+        ],
+        [
+          "Design code",
+          "ASME VIII Div.1 / TEMA R (heavy industrial service)",
+          "—",
+          "—"
+        ],
+        [
+          "Tube material",
+          "Saramet 23 (high-Si iron) or Hastelloy C-276 (vendor option)",
+          "—",
+          "Required for concentrated H₂SO₄ at 65–95°C"
+        ],
+        [
+          "Shell material",
+          "Carbon steel SA-516 Gr.70 (CW side)",
+          "—",
+          "—"
+        ],
+        [
+          "Tube design pressure",
+          "6.0 barg (acid side)",
+          "barg",
+          "Acid pump discharge: 4.0 barg max; 6.0 barg provides margin"
+        ],
+        [
+          "Shell design pressure",
+          "6.0 barg (CW side)",
+          "barg",
+          "CW system: 4.5 barg max; margin adequate"
+        ],
+        [
+          "Design acid inlet temp",
+          "100°C; acid outlet target 65°C (normal); 70°C at surge",
+          "°C",
+          "Surge outlet 70°C within design — consistent"
+        ],
+        [
+          "CW inlet temperature",
+          "30°C (normal); 35°C maximum (at high ambient 45°C)",
+          "°C",
+          "MARGIN: at 35°C CW inlet, cooler duty may not achieve 65°C outlet; vendor to confirm at 35°C CW"
+        ],
+        [
+          "Rated duty",
+          "3,200 kW (minimum at 35°C CW inlet)",
+          "kW",
+          "Surge demand 2,915 kW = 91.1% of rating at 35°C CW — consistent"
+        ],
+        [
+          "Heat transfer area",
+          "180 m² minimum (calculated at design fouling factor Rf = 0.0002 m²K/W each side)",
+          "m²",
+          "Vendor must confirm area includes fouling allowance in calculation"
+        ],
+        [
+          "Fouling factors",
+          "Tube side (acid): 0.0002; Shell side (CW): 0.0002 m²K/W",
+          "m²K/W",
+          "Standard TEMA fouling factors for this service"
+        ],
+        [
+          "Thermal expansion",
+          "Floating head (TEMA S) or U-tube design; no fixed tubesheet permitted",
+          "—",
+          "Required for acid-side temperature from 65°C to 100°C"
+        ],
+        [
+          "VENDOR CONFIRMATION",
+          "Performance at 35°C CW inlet (high ambient case); Saramet vs Hastelloy selection and cost trade-off",
+          "—",
+          "MARGIN: CW temperature sensitivity is key selection criterion"
+        ]
+      ]
+    },
+    {
+      "index": 8,
+      "rows": [
+        [
+          "Parameter",
+          "Specified Value / Requirement",
+          "Units / Notes",
+          "Consistency Check"
+        ],
+        [
+          "Type",
+          "Paramagnetic O₂ analyser (for O₂ reading) + UV photometric SO₂ analyser; combined extraction type",
+          "—",
+          "Consistent with instrument specification"
+        ],
+        [
+          "Measurement range (SO₂)",
+          "0–15 vol% (revised from original 0–15 — no change; but AT-401 changed 0–15 as per II FAIL correction)",
+          "vol%",
+          "NOV 10.5 vol%; alarm at 12.5 vol% = 83.3% of range — consistent"
+        ],
+        [
+          "Measurement range (O₂)",
+          "0–15 vol% (revised from 0–25 vol%; improved resolution)",
+          "vol%",
+          "NOV 10.5 vol%; alarm AAL 8.0 vol% = 53.3% of range — good resolution"
+        ],
+        [
+          "Sample conditioning",
+          "Stainless steel sample probe; 316SS sample line; heated (180°C) to prevent condensation; in-line filter; cooler to bring sample to 5°C before analyser",
+          "°C",
+          "Sample conditioning critical in SO₂/SO₃ duty — all wetted parts acid-resistant"
+        ],
+        [
+          "Response time",
+          "< 30 seconds to 90% of step change",
+          "s",
+          "Fast enough for DCS cascade ratio control on FIC-201"
+        ],
+        [
+          "Calibration",
+          "Minimum 2-point calibration (zero + span) via solenoid-switched calibration gas manifold; manual and automatic calibration modes",
+          "—",
+          "—"
+        ],
+        [
+          "Alarm outputs",
+          "4–20 mA HART; discrete alarm outputs for FAIL and maintenance mode",
+          "—",
+          "Consistent with DCS I/O specification"
+        ],
+        [
+          "Certification",
+          "ATEX Zone 2 certified analyser cabinet; IECEx equivalent accepted",
+          "—",
+          "Required for area classification at furnace exit"
+        ],
+        [
+          "VENDOR CONFIRMATION",
+          "Calibration gas concentration available locally (SO₂ certified reference gas); sample line trace heating spec",
+          "—",
+          "—"
+        ]
+      ]
+    },
+    {
+      "index": 9,
+      "rows": [
+        [
+          "Tag / Datasheet",
+          "Key Consistency Finding",
+          "Status",
+          "Purchase Specification Action"
+        ],
+        [
+          "BU-201 (Furnace)",
+          "Surge T (1,080°C) = 90% of design T (1,200°C); refractory lining must be confirmed for thermal cycling at this level",
+          "MARGIN",
+          "Include thermal cycling fatigue requirement in purchase spec"
+        ],
+        [
+          "WHB-201",
+          "Tube-side gas velocity 4.6 m/s vs limit 5.0 m/s at surge (92%); steam output 86.8% of rated",
+          "MARGIN",
+          "Vendor must confirm tube velocity and erosion life at 4.6 m/s continuous"
+        ],
+        [
+          "R-401 (Converter)",
+          "P1 catalyst bed height specification must be REDUCED by ~5% before purchase spec can be finalised",
+          "FAIL",
+          "Do NOT issue purchase specification until H&MB FAIL (Pass 1 temperature) is resolved. Withhold tender issue for R-401."
+        ],
+        [
+          "P-702 (Dispatch pump)",
+          "Resized from 3.0 to 4.5 m³/h normal; motor from 22 to 30 kW — FAIL now resolved",
+          "PASS (after resize)",
+          "Issue purchase specification at new size; confirm availability with vendors"
+        ],
+        [
+          "K-301 (Blower)",
+          "VFD at 55 Hz continuous (91.7% of 60 Hz); motor at 90.8% of rated at surge",
+          "MARGIN",
+          "Vendor must confirm continuous duty rating at 55 Hz; include anti-surge recycle in scope"
+        ],
+        [
+          "T-501 (IPAT)",
+          "Gas inlet design T (480°C) provides adequate margin over surge (432°C)",
+          "PASS",
+          "No critical action; confirm packing flooding at surge flow"
+        ],
+        [
+          "E-501 (IPAT cooler)",
+          "Cooler duty at 91.1% rated at surge; sensitive to CW inlet temperature at high ambient",
+          "MARGIN",
+          "Include 35°C CW inlet performance guarantee in purchase specification"
+        ],
+        [
+          "AT-201 (Analyser)",
+          "Range and calibration consistent after II corrections applied",
+          "PASS",
+          "No action"
+        ],
+        [
+          "All datasheets",
+          "Surge (110%) flows and temperatures included as mandatory vendor confirmation items",
+          "PASS",
+          "Vendor quotations must include surge performance confirmation"
+        ]
+      ]
+    }
+  ]
+}

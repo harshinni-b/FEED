@@ -1,0 +1,945 @@
+{
+  "filename": "DOC1_Basis_of_Design 1.docx",
+  "metadata": {
+    "source_path": "data\\raw\\DOC1_Basis_of_Design 1.docx",
+    "core_properties": {
+      "author": "Un-named",
+      "created": "2026-08-20T11:37:00+00:00",
+      "last_modified_by": "Srinivasan, Pratheep Kumar",
+      "modified": "2026-08-21T06:24:00+00:00",
+      "revision": 4
+    }
+  },
+  "headings": [
+    {
+      "text": "1. PLANT CAPACITY AND THROUGHPUT",
+      "level": 1
+    },
+    {
+      "text": "1.1 Production Rate — Consistency Check",
+      "level": 2
+    },
+    {
+      "text": "2. FEEDSTOCK SPECIFICATION — DESIGN BASIS",
+      "level": 1
+    },
+    {
+      "text": "2.1 Molten Sulfur Feed Quality",
+      "level": 2
+    },
+    {
+      "text": "3. PRODUCT SPECIFICATION — DESIGN BASIS",
+      "level": 1
+    },
+    {
+      "text": "4. UTILITY SPECIFICATIONS — RATED vs DEMAND",
+      "level": 1
+    },
+    {
+      "text": "5. ENVIRONMENTAL LIMITS — DESIGN MARGIN",
+      "level": 1
+    },
+    {
+      "text": "6. OPERATING MODES — RANGE CONSISTENCY",
+      "level": 1
+    }
+  ],
+  "sections": [
+    {
+      "heading": null,
+      "level": 0,
+      "paragraphs": [
+        {
+          "text": "FRONT-END ENGINEERING DESIGN (FEED)",
+          "style": "Normal"
+        },
+        {
+          "text": "100 t/d Sulfuric Acid Plant — DCDA / Elemental Sulfur",
+          "style": "Normal"
+        },
+        {
+          "text": "BASIS OF DESIGN (BoD)",
+          "style": "Normal"
+        },
+        {
+          "text": "This document contains automated consistency status flags. Parameters marked FAIL require engineering review before progression to Detailed Engineering.",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 0,
+          "rows": [
+            [
+              "Attribute",
+              "Value"
+            ],
+            [
+              "Document No.",
+              "PRJ-SA100-FEED-BOD-001"
+            ],
+            [
+              "Revision",
+              "A0 — Issued for Review"
+            ],
+            [
+              "Project",
+              "100 t/d H₂SO₄ Plant, DCDA Route"
+            ],
+            [
+              "Date",
+              "August 2026"
+            ],
+            [
+              "Status",
+              "FEED — Consistency-Checked Edition"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "1. PLANT CAPACITY AND THROUGHPUT",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": []
+    },
+    {
+      "heading": {
+        "text": "1.1 Production Rate — Consistency Check",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [
+        {
+          "text": "The plant nameplate is 100 t/d product H₂SO₄. Surge capacity (for storage buffer and downstream demand) is 110 t/d (+10%). Equipment across the plant is rated at a minimum of 110% of nameplate to accommodate the surge, and pumps are rated to 130% of normal duty flow. Status reflects maximum operating vs. equipment rated.",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 1,
+          "rows": [
+            [
+              "Parameter",
+              "Nom. Design (100 t/d)",
+              "Max Operating (110 t/d +10%)",
+              "Equipment Rated Capacity"
+            ],
+            [
+              "Product H₂SO₄ output",
+              "4,167 kg/h",
+              "4,583 kg/h",
+              "5,000 kg/h (storage pump rated)"
+            ],
+            [
+              "Sulfur feed rate",
+              "1,363 kg/h",
+              "1,499 kg/h",
+              "1,800 kg/h (Coriolis MFM rated)"
+            ],
+            [
+              "Process air volumetric",
+              "8,873 Nm³/h",
+              "9,760 Nm³/h",
+              "11,000 Nm³/h (blower rated)"
+            ],
+            [
+              "Air blower motor power",
+              "520 kW",
+              "572 kW",
+              "630 kW (motor nameplate)"
+            ],
+            [
+              "WHB steam generation",
+              "7,500 kg/h",
+              "8,250 kg/h",
+              "9,500 kg/h (WHB design)"
+            ],
+            [
+              "Molten sulfur pump flow",
+              "1,363 kg/h",
+              "1,775 kg/h",
+              "1,950 kg/h (pump rated @ 130%)"
+            ],
+            [
+              "Product dispatch pump",
+              "4,167 kg/h",
+              "5,417 kg/h",
+              "5,400 kg/h (pump rated @ 130%)"
+            ],
+            [
+              "Annual production",
+              "300,000 t/yr",
+              "330,000 t/yr",
+              "350,000 t/yr (OSBL rated)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "2. FEEDSTOCK SPECIFICATION — DESIGN BASIS",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": []
+    },
+    {
+      "heading": {
+        "text": "2.1 Molten Sulfur Feed Quality",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [
+        {
+          "text": "Instrument and analyser ranges must encompass the full quality variation expected in the feedstock. The following checks confirm analyser ranges and trip setpoints are consistent with the specification envelope.",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 2,
+          "rows": [
+            [
+              "Parameter",
+              "Spec Limit (guaranteed)",
+              "Typical Operating Range",
+              "Analyser / Meter Range"
+            ],
+            [
+              "Purity (S content, wt%)",
+              "≥ 99.90",
+              "99.90–99.97",
+              "99.50–100.0% (density)"
+            ],
+            [
+              "Ash content (wt%)",
+              "≤ 0.030",
+              "0.005–0.025",
+              "0–0.05% (filter ΔP proxy)"
+            ],
+            [
+              "Moisture (wt%)",
+              "≤ 0.100",
+              "0.010–0.080",
+              "0–0.15% (Karl Fischer)"
+            ],
+            [
+              "Acidity as H₂SO₄ (wt%)",
+              "≤ 0.003",
+              "0.001–0.003",
+              "0–0.005% (titration)"
+            ],
+            [
+              "Selenium (ppm)",
+              "≤ 1.0",
+              "0.1–0.8",
+              "0–2 ppm ICP (lab)"
+            ],
+            [
+              "Arsenic (ppm)",
+              "≤ 0.5",
+              "0.05–0.4",
+              "0–1 ppm ICP (lab)"
+            ],
+            [
+              "Feed temperature (°C)",
+              "135–145",
+              "138–143",
+              "RTD 0–200°C"
+            ],
+            [
+              "Feed pressure (barg)",
+              "0.30–0.50",
+              "0.35–0.45",
+              "PT 0–10 barg"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "3. PRODUCT SPECIFICATION — DESIGN BASIS",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 3,
+          "rows": [
+            [
+              "Parameter",
+              "Product Spec",
+              "DCS Control Target",
+              "Analyser Range",
+              "Alarm HH Setpoint"
+            ],
+            [
+              "H₂SO₄ concentration (wt%)",
+              "98.0–98.5",
+              "98.2 ± 0.15",
+              "96–99.5 wt%",
+              ">98.8 wt% (MARGIN alarm)"
+            ],
+            [
+              "Iron (Fe, ppm)",
+              "≤ 50",
+              "<20 typical",
+              "0–100 ppm (ICP lab)",
+              "None in DCS"
+            ],
+            [
+              "Chloride (Cl, ppm)",
+              "≤ 1.0",
+              "<0.3 typical",
+              "0–2 ppm (IC lab)",
+              "None in DCS"
+            ],
+            [
+              "Product temperature (°C)",
+              "25–40",
+              "35 ± 3",
+              "RTD 0–100°C",
+              ">45°C alarm HIGH"
+            ],
+            [
+              "Oleum (free SO₃, wt%)",
+              "20 ± 1",
+              "20.0 ± 0.5",
+              "18–22% free SO₃",
+              "—"
+            ],
+            [
+              "Colour Hazen",
+              "≤ 10",
+              "<5 typical",
+              "Lab measurement only",
+              "No online analyser"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "4. UTILITY SPECIFICATIONS — RATED vs DEMAND",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 4,
+          "rows": [
+            [
+              "Utility",
+              "Normal Demand (100 t/d)",
+              "Peak Demand (110 t/d surge)",
+              "System Rated Supply"
+            ],
+            [
+              "Cooling water (m³/h)",
+              "240",
+              "264",
+              "300 (CW system rated)"
+            ],
+            [
+              "Instrument air (Nm³/h)",
+              "120",
+              "132",
+              "180 (compressor rated)"
+            ],
+            [
+              "Plant air (Nm³/h)",
+              "80",
+              "88",
+              "120 (compressor rated)"
+            ],
+            [
+              "HP steam export (kg/h)",
+              "7,500",
+              "8,250",
+              "9,500 (WHB rated)"
+            ],
+            [
+              "MP steam (tracing, kg/h)",
+              "350",
+              "385",
+              "500 (MP header rated)"
+            ],
+            [
+              "Nitrogen (Nm³/h)",
+              "15",
+              "18",
+              "25 (N₂ supply rated)"
+            ],
+            [
+              "Electrical power (kW, MV)",
+              "1,850",
+              "2,035",
+              "2,500 (MV switchgear rated)"
+            ],
+            [
+              "Cooling water ΔT (°C)",
+              "12",
+              "14",
+              "15 (CW design ΔT limit)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "5. ENVIRONMENTAL LIMITS — DESIGN MARGIN",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 5,
+          "rows": [
+            [
+              "Emission Parameter",
+              "Regulatory Limit",
+              "Design Target",
+              "Max Operating Emission (est.)"
+            ],
+            [
+              "SO₂ stack (mg/Nm³, dry)",
+              "≤ 500",
+              "≤ 300",
+              "≤ 480 (at 50% turndown)"
+            ],
+            [
+              "SO₃ / acid mist (mg/Nm³)",
+              "≤ 35",
+              "≤ 20",
+              "≤ 30"
+            ],
+            [
+              "Conversion efficiency (%)",
+              "≥ 99.5",
+              "≥ 99.8",
+              "99.65 (at 50% turndown)"
+            ],
+            [
+              "Stack height (m)",
+              "≥ 60",
+              "65",
+              "65"
+            ],
+            [
+              "Noise at boundary (dB(A))",
+              "≤ 70",
+              "≤ 65",
+              "63 est."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "6. OPERATING MODES — RANGE CONSISTENCY",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 6,
+          "rows": [
+            [
+              "Operating Mode",
+              "Sulfur Feed (kg/h)",
+              "Air Flow (Nm³/h)",
+              "SO₂ Concentration (vol%)",
+              "Converter T° Pass 1 (°C)"
+            ],
+            [
+              "Normal 100%",
+              "1,363",
+              "8,873",
+              "10.5",
+              "420–600"
+            ],
+            [
+              "Surge 110%",
+              "1,499",
+              "9,760",
+              "10.5",
+              "420–615"
+            ],
+            [
+              "Turndown 80%",
+              "1,090",
+              "7,098",
+              "10.5",
+              "410–580"
+            ],
+            [
+              "Turndown 60%",
+              "818",
+              "5,324",
+              "10.5",
+              "405–555"
+            ],
+            [
+              "Minimum stable 50%",
+              "682",
+              "4,436",
+              "10.5",
+              "400–545"
+            ],
+            [
+              "Cold start ramp-up",
+              "0→682",
+              "4,000",
+              "0→10.5",
+              "Ambient→420"
+            ],
+            [
+              "Emergency surge*",
+              "1,640",
+              "10,600",
+              "10.5",
+              "420–650"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "text": "FRONT-END ENGINEERING DESIGN (FEED)",
+      "style": "Normal"
+    },
+    {
+      "text": "100 t/d Sulfuric Acid Plant — DCDA / Elemental Sulfur",
+      "style": "Normal"
+    },
+    {
+      "text": "BASIS OF DESIGN (BoD)",
+      "style": "Normal"
+    },
+    {
+      "text": "This document contains automated consistency status flags. Parameters marked FAIL require engineering review before progression to Detailed Engineering.",
+      "style": "Normal"
+    },
+    {
+      "text": "1. PLANT CAPACITY AND THROUGHPUT",
+      "style": "Heading 1"
+    },
+    {
+      "text": "1.1 Production Rate — Consistency Check",
+      "style": "Heading 2"
+    },
+    {
+      "text": "The plant nameplate is 100 t/d product H₂SO₄. Surge capacity (for storage buffer and downstream demand) is 110 t/d (+10%). Equipment across the plant is rated at a minimum of 110% of nameplate to accommodate the surge, and pumps are rated to 130% of normal duty flow. Status reflects maximum operating vs. equipment rated.",
+      "style": "Normal"
+    },
+    {
+      "text": "2. FEEDSTOCK SPECIFICATION — DESIGN BASIS",
+      "style": "Heading 1"
+    },
+    {
+      "text": "2.1 Molten Sulfur Feed Quality",
+      "style": "Heading 2"
+    },
+    {
+      "text": "Instrument and analyser ranges must encompass the full quality variation expected in the feedstock. The following checks confirm analyser ranges and trip setpoints are consistent with the specification envelope.",
+      "style": "Normal"
+    },
+    {
+      "text": "3. PRODUCT SPECIFICATION — DESIGN BASIS",
+      "style": "Heading 1"
+    },
+    {
+      "text": "4. UTILITY SPECIFICATIONS — RATED vs DEMAND",
+      "style": "Heading 1"
+    },
+    {
+      "text": "5. ENVIRONMENTAL LIMITS — DESIGN MARGIN",
+      "style": "Heading 1"
+    },
+    {
+      "text": "6. OPERATING MODES — RANGE CONSISTENCY",
+      "style": "Heading 1"
+    }
+  ],
+  "tables": [
+    {
+      "index": 0,
+      "rows": [
+        [
+          "Attribute",
+          "Value"
+        ],
+        [
+          "Document No.",
+          "PRJ-SA100-FEED-BOD-001"
+        ],
+        [
+          "Revision",
+          "A0 — Issued for Review"
+        ],
+        [
+          "Project",
+          "100 t/d H₂SO₄ Plant, DCDA Route"
+        ],
+        [
+          "Date",
+          "August 2026"
+        ],
+        [
+          "Status",
+          "FEED — Consistency-Checked Edition"
+        ]
+      ]
+    },
+    {
+      "index": 1,
+      "rows": [
+        [
+          "Parameter",
+          "Nom. Design (100 t/d)",
+          "Max Operating (110 t/d +10%)",
+          "Equipment Rated Capacity"
+        ],
+        [
+          "Product H₂SO₄ output",
+          "4,167 kg/h",
+          "4,583 kg/h",
+          "5,000 kg/h (storage pump rated)"
+        ],
+        [
+          "Sulfur feed rate",
+          "1,363 kg/h",
+          "1,499 kg/h",
+          "1,800 kg/h (Coriolis MFM rated)"
+        ],
+        [
+          "Process air volumetric",
+          "8,873 Nm³/h",
+          "9,760 Nm³/h",
+          "11,000 Nm³/h (blower rated)"
+        ],
+        [
+          "Air blower motor power",
+          "520 kW",
+          "572 kW",
+          "630 kW (motor nameplate)"
+        ],
+        [
+          "WHB steam generation",
+          "7,500 kg/h",
+          "8,250 kg/h",
+          "9,500 kg/h (WHB design)"
+        ],
+        [
+          "Molten sulfur pump flow",
+          "1,363 kg/h",
+          "1,775 kg/h",
+          "1,950 kg/h (pump rated @ 130%)"
+        ],
+        [
+          "Product dispatch pump",
+          "4,167 kg/h",
+          "5,417 kg/h",
+          "5,400 kg/h (pump rated @ 130%)"
+        ],
+        [
+          "Annual production",
+          "300,000 t/yr",
+          "330,000 t/yr",
+          "350,000 t/yr (OSBL rated)"
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "rows": [
+        [
+          "Parameter",
+          "Spec Limit (guaranteed)",
+          "Typical Operating Range",
+          "Analyser / Meter Range"
+        ],
+        [
+          "Purity (S content, wt%)",
+          "≥ 99.90",
+          "99.90–99.97",
+          "99.50–100.0% (density)"
+        ],
+        [
+          "Ash content (wt%)",
+          "≤ 0.030",
+          "0.005–0.025",
+          "0–0.05% (filter ΔP proxy)"
+        ],
+        [
+          "Moisture (wt%)",
+          "≤ 0.100",
+          "0.010–0.080",
+          "0–0.15% (Karl Fischer)"
+        ],
+        [
+          "Acidity as H₂SO₄ (wt%)",
+          "≤ 0.003",
+          "0.001–0.003",
+          "0–0.005% (titration)"
+        ],
+        [
+          "Selenium (ppm)",
+          "≤ 1.0",
+          "0.1–0.8",
+          "0–2 ppm ICP (lab)"
+        ],
+        [
+          "Arsenic (ppm)",
+          "≤ 0.5",
+          "0.05–0.4",
+          "0–1 ppm ICP (lab)"
+        ],
+        [
+          "Feed temperature (°C)",
+          "135–145",
+          "138–143",
+          "RTD 0–200°C"
+        ],
+        [
+          "Feed pressure (barg)",
+          "0.30–0.50",
+          "0.35–0.45",
+          "PT 0–10 barg"
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "rows": [
+        [
+          "Parameter",
+          "Product Spec",
+          "DCS Control Target",
+          "Analyser Range",
+          "Alarm HH Setpoint"
+        ],
+        [
+          "H₂SO₄ concentration (wt%)",
+          "98.0–98.5",
+          "98.2 ± 0.15",
+          "96–99.5 wt%",
+          ">98.8 wt% (MARGIN alarm)"
+        ],
+        [
+          "Iron (Fe, ppm)",
+          "≤ 50",
+          "<20 typical",
+          "0–100 ppm (ICP lab)",
+          "None in DCS"
+        ],
+        [
+          "Chloride (Cl, ppm)",
+          "≤ 1.0",
+          "<0.3 typical",
+          "0–2 ppm (IC lab)",
+          "None in DCS"
+        ],
+        [
+          "Product temperature (°C)",
+          "25–40",
+          "35 ± 3",
+          "RTD 0–100°C",
+          ">45°C alarm HIGH"
+        ],
+        [
+          "Oleum (free SO₃, wt%)",
+          "20 ± 1",
+          "20.0 ± 0.5",
+          "18–22% free SO₃",
+          "—"
+        ],
+        [
+          "Colour Hazen",
+          "≤ 10",
+          "<5 typical",
+          "Lab measurement only",
+          "No online analyser"
+        ]
+      ]
+    },
+    {
+      "index": 4,
+      "rows": [
+        [
+          "Utility",
+          "Normal Demand (100 t/d)",
+          "Peak Demand (110 t/d surge)",
+          "System Rated Supply"
+        ],
+        [
+          "Cooling water (m³/h)",
+          "240",
+          "264",
+          "300 (CW system rated)"
+        ],
+        [
+          "Instrument air (Nm³/h)",
+          "120",
+          "132",
+          "180 (compressor rated)"
+        ],
+        [
+          "Plant air (Nm³/h)",
+          "80",
+          "88",
+          "120 (compressor rated)"
+        ],
+        [
+          "HP steam export (kg/h)",
+          "7,500",
+          "8,250",
+          "9,500 (WHB rated)"
+        ],
+        [
+          "MP steam (tracing, kg/h)",
+          "350",
+          "385",
+          "500 (MP header rated)"
+        ],
+        [
+          "Nitrogen (Nm³/h)",
+          "15",
+          "18",
+          "25 (N₂ supply rated)"
+        ],
+        [
+          "Electrical power (kW, MV)",
+          "1,850",
+          "2,035",
+          "2,500 (MV switchgear rated)"
+        ],
+        [
+          "Cooling water ΔT (°C)",
+          "12",
+          "14",
+          "15 (CW design ΔT limit)"
+        ]
+      ]
+    },
+    {
+      "index": 5,
+      "rows": [
+        [
+          "Emission Parameter",
+          "Regulatory Limit",
+          "Design Target",
+          "Max Operating Emission (est.)"
+        ],
+        [
+          "SO₂ stack (mg/Nm³, dry)",
+          "≤ 500",
+          "≤ 300",
+          "≤ 480 (at 50% turndown)"
+        ],
+        [
+          "SO₃ / acid mist (mg/Nm³)",
+          "≤ 35",
+          "≤ 20",
+          "≤ 30"
+        ],
+        [
+          "Conversion efficiency (%)",
+          "≥ 99.5",
+          "≥ 99.8",
+          "99.65 (at 50% turndown)"
+        ],
+        [
+          "Stack height (m)",
+          "≥ 60",
+          "65",
+          "65"
+        ],
+        [
+          "Noise at boundary (dB(A))",
+          "≤ 70",
+          "≤ 65",
+          "63 est."
+        ]
+      ]
+    },
+    {
+      "index": 6,
+      "rows": [
+        [
+          "Operating Mode",
+          "Sulfur Feed (kg/h)",
+          "Air Flow (Nm³/h)",
+          "SO₂ Concentration (vol%)",
+          "Converter T° Pass 1 (°C)"
+        ],
+        [
+          "Normal 100%",
+          "1,363",
+          "8,873",
+          "10.5",
+          "420–600"
+        ],
+        [
+          "Surge 110%",
+          "1,499",
+          "9,760",
+          "10.5",
+          "420–615"
+        ],
+        [
+          "Turndown 80%",
+          "1,090",
+          "7,098",
+          "10.5",
+          "410–580"
+        ],
+        [
+          "Turndown 60%",
+          "818",
+          "5,324",
+          "10.5",
+          "405–555"
+        ],
+        [
+          "Minimum stable 50%",
+          "682",
+          "4,436",
+          "10.5",
+          "400–545"
+        ],
+        [
+          "Cold start ramp-up",
+          "0→682",
+          "4,000",
+          "0→10.5",
+          "Ambient→420"
+        ],
+        [
+          "Emergency surge*",
+          "1,640",
+          "10,600",
+          "10.5",
+          "420–650"
+        ]
+      ]
+    }
+  ]
+}

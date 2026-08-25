@@ -1,0 +1,1161 @@
+{
+  "filename": "DOC2_Heat_Material_Balance 1.docx",
+  "metadata": {
+    "source_path": "data\\raw\\DOC2_Heat_Material_Balance 1.docx",
+    "core_properties": {
+      "author": "Un-named",
+      "created": "2026-08-20T11:37:00+00:00",
+      "last_modified_by": "Srinivasan, Pratheep Kumar",
+      "modified": "2026-08-21T06:25:00+00:00",
+      "revision": 4
+    }
+  },
+  "headings": [
+    {
+      "text": "1. OVERALL PLANT MASS BALANCE",
+      "level": 1
+    },
+    {
+      "text": "1.1 Three-Point Mass Balance Comparison",
+      "level": 2
+    },
+    {
+      "text": "2. UNIT 200 — SULFUR FURNACE & WASTE HEAT BOILER",
+      "level": 1
+    },
+    {
+      "text": "2.1 Furnace Mass Balance",
+      "level": 2
+    },
+    {
+      "text": "2.2 Waste Heat Boiler (WHB) Heat Balance",
+      "level": 2
+    },
+    {
+      "text": "3. UNIT 400 — DCDA CONVERTER HEAT BALANCE",
+      "level": 1
+    },
+    {
+      "text": "3.1 Pass-by-Pass Mass and Heat Balance",
+      "level": 2
+    },
+    {
+      "text": "4. UNIT 300 — AIR DRYING TOWER HEAT BALANCE",
+      "level": 1
+    },
+    {
+      "text": "5. UNIT 500 — ABSORPTION SYSTEM HEAT BALANCE",
+      "level": 1
+    },
+    {
+      "text": "6. HEAT INTEGRATION SUMMARY — KEY EXCHANGER DUTIES",
+      "level": 1
+    }
+  ],
+  "sections": [
+    {
+      "heading": null,
+      "level": 0,
+      "paragraphs": [
+        {
+          "text": "FRONT-END ENGINEERING DESIGN (FEED)",
+          "style": "Normal"
+        },
+        {
+          "text": "100 t/d Sulfuric Acid Plant — DCDA / Elemental Sulfur",
+          "style": "Normal"
+        },
+        {
+          "text": "HEAT AND MATERIAL BALANCE (H&MB)",
+          "style": "Normal"
+        },
+        {
+          "text": "Consistency-Checked: Operating Range vs Equipment Rated Capacity",
+          "style": "Normal"
+        },
+        {
+          "text": "This document contains automated consistency status flags. Parameters marked FAIL require engineering review before progression to Detailed Engineering.",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 0,
+          "rows": [
+            [
+              "Attribute",
+              "Value"
+            ],
+            [
+              "Document No.",
+              "PRJ-SA100-FEED-HMB-002"
+            ],
+            [
+              "Revision",
+              "A0 — Issued for Review"
+            ],
+            [
+              "Project",
+              "100 t/d H₂SO₄ Plant, DCDA Route"
+            ],
+            [
+              "Date",
+              "August 2026"
+            ],
+            [
+              "Status",
+              "FEED — Consistency-Checked Edition"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "1. OVERALL PLANT MASS BALANCE",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": []
+    },
+    {
+      "heading": {
+        "text": "1.1 Three-Point Mass Balance Comparison",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 1,
+          "rows": [
+            [
+              "Stream / Component",
+              "Normal (A) 100 t/d kg/h",
+              "Surge (B) 110 t/d kg/h",
+              "Turndown (C) 50 t/d kg/h",
+              "Equip. Rated Capacity kg/h or Nm³/h"
+            ],
+            [
+              "Molten Sulfur Feed (S)",
+              "1,363",
+              "1,499",
+              "682",
+              "1,800 (MFM rated)"
+            ],
+            [
+              "Process Air (dry, Nm³/h)",
+              "8,873",
+              "9,760",
+              "4,437",
+              "11,000 (blower)"
+            ],
+            [
+              "Product H₂SO₄ (98.5 wt%)",
+              "4,167",
+              "4,583",
+              "2,083",
+              "5,000 (pump rated)"
+            ],
+            [
+              "HP Steam Export (kg/h)",
+              "7,500",
+              "8,250",
+              "3,750",
+              "9,500 (WHB rated)"
+            ],
+            [
+              "Stack Gas — total (Nm³/h)",
+              "7,800",
+              "8,580",
+              "3,900",
+              "9,500 (stack rated)"
+            ],
+            [
+              "Cooling Water Total (m³/h)",
+              "240",
+              "264",
+              "120",
+              "300 (CW system)"
+            ],
+            [
+              "Dilution Water to Absorption (L/h)",
+              "220",
+              "242",
+              "110",
+              "500 (FCV rated)"
+            ],
+            [
+              "BFW to WHB (kg/h)",
+              "7,700",
+              "8,470",
+              "3,850",
+              "10,000 (BFW pump)"
+            ],
+            [
+              "Oleum draw-off (optional, kg/h)",
+              "0–500",
+              "0–550",
+              "0",
+              "700 (oleum pump)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "2. UNIT 200 — SULFUR FURNACE & WASTE HEAT BOILER",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": []
+    },
+    {
+      "heading": {
+        "text": "2.1 Furnace Mass Balance",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [],
+      "tables": []
+    },
+    {
+      "heading": {
+        "text": "2.2 Waste Heat Boiler (WHB) Heat Balance",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 2,
+          "rows": [
+            [
+              "Parameter",
+              "Normal (A)",
+              "Surge (B)",
+              "WHB Rated"
+            ],
+            [
+              "Gas inlet temperature",
+              "1,050°C",
+              "1,080°C",
+              "1,200°C max"
+            ],
+            [
+              "Gas outlet temperature",
+              "420°C",
+              "425°C",
+              "380–450°C target"
+            ],
+            [
+              "Steam generation rate",
+              "7,500 kg/h",
+              "8,250 kg/h",
+              "9,500 kg/h rated"
+            ],
+            [
+              "Steam pressure",
+              "40 barg",
+              "40 barg",
+              "45 barg (design P)"
+            ],
+            [
+              "Steam temperature",
+              "400°C",
+              "402°C",
+              "420°C max"
+            ],
+            [
+              "WHB heat duty (kW)",
+              "16,800",
+              "18,480",
+              "21,000 kW (design)"
+            ],
+            [
+              "BFW inlet temperature",
+              "105°C",
+              "105°C",
+              "60–120°C range"
+            ],
+            [
+              "Steam drum water level range",
+              "40–60%",
+              "40–60%",
+              "20% (LSLL trip)"
+            ],
+            [
+              "WHB tube-side velocity",
+              "4.2 m/s",
+              "4.6 m/s",
+              "5.0 m/s max (erosion limit)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "3. UNIT 400 — DCDA CONVERTER HEAT BALANCE",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": []
+    },
+    {
+      "heading": {
+        "text": "3.1 Pass-by-Pass Mass and Heat Balance",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 3,
+          "rows": [
+            [
+              "Pass / Section",
+              "SO₂ In (kg/h) A|B",
+              "SO₃ Formed (kg/h) A|B",
+              "SO₂ Out (kg/h) A|B",
+              "T Inlet (°C)",
+              "T Outlet (°C) A|B",
+              "Catalyst T Max Rated (°C)"
+            ],
+            [
+              "Pass 1",
+              "3,185 | 3,504",
+              "2,008 | 2,209",
+              "1,177 | 1,295",
+              "420",
+              "600 | 621",
+              "620°C TSHH limit"
+            ],
+            [
+              "Pass 2",
+              "1,177 | 1,295",
+              "726 | 799",
+              "451 | 496",
+              "440",
+              "520 | 526",
+              "550°C TSHH limit"
+            ],
+            [
+              "Pass 3",
+              "451 | 496",
+              "318 | 350",
+              "133 | 146",
+              "430",
+              "480 | 484",
+              "500°C TSHH limit"
+            ],
+            [
+              "IPAT (absorption)",
+              "—",
+              "3,052|3,358 (SO₃ abs.)",
+              "—",
+              "—",
+              "—",
+              "—"
+            ],
+            [
+              "Pass 4",
+              "133 | 146",
+              "133 | 146",
+              "<7 | <8",
+              "415",
+              "430 | 432",
+              "450°C TSHH limit"
+            ],
+            [
+              "FAT (absorption)",
+              "—",
+              "133|146 (SO₃ abs.)",
+              "—",
+              "—",
+              "—",
+              "—"
+            ],
+            [
+              "Stack tail gas",
+              "<7 | <8",
+              "—",
+              "<7 | <8",
+              "80",
+              "80",
+              "≤7 kg/h SO₂ target"
+            ],
+            [
+              "Overall conversion",
+              "99.78% | 99.77%",
+              "—",
+              "—",
+              "—",
+              "—",
+              "≥99.5% guaranteed"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "4. UNIT 300 — AIR DRYING TOWER HEAT BALANCE",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 4,
+          "rows": [
+            [
+              "Parameter",
+              "Normal (A)",
+              "Surge (B)",
+              "Equipment Rated"
+            ],
+            [
+              "Air flow to DT (Nm³/h)",
+              "7000",
+              "7,760",
+              "8,000 (tower internals)"
+            ],
+            [
+              "DT gas velocity (m/s)",
+              "1.8",
+              "2.0",
+              "2.5 (flooding limit)"
+            ],
+            [
+              "Moisture removal (kg/h)",
+              "58",
+              "64",
+              "100 (DT design)"
+            ],
+            [
+              "DT circulating acid flow (m³/h)",
+              "45",
+              "50",
+              "60 (pump rated)"
+            ],
+            [
+              "DT acid cooler duty (kW)",
+              "320",
+              "352",
+              "420 (cooler rated)"
+            ],
+            [
+              "DT acid concentration (wt%)",
+              "93–96",
+              "93–96",
+              "91–98 (tower design)"
+            ],
+            [
+              "Mist eliminator ΔP (mbar)",
+              "8",
+              "9",
+              "15 (design max)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "5. UNIT 500 — ABSORPTION SYSTEM HEAT BALANCE",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 5,
+          "rows": [
+            [
+              "Parameter",
+              "Normal (A)",
+              "Surge (B)",
+              "Equipment Rated"
+            ],
+            [
+              "IPAT SO₃ absorbed (kg/h)",
+              "3,052",
+              "3,358",
+              "4,000 (tower design)"
+            ],
+            [
+              "IPAT acid cooler duty (kW)",
+              "2,650",
+              "2,915",
+              "3,200 (cooler rated)"
+            ],
+            [
+              "IPAT CW flow (m³/h)",
+              "76",
+              "84",
+              "95 (CW branch rated)"
+            ],
+            [
+              "IPAT circulating acid flow (m³/h)",
+              "120",
+              "132",
+              "150 (pump rated @ 130%)"
+            ],
+            [
+              "FAT SO₃ absorbed (kg/h)",
+              "133",
+              "146",
+              "250 (tower design)"
+            ],
+            [
+              "FAT acid cooler duty (kW)",
+              "890",
+              "979",
+              "1,100 (cooler rated)"
+            ],
+            [
+              "FAT CW flow (m³/h)",
+              "26",
+              "29",
+              "35 (CW branch rated)"
+            ],
+            [
+              "Dilution water total (L/h)",
+              "220",
+              "242",
+              "500 (FCV-501 rated)"
+            ],
+            [
+              "IPAT acid sump retention time",
+              ">8 min",
+              ">7 min",
+              ">5 min (design minimum)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "6. HEAT INTEGRATION SUMMARY — KEY EXCHANGER DUTIES",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 6,
+          "rows": [
+            [
+              "Exchanger",
+              "Service",
+              "Duty Normal (kW)",
+              "Duty Surge (kW)",
+              "Rated Duty (kW)",
+              "MTD Normal (°C)"
+            ],
+            [
+              "WHB",
+              "Furnace gas → HP steam",
+              "16,800",
+              "18,480",
+              "21,000",
+              "420"
+            ],
+            [
+              "Interpass HX 1-2",
+              "Pass 1 gas → Pass 2 preheat",
+              "1,650",
+              "1,815",
+              "2,000",
+              "85"
+            ],
+            [
+              "Interpass HX 2-3",
+              "Pass 2 gas → Pass 3 preheat",
+              "980",
+              "1,078",
+              "1,200",
+              "60"
+            ],
+            [
+              "Interpass HX 3-IPAT",
+              "Pass 3 gas cooling to IPAT",
+              "1,100",
+              "1,210",
+              "1,400",
+              "75"
+            ],
+            [
+              "Interpass HX 4-FAT",
+              "Pass 4 gas cooling to FAT",
+              "620",
+              "682",
+              "800",
+              "45"
+            ],
+            [
+              "IPAT acid cooler",
+              "Acid → CW",
+              "2,650",
+              "2,915",
+              "3,200",
+              "35"
+            ],
+            [
+              "FAT acid cooler",
+              "Acid → CW",
+              "890",
+              "979",
+              "1,100",
+              "30"
+            ],
+            [
+              "DT acid cooler",
+              "DT acid → CW",
+              "320",
+              "352",
+              "420",
+              "25"
+            ],
+            [
+              "Product acid cooler",
+              "Product → CW",
+              "420",
+              "462",
+              "520",
+              "20"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "text": "FRONT-END ENGINEERING DESIGN (FEED)",
+      "style": "Normal"
+    },
+    {
+      "text": "100 t/d Sulfuric Acid Plant — DCDA / Elemental Sulfur",
+      "style": "Normal"
+    },
+    {
+      "text": "HEAT AND MATERIAL BALANCE (H&MB)",
+      "style": "Normal"
+    },
+    {
+      "text": "Consistency-Checked: Operating Range vs Equipment Rated Capacity",
+      "style": "Normal"
+    },
+    {
+      "text": "This document contains automated consistency status flags. Parameters marked FAIL require engineering review before progression to Detailed Engineering.",
+      "style": "Normal"
+    },
+    {
+      "text": "1. OVERALL PLANT MASS BALANCE",
+      "style": "Heading 1"
+    },
+    {
+      "text": "1.1 Three-Point Mass Balance Comparison",
+      "style": "Heading 2"
+    },
+    {
+      "text": "2. UNIT 200 — SULFUR FURNACE & WASTE HEAT BOILER",
+      "style": "Heading 1"
+    },
+    {
+      "text": "2.1 Furnace Mass Balance",
+      "style": "Heading 2"
+    },
+    {
+      "text": "2.2 Waste Heat Boiler (WHB) Heat Balance",
+      "style": "Heading 2"
+    },
+    {
+      "text": "3. UNIT 400 — DCDA CONVERTER HEAT BALANCE",
+      "style": "Heading 1"
+    },
+    {
+      "text": "3.1 Pass-by-Pass Mass and Heat Balance",
+      "style": "Heading 2"
+    },
+    {
+      "text": "4. UNIT 300 — AIR DRYING TOWER HEAT BALANCE",
+      "style": "Heading 1"
+    },
+    {
+      "text": "5. UNIT 500 — ABSORPTION SYSTEM HEAT BALANCE",
+      "style": "Heading 1"
+    },
+    {
+      "text": "6. HEAT INTEGRATION SUMMARY — KEY EXCHANGER DUTIES",
+      "style": "Heading 1"
+    }
+  ],
+  "tables": [
+    {
+      "index": 0,
+      "rows": [
+        [
+          "Attribute",
+          "Value"
+        ],
+        [
+          "Document No.",
+          "PRJ-SA100-FEED-HMB-002"
+        ],
+        [
+          "Revision",
+          "A0 — Issued for Review"
+        ],
+        [
+          "Project",
+          "100 t/d H₂SO₄ Plant, DCDA Route"
+        ],
+        [
+          "Date",
+          "August 2026"
+        ],
+        [
+          "Status",
+          "FEED — Consistency-Checked Edition"
+        ]
+      ]
+    },
+    {
+      "index": 1,
+      "rows": [
+        [
+          "Stream / Component",
+          "Normal (A) 100 t/d kg/h",
+          "Surge (B) 110 t/d kg/h",
+          "Turndown (C) 50 t/d kg/h",
+          "Equip. Rated Capacity kg/h or Nm³/h"
+        ],
+        [
+          "Molten Sulfur Feed (S)",
+          "1,363",
+          "1,499",
+          "682",
+          "1,800 (MFM rated)"
+        ],
+        [
+          "Process Air (dry, Nm³/h)",
+          "8,873",
+          "9,760",
+          "4,437",
+          "11,000 (blower)"
+        ],
+        [
+          "Product H₂SO₄ (98.5 wt%)",
+          "4,167",
+          "4,583",
+          "2,083",
+          "5,000 (pump rated)"
+        ],
+        [
+          "HP Steam Export (kg/h)",
+          "7,500",
+          "8,250",
+          "3,750",
+          "9,500 (WHB rated)"
+        ],
+        [
+          "Stack Gas — total (Nm³/h)",
+          "7,800",
+          "8,580",
+          "3,900",
+          "9,500 (stack rated)"
+        ],
+        [
+          "Cooling Water Total (m³/h)",
+          "240",
+          "264",
+          "120",
+          "300 (CW system)"
+        ],
+        [
+          "Dilution Water to Absorption (L/h)",
+          "220",
+          "242",
+          "110",
+          "500 (FCV rated)"
+        ],
+        [
+          "BFW to WHB (kg/h)",
+          "7,700",
+          "8,470",
+          "3,850",
+          "10,000 (BFW pump)"
+        ],
+        [
+          "Oleum draw-off (optional, kg/h)",
+          "0–500",
+          "0–550",
+          "0",
+          "700 (oleum pump)"
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "rows": [
+        [
+          "Parameter",
+          "Normal (A)",
+          "Surge (B)",
+          "WHB Rated"
+        ],
+        [
+          "Gas inlet temperature",
+          "1,050°C",
+          "1,080°C",
+          "1,200°C max"
+        ],
+        [
+          "Gas outlet temperature",
+          "420°C",
+          "425°C",
+          "380–450°C target"
+        ],
+        [
+          "Steam generation rate",
+          "7,500 kg/h",
+          "8,250 kg/h",
+          "9,500 kg/h rated"
+        ],
+        [
+          "Steam pressure",
+          "40 barg",
+          "40 barg",
+          "45 barg (design P)"
+        ],
+        [
+          "Steam temperature",
+          "400°C",
+          "402°C",
+          "420°C max"
+        ],
+        [
+          "WHB heat duty (kW)",
+          "16,800",
+          "18,480",
+          "21,000 kW (design)"
+        ],
+        [
+          "BFW inlet temperature",
+          "105°C",
+          "105°C",
+          "60–120°C range"
+        ],
+        [
+          "Steam drum water level range",
+          "40–60%",
+          "40–60%",
+          "20% (LSLL trip)"
+        ],
+        [
+          "WHB tube-side velocity",
+          "4.2 m/s",
+          "4.6 m/s",
+          "5.0 m/s max (erosion limit)"
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "rows": [
+        [
+          "Pass / Section",
+          "SO₂ In (kg/h) A|B",
+          "SO₃ Formed (kg/h) A|B",
+          "SO₂ Out (kg/h) A|B",
+          "T Inlet (°C)",
+          "T Outlet (°C) A|B",
+          "Catalyst T Max Rated (°C)"
+        ],
+        [
+          "Pass 1",
+          "3,185 | 3,504",
+          "2,008 | 2,209",
+          "1,177 | 1,295",
+          "420",
+          "600 | 621",
+          "620°C TSHH limit"
+        ],
+        [
+          "Pass 2",
+          "1,177 | 1,295",
+          "726 | 799",
+          "451 | 496",
+          "440",
+          "520 | 526",
+          "550°C TSHH limit"
+        ],
+        [
+          "Pass 3",
+          "451 | 496",
+          "318 | 350",
+          "133 | 146",
+          "430",
+          "480 | 484",
+          "500°C TSHH limit"
+        ],
+        [
+          "IPAT (absorption)",
+          "—",
+          "3,052|3,358 (SO₃ abs.)",
+          "—",
+          "—",
+          "—",
+          "—"
+        ],
+        [
+          "Pass 4",
+          "133 | 146",
+          "133 | 146",
+          "<7 | <8",
+          "415",
+          "430 | 432",
+          "450°C TSHH limit"
+        ],
+        [
+          "FAT (absorption)",
+          "—",
+          "133|146 (SO₃ abs.)",
+          "—",
+          "—",
+          "—",
+          "—"
+        ],
+        [
+          "Stack tail gas",
+          "<7 | <8",
+          "—",
+          "<7 | <8",
+          "80",
+          "80",
+          "≤7 kg/h SO₂ target"
+        ],
+        [
+          "Overall conversion",
+          "99.78% | 99.77%",
+          "—",
+          "—",
+          "—",
+          "—",
+          "≥99.5% guaranteed"
+        ]
+      ]
+    },
+    {
+      "index": 4,
+      "rows": [
+        [
+          "Parameter",
+          "Normal (A)",
+          "Surge (B)",
+          "Equipment Rated"
+        ],
+        [
+          "Air flow to DT (Nm³/h)",
+          "7000",
+          "7,760",
+          "8,000 (tower internals)"
+        ],
+        [
+          "DT gas velocity (m/s)",
+          "1.8",
+          "2.0",
+          "2.5 (flooding limit)"
+        ],
+        [
+          "Moisture removal (kg/h)",
+          "58",
+          "64",
+          "100 (DT design)"
+        ],
+        [
+          "DT circulating acid flow (m³/h)",
+          "45",
+          "50",
+          "60 (pump rated)"
+        ],
+        [
+          "DT acid cooler duty (kW)",
+          "320",
+          "352",
+          "420 (cooler rated)"
+        ],
+        [
+          "DT acid concentration (wt%)",
+          "93–96",
+          "93–96",
+          "91–98 (tower design)"
+        ],
+        [
+          "Mist eliminator ΔP (mbar)",
+          "8",
+          "9",
+          "15 (design max)"
+        ]
+      ]
+    },
+    {
+      "index": 5,
+      "rows": [
+        [
+          "Parameter",
+          "Normal (A)",
+          "Surge (B)",
+          "Equipment Rated"
+        ],
+        [
+          "IPAT SO₃ absorbed (kg/h)",
+          "3,052",
+          "3,358",
+          "4,000 (tower design)"
+        ],
+        [
+          "IPAT acid cooler duty (kW)",
+          "2,650",
+          "2,915",
+          "3,200 (cooler rated)"
+        ],
+        [
+          "IPAT CW flow (m³/h)",
+          "76",
+          "84",
+          "95 (CW branch rated)"
+        ],
+        [
+          "IPAT circulating acid flow (m³/h)",
+          "120",
+          "132",
+          "150 (pump rated @ 130%)"
+        ],
+        [
+          "FAT SO₃ absorbed (kg/h)",
+          "133",
+          "146",
+          "250 (tower design)"
+        ],
+        [
+          "FAT acid cooler duty (kW)",
+          "890",
+          "979",
+          "1,100 (cooler rated)"
+        ],
+        [
+          "FAT CW flow (m³/h)",
+          "26",
+          "29",
+          "35 (CW branch rated)"
+        ],
+        [
+          "Dilution water total (L/h)",
+          "220",
+          "242",
+          "500 (FCV-501 rated)"
+        ],
+        [
+          "IPAT acid sump retention time",
+          ">8 min",
+          ">7 min",
+          ">5 min (design minimum)"
+        ]
+      ]
+    },
+    {
+      "index": 6,
+      "rows": [
+        [
+          "Exchanger",
+          "Service",
+          "Duty Normal (kW)",
+          "Duty Surge (kW)",
+          "Rated Duty (kW)",
+          "MTD Normal (°C)"
+        ],
+        [
+          "WHB",
+          "Furnace gas → HP steam",
+          "16,800",
+          "18,480",
+          "21,000",
+          "420"
+        ],
+        [
+          "Interpass HX 1-2",
+          "Pass 1 gas → Pass 2 preheat",
+          "1,650",
+          "1,815",
+          "2,000",
+          "85"
+        ],
+        [
+          "Interpass HX 2-3",
+          "Pass 2 gas → Pass 3 preheat",
+          "980",
+          "1,078",
+          "1,200",
+          "60"
+        ],
+        [
+          "Interpass HX 3-IPAT",
+          "Pass 3 gas cooling to IPAT",
+          "1,100",
+          "1,210",
+          "1,400",
+          "75"
+        ],
+        [
+          "Interpass HX 4-FAT",
+          "Pass 4 gas cooling to FAT",
+          "620",
+          "682",
+          "800",
+          "45"
+        ],
+        [
+          "IPAT acid cooler",
+          "Acid → CW",
+          "2,650",
+          "2,915",
+          "3,200",
+          "35"
+        ],
+        [
+          "FAT acid cooler",
+          "Acid → CW",
+          "890",
+          "979",
+          "1,100",
+          "30"
+        ],
+        [
+          "DT acid cooler",
+          "DT acid → CW",
+          "320",
+          "352",
+          "420",
+          "25"
+        ],
+        [
+          "Product acid cooler",
+          "Product → CW",
+          "420",
+          "462",
+          "520",
+          "20"
+        ]
+      ]
+    }
+  ]
+}

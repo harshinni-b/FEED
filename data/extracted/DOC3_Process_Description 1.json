@@ -1,0 +1,1483 @@
+{
+  "filename": "DOC3_Process_Description 1.docx",
+  "metadata": {
+    "source_path": "data\\raw\\DOC3_Process_Description 1.docx",
+    "core_properties": {
+      "author": "Un-named",
+      "created": "2026-08-20T11:37:00+00:00",
+      "last_modified_by": "Srinivasan, Pratheep Kumar",
+      "modified": "2026-08-21T06:26:00+00:00",
+      "revision": 3
+    }
+  },
+  "headings": [
+    {
+      "text": "UNIT 100 — SULFUR HANDLING AND MELTING",
+      "level": 1
+    },
+    {
+      "text": "Process Narrative",
+      "level": 2
+    },
+    {
+      "text": "Unit 100 — Operating Envelope Consistency Check",
+      "level": 2
+    },
+    {
+      "text": "UNIT 200 — SULFUR COMBUSTION AND WASTE HEAT BOILER",
+      "level": 1
+    },
+    {
+      "text": "Process Narrative",
+      "level": 2
+    },
+    {
+      "text": "Unit 200 — Operating Envelope Consistency Check",
+      "level": 2
+    },
+    {
+      "text": "UNIT 300 — GAS DRYING AND MAIN AIR BLOWER",
+      "level": 1
+    },
+    {
+      "text": "Process Narrative",
+      "level": 2
+    },
+    {
+      "text": "Unit 300 — Operating Envelope Consistency Check",
+      "level": 2
+    },
+    {
+      "text": "UNIT 400 — DCDA CATALYTIC CONVERTER",
+      "level": 1
+    },
+    {
+      "text": "Process Narrative",
+      "level": 2
+    },
+    {
+      "text": "Unit 400 — Operating Envelope Consistency Check",
+      "level": 2
+    },
+    {
+      "text": "UNIT 500 — ABSORPTION SYSTEM (IPAT AND FAT)",
+      "level": 1
+    },
+    {
+      "text": "Process Narrative",
+      "level": 2
+    },
+    {
+      "text": "Unit 500 — Operating Envelope Consistency Check",
+      "level": 2
+    },
+    {
+      "text": "UNIT 700 — PRODUCT STORAGE AND LOADING",
+      "level": 1
+    },
+    {
+      "text": "Process Narrative",
+      "level": 2
+    },
+    {
+      "text": "Unit 700 — Operating Envelope Consistency Check",
+      "level": 2
+    }
+  ],
+  "sections": [
+    {
+      "heading": null,
+      "level": 0,
+      "paragraphs": [
+        {
+          "text": "FRONT-END ENGINEERING DESIGN (FEED)",
+          "style": "Normal"
+        },
+        {
+          "text": "100 t/d Sulfuric Acid Plant — DCDA / Elemental Sulfur",
+          "style": "Normal"
+        },
+        {
+          "text": "PROCESS DESCRIPTION",
+          "style": "Normal"
+        },
+        {
+          "text": "Unit-by-Unit Narrative with Operating Envelope Consistency Check",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 0,
+          "rows": [
+            [
+              "Attribute",
+              "Value"
+            ],
+            [
+              "Document No.",
+              "PRJ-SA100-FEED-PD-003"
+            ],
+            [
+              "Revision",
+              "A0 — Issued for Review"
+            ],
+            [
+              "Project",
+              "100 t/d H₂SO₄ Plant, DCDA Route"
+            ],
+            [
+              "Date",
+              "August 2026"
+            ],
+            [
+              "Status",
+              "FEED — Consistency-Checked Edition"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "UNIT 100 — SULFUR HANDLING AND MELTING",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": []
+    },
+    {
+      "heading": {
+        "text": "Process Narrative",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [
+        {
+          "text": "Molten elemental sulfur is received from road tankers at 135–145°C into insulated, steam-traced storage tanks (capacity: minimum 7-day supply at 100 t/d nameplate = 9,541 t minimum storage). The storage system consists of two tanks of equal size operating in duty/standby configuration with a common suction header. Each tank is fitted with electric immersion heaters and/or steam coil heating to maintain sulfur at 138–143°C (operating band). Sulfur vapour pressure at 143°C is approximately 0.08 barg — tanks are designed for 0.5 barg working pressure (atmospheric + vapour space).",
+          "style": "Normal"
+        },
+        {
+          "text": "Molten sulfur is pumped from storage via a dedicated duty/standby pump set (gear pumps, ATEX-rated, heated casing) through 4-inch insulated and electrically heat-traced carbon steel pipe to the sulfur filter unit. The filter removes ash, carbon, and solid particulates >25 micron to protect vanadium catalyst. After filtration, a Coriolis mass flow meter (FT-101) measures and controls the sulfur feed rate to the furnace via a heated modulating control valve (FCV-101).",
+          "style": "Normal"
+        }
+      ],
+      "tables": []
+    },
+    {
+      "heading": {
+        "text": "Unit 100 — Operating Envelope Consistency Check",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 1,
+          "rows": [
+            [
+              "Parameter",
+              "Min Operating",
+              "Normal Design",
+              "Surge (110%)",
+              "Equipment/ Instrument Rated"
+            ],
+            [
+              "Storage tank operating pressure (barg)",
+              "0 (atmospheric)",
+              "0.05",
+              "0.05",
+              "0.5 barg design"
+            ],
+            [
+              "Sulfur storage temperature (°C)",
+              "135",
+              "140",
+              "140",
+              "160°C heating coil max"
+            ],
+            [
+              "Sulfur pump discharge pressure (barg)",
+              "0.3",
+              "0.4",
+              "0.5",
+              "6.0 barg pump rated"
+            ],
+            [
+              "Sulfur pump flow — duty (kg/h)",
+              "682",
+              "1,363",
+              "1,499",
+              "1,950 kg/h rated (130%)"
+            ],
+            [
+              "Sulfur pump flow — surge beyond 130% rated?",
+              "N/A",
+              "N/A",
+              "1,499",
+              "1,950 rated"
+            ],
+            [
+              "FT-101 Coriolis MFM range (kg/h)",
+              "0",
+              "1,363",
+              "1,499",
+              "0–2,000 range"
+            ],
+            [
+              "FCV-101 control valve Cv at max flow",
+              "—",
+              "—",
+              "1,499",
+              "Cv ≥ 45 required"
+            ],
+            [
+              "Transfer line trace temperature (°C)",
+              "135",
+              "140",
+              "140",
+              "160°C trace rated"
+            ],
+            [
+              "Filter ΔP clean (bar)",
+              "0.05",
+              "0.10",
+              "0.11",
+              "0.5 barg (bypass opens)"
+            ],
+            [
+              "Filter ΔP fouled alarm setpoint (bar)",
+              "—",
+              "—",
+              "—",
+              "0.3 barg alarm"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "UNIT 200 — SULFUR COMBUSTION AND WASTE HEAT BOILER",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": []
+    },
+    {
+      "heading": {
+        "text": "Process Narrative",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [
+        {
+          "text": "Filtered molten sulfur is atomised through 2 × 100% stainless steel spray guns into the horizontal cylindrical sulfur furnace. The furnace burner zone is refractory-lined (castable high-alumina refractory, service temperature 1,400°C). Dried process air, compressed by the main air blower, enters the furnace through a windbox and annular air register. Sulfur auto-ignites at approximately 250°C; at normal operating temperatures of 1,000–1,050°C, combustion is complete within the furnace residence time (approximately 3 seconds at design flow).",
+          "style": "Normal"
+        },
+        {
+          "text": "The process gas exits the furnace at 1,000–1,100°C into the Waste Heat Boiler (WHB), a fire-tube boiler design with process gas on the tube side. The WHB cools the gas from ~1,050°C to ~420°C while generating HP steam at 40 barg/400°C. A steam drum integral to the WHB package maintains water level; a three-element level control (LIC-201) regulates BFW admission.",
+          "style": "Normal"
+        }
+      ],
+      "tables": []
+    },
+    {
+      "heading": {
+        "text": "Unit 200 — Operating Envelope Consistency Check",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 2,
+          "rows": [
+            [
+              "Parameter",
+              "Min",
+              "Normal",
+              "Surge (110%)",
+              "Equipment Rated / Limit"
+            ],
+            [
+              "Furnace temp (°C)",
+              "950",
+              "1,050",
+              "1,080",
+              "TSHH 1,150°C; Refractory 1,400°C"
+            ],
+            [
+              "Furnace outlet gas temp (°C)",
+              "950",
+              "1,050",
+              "1,080",
+              "WHB inlet rated 1,200°C"
+            ],
+            [
+              "WHB gas outlet temp (°C)",
+              "400",
+              "420",
+              "425",
+              "380–450°C design window"
+            ],
+            [
+              "WHB steam pressure (barg)",
+              "38",
+              "40",
+              "40",
+              "PAHH 46 barg; MAWP 48 barg"
+            ],
+            [
+              "WHB steam flow (kg/h)",
+              "3,750",
+              "7,500",
+              "8,250",
+              "9,500 kg/h rated"
+            ],
+            [
+              "WHB tube gas velocity (m/s)",
+              "2.1",
+              "4.2",
+              "4.6",
+              "5.0 m/s erosion limit"
+            ],
+            [
+              "SO₂ concentration at furnace exit (vol%)",
+              "8.5",
+              "10.5",
+              "10.5",
+              "11.5 vol% max (catalyst constraint)"
+            ],
+            [
+              "Furnace chamber pressure (mbar)",
+              "-30",
+              "-15",
+              "-18",
+              "PSHH +300 mbar; blower design -60 mbar"
+            ],
+            [
+              "Sulfur gun atomising pressure (barg)",
+              "0.30",
+              "0.40",
+              "0.44",
+              "0.6 barg (gun design pressure)"
+            ],
+            [
+              "Air blower discharge pressure (barg)",
+              "0.30",
+              "0.45",
+              "0.50",
+              "0.65 barg (blower MAWP)"
+            ],
+            [
+              "Air blower motor current (A)",
+              "180",
+              "290",
+              "319",
+              "350 A (motor FLA)"
+            ],
+            [
+              "WHB steam drum level (%)",
+              "40",
+              "50",
+              "50",
+              "LSLL 20%; LSHH 90%"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "UNIT 300 — GAS DRYING AND MAIN AIR BLOWER",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": []
+    },
+    {
+      "heading": {
+        "text": "Process Narrative",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [
+        {
+          "text": "Atmospheric air enters the drying tower (DT) through a coarse-mesh inlet filter and rises through structured packing irrigated with 93–96 wt% H₂SO₄ countercurrently. The desiccant acid absorbs moisture, reducing the air moisture content from ambient (up to 25 g/Nm³) to <0.1 g/Nm³ dry. The dried air exits through a fibre-bed mist eliminator to capture entrained acid droplets before passing to the centrifugal main air blower.",
+          "style": "Normal"
+        },
+        {
+          "text": "The main air blower is a single-stage centrifugal type (duty only; a full standby blower is provided) driven by a high-efficiency MV motor (11 kV) with Variable Frequency Drive (VFD). The VFD enables the blower to match air flow to the production rate setpoint from the DCS Master Load Governor. The blower operates at approximately 0.45 barg discharge pressure under normal conditions.",
+          "style": "Normal"
+        }
+      ],
+      "tables": []
+    },
+    {
+      "heading": {
+        "text": "Unit 300 — Operating Envelope Consistency Check",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 3,
+          "rows": [
+            [
+              "Parameter",
+              "Turndown (50%)",
+              "Normal (100%)",
+              "Surge (110%)"
+            ],
+            [
+              "Air flow (Nm³/h)",
+              "4,437",
+              "8,873",
+              "9,760"
+            ],
+            [
+              "DT packing gas velocity (m/s)",
+              "0.9",
+              "1.8",
+              "2.0"
+            ],
+            [
+              "DT acid concentration (wt%)",
+              "93",
+              "94.5",
+              "94.5"
+            ],
+            [
+              "DT acid pump flow (m³/h)",
+              "45",
+              "45",
+              "50"
+            ],
+            [
+              "Blower VFD frequency (Hz)",
+              "26",
+              "50",
+              "55"
+            ],
+            [
+              "Blower VFD speed (%)",
+              "52",
+              "100",
+              "110"
+            ],
+            [
+              "Blower motor power (kW)",
+              "140",
+              "520",
+              "572"
+            ],
+            [
+              "Inlet filter ΔP (mbar)",
+              "3",
+              "8",
+              "9"
+            ],
+            [
+              "Air blower surge margin",
+              "Check",
+              ">15%",
+              ">10%"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "UNIT 400 — DCDA CATALYTIC CONVERTER",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": []
+    },
+    {
+      "heading": {
+        "text": "Process Narrative",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [
+        {
+          "text": "The converter is a vertical cylindrical carbon steel vessel with four catalyst beds (passes) arranged vertically. The shell operates at near-atmospheric pressure (slight positive, <0.15 barg). Between each pass, gas-to-gas heat exchangers (shell-and-tube, Type 304 SS) cool the reacted gas and preheat the incoming gas, maintaining each catalyst bed inlet within the optimal temperature window. Each bed contains Cs-promoted V₂O₅ catalyst (VK Series, Haldor Topsoe or equivalent). Catalyst bed depths are 1.2 m (Pass 1), 0.8 m (Pass 2), 0.8 m (Pass 3), 1.0 m (Pass 4).",
+          "style": "Normal"
+        }
+      ],
+      "tables": []
+    },
+    {
+      "heading": {
+        "text": "Unit 400 — Operating Envelope Consistency Check",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 4,
+          "rows": [
+            [
+              "Parameter",
+              "Turndown (50%)",
+              "Normal (100%)",
+              "Surge (110%)",
+              "Limit / TSHH Setpoint"
+            ],
+            [
+              "Pass 1 inlet T (°C)",
+              "400",
+              "420",
+              "420",
+              "Ignition temp 400°C; TSLL 405°C"
+            ],
+            [
+              "Pass 1 outlet T (°C)",
+              "540",
+              "600",
+              "621",
+              "TSHH 620°C — EXCEEDED at surge"
+            ],
+            [
+              "Pass 2 inlet T (°C)",
+              "425",
+              "440",
+              "442",
+              "Normal 440°C; max 470°C"
+            ],
+            [
+              "Pass 2 outlet T (°C)",
+              "490",
+              "520",
+              "526",
+              "TSHH 550°C"
+            ],
+            [
+              "Pass 3 inlet T (°C)",
+              "420",
+              "430",
+              "432",
+              "Normal 430°C; max 460°C"
+            ],
+            [
+              "Pass 3 outlet T (°C)",
+              "455",
+              "480",
+              "484",
+              "TSHH 500°C"
+            ],
+            [
+              "Pass 4 inlet T (°C)",
+              "408",
+              "415",
+              "416",
+              "Normal 415°C; max 440°C"
+            ],
+            [
+              "Pass 4 outlet T (°C)",
+              "420",
+              "430",
+              "432",
+              "TSHH 450°C"
+            ],
+            [
+              "Converter shell pressure (barg)",
+              "0.03",
+              "0.08",
+              "0.10",
+              "0.5 barg design (MAWP)"
+            ],
+            [
+              "Catalyst bed ΔP (mbar)",
+              "8",
+              "18",
+              "20",
+              "40 mbar (design limit)"
+            ],
+            [
+              "Space velocity (h⁻¹) P1",
+              "—",
+              "550",
+              "600",
+              "700 h⁻¹ max (catalyst spec)"
+            ],
+            [
+              "SO₂ conversion total (%)",
+              "99.6",
+              "99.8",
+              "99.77",
+              "≥99.5% (environmental guarantee)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "UNIT 500 — ABSORPTION SYSTEM (IPAT AND FAT)",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": []
+    },
+    {
+      "heading": {
+        "text": "Process Narrative",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [
+        {
+          "text": "Both the Interpass Absorption Tower (IPAT) and Final Absorption Tower (FAT) are packed column vessels constructed of carbon steel with an internal monolithic brick lining (acid-resistant, silicate-bonded). Packing is ceramic Raschig rings (50 mm) or equivalent structured packing. Gas flows upward; acid flows downward (countercurrent). Product acid is continuously withdrawn from the absorption circuit, diluted with precise amounts of demineralised water, and cooled in shell-and-tube acid coolers (Saramet or Hastelloy C-276 tubed) before returning to the towers. The acid concentration is maintained at 98.0–98.5 wt% by the inline density-based control loop (AIC-501/502).",
+          "style": "Normal"
+        }
+      ],
+      "tables": []
+    },
+    {
+      "heading": {
+        "text": "Unit 500 — Operating Envelope Consistency Check",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 5,
+          "rows": [
+            [
+              "Parameter",
+              "Normal (100%)",
+              "Surge (110%)",
+              "Equipment Rated"
+            ],
+            [
+              "IPAT gas inlet temp (°C)",
+              "420",
+              "432",
+              "480°C (lining design T)"
+            ],
+            [
+              "IPAT gas velocity in packing (m/s)",
+              "1.5",
+              "1.65",
+              "2.0 m/s flooding limit"
+            ],
+            [
+              "IPAT acid concentration (wt%)",
+              "98.2",
+              "98.2",
+              "97.5–98.8 wt% (control band)"
+            ],
+            [
+              "IPAT acid cooler duty (kW)",
+              "2,650",
+              "2,915",
+              "3,200 kW rated"
+            ],
+            [
+              "IPAT CW flow (m³/h)",
+              "76",
+              "84",
+              "95 m³/h (branch rated)"
+            ],
+            [
+              "IPAT circulating acid pump (m³/h)",
+              "120",
+              "132",
+              "150 m³/h (rated @ 130%)"
+            ],
+            [
+              "FAT gas inlet temp (°C)",
+              "415",
+              "420",
+              "450°C (lining design T)"
+            ],
+            [
+              "FAT acid concentration (wt%)",
+              "98.2",
+              "98.2",
+              "97.5–98.8 wt%"
+            ],
+            [
+              "FAT acid cooler duty (kW)",
+              "890",
+              "979",
+              "1,100 kW rated"
+            ],
+            [
+              "Dilution water flow (L/h)",
+              "220",
+              "242",
+              "500 L/h (FCV-501 rated)"
+            ],
+            [
+              "Product acid temperature (°C)",
+              "35",
+              "38",
+              "45°C (TA-701-H alarm)"
+            ],
+            [
+              "WESP / mist eliminator efficiency",
+              "99.5%",
+              "99.0%",
+              "≥99.0% at rated flow"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "UNIT 700 — PRODUCT STORAGE AND LOADING",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": []
+    },
+    {
+      "heading": {
+        "text": "Process Narrative",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [
+        {
+          "text": "Concentrated product acid is transferred from the FAT acid circuit to product storage tanks via the product acid cooler, where it is cooled to 25–40°C before entering storage. Product tanks are carbon steel construction with an internal rubber lining (natural rubber, 5 mm) or brick-lined; they are enclosed within a reinforced concrete bund of 110% tank capacity. Each tank is equipped with a fixed roof, nitrogen blanket (to prevent moisture ingress and vapour release), and level measurement with high-high level ESD shutdown. Product is dispatched via acid-proof centrifugal pumps to road tanker loading bays equipped with dry-break couplings and weigh-bridge control.",
+          "style": "Normal"
+        }
+      ],
+      "tables": []
+    },
+    {
+      "heading": {
+        "text": "Unit 700 — Operating Envelope Consistency Check",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 6,
+          "rows": [
+            [
+              "Parameter",
+              "Normal (100%)",
+              "Surge (110%)",
+              "Equipment Rated"
+            ],
+            [
+              "Product acid temperature to storage (°C)",
+              "35",
+              "38",
+              "45°C (tank lining design)"
+            ],
+            [
+              "Product tank working pressure (mbarg)",
+              "5–10",
+              "5–10",
+              "50 mbarg (tank MAWP)"
+            ],
+            [
+              "Product pump flow — dispatch (kg/h)",
+              "4,167",
+              "5,417",
+              "5,400 kg/h (rated @ 130%)"
+            ],
+            [
+              "Product transfer pump flow (internal)",
+              "4,167",
+              "4,583",
+              "5,200 kg/h (rated @ 125%)"
+            ],
+            [
+              "Product acid cooler duty (kW)",
+              "420",
+              "462",
+              "520 kW rated"
+            ],
+            [
+              "Product tank N₂ blanket flow (Nm³/h)",
+              "2",
+              "2",
+              "5 (N₂ supply)"
+            ],
+            [
+              "Level transmitter range (%)",
+              "0–100",
+              "0–100",
+              "LSHH at 90% — adequate"
+            ],
+            [
+              "Bund capacity (% of tank vol.)",
+              "110%",
+              "110%",
+              "≥110% (regulatory)"
+            ],
+            [
+              "Loading arm flow rate (kg/h)",
+              "25,000",
+              "25,000",
+              "30,000 kg/h (arm rated)"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "text": "FRONT-END ENGINEERING DESIGN (FEED)",
+      "style": "Normal"
+    },
+    {
+      "text": "100 t/d Sulfuric Acid Plant — DCDA / Elemental Sulfur",
+      "style": "Normal"
+    },
+    {
+      "text": "PROCESS DESCRIPTION",
+      "style": "Normal"
+    },
+    {
+      "text": "Unit-by-Unit Narrative with Operating Envelope Consistency Check",
+      "style": "Normal"
+    },
+    {
+      "text": "UNIT 100 — SULFUR HANDLING AND MELTING",
+      "style": "Heading 1"
+    },
+    {
+      "text": "Process Narrative",
+      "style": "Heading 2"
+    },
+    {
+      "text": "Molten elemental sulfur is received from road tankers at 135–145°C into insulated, steam-traced storage tanks (capacity: minimum 7-day supply at 100 t/d nameplate = 9,541 t minimum storage). The storage system consists of two tanks of equal size operating in duty/standby configuration with a common suction header. Each tank is fitted with electric immersion heaters and/or steam coil heating to maintain sulfur at 138–143°C (operating band). Sulfur vapour pressure at 143°C is approximately 0.08 barg — tanks are designed for 0.5 barg working pressure (atmospheric + vapour space).",
+      "style": "Normal"
+    },
+    {
+      "text": "Molten sulfur is pumped from storage via a dedicated duty/standby pump set (gear pumps, ATEX-rated, heated casing) through 4-inch insulated and electrically heat-traced carbon steel pipe to the sulfur filter unit. The filter removes ash, carbon, and solid particulates >25 micron to protect vanadium catalyst. After filtration, a Coriolis mass flow meter (FT-101) measures and controls the sulfur feed rate to the furnace via a heated modulating control valve (FCV-101).",
+      "style": "Normal"
+    },
+    {
+      "text": "Unit 100 — Operating Envelope Consistency Check",
+      "style": "Heading 2"
+    },
+    {
+      "text": "UNIT 200 — SULFUR COMBUSTION AND WASTE HEAT BOILER",
+      "style": "Heading 1"
+    },
+    {
+      "text": "Process Narrative",
+      "style": "Heading 2"
+    },
+    {
+      "text": "Filtered molten sulfur is atomised through 2 × 100% stainless steel spray guns into the horizontal cylindrical sulfur furnace. The furnace burner zone is refractory-lined (castable high-alumina refractory, service temperature 1,400°C). Dried process air, compressed by the main air blower, enters the furnace through a windbox and annular air register. Sulfur auto-ignites at approximately 250°C; at normal operating temperatures of 1,000–1,050°C, combustion is complete within the furnace residence time (approximately 3 seconds at design flow).",
+      "style": "Normal"
+    },
+    {
+      "text": "The process gas exits the furnace at 1,000–1,100°C into the Waste Heat Boiler (WHB), a fire-tube boiler design with process gas on the tube side. The WHB cools the gas from ~1,050°C to ~420°C while generating HP steam at 40 barg/400°C. A steam drum integral to the WHB package maintains water level; a three-element level control (LIC-201) regulates BFW admission.",
+      "style": "Normal"
+    },
+    {
+      "text": "Unit 200 — Operating Envelope Consistency Check",
+      "style": "Heading 2"
+    },
+    {
+      "text": "UNIT 300 — GAS DRYING AND MAIN AIR BLOWER",
+      "style": "Heading 1"
+    },
+    {
+      "text": "Process Narrative",
+      "style": "Heading 2"
+    },
+    {
+      "text": "Atmospheric air enters the drying tower (DT) through a coarse-mesh inlet filter and rises through structured packing irrigated with 93–96 wt% H₂SO₄ countercurrently. The desiccant acid absorbs moisture, reducing the air moisture content from ambient (up to 25 g/Nm³) to <0.1 g/Nm³ dry. The dried air exits through a fibre-bed mist eliminator to capture entrained acid droplets before passing to the centrifugal main air blower.",
+      "style": "Normal"
+    },
+    {
+      "text": "The main air blower is a single-stage centrifugal type (duty only; a full standby blower is provided) driven by a high-efficiency MV motor (11 kV) with Variable Frequency Drive (VFD). The VFD enables the blower to match air flow to the production rate setpoint from the DCS Master Load Governor. The blower operates at approximately 0.45 barg discharge pressure under normal conditions.",
+      "style": "Normal"
+    },
+    {
+      "text": "Unit 300 — Operating Envelope Consistency Check",
+      "style": "Heading 2"
+    },
+    {
+      "text": "UNIT 400 — DCDA CATALYTIC CONVERTER",
+      "style": "Heading 1"
+    },
+    {
+      "text": "Process Narrative",
+      "style": "Heading 2"
+    },
+    {
+      "text": "The converter is a vertical cylindrical carbon steel vessel with four catalyst beds (passes) arranged vertically. The shell operates at near-atmospheric pressure (slight positive, <0.15 barg). Between each pass, gas-to-gas heat exchangers (shell-and-tube, Type 304 SS) cool the reacted gas and preheat the incoming gas, maintaining each catalyst bed inlet within the optimal temperature window. Each bed contains Cs-promoted V₂O₅ catalyst (VK Series, Haldor Topsoe or equivalent). Catalyst bed depths are 1.2 m (Pass 1), 0.8 m (Pass 2), 0.8 m (Pass 3), 1.0 m (Pass 4).",
+      "style": "Normal"
+    },
+    {
+      "text": "Unit 400 — Operating Envelope Consistency Check",
+      "style": "Heading 2"
+    },
+    {
+      "text": "UNIT 500 — ABSORPTION SYSTEM (IPAT AND FAT)",
+      "style": "Heading 1"
+    },
+    {
+      "text": "Process Narrative",
+      "style": "Heading 2"
+    },
+    {
+      "text": "Both the Interpass Absorption Tower (IPAT) and Final Absorption Tower (FAT) are packed column vessels constructed of carbon steel with an internal monolithic brick lining (acid-resistant, silicate-bonded). Packing is ceramic Raschig rings (50 mm) or equivalent structured packing. Gas flows upward; acid flows downward (countercurrent). Product acid is continuously withdrawn from the absorption circuit, diluted with precise amounts of demineralised water, and cooled in shell-and-tube acid coolers (Saramet or Hastelloy C-276 tubed) before returning to the towers. The acid concentration is maintained at 98.0–98.5 wt% by the inline density-based control loop (AIC-501/502).",
+      "style": "Normal"
+    },
+    {
+      "text": "Unit 500 — Operating Envelope Consistency Check",
+      "style": "Heading 2"
+    },
+    {
+      "text": "UNIT 700 — PRODUCT STORAGE AND LOADING",
+      "style": "Heading 1"
+    },
+    {
+      "text": "Process Narrative",
+      "style": "Heading 2"
+    },
+    {
+      "text": "Concentrated product acid is transferred from the FAT acid circuit to product storage tanks via the product acid cooler, where it is cooled to 25–40°C before entering storage. Product tanks are carbon steel construction with an internal rubber lining (natural rubber, 5 mm) or brick-lined; they are enclosed within a reinforced concrete bund of 110% tank capacity. Each tank is equipped with a fixed roof, nitrogen blanket (to prevent moisture ingress and vapour release), and level measurement with high-high level ESD shutdown. Product is dispatched via acid-proof centrifugal pumps to road tanker loading bays equipped with dry-break couplings and weigh-bridge control.",
+      "style": "Normal"
+    },
+    {
+      "text": "Unit 700 — Operating Envelope Consistency Check",
+      "style": "Heading 2"
+    }
+  ],
+  "tables": [
+    {
+      "index": 0,
+      "rows": [
+        [
+          "Attribute",
+          "Value"
+        ],
+        [
+          "Document No.",
+          "PRJ-SA100-FEED-PD-003"
+        ],
+        [
+          "Revision",
+          "A0 — Issued for Review"
+        ],
+        [
+          "Project",
+          "100 t/d H₂SO₄ Plant, DCDA Route"
+        ],
+        [
+          "Date",
+          "August 2026"
+        ],
+        [
+          "Status",
+          "FEED — Consistency-Checked Edition"
+        ]
+      ]
+    },
+    {
+      "index": 1,
+      "rows": [
+        [
+          "Parameter",
+          "Min Operating",
+          "Normal Design",
+          "Surge (110%)",
+          "Equipment/ Instrument Rated"
+        ],
+        [
+          "Storage tank operating pressure (barg)",
+          "0 (atmospheric)",
+          "0.05",
+          "0.05",
+          "0.5 barg design"
+        ],
+        [
+          "Sulfur storage temperature (°C)",
+          "135",
+          "140",
+          "140",
+          "160°C heating coil max"
+        ],
+        [
+          "Sulfur pump discharge pressure (barg)",
+          "0.3",
+          "0.4",
+          "0.5",
+          "6.0 barg pump rated"
+        ],
+        [
+          "Sulfur pump flow — duty (kg/h)",
+          "682",
+          "1,363",
+          "1,499",
+          "1,950 kg/h rated (130%)"
+        ],
+        [
+          "Sulfur pump flow — surge beyond 130% rated?",
+          "N/A",
+          "N/A",
+          "1,499",
+          "1,950 rated"
+        ],
+        [
+          "FT-101 Coriolis MFM range (kg/h)",
+          "0",
+          "1,363",
+          "1,499",
+          "0–2,000 range"
+        ],
+        [
+          "FCV-101 control valve Cv at max flow",
+          "—",
+          "—",
+          "1,499",
+          "Cv ≥ 45 required"
+        ],
+        [
+          "Transfer line trace temperature (°C)",
+          "135",
+          "140",
+          "140",
+          "160°C trace rated"
+        ],
+        [
+          "Filter ΔP clean (bar)",
+          "0.05",
+          "0.10",
+          "0.11",
+          "0.5 barg (bypass opens)"
+        ],
+        [
+          "Filter ΔP fouled alarm setpoint (bar)",
+          "—",
+          "—",
+          "—",
+          "0.3 barg alarm"
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "rows": [
+        [
+          "Parameter",
+          "Min",
+          "Normal",
+          "Surge (110%)",
+          "Equipment Rated / Limit"
+        ],
+        [
+          "Furnace temp (°C)",
+          "950",
+          "1,050",
+          "1,080",
+          "TSHH 1,150°C; Refractory 1,400°C"
+        ],
+        [
+          "Furnace outlet gas temp (°C)",
+          "950",
+          "1,050",
+          "1,080",
+          "WHB inlet rated 1,200°C"
+        ],
+        [
+          "WHB gas outlet temp (°C)",
+          "400",
+          "420",
+          "425",
+          "380–450°C design window"
+        ],
+        [
+          "WHB steam pressure (barg)",
+          "38",
+          "40",
+          "40",
+          "PAHH 46 barg; MAWP 48 barg"
+        ],
+        [
+          "WHB steam flow (kg/h)",
+          "3,750",
+          "7,500",
+          "8,250",
+          "9,500 kg/h rated"
+        ],
+        [
+          "WHB tube gas velocity (m/s)",
+          "2.1",
+          "4.2",
+          "4.6",
+          "5.0 m/s erosion limit"
+        ],
+        [
+          "SO₂ concentration at furnace exit (vol%)",
+          "8.5",
+          "10.5",
+          "10.5",
+          "11.5 vol% max (catalyst constraint)"
+        ],
+        [
+          "Furnace chamber pressure (mbar)",
+          "-30",
+          "-15",
+          "-18",
+          "PSHH +300 mbar; blower design -60 mbar"
+        ],
+        [
+          "Sulfur gun atomising pressure (barg)",
+          "0.30",
+          "0.40",
+          "0.44",
+          "0.6 barg (gun design pressure)"
+        ],
+        [
+          "Air blower discharge pressure (barg)",
+          "0.30",
+          "0.45",
+          "0.50",
+          "0.65 barg (blower MAWP)"
+        ],
+        [
+          "Air blower motor current (A)",
+          "180",
+          "290",
+          "319",
+          "350 A (motor FLA)"
+        ],
+        [
+          "WHB steam drum level (%)",
+          "40",
+          "50",
+          "50",
+          "LSLL 20%; LSHH 90%"
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "rows": [
+        [
+          "Parameter",
+          "Turndown (50%)",
+          "Normal (100%)",
+          "Surge (110%)"
+        ],
+        [
+          "Air flow (Nm³/h)",
+          "4,437",
+          "8,873",
+          "9,760"
+        ],
+        [
+          "DT packing gas velocity (m/s)",
+          "0.9",
+          "1.8",
+          "2.0"
+        ],
+        [
+          "DT acid concentration (wt%)",
+          "93",
+          "94.5",
+          "94.5"
+        ],
+        [
+          "DT acid pump flow (m³/h)",
+          "45",
+          "45",
+          "50"
+        ],
+        [
+          "Blower VFD frequency (Hz)",
+          "26",
+          "50",
+          "55"
+        ],
+        [
+          "Blower VFD speed (%)",
+          "52",
+          "100",
+          "110"
+        ],
+        [
+          "Blower motor power (kW)",
+          "140",
+          "520",
+          "572"
+        ],
+        [
+          "Inlet filter ΔP (mbar)",
+          "3",
+          "8",
+          "9"
+        ],
+        [
+          "Air blower surge margin",
+          "Check",
+          ">15%",
+          ">10%"
+        ]
+      ]
+    },
+    {
+      "index": 4,
+      "rows": [
+        [
+          "Parameter",
+          "Turndown (50%)",
+          "Normal (100%)",
+          "Surge (110%)",
+          "Limit / TSHH Setpoint"
+        ],
+        [
+          "Pass 1 inlet T (°C)",
+          "400",
+          "420",
+          "420",
+          "Ignition temp 400°C; TSLL 405°C"
+        ],
+        [
+          "Pass 1 outlet T (°C)",
+          "540",
+          "600",
+          "621",
+          "TSHH 620°C — EXCEEDED at surge"
+        ],
+        [
+          "Pass 2 inlet T (°C)",
+          "425",
+          "440",
+          "442",
+          "Normal 440°C; max 470°C"
+        ],
+        [
+          "Pass 2 outlet T (°C)",
+          "490",
+          "520",
+          "526",
+          "TSHH 550°C"
+        ],
+        [
+          "Pass 3 inlet T (°C)",
+          "420",
+          "430",
+          "432",
+          "Normal 430°C; max 460°C"
+        ],
+        [
+          "Pass 3 outlet T (°C)",
+          "455",
+          "480",
+          "484",
+          "TSHH 500°C"
+        ],
+        [
+          "Pass 4 inlet T (°C)",
+          "408",
+          "415",
+          "416",
+          "Normal 415°C; max 440°C"
+        ],
+        [
+          "Pass 4 outlet T (°C)",
+          "420",
+          "430",
+          "432",
+          "TSHH 450°C"
+        ],
+        [
+          "Converter shell pressure (barg)",
+          "0.03",
+          "0.08",
+          "0.10",
+          "0.5 barg design (MAWP)"
+        ],
+        [
+          "Catalyst bed ΔP (mbar)",
+          "8",
+          "18",
+          "20",
+          "40 mbar (design limit)"
+        ],
+        [
+          "Space velocity (h⁻¹) P1",
+          "—",
+          "550",
+          "600",
+          "700 h⁻¹ max (catalyst spec)"
+        ],
+        [
+          "SO₂ conversion total (%)",
+          "99.6",
+          "99.8",
+          "99.77",
+          "≥99.5% (environmental guarantee)"
+        ]
+      ]
+    },
+    {
+      "index": 5,
+      "rows": [
+        [
+          "Parameter",
+          "Normal (100%)",
+          "Surge (110%)",
+          "Equipment Rated"
+        ],
+        [
+          "IPAT gas inlet temp (°C)",
+          "420",
+          "432",
+          "480°C (lining design T)"
+        ],
+        [
+          "IPAT gas velocity in packing (m/s)",
+          "1.5",
+          "1.65",
+          "2.0 m/s flooding limit"
+        ],
+        [
+          "IPAT acid concentration (wt%)",
+          "98.2",
+          "98.2",
+          "97.5–98.8 wt% (control band)"
+        ],
+        [
+          "IPAT acid cooler duty (kW)",
+          "2,650",
+          "2,915",
+          "3,200 kW rated"
+        ],
+        [
+          "IPAT CW flow (m³/h)",
+          "76",
+          "84",
+          "95 m³/h (branch rated)"
+        ],
+        [
+          "IPAT circulating acid pump (m³/h)",
+          "120",
+          "132",
+          "150 m³/h (rated @ 130%)"
+        ],
+        [
+          "FAT gas inlet temp (°C)",
+          "415",
+          "420",
+          "450°C (lining design T)"
+        ],
+        [
+          "FAT acid concentration (wt%)",
+          "98.2",
+          "98.2",
+          "97.5–98.8 wt%"
+        ],
+        [
+          "FAT acid cooler duty (kW)",
+          "890",
+          "979",
+          "1,100 kW rated"
+        ],
+        [
+          "Dilution water flow (L/h)",
+          "220",
+          "242",
+          "500 L/h (FCV-501 rated)"
+        ],
+        [
+          "Product acid temperature (°C)",
+          "35",
+          "38",
+          "45°C (TA-701-H alarm)"
+        ],
+        [
+          "WESP / mist eliminator efficiency",
+          "99.5%",
+          "99.0%",
+          "≥99.0% at rated flow"
+        ]
+      ]
+    },
+    {
+      "index": 6,
+      "rows": [
+        [
+          "Parameter",
+          "Normal (100%)",
+          "Surge (110%)",
+          "Equipment Rated"
+        ],
+        [
+          "Product acid temperature to storage (°C)",
+          "35",
+          "38",
+          "45°C (tank lining design)"
+        ],
+        [
+          "Product tank working pressure (mbarg)",
+          "5–10",
+          "5–10",
+          "50 mbarg (tank MAWP)"
+        ],
+        [
+          "Product pump flow — dispatch (kg/h)",
+          "4,167",
+          "5,417",
+          "5,400 kg/h (rated @ 130%)"
+        ],
+        [
+          "Product transfer pump flow (internal)",
+          "4,167",
+          "4,583",
+          "5,200 kg/h (rated @ 125%)"
+        ],
+        [
+          "Product acid cooler duty (kW)",
+          "420",
+          "462",
+          "520 kW rated"
+        ],
+        [
+          "Product tank N₂ blanket flow (Nm³/h)",
+          "2",
+          "2",
+          "5 (N₂ supply)"
+        ],
+        [
+          "Level transmitter range (%)",
+          "0–100",
+          "0–100",
+          "LSHH at 90% — adequate"
+        ],
+        [
+          "Bund capacity (% of tank vol.)",
+          "110%",
+          "110%",
+          "≥110% (regulatory)"
+        ],
+        [
+          "Loading arm flow rate (kg/h)",
+          "25,000",
+          "25,000",
+          "30,000 kg/h (arm rated)"
+        ]
+      ]
+    }
+  ]
+}

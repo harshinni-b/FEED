@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+data/processed/*
+!data/processed/.gitkeep
+frontend/node_modules/
+frontend/dist/
+
+outputs/

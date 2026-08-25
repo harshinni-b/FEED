@@ -1,0 +1,997 @@
+{
+  "filename": "DOC11_Operating_Philosophy.docx",
+  "metadata": {
+    "source_path": "data\\raw\\DOC11_Operating_Philosophy.docx",
+    "core_properties": {
+      "author": "Un-named",
+      "created": "2026-08-20T13:11:00+00:00",
+      "last_modified_by": "Srinivasan, Pratheep Kumar",
+      "modified": "2026-08-20T13:40:00+00:00",
+      "revision": 2
+    }
+  },
+  "headings": [
+    {
+      "text": "2. OPERATING MODES AND PERMISSIBLE RANGES",
+      "level": 1
+    },
+    {
+      "text": "2.1 Defined Operating Modes",
+      "level": 2
+    },
+    {
+      "text": "2.2 Operating Envelope — Operator Action Triggers",
+      "level": 2
+    },
+    {
+      "text": "3. SHIFT PHILOSOPHY AND OPERATOR RESPONSIBILITIES",
+      "level": 1
+    },
+    {
+      "text": "3.1 Staffing and Handover",
+      "level": 2
+    },
+    {
+      "text": "3.2 Shift Handover Requirements",
+      "level": 2
+    },
+    {
+      "text": "4. CONTROL MODE PHILOSOPHY",
+      "level": 1
+    },
+    {
+      "text": "4.1 Normal Operating Control Mode",
+      "level": 2
+    },
+    {
+      "text": "4.2 Key Process Interaction Rules",
+      "level": 2
+    },
+    {
+      "text": "5. ENVIRONMENTAL COMPLIANCE OPERATING RULES",
+      "level": 1
+    }
+  ],
+  "sections": [
+    {
+      "heading": null,
+      "level": 0,
+      "paragraphs": [
+        {
+          "text": "FRONT-END ENGINEERING DESIGN (FEED)",
+          "style": "Normal"
+        },
+        {
+          "text": "100 t/d Sulfuric Acid Plant — DCDA / Elemental Sulfur",
+          "style": "Normal"
+        },
+        {
+          "text": "OPERATING PHILOSOPHY",
+          "style": "Normal"
+        },
+        {
+          "text": "Plant Operating Strategy — Normal, Turndown, and Surge Modes with Range Consistency",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 0,
+          "rows": [
+            [
+              "Attribute",
+              "Value"
+            ],
+            [
+              "Document No.",
+              "PRJ-SA100-FEED-OP-011"
+            ],
+            [
+              "Revision",
+              "A0 — Issued for Review"
+            ],
+            [
+              "Project",
+              "100 t/d H₂SO₄ Plant, DCDA Route"
+            ],
+            [
+              "Date",
+              "August 2026"
+            ],
+            [
+              "Status",
+              "FEED — Consistency-Checked Edition"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "2. OPERATING MODES AND PERMISSIBLE RANGES",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": []
+    },
+    {
+      "heading": {
+        "text": "2.1 Defined Operating Modes",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 1,
+          "rows": [
+            [
+              "Mode",
+              "Load (% Nameplate)",
+              "Sulfur Feed (kg/h)",
+              "Air Flow (Nm³/h)",
+              "SO₂ Conc. (vol%)",
+              "Conv. P1 Outlet (°C)",
+              "Stack SO₂ (mg/Nm³)"
+            ],
+            [
+              "Maximum Surge",
+              "110%",
+              "1,499",
+              "9,760",
+              "10.5",
+              "621",
+              "<480"
+            ],
+            [
+              "Normal Design",
+              "100%",
+              "1,363",
+              "8,873",
+              "10.5",
+              "600",
+              "<300"
+            ],
+            [
+              "Intermediate 80%",
+              "80%",
+              "1,090",
+              "7,098",
+              "10.5",
+              "580",
+              "<280"
+            ],
+            [
+              "Intermediate 60%",
+              "60%",
+              "818",
+              "5,324",
+              "10.5",
+              "555",
+              "<400"
+            ],
+            [
+              "Minimum Stable (50%)",
+              "50%",
+              "682",
+              "4,436",
+              "10.5",
+              "545",
+              "<480"
+            ],
+            [
+              "Cold Start Ramp",
+              "0→50%",
+              "0→682",
+              "4,000→4,436",
+              "0→10.5",
+              "Ambient→545",
+              "<500 (rising)"
+            ],
+            [
+              "PROHIBITED (120%+)",
+              ">110%",
+              "—",
+              "—",
+              "—",
+              ">621",
+              "Regulatory breach likely"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "2.2 Operating Envelope — Operator Action Triggers",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [
+        {
+          "text": "The following table defines the process variable thresholds at which the operator must take action, escalating from advisory through alarm to automatic ESD. The ranges reflect the full operating envelope including surge.",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 2,
+          "rows": [
+            [
+              "Process Variable",
+              "Normal Operating Range",
+              "Advisory (DCS INFO)",
+              "Alarm (DCS HIGH/LOW)",
+              "SIS Trip (Automatic)"
+            ],
+            [
+              "Furnace Temperature",
+              "1,000–1,080°C",
+              "—",
+              "HIGH 1,100°C / LOW 950°C",
+              "HH 1,150°C (SIL 2)"
+            ],
+            [
+              "Converter P1 Outlet T",
+              "590–610°C (normal); up to 621°C at surge",
+              "600°C advisory at surge",
+              "HIGH 610°C",
+              "HH 620°C (SIL 2)"
+            ],
+            [
+              "IPAT Acid Conc.",
+              "98.0–98.4 wt%",
+              "—",
+              "LOW 97.5 / HIGH 98.8",
+              "—"
+            ],
+            [
+              "Stack SO₂",
+              "<300 mg/Nm³ normal; <480 at turndown",
+              "400 mg/Nm³",
+              "HIGH 500 mg/Nm³",
+              "HH 600 mg/Nm³ + 5 min"
+            ],
+            [
+              "WHB Drum Level",
+              "40–60%",
+              "30% advisory",
+              "LOW 30% / HH 90%",
+              "LL 20% (SIL 1)"
+            ],
+            [
+              "WHB Steam Pressure",
+              "38–42 barg",
+              "—",
+              "HIGH 43 barg",
+              "HH 46 barg (SIL 2)"
+            ],
+            [
+              "Product Tank Level",
+              "20–80%",
+              "—",
+              "HIGH 80% / LOW 15%",
+              "HH 90% (SIL 2)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "3. SHIFT PHILOSOPHY AND OPERATOR RESPONSIBILITIES",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": []
+    },
+    {
+      "heading": {
+        "text": "3.1 Staffing and Handover",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 3,
+          "rows": [
+            [
+              "Role",
+              "Shift Structure",
+              "Key Responsibilities",
+              "Minimum Qualification"
+            ],
+            [
+              "Control Room Operator (CRO)",
+              "12-hour shifts (2 × 12 h; day and night)",
+              "Monitor all DCS displays; acknowledge and respond to all alarms; execute start-up/shutdown sequences under Process Engineer direction",
+              "Minimum 3 years process plant control room experience; H₂SO₄ or chemical plant preferred"
+            ],
+            [
+              "Field Operator",
+              "12-hour shifts",
+              "Physical rounds every 2 hours; confirm valve positions; take manual readings; respond to CRO direction",
+              "Trade-qualified; COSHH training; SCBA competent"
+            ],
+            [
+              "Shift Supervisor",
+              "12-hour shifts",
+              "Shift handover; shift log completion; Permit-to-Work authority; emergency coordinator",
+              "Minimum 5 years; first-line management trained"
+            ],
+            [
+              "Process Engineer (on-call)",
+              "Office hours + on-call",
+              "Technical authority for non-routine operations; SIS bypass authorisation; LOPA review; MOC approval",
+              "BEng Chemical Engineering; TÜV FS Engineer desirable"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "3.2 Shift Handover Requirements",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [
+        {
+          "text": "Shift handover shall be completed face-to-face in the control room with both incoming and outgoing CROs present. The outgoing operator shall verbally confirm the following, supported by the shift log:",
+          "style": "Normal"
+        },
+        {
+          "text": "1.  Current plant load (% and t/d) and trend direction",
+          "style": "Normal"
+        },
+        {
+          "text": "2.  All active alarms: acknowledged, priority, and action taken or pending",
+          "style": "Normal"
+        },
+        {
+          "text": "3.  Any abnormal operating conditions, equipment deficiencies, or deviations from SOP",
+          "style": "Normal"
+        },
+        {
+          "text": "4.  Active Permits to Work, including any ESD bypasses or SIS inhibits currently in place",
+          "style": "Normal"
+        },
+        {
+          "text": "5.  Status of all duty/standby equipment; any equipment out of service",
+          "style": "Normal"
+        },
+        {
+          "text": "6.  Sulfur storage tank level and estimated days of supply remaining",
+          "style": "Normal"
+        },
+        {
+          "text": "7.  Product storage tank level and dispatch schedule for next 24 hours",
+          "style": "Normal"
+        },
+        {
+          "text": "8.  Any outstanding laboratory results or quality deviations",
+          "style": "Normal"
+        }
+      ],
+      "tables": []
+    },
+    {
+      "heading": {
+        "text": "4. CONTROL MODE PHILOSOPHY",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": []
+    },
+    {
+      "heading": {
+        "text": "4.1 Normal Operating Control Mode",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [
+        {
+          "text": "Under normal operating conditions all DCS PID loops shall operate in AUTOMATIC mode with remote setpoints from the Master Production Rate Governor. The following exceptions define when MANUAL mode is permissible:",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 4,
+          "rows": [
+            [
+              "Situation",
+              "Loop",
+              "Permitted Mode",
+              "Authority Required",
+              "Duration Limit",
+              "Status Check"
+            ],
+            [
+              "Analyser maintenance (AT-501/502)",
+              "AIC-501/502",
+              "MANUAL — operator trims dilution water FCV manually",
+              "CRO with Shift Supervisor notification",
+              "Duration of analyser maintenance + 30 min",
+              "AIC must return to AUTO within 2 h"
+            ],
+            [
+              "Blower surge event transient",
+              "FIC-201",
+              "MANUAL — temporarily fix air flow during transient",
+              "CRO decision",
+              "<15 minutes",
+              "Return to AUTO when governor stable"
+            ],
+            [
+              "WHB level extreme transient",
+              "LIC-201",
+              "MANUAL — BFW trim",
+              "CRO decision",
+              "<10 minutes; escalate to Process Engineer if longer",
+              "Return to 3-element AUTO when level stable 40–60%"
+            ],
+            [
+              "SIS bypass (any)",
+              "SIS logic",
+              "Hardwired bypass switch",
+              "Process Engineer + Shift Supervisor",
+              "Maximum 8 hours (auto timer)",
+              "Log entry mandatory; DCS advisory active"
+            ],
+            [
+              "Operation above 100% load",
+              "Governor",
+              "110% maximum; hard cap in DCS",
+              "CRO with awareness that P1 temperature approaches alarm at surge",
+              "Continuous at 110% is permissible; review monthly if sustained",
+              "Monitor TT-401/402 closely at surge"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "4.2 Key Process Interaction Rules",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [
+        {
+          "text": "The following rules govern operator interaction with the tightly coupled process loops. Violation of these rules risks process upsets or SIS trips:",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 5,
+          "rows": [
+            [
+              "Rule",
+              "Description",
+              "Consequence of Violation"
+            ],
+            [
+              "R-01: Air-before-Sulfur",
+              "On any load increase: increase air flow first, confirm AT-201 response, then increase sulfur. Minimum 60-second lag.",
+              "Sub-stoichiometric combustion → SO₂ spike → catalyst coking → conversion loss"
+            ],
+            [
+              "R-02: Sulfur-before-Air (down)",
+              "On any load decrease: reduce sulfur first, confirm SO₂ drop, then reduce air. Minimum 60-second lag.",
+              "Over-stoichiometric air → excess O₂ → no harm, but wasted utility"
+            ],
+            [
+              "R-03: Acid concentration first",
+              "Do not adjust dilution water FCV-501/502 more than 5% output at a time. Wait 5 minutes for AT-501/502 response before further adjustment.",
+              "Overshooting acid concentration → SO₃ mist or acid dilution → absorption loss and mist formation"
+            ],
+            [
+              "R-04: Converter temperature priority",
+              "If TT-402 (Pass 1 outlet) approaches 610°C, reduce plant load to 100% immediately — do not wait for alarm.",
+              "At 621°C, SIS TSHH-401 trips — unplanned ESD shutdown"
+            ],
+            [
+              "R-05: Product tank management",
+              "Initiate tanker dispatch when product tank level reaches 70% (not 80% alarm). Do not allow product tank to reach 80% without a tanker confirmed on site.",
+              "At 90% LSHH trips and SDV-E05 closes — production must halt"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "5. ENVIRONMENTAL COMPLIANCE OPERATING RULES",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 6,
+          "rows": [
+            [
+              "Environmental Parameter",
+              "Normal Operating Target",
+              "Limit in Consent",
+              "Operator Action if Limit Approached",
+              "Regulatory Reporting Trigger"
+            ],
+            [
+              "Stack SO₂ (mg/Nm³, 30-min average)",
+              "<300",
+              "500",
+              "Reduce load; check converter conversion; if >450 mg/Nm³, contact HSE",
+              "If >500 mg/Nm³ for >30 min: report within 24 h per site environmental permit"
+            ],
+            [
+              "Acid mist / SO₃ (mg/Nm³)",
+              "<20",
+              "35",
+              "Inspect WESP; check IPAT/FAT acid concentration; check FT-501 dilution water flow",
+              "If visible acid mist plume observed: immediate process review and log"
+            ],
+            [
+              "Noise at plant boundary (dB(A))",
+              "<63",
+              "70",
+              "Investigate equipment noise source; schedule maintenance",
+              "If complaint received from neighbour: log and investigate within 24 h"
+            ],
+            [
+              "H₂SO₄ in process effluent (pH)",
+              "6–9",
+              "6–9",
+              "Check bund drainage isolation; neutralise before release",
+              "Any acid spill to drain: report to Environment Agency immediately"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "text": "FRONT-END ENGINEERING DESIGN (FEED)",
+      "style": "Normal"
+    },
+    {
+      "text": "100 t/d Sulfuric Acid Plant — DCDA / Elemental Sulfur",
+      "style": "Normal"
+    },
+    {
+      "text": "OPERATING PHILOSOPHY",
+      "style": "Normal"
+    },
+    {
+      "text": "Plant Operating Strategy — Normal, Turndown, and Surge Modes with Range Consistency",
+      "style": "Normal"
+    },
+    {
+      "text": "2. OPERATING MODES AND PERMISSIBLE RANGES",
+      "style": "Heading 1"
+    },
+    {
+      "text": "2.1 Defined Operating Modes",
+      "style": "Heading 2"
+    },
+    {
+      "text": "2.2 Operating Envelope — Operator Action Triggers",
+      "style": "Heading 2"
+    },
+    {
+      "text": "The following table defines the process variable thresholds at which the operator must take action, escalating from advisory through alarm to automatic ESD. The ranges reflect the full operating envelope including surge.",
+      "style": "Normal"
+    },
+    {
+      "text": "3. SHIFT PHILOSOPHY AND OPERATOR RESPONSIBILITIES",
+      "style": "Heading 1"
+    },
+    {
+      "text": "3.1 Staffing and Handover",
+      "style": "Heading 2"
+    },
+    {
+      "text": "3.2 Shift Handover Requirements",
+      "style": "Heading 2"
+    },
+    {
+      "text": "Shift handover shall be completed face-to-face in the control room with both incoming and outgoing CROs present. The outgoing operator shall verbally confirm the following, supported by the shift log:",
+      "style": "Normal"
+    },
+    {
+      "text": "1.  Current plant load (% and t/d) and trend direction",
+      "style": "Normal"
+    },
+    {
+      "text": "2.  All active alarms: acknowledged, priority, and action taken or pending",
+      "style": "Normal"
+    },
+    {
+      "text": "3.  Any abnormal operating conditions, equipment deficiencies, or deviations from SOP",
+      "style": "Normal"
+    },
+    {
+      "text": "4.  Active Permits to Work, including any ESD bypasses or SIS inhibits currently in place",
+      "style": "Normal"
+    },
+    {
+      "text": "5.  Status of all duty/standby equipment; any equipment out of service",
+      "style": "Normal"
+    },
+    {
+      "text": "6.  Sulfur storage tank level and estimated days of supply remaining",
+      "style": "Normal"
+    },
+    {
+      "text": "7.  Product storage tank level and dispatch schedule for next 24 hours",
+      "style": "Normal"
+    },
+    {
+      "text": "8.  Any outstanding laboratory results or quality deviations",
+      "style": "Normal"
+    },
+    {
+      "text": "4. CONTROL MODE PHILOSOPHY",
+      "style": "Heading 1"
+    },
+    {
+      "text": "4.1 Normal Operating Control Mode",
+      "style": "Heading 2"
+    },
+    {
+      "text": "Under normal operating conditions all DCS PID loops shall operate in AUTOMATIC mode with remote setpoints from the Master Production Rate Governor. The following exceptions define when MANUAL mode is permissible:",
+      "style": "Normal"
+    },
+    {
+      "text": "4.2 Key Process Interaction Rules",
+      "style": "Heading 2"
+    },
+    {
+      "text": "The following rules govern operator interaction with the tightly coupled process loops. Violation of these rules risks process upsets or SIS trips:",
+      "style": "Normal"
+    },
+    {
+      "text": "5. ENVIRONMENTAL COMPLIANCE OPERATING RULES",
+      "style": "Heading 1"
+    }
+  ],
+  "tables": [
+    {
+      "index": 0,
+      "rows": [
+        [
+          "Attribute",
+          "Value"
+        ],
+        [
+          "Document No.",
+          "PRJ-SA100-FEED-OP-011"
+        ],
+        [
+          "Revision",
+          "A0 — Issued for Review"
+        ],
+        [
+          "Project",
+          "100 t/d H₂SO₄ Plant, DCDA Route"
+        ],
+        [
+          "Date",
+          "August 2026"
+        ],
+        [
+          "Status",
+          "FEED — Consistency-Checked Edition"
+        ]
+      ]
+    },
+    {
+      "index": 1,
+      "rows": [
+        [
+          "Mode",
+          "Load (% Nameplate)",
+          "Sulfur Feed (kg/h)",
+          "Air Flow (Nm³/h)",
+          "SO₂ Conc. (vol%)",
+          "Conv. P1 Outlet (°C)",
+          "Stack SO₂ (mg/Nm³)"
+        ],
+        [
+          "Maximum Surge",
+          "110%",
+          "1,499",
+          "9,760",
+          "10.5",
+          "621",
+          "<480"
+        ],
+        [
+          "Normal Design",
+          "100%",
+          "1,363",
+          "8,873",
+          "10.5",
+          "600",
+          "<300"
+        ],
+        [
+          "Intermediate 80%",
+          "80%",
+          "1,090",
+          "7,098",
+          "10.5",
+          "580",
+          "<280"
+        ],
+        [
+          "Intermediate 60%",
+          "60%",
+          "818",
+          "5,324",
+          "10.5",
+          "555",
+          "<400"
+        ],
+        [
+          "Minimum Stable (50%)",
+          "50%",
+          "682",
+          "4,436",
+          "10.5",
+          "545",
+          "<480"
+        ],
+        [
+          "Cold Start Ramp",
+          "0→50%",
+          "0→682",
+          "4,000→4,436",
+          "0→10.5",
+          "Ambient→545",
+          "<500 (rising)"
+        ],
+        [
+          "PROHIBITED (120%+)",
+          ">110%",
+          "—",
+          "—",
+          "—",
+          ">621",
+          "Regulatory breach likely"
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "rows": [
+        [
+          "Process Variable",
+          "Normal Operating Range",
+          "Advisory (DCS INFO)",
+          "Alarm (DCS HIGH/LOW)",
+          "SIS Trip (Automatic)"
+        ],
+        [
+          "Furnace Temperature",
+          "1,000–1,080°C",
+          "—",
+          "HIGH 1,100°C / LOW 950°C",
+          "HH 1,150°C (SIL 2)"
+        ],
+        [
+          "Converter P1 Outlet T",
+          "590–610°C (normal); up to 621°C at surge",
+          "600°C advisory at surge",
+          "HIGH 610°C",
+          "HH 620°C (SIL 2)"
+        ],
+        [
+          "IPAT Acid Conc.",
+          "98.0–98.4 wt%",
+          "—",
+          "LOW 97.5 / HIGH 98.8",
+          "—"
+        ],
+        [
+          "Stack SO₂",
+          "<300 mg/Nm³ normal; <480 at turndown",
+          "400 mg/Nm³",
+          "HIGH 500 mg/Nm³",
+          "HH 600 mg/Nm³ + 5 min"
+        ],
+        [
+          "WHB Drum Level",
+          "40–60%",
+          "30% advisory",
+          "LOW 30% / HH 90%",
+          "LL 20% (SIL 1)"
+        ],
+        [
+          "WHB Steam Pressure",
+          "38–42 barg",
+          "—",
+          "HIGH 43 barg",
+          "HH 46 barg (SIL 2)"
+        ],
+        [
+          "Product Tank Level",
+          "20–80%",
+          "—",
+          "HIGH 80% / LOW 15%",
+          "HH 90% (SIL 2)"
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "rows": [
+        [
+          "Role",
+          "Shift Structure",
+          "Key Responsibilities",
+          "Minimum Qualification"
+        ],
+        [
+          "Control Room Operator (CRO)",
+          "12-hour shifts (2 × 12 h; day and night)",
+          "Monitor all DCS displays; acknowledge and respond to all alarms; execute start-up/shutdown sequences under Process Engineer direction",
+          "Minimum 3 years process plant control room experience; H₂SO₄ or chemical plant preferred"
+        ],
+        [
+          "Field Operator",
+          "12-hour shifts",
+          "Physical rounds every 2 hours; confirm valve positions; take manual readings; respond to CRO direction",
+          "Trade-qualified; COSHH training; SCBA competent"
+        ],
+        [
+          "Shift Supervisor",
+          "12-hour shifts",
+          "Shift handover; shift log completion; Permit-to-Work authority; emergency coordinator",
+          "Minimum 5 years; first-line management trained"
+        ],
+        [
+          "Process Engineer (on-call)",
+          "Office hours + on-call",
+          "Technical authority for non-routine operations; SIS bypass authorisation; LOPA review; MOC approval",
+          "BEng Chemical Engineering; TÜV FS Engineer desirable"
+        ]
+      ]
+    },
+    {
+      "index": 4,
+      "rows": [
+        [
+          "Situation",
+          "Loop",
+          "Permitted Mode",
+          "Authority Required",
+          "Duration Limit",
+          "Status Check"
+        ],
+        [
+          "Analyser maintenance (AT-501/502)",
+          "AIC-501/502",
+          "MANUAL — operator trims dilution water FCV manually",
+          "CRO with Shift Supervisor notification",
+          "Duration of analyser maintenance + 30 min",
+          "AIC must return to AUTO within 2 h"
+        ],
+        [
+          "Blower surge event transient",
+          "FIC-201",
+          "MANUAL — temporarily fix air flow during transient",
+          "CRO decision",
+          "<15 minutes",
+          "Return to AUTO when governor stable"
+        ],
+        [
+          "WHB level extreme transient",
+          "LIC-201",
+          "MANUAL — BFW trim",
+          "CRO decision",
+          "<10 minutes; escalate to Process Engineer if longer",
+          "Return to 3-element AUTO when level stable 40–60%"
+        ],
+        [
+          "SIS bypass (any)",
+          "SIS logic",
+          "Hardwired bypass switch",
+          "Process Engineer + Shift Supervisor",
+          "Maximum 8 hours (auto timer)",
+          "Log entry mandatory; DCS advisory active"
+        ],
+        [
+          "Operation above 100% load",
+          "Governor",
+          "110% maximum; hard cap in DCS",
+          "CRO with awareness that P1 temperature approaches alarm at surge",
+          "Continuous at 110% is permissible; review monthly if sustained",
+          "Monitor TT-401/402 closely at surge"
+        ]
+      ]
+    },
+    {
+      "index": 5,
+      "rows": [
+        [
+          "Rule",
+          "Description",
+          "Consequence of Violation"
+        ],
+        [
+          "R-01: Air-before-Sulfur",
+          "On any load increase: increase air flow first, confirm AT-201 response, then increase sulfur. Minimum 60-second lag.",
+          "Sub-stoichiometric combustion → SO₂ spike → catalyst coking → conversion loss"
+        ],
+        [
+          "R-02: Sulfur-before-Air (down)",
+          "On any load decrease: reduce sulfur first, confirm SO₂ drop, then reduce air. Minimum 60-second lag.",
+          "Over-stoichiometric air → excess O₂ → no harm, but wasted utility"
+        ],
+        [
+          "R-03: Acid concentration first",
+          "Do not adjust dilution water FCV-501/502 more than 5% output at a time. Wait 5 minutes for AT-501/502 response before further adjustment.",
+          "Overshooting acid concentration → SO₃ mist or acid dilution → absorption loss and mist formation"
+        ],
+        [
+          "R-04: Converter temperature priority",
+          "If TT-402 (Pass 1 outlet) approaches 610°C, reduce plant load to 100% immediately — do not wait for alarm.",
+          "At 621°C, SIS TSHH-401 trips — unplanned ESD shutdown"
+        ],
+        [
+          "R-05: Product tank management",
+          "Initiate tanker dispatch when product tank level reaches 70% (not 80% alarm). Do not allow product tank to reach 80% without a tanker confirmed on site.",
+          "At 90% LSHH trips and SDV-E05 closes — production must halt"
+        ]
+      ]
+    },
+    {
+      "index": 6,
+      "rows": [
+        [
+          "Environmental Parameter",
+          "Normal Operating Target",
+          "Limit in Consent",
+          "Operator Action if Limit Approached",
+          "Regulatory Reporting Trigger"
+        ],
+        [
+          "Stack SO₂ (mg/Nm³, 30-min average)",
+          "<300",
+          "500",
+          "Reduce load; check converter conversion; if >450 mg/Nm³, contact HSE",
+          "If >500 mg/Nm³ for >30 min: report within 24 h per site environmental permit"
+        ],
+        [
+          "Acid mist / SO₃ (mg/Nm³)",
+          "<20",
+          "35",
+          "Inspect WESP; check IPAT/FAT acid concentration; check FT-501 dilution water flow",
+          "If visible acid mist plume observed: immediate process review and log"
+        ],
+        [
+          "Noise at plant boundary (dB(A))",
+          "<63",
+          "70",
+          "Investigate equipment noise source; schedule maintenance",
+          "If complaint received from neighbour: log and investigate within 24 h"
+        ],
+        [
+          "H₂SO₄ in process effluent (pH)",
+          "6–9",
+          "6–9",
+          "Check bund drainage isolation; neutralise before release",
+          "Any acid spill to drain: report to Environment Agency immediately"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1387 @@
+{
+  "filename": "DOC12_Operating_Procedures.docx",
+  "metadata": {
+    "source_path": "data\\raw\\DOC12_Operating_Procedures.docx",
+    "core_properties": {
+      "author": "Un-named",
+      "created": "2026-08-20T13:16:00+00:00",
+      "last_modified_by": "Srinivasan, Pratheep Kumar",
+      "modified": "2026-08-21T06:18:00+00:00",
+      "revision": 3
+    }
+  },
+  "headings": [
+    {
+      "text": "PROCEDURE 1 — COLD START-UP (from ambient, total plant shutdown)",
+      "level": 1
+    },
+    {
+      "text": "Pre-requisites (all must be confirmed before proceeding):",
+      "level": 2
+    },
+    {
+      "text": "PROCEDURE 2 — NORMAL OPERATING PROCEDURE (continuous steady-state)",
+      "level": 1
+    },
+    {
+      "text": "2.1 Routine Operator Rounds (every 2 hours)",
+      "level": 2
+    },
+    {
+      "text": "2.2 Load Change Procedure (during normal operation)",
+      "level": 2
+    },
+    {
+      "text": "PROCEDURE 3 — PLANNED SHUTDOWN (4–6 hours)",
+      "level": 1
+    },
+    {
+      "text": "PROCEDURES — CONSISTENCY SUMMARY (Key Setpoints in Procedures vs Design Docs)",
+      "level": 1
+    }
+  ],
+  "sections": [
+    {
+      "heading": null,
+      "level": 0,
+      "paragraphs": [
+        {
+          "text": "FRONT-END ENGINEERING DESIGN (FEED)",
+          "style": "Normal"
+        },
+        {
+          "text": "100 t/d Sulfuric Acid Plant — DCDA / Elemental Sulfur",
+          "style": "Normal"
+        },
+        {
+          "text": "START-UP / SHUTDOWN / NORMAL OPERATING PROCEDURES",
+          "style": "Normal"
+        },
+        {
+          "text": "FEED-Stage Operating Procedures — Step Range Consistency Verified",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 0,
+          "rows": [
+            [
+              "Attribute",
+              "Value"
+            ],
+            [
+              "Document No.",
+              "PRJ-SA100-FEED-SOP-012"
+            ],
+            [
+              "Revision",
+              "A0 — Issued for Review"
+            ],
+            [
+              "Project",
+              "100 t/d H₂SO₄ Plant, DCDA Route"
+            ],
+            [
+              "Date",
+              "August 2026"
+            ],
+            [
+              "Status",
+              "FEED — Consistency-Checked Edition"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "PROCEDURE 1 — COLD START-UP (from ambient, total plant shutdown)",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": []
+    },
+    {
+      "heading": {
+        "text": "Pre-requisites (all must be confirmed before proceeding):",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [
+        {
+          "text": "▶  PHASE 1: COOLING WATER AND UTILITIES START-UP (0–30 minutes)",
+          "style": "Normal"
+        },
+        {
+          "text": "Step 1.1   Start cooling water circulation pumps P-901A (duty). Confirm discharge pressure 4.0 ± 0.2 barg.",
+          "style": "Normal"
+        },
+        {
+          "text": "✓ Verify: CW supply pressure PT-901 = 3.8–4.2 barg; no vibration on pump casing",
+          "style": "Normal"
+        },
+        {
+          "text": "Step 1.2   Open CW isolation valves to E-301, E-501, E-502, E-701 acid coolers progressively (allow 2 minutes each).",
+          "style": "Normal"
+        },
+        {
+          "text": "✓ Verify: CW flow established to each cooler — confirm via local flow indicators",
+          "style": "Normal"
+        },
+        {
+          "text": "Step 1.3   Start BFW pump P-201A (duty). Set LIC-201 to maintain WHB drum level at 50 ± 5%.",
+          "style": "Normal"
+        },
+        {
+          "text": "✓ Verify: LT-201 reading stable 45–55%; no high-pressure steam generation yet — drum is cold",
+          "style": "Normal"
+        },
+        {
+          "text": "Step 1.4   Confirm instrument air ring main pressure 7.0 ± 0.3 barg. Confirm N₂ blanket to product tanks active.",
+          "style": "Normal"
+        },
+        {
+          "text": "✓ Verify: V-301 IA receiver pressure ≥ 7.0 barg; both product tanks show N₂ flow on local rotameters",
+          "style": "Normal"
+        },
+        {
+          "text": "▶  PHASE 2: ACID CIRCUIT PRIMING (30–90 minutes)",
+          "style": "Normal"
+        },
+        {
+          "text": "Step 2.1   Start DT acid circulating pump P-301A. Confirm AIC-501 not yet in auto — DT acid concentration monitoring only.",
+          "style": "Normal"
+        },
+        {
+          "text": "✓ Verify: P-301A running; LT-301 stable 40–60%; no air flow yet",
+          "style": "Normal"
+        },
+        {
+          "text": "Step 2.2   Start IPAT acid circulating pump P-501A. Confirm AT-501 reading 98.0–98.5 wt%.",
+          "style": "Normal"
+        },
+        {
+          "text": "✓ Verify: AT-501 = 98.0–98.5 wt%; LT-501 = 40–60%",
+          "style": "Normal"
+        },
+        {
+          "text": "⚠ CAUTION: If AT-501 < 97.5 wt%, do NOT proceed — top up with 98.5% make-up acid until target is achieved",
+          "style": "Normal"
+        },
+        {
+          "text": "Step 2.3   Start FAT acid circulating pump P-502A. Confirm AT-502 reading 98.0–98.5 wt%.",
+          "style": "Normal"
+        },
+        {
+          "text": "✓ Verify: AT-502 = 98.0–98.5 wt%",
+          "style": "Normal"
+        },
+        {
+          "text": "Step 2.4   Open dilution water FCV-501 and FCV-502 to approximately 20% output (approximately 45 L/h each). Set AIC-501 and AIC-502 to AUTO.",
+          "style": "Normal"
+        },
+        {
+          "text": "✓ Verify: AIC-501/502 in AUTO; water flow confirmed on FT-501/502",
+          "style": "Normal"
+        },
+        {
+          "text": "▶  PHASE 3: MAIN AIR BLOWER START AND CATALYST PRE-HEAT (90–180 minutes)",
+          "style": "Normal"
+        },
+        {
+          "text": "Step 3.1   Check blower K-301A anti-surge valve in OPEN position. Start K-301A at minimum speed (26 Hz / 50% VFD).",
+          "style": "Normal"
+        },
+        {
+          "text": "✓ Verify: K-301A running; discharge pressure 0.1–0.2 barg; no vibration; air flow FT-201 > 4,000 Nm³/h",
+          "style": "Normal"
+        },
+        {
+          "text": "Step 3.2   Slowly increase K-301A VFD speed to achieve air flow of 5,000 Nm³/h (approximately 57% speed). Maintain this flow for catalyst pre-heating.",
+          "style": "Normal"
+        },
+        {
+          "text": "✓ Verify: FT-201 = 4,800–5,200 Nm³/h; AT-301 (moisture) < 0.1 g/Nm³",
+          "style": "Normal"
+        },
+        {
+          "text": "⛔ WARNING: Do NOT proceed to ignition if AT-301 moisture reading exceeds 0.15 g/Nm³. High moisture entering the catalyst will cause permanent catalyst deactivation. Check DT acid concentration (target 94–96 wt%) and add make-up 98% acid if required.",
+          "style": "Normal"
+        },
+        {
+          "text": "Step 3.3   If start-up heater available: energise start-up gas heater to warm converter catalyst to 400°C (Pass 1 inlet). This step takes approximately 90 minutes.",
+          "style": "Normal"
+        },
+        {
+          "text": "✓ Verify: TT-401 (Pass 1 inlet) reading ≥ 400°C (minimum for sulfur ignition); confirm all 4 pass temperatures rising uniformly",
+          "style": "Normal"
+        },
+        {
+          "text": "⚠ CAUTION: If TT-401 fails to reach 400°C in 180 minutes, check heater operation and contact Process Engineer before proceeding",
+          "style": "Normal"
+        },
+        {
+          "text": "▶  PHASE 4: SULFUR IGNITION AND INITIAL COMBUSTION (duration 15–30 minutes)",
+          "style": "Normal"
+        },
+        {
+          "text": "⛔ WARNING: Confirm all 12 start-up permissives P-01 through P-12 are GREEN on DCS before initiating ignition.",
+          "style": "Normal"
+        },
+        {
+          "text": "Step 4.1   Confirm ESD system in armed state (all SIS logic energised, solenoids energised, trip functions active).",
+          "style": "Normal"
+        },
+        {
+          "text": "✓ Verify: DCS SIS status: all SIF armed; no bypasses active",
+          "style": "Normal"
+        },
+        {
+          "text": "Step 4.2   Open SDV-E01 (sulfur block valve) slowly — DCS command. Position feedback confirmed OPEN.",
+          "style": "Normal"
+        },
+        {
+          "text": "✓ Verify: SDV-E01 open position feedback on DCS",
+          "style": "Normal"
+        },
+        {
+          "text": "Step 4.3   Set FIC-101 to MANUAL mode. Gradually open FCV-101 to 10% output — targeting approximately 136 kg/h sulfur flow (10% of design).",
+          "style": "Normal"
+        },
+        {
+          "text": "✓ Verify: FT-101 reading 120–150 kg/h; TT-201 (furnace T) begins rising within 2 minutes",
+          "style": "Normal"
+        },
+        {
+          "text": "⚠ CAUTION: If furnace temperature does not begin rising within 3 minutes of sulfur admission, close FCV-101 immediately and purge for 10 minutes with air before re-attempting ignition",
+          "style": "Normal"
+        },
+        {
+          "text": "Step 4.4   Confirm stable combustion: TT-201 rising and AT-201 (SO₂) reading > 8 vol%.",
+          "style": "Normal"
+        },
+        {
+          "text": "✓ Verify: TT-201 > 700°C and rising; AT-201 > 8 vol%",
+          "style": "Normal"
+        },
+        {
+          "text": "Step 4.5   Switch FIC-101 to AUTO (cascade from Governor). Set Master Load to 10%.",
+          "style": "Normal"
+        },
+        {
+          "text": "✓ Verify: DCS Master Load = 10%; FIC-101 and FIC-201 in AUTO cascade",
+          "style": "Normal"
+        },
+        {
+          "text": "▶  PHASE 5: LOAD RAMP TO DESIGN (2–4 hours)",
+          "style": "Normal"
+        },
+        {
+          "text": "Step 5.1   Increase Master Load from 10% to 50% at rate of 5% per 10 minutes (maximum ramp rate). Monitor TT-401 through TT-408 continuously.",
+          "style": "Normal"
+        },
+        {
+          "text": "✓ Verify: All converter pass temperatures trending smoothly; TT-402 (Pass 1 outlet) must not exceed 610°C during ramp",
+          "style": "Normal"
+        },
+        {
+          "text": "⚠ CAUTION: If TT-402 approaches 605°C during ramp, pause load increase for 15 minutes until temperatures stabilise",
+          "style": "Normal"
+        },
+        {
+          "text": "Step 5.2   At 50% load: confirm AT-403 (stack SO₂) < 500 mg/Nm³. Continue ramp to 80%.",
+          "style": "Normal"
+        },
+        {
+          "text": "✓ Verify: AT-403 < 500 mg/Nm³; all absorption tower levels stable; AT-501/502 = 98.0–98.5 wt%",
+          "style": "Normal"
+        },
+        {
+          "text": "Step 5.3   At 80% load: confirm WHB steam generation established. Set PIC-202 to AUTO for steam export.",
+          "style": "Normal"
+        },
+        {
+          "text": "✓ Verify: FT-202 (steam flow) > 6,000 kg/h; PT-202 = 40 ± 1 barg; PIC-202 in AUTO",
+          "style": "Normal"
+        },
+        {
+          "text": "Step 5.4   At 80%: confirm all acid loops stabilised. Transition AIC-501 and AIC-502 from MANUAL trim to full AUTO.",
+          "style": "Normal"
+        },
+        {
+          "text": "✓ Verify: Both AIC loops in AUTO; concentrations stable ± 0.1 wt%",
+          "style": "Normal"
+        },
+        {
+          "text": "Step 5.5   Continue ramp to 100% load at same ramp rate. At 100%: declare Normal Operation.",
+          "style": "Normal"
+        },
+        {
+          "text": "✓ Verify: AT-403 < 300 mg/Nm³; TT-402 ≤ 600°C; AT-501/502 = 98.0–98.5 wt%; PT-202 = 40 barg; All DCS loops in AUTO",
+          "style": "Normal"
+        },
+        {
+          "text": "⚠ CAUTION: Complete start-up log entry; notify Shift Supervisor; schedule first product sample to laboratory within 30 min of reaching 100% load",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 1,
+          "rows": [
+            [
+              "Pre-requisite",
+              "Confirmed By",
+              "Tag / Location",
+              "Acceptable Condition"
+            ],
+            [
+              "All maintenance isolations removed; blinds lifted",
+              "Shift Supervisor",
+              "Field",
+              "Confirmed via PTW close-out"
+            ],
+            [
+              "SIS system powered and healthy — no active trips",
+              "CRO",
+              "SIS Panel",
+              "All SIS OK lights green; trip log clear"
+            ],
+            [
+              "DCS in AUTO mode with all loops configured",
+              "CRO",
+              "DCS Workstation",
+              "All PID loops in AUTO with design setpoints"
+            ],
+            [
+              "Sulfur storage tank level > 30%",
+              "CRO",
+              "LT-101A",
+              "LT-101A reading > 30% on DCS"
+            ],
+            [
+              "WHB steam drum filled to 40–60% with BFW",
+              "CRO",
+              "LT-201",
+              "LT-201 reading 40–60%"
+            ],
+            [
+              "IPAT and FAT acid sumps at 40–60%, concentration 98.0–98.5 wt%",
+              "CRO",
+              "LT-501/502; AT-501/502",
+              "Both level and concentration in range"
+            ],
+            [
+              "Process air inlet filter clean (ΔP < 10 mbar)",
+              "Field Op.",
+              "PI-301 (local gauge)",
+              "ΔP < 10 mbar"
+            ],
+            [
+              "All ESD valves in auto / de-energised safe state",
+              "CRO",
+              "DCS status display",
+              "All SDV-E01, E02, E03, E05 position confirmed on DCS"
+            ],
+            [
+              "Cooling water supply available (30°C, 4.0 barg)",
+              "CRO",
+              "PT-901; TT-901",
+              "Within spec"
+            ],
+            [
+              "Instrument air available (≥7.0 barg, dew pt ≤−40°C)",
+              "CRO",
+              "PT-IA-001; AT-IA-001",
+              "Within spec"
+            ],
+            [
+              "Fire and gas detection system healthy",
+              "CRO",
+              "F&G panel",
+              "No active F&G alarms"
+            ],
+            [
+              "Operator SCBA kits confirmed charged and available",
+              "Shift Supervisor",
+              "Muster station",
+              "Confirmed"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "PROCEDURE 2 — NORMAL OPERATING PROCEDURE (continuous steady-state)",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": []
+    },
+    {
+      "heading": {
+        "text": "2.1 Routine Operator Rounds (every 2 hours)",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 2,
+          "rows": [
+            [
+              "Round Item",
+              "Location",
+              "Check",
+              "Accept Range",
+              "Action if Outside Range"
+            ],
+            [
+              "Sulfur spray gun condition",
+              "Furnace front",
+              "No sulfur solidification on nozzle; clean atomization",
+              "Visual — clean spray",
+              "Notify CRO; prepare spare gun; swap if blocked"
+            ],
+            [
+              "DT acid level and temperature",
+              "T-301 local",
+              "Level 40–60%; temperature 60–75°C",
+              "LT-301: 40–60%; TT-301: 60–75°C",
+              "Adjust make-up acid; check cooler CW flow"
+            ],
+            [
+              "IPAT and FAT acid sump levels",
+              "T-501, T-502",
+              "Level 45–55%",
+              "LT-501/502: 45–55%",
+              "Adjust level control valves LCV-501/502"
+            ],
+            [
+              "Converter body temperature",
+              "R-401 field",
+              "Uniform temperature on each pass (multipoint TT)",
+              "As per DCS TIC setpoints ± 15°C",
+              "Notify CRO if deviation > 15°C; check bypass valve position"
+            ],
+            [
+              "WHB drum water level (local sight glass)",
+              "WHB-201",
+              "Level at half-glass",
+              "40–60% of sight glass",
+              "Cross-check with LT-201 DCS reading; notify CRO if discrepancy"
+            ],
+            [
+              "Product acid cooler outlet temperature",
+              "E-701",
+              "Acid cool to 30–40°C",
+              "TT-701: 30–40°C",
+              "Check CW flow; inspect TCV-701 position"
+            ],
+            [
+              "Product tank level",
+              "TK-701",
+              "Both tanks: level and level agreement",
+              "LT-701 20–80%; within 5% of LT-702 reading",
+              "If difference > 5%: potential level transmitter fault; notify CRO; cross-check with manual dip"
+            ],
+            [
+              "Stack visual inspection",
+              "Stack base / observation",
+              "No visible acid mist plume; no unusual colour",
+              "Clear / pale white vapour only",
+              "If dense white plume: check AT-403 (stack SO₂) and WESP operation; notify HSE"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "2.2 Load Change Procedure (during normal operation)",
+        "level": 2
+      },
+      "level": 2,
+      "paragraphs": [
+        {
+          "text": "Any load change (increase or decrease) shall be made by adjusting the DCS Master Load setpoint only. Direct manipulation of FIC-101 or FIC-201 setpoints is NOT permitted during normal operation.",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 3,
+          "rows": [
+            [
+              "Action",
+              "Maximum Rate",
+              "Minimum Stabilisation Time Before Next Change",
+              "Monitor"
+            ],
+            [
+              "Load increase",
+              "5% per 10 minutes",
+              "15 minutes after each 5% increment",
+              "TT-402 < 610°C; AT-403 < 400 mg/Nm³; AIC-501/502 stable"
+            ],
+            [
+              "Load decrease",
+              "10% per 10 minutes",
+              "10 minutes after each 10% decrement",
+              "AT-403 trend; AIC-501/502 concentration; no alarms"
+            ],
+            [
+              "Surge to 110%",
+              "5% per 10 minutes from 100%",
+              "30 minutes monitoring at 110% before declaring stable",
+              "TT-402 ≤ 610°C critical; CW temperatures; steam export"
+            ],
+            [
+              "Return from 110% to 100%",
+              "5% per 5 minutes",
+              "10 minutes",
+              "Confirm P1 temp drops below 600°C within 5 min of load reduction"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "PROCEDURE 3 — PLANNED SHUTDOWN (4–6 hours)",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [
+        {
+          "text": "⛔ WARNING: Planned Shutdown must be authorised by the Shift Supervisor and notified to the Process Engineer and HSE department at least 1 hour before commencement.",
+          "style": "Normal"
+        },
+        {
+          "text": "▶  PHASE 1: LOAD REDUCTION (0–90 minutes)",
+          "style": "Normal"
+        },
+        {
+          "text": "Step S.1   Set Master Load to 80%. Confirm stable operation at 80% for 15 minutes.",
+          "style": "Normal"
+        },
+        {
+          "text": "✓ Verify: All loops stable; AT-403 < 300 mg/Nm³",
+          "style": "Normal"
+        },
+        {
+          "text": "Step S.2   Set Master Load to 60%. Continue monitoring converter temperatures and stack SO₂.",
+          "style": "Normal"
+        },
+        {
+          "text": "✓ Verify: TT-402 < 580°C; AT-403 < 400 mg/Nm³",
+          "style": "Normal"
+        },
+        {
+          "text": "⚠ CAUTION: If AT-403 > 400 mg/Nm³ at 60% load, reduce to 50% and notify HSE",
+          "style": "Normal"
+        },
+        {
+          "text": "Step S.3   Set Master Load to 50% (minimum stable turndown). Confirm 20 minutes stable operation.",
+          "style": "Normal"
+        },
+        {
+          "text": "✓ Verify: AT-403 < 480 mg/Nm³; all loops stable",
+          "style": "Normal"
+        },
+        {
+          "text": "Step S.4   Set Master Load to 0% (FIC-101 demand → 0). FIC-101 closes FCV-101. Confirm SDV-E01 closes automatically on zero flow.",
+          "style": "Normal"
+        },
+        {
+          "text": "✓ Verify: FT-101 = 0 kg/h; TT-201 begins to fall; AT-201 SO₂ begins to fall",
+          "style": "Normal"
+        },
+        {
+          "text": "▶  PHASE 2: FURNACE PURGE AND COOLING (90–240 minutes)",
+          "style": "Normal"
+        },
+        {
+          "text": "Step S.5   Continue K-301A air blower at 50% speed for air purge of furnace and converter. Minimum 30-minute air purge after sulfur cutoff.",
+          "style": "Normal"
+        },
+        {
+          "text": "✓ Verify: AT-201 (SO₂) < 1 vol% after 30 minutes of purge",
+          "style": "Normal"
+        },
+        {
+          "text": "⚠ CAUTION: Do NOT stop air blower until SO₂ < 1 vol% — residual SO₂ must be cleared before duct entry",
+          "style": "Normal"
+        },
+        {
+          "text": "Step S.6   Once TT-201 < 200°C, progressively reduce blower speed to 30% and maintain for natural cooling.",
+          "style": "Normal"
+        },
+        {
+          "text": "✓ Verify: TT-201 declining; TT-401 (converter) declining below 200°C",
+          "style": "Normal"
+        },
+        {
+          "text": "Step S.7   Maintain WHB BFW flow (LIC-201 in AUTO) until drum pressure PT-202 < 5 barg. Then close BFW isolation and drain steam circuit under Process Engineer supervision.",
+          "style": "Normal"
+        },
+        {
+          "text": "✓ Verify: PT-202 < 5 barg before BFW isolation; steam drum vented",
+          "style": "Normal"
+        },
+        {
+          "text": "⚠ CAUTION: Critical: BFW must remain on until pressure < 5 barg to prevent dry-fire during heat soak",
+          "style": "Normal"
+        },
+        {
+          "text": "▶  PHASE 3: ACID CIRCUIT DRAIN AND ISOLATION (240–360 minutes)",
+          "style": "Normal"
+        },
+        {
+          "text": "Step S.8   Transfer excess product acid from IPAT and FAT sumps to product storage tank TK-701. Confirm LT-701 < 80% (product tank).",
+          "style": "Normal"
+        },
+        {
+          "text": "✓ Verify: Transfer pump flow confirmed; LT-701 < 80%",
+          "style": "Normal"
+        },
+        {
+          "text": "Step S.9   Stop acid circulating pumps P-501A and P-502A. Close all acid isolation valves. Drain sumps to designated acid sump collection.",
+          "style": "Normal"
+        },
+        {
+          "text": "✓ Verify: No acid flow in absorption towers; all drain valves confirmed closed",
+          "style": "Normal"
+        },
+        {
+          "text": "Step S.10   Stop K-301A blower. Isolate air inlet. Complete shutdown log.",
+          "style": "Normal"
+        },
+        {
+          "text": "✓ Verify: K-301A stopped; all flows at zero; DCS confirms plant in \"shutdown\" state",
+          "style": "Normal"
+        },
+        {
+          "text": "NOTE: Post-shutdown: the plant remains a Major Hazard site even when shutdown. All entry to vessels or confined spaces requires a confined space entry permit, gas testing (O₂ > 19.5%; SO₂ < 0.5 ppm), and SCBA standby.",
+          "style": "Normal"
+        }
+      ],
+      "tables": []
+    },
+    {
+      "heading": {
+        "text": "PROCEDURES — CONSISTENCY SUMMARY (Key Setpoints in Procedures vs Design Docs)",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 4,
+          "rows": [
+            [
+              "Procedure Step",
+              "Setpoint Referenced",
+              "Design Doc Value",
+              "Consistent?"
+            ],
+            [
+              "Phase 3: AT-301 moisture check",
+              "0.15 g/Nm³ limit before ignition",
+              "BoD §1.3; II AT-301 alarm AAH 0.15",
+              "Yes"
+            ],
+            [
+              "Phase 4: Permissive check",
+              "All 12 permissives per C&E Doc 6",
+              "C&E Section 4 permissives P-01 to P-12",
+              "Yes"
+            ],
+            [
+              "Phase 5: TT-402 limit during ramp",
+              "610°C operator caution (before 620°C SIS trip)",
+              "C&E SIF-05 TSHH 620°C; II TT-402",
+              "Yes — 10°C operator buffer"
+            ],
+            [
+              "Phase 5: AT-403 normal target",
+              "< 300 mg/Nm³ at 100% load",
+              "BoD §1.6; Alarm List AAH 500 mg/Nm³",
+              "Yes"
+            ],
+            [
+              "Normal op: surge to 110%",
+              "TT-402 must remain ≤ 610°C",
+              "H&MB FAIL: actual surge value is 621°C — exceeds both the 610°C caution and 620°C SIS trip",
+              "CONFLICT: procedures cannot safely operate at 110% until Pass 1 temperature is resolved"
+            ],
+            [
+              "Shutdown S.7: BFW before <5 barg",
+              "BFW isolation only when PT-202 < 5 barg",
+              "WHB design; SIF-03 LSLL protection",
+              "Yes — explicit in procedure"
+            ],
+            [
+              "Shutdown S.5: SO₂ purge",
+              "AT-201 < 1 vol% before air purge complete",
+              "Alarm List AAL-201 8.5 vol% (process); 1 vol% is safe purge level",
+              "Yes — 1 vol% is conservative purge criterion"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "text": "FRONT-END ENGINEERING DESIGN (FEED)",
+      "style": "Normal"
+    },
+    {
+      "text": "100 t/d Sulfuric Acid Plant — DCDA / Elemental Sulfur",
+      "style": "Normal"
+    },
+    {
+      "text": "START-UP / SHUTDOWN / NORMAL OPERATING PROCEDURES",
+      "style": "Normal"
+    },
+    {
+      "text": "FEED-Stage Operating Procedures — Step Range Consistency Verified",
+      "style": "Normal"
+    },
+    {
+      "text": "PROCEDURE 1 — COLD START-UP (from ambient, total plant shutdown)",
+      "style": "Heading 1"
+    },
+    {
+      "text": "Pre-requisites (all must be confirmed before proceeding):",
+      "style": "Heading 2"
+    },
+    {
+      "text": "▶  PHASE 1: COOLING WATER AND UTILITIES START-UP (0–30 minutes)",
+      "style": "Normal"
+    },
+    {
+      "text": "Step 1.1   Start cooling water circulation pumps P-901A (duty). Confirm discharge pressure 4.0 ± 0.2 barg.",
+      "style": "Normal"
+    },
+    {
+      "text": "✓ Verify: CW supply pressure PT-901 = 3.8–4.2 barg; no vibration on pump casing",
+      "style": "Normal"
+    },
+    {
+      "text": "Step 1.2   Open CW isolation valves to E-301, E-501, E-502, E-701 acid coolers progressively (allow 2 minutes each).",
+      "style": "Normal"
+    },
+    {
+      "text": "✓ Verify: CW flow established to each cooler — confirm via local flow indicators",
+      "style": "Normal"
+    },
+    {
+      "text": "Step 1.3   Start BFW pump P-201A (duty). Set LIC-201 to maintain WHB drum level at 50 ± 5%.",
+      "style": "Normal"
+    },
+    {
+      "text": "✓ Verify: LT-201 reading stable 45–55%; no high-pressure steam generation yet — drum is cold",
+      "style": "Normal"
+    },
+    {
+      "text": "Step 1.4   Confirm instrument air ring main pressure 7.0 ± 0.3 barg. Confirm N₂ blanket to product tanks active.",
+      "style": "Normal"
+    },
+    {
+      "text": "✓ Verify: V-301 IA receiver pressure ≥ 7.0 barg; both product tanks show N₂ flow on local rotameters",
+      "style": "Normal"
+    },
+    {
+      "text": "▶  PHASE 2: ACID CIRCUIT PRIMING (30–90 minutes)",
+      "style": "Normal"
+    },
+    {
+      "text": "Step 2.1   Start DT acid circulating pump P-301A. Confirm AIC-501 not yet in auto — DT acid concentration monitoring only.",
+      "style": "Normal"
+    },
+    {
+      "text": "✓ Verify: P-301A running; LT-301 stable 40–60%; no air flow yet",
+      "style": "Normal"
+    },
+    {
+      "text": "Step 2.2   Start IPAT acid circulating pump P-501A. Confirm AT-501 reading 98.0–98.5 wt%.",
+      "style": "Normal"
+    },
+    {
+      "text": "✓ Verify: AT-501 = 98.0–98.5 wt%; LT-501 = 40–60%",
+      "style": "Normal"
+    },
+    {
+      "text": "⚠ CAUTION: If AT-501 < 97.5 wt%, do NOT proceed — top up with 98.5% make-up acid until target is achieved",
+      "style": "Normal"
+    },
+    {
+      "text": "Step 2.3   Start FAT acid circulating pump P-502A. Confirm AT-502 reading 98.0–98.5 wt%.",
+      "style": "Normal"
+    },
+    {
+      "text": "✓ Verify: AT-502 = 98.0–98.5 wt%",
+      "style": "Normal"
+    },
+    {
+      "text": "Step 2.4   Open dilution water FCV-501 and FCV-502 to approximately 20% output (approximately 45 L/h each). Set AIC-501 and AIC-502 to AUTO.",
+      "style": "Normal"
+    },
+    {
+      "text": "✓ Verify: AIC-501/502 in AUTO; water flow confirmed on FT-501/502",
+      "style": "Normal"
+    },
+    {
+      "text": "▶  PHASE 3: MAIN AIR BLOWER START AND CATALYST PRE-HEAT (90–180 minutes)",
+      "style": "Normal"
+    },
+    {
+      "text": "Step 3.1   Check blower K-301A anti-surge valve in OPEN position. Start K-301A at minimum speed (26 Hz / 50% VFD).",
+      "style": "Normal"
+    },
+    {
+      "text": "✓ Verify: K-301A running; discharge pressure 0.1–0.2 barg; no vibration; air flow FT-201 > 4,000 Nm³/h",
+      "style": "Normal"
+    },
+    {
+      "text": "Step 3.2   Slowly increase K-301A VFD speed to achieve air flow of 5,000 Nm³/h (approximately 57% speed). Maintain this flow for catalyst pre-heating.",
+      "style": "Normal"
+    },
+    {
+      "text": "✓ Verify: FT-201 = 4,800–5,200 Nm³/h; AT-301 (moisture) < 0.1 g/Nm³",
+      "style": "Normal"
+    },
+    {
+      "text": "⛔ WARNING: Do NOT proceed to ignition if AT-301 moisture reading exceeds 0.15 g/Nm³. High moisture entering the catalyst will cause permanent catalyst deactivation. Check DT acid concentration (target 94–96 wt%) and add make-up 98% acid if required.",
+      "style": "Normal"
+    },
+    {
+      "text": "Step 3.3   If start-up heater available: energise start-up gas heater to warm converter catalyst to 400°C (Pass 1 inlet). This step takes approximately 90 minutes.",
+      "style": "Normal"
+    },
+    {
+      "text": "✓ Verify: TT-401 (Pass 1 inlet) reading ≥ 400°C (minimum for sulfur ignition); confirm all 4 pass temperatures rising uniformly",
+      "style": "Normal"
+    },
+    {
+      "text": "⚠ CAUTION: If TT-401 fails to reach 400°C in 180 minutes, check heater operation and contact Process Engineer before proceeding",
+      "style": "Normal"
+    },
+    {
+      "text": "▶  PHASE 4: SULFUR IGNITION AND INITIAL COMBUSTION (duration 15–30 minutes)",
+      "style": "Normal"
+    },
+    {
+      "text": "⛔ WARNING: Confirm all 12 start-up permissives P-01 through P-12 are GREEN on DCS before initiating ignition.",
+      "style": "Normal"
+    },
+    {
+      "text": "Step 4.1   Confirm ESD system in armed state (all SIS logic energised, solenoids energised, trip functions active).",
+      "style": "Normal"
+    },
+    {
+      "text": "✓ Verify: DCS SIS status: all SIF armed; no bypasses active",
+      "style": "Normal"
+    },
+    {
+      "text": "Step 4.2   Open SDV-E01 (sulfur block valve) slowly — DCS command. Position feedback confirmed OPEN.",
+      "style": "Normal"
+    },
+    {
+      "text": "✓ Verify: SDV-E01 open position feedback on DCS",
+      "style": "Normal"
+    },
+    {
+      "text": "Step 4.3   Set FIC-101 to MANUAL mode. Gradually open FCV-101 to 10% output — targeting approximately 136 kg/h sulfur flow (10% of design).",
+      "style": "Normal"
+    },
+    {
+      "text": "✓ Verify: FT-101 reading 120–150 kg/h; TT-201 (furnace T) begins rising within 2 minutes",
+      "style": "Normal"
+    },
+    {
+      "text": "⚠ CAUTION: If furnace temperature does not begin rising within 3 minutes of sulfur admission, close FCV-101 immediately and purge for 10 minutes with air before re-attempting ignition",
+      "style": "Normal"
+    },
+    {
+      "text": "Step 4.4   Confirm stable combustion: TT-201 rising and AT-201 (SO₂) reading > 8 vol%.",
+      "style": "Normal"
+    },
+    {
+      "text": "✓ Verify: TT-201 > 700°C and rising; AT-201 > 8 vol%",
+      "style": "Normal"
+    },
+    {
+      "text": "Step 4.5   Switch FIC-101 to AUTO (cascade from Governor). Set Master Load to 10%.",
+      "style": "Normal"
+    },
+    {
+      "text": "✓ Verify: DCS Master Load = 10%; FIC-101 and FIC-201 in AUTO cascade",
+      "style": "Normal"
+    },
+    {
+      "text": "▶  PHASE 5: LOAD RAMP TO DESIGN (2–4 hours)",
+      "style": "Normal"
+    },
+    {
+      "text": "Step 5.1   Increase Master Load from 10% to 50% at rate of 5% per 10 minutes (maximum ramp rate). Monitor TT-401 through TT-408 continuously.",
+      "style": "Normal"
+    },
+    {
+      "text": "✓ Verify: All converter pass temperatures trending smoothly; TT-402 (Pass 1 outlet) must not exceed 610°C during ramp",
+      "style": "Normal"
+    },
+    {
+      "text": "⚠ CAUTION: If TT-402 approaches 605°C during ramp, pause load increase for 15 minutes until temperatures stabilise",
+      "style": "Normal"
+    },
+    {
+      "text": "Step 5.2   At 50% load: confirm AT-403 (stack SO₂) < 500 mg/Nm³. Continue ramp to 80%.",
+      "style": "Normal"
+    },
+    {
+      "text": "✓ Verify: AT-403 < 500 mg/Nm³; all absorption tower levels stable; AT-501/502 = 98.0–98.5 wt%",
+      "style": "Normal"
+    },
+    {
+      "text": "Step 5.3   At 80% load: confirm WHB steam generation established. Set PIC-202 to AUTO for steam export.",
+      "style": "Normal"
+    },
+    {
+      "text": "✓ Verify: FT-202 (steam flow) > 6,000 kg/h; PT-202 = 40 ± 1 barg; PIC-202 in AUTO",
+      "style": "Normal"
+    },
+    {
+      "text": "Step 5.4   At 80%: confirm all acid loops stabilised. Transition AIC-501 and AIC-502 from MANUAL trim to full AUTO.",
+      "style": "Normal"
+    },
+    {
+      "text": "✓ Verify: Both AIC loops in AUTO; concentrations stable ± 0.1 wt%",
+      "style": "Normal"
+    },
+    {
+      "text": "Step 5.5   Continue ramp to 100% load at same ramp rate. At 100%: declare Normal Operation.",
+      "style": "Normal"
+    },
+    {
+      "text": "✓ Verify: AT-403 < 300 mg/Nm³; TT-402 ≤ 600°C; AT-501/502 = 98.0–98.5 wt%; PT-202 = 40 barg; All DCS loops in AUTO",
+      "style": "Normal"
+    },
+    {
+      "text": "⚠ CAUTION: Complete start-up log entry; notify Shift Supervisor; schedule first product sample to laboratory within 30 min of reaching 100% load",
+      "style": "Normal"
+    },
+    {
+      "text": "PROCEDURE 2 — NORMAL OPERATING PROCEDURE (continuous steady-state)",
+      "style": "Heading 1"
+    },
+    {
+      "text": "2.1 Routine Operator Rounds (every 2 hours)",
+      "style": "Heading 2"
+    },
+    {
+      "text": "2.2 Load Change Procedure (during normal operation)",
+      "style": "Heading 2"
+    },
+    {
+      "text": "Any load change (increase or decrease) shall be made by adjusting the DCS Master Load setpoint only. Direct manipulation of FIC-101 or FIC-201 setpoints is NOT permitted during normal operation.",
+      "style": "Normal"
+    },
+    {
+      "text": "PROCEDURE 3 — PLANNED SHUTDOWN (4–6 hours)",
+      "style": "Heading 1"
+    },
+    {
+      "text": "⛔ WARNING: Planned Shutdown must be authorised by the Shift Supervisor and notified to the Process Engineer and HSE department at least 1 hour before commencement.",
+      "style": "Normal"
+    },
+    {
+      "text": "▶  PHASE 1: LOAD REDUCTION (0–90 minutes)",
+      "style": "Normal"
+    },
+    {
+      "text": "Step S.1   Set Master Load to 80%. Confirm stable operation at 80% for 15 minutes.",
+      "style": "Normal"
+    },
+    {
+      "text": "✓ Verify: All loops stable; AT-403 < 300 mg/Nm³",
+      "style": "Normal"
+    },
+    {
+      "text": "Step S.2   Set Master Load to 60%. Continue monitoring converter temperatures and stack SO₂.",
+      "style": "Normal"
+    },
+    {
+      "text": "✓ Verify: TT-402 < 580°C; AT-403 < 400 mg/Nm³",
+      "style": "Normal"
+    },
+    {
+      "text": "⚠ CAUTION: If AT-403 > 400 mg/Nm³ at 60% load, reduce to 50% and notify HSE",
+      "style": "Normal"
+    },
+    {
+      "text": "Step S.3   Set Master Load to 50% (minimum stable turndown). Confirm 20 minutes stable operation.",
+      "style": "Normal"
+    },
+    {
+      "text": "✓ Verify: AT-403 < 480 mg/Nm³; all loops stable",
+      "style": "Normal"
+    },
+    {
+      "text": "Step S.4   Set Master Load to 0% (FIC-101 demand → 0). FIC-101 closes FCV-101. Confirm SDV-E01 closes automatically on zero flow.",
+      "style": "Normal"
+    },
+    {
+      "text": "✓ Verify: FT-101 = 0 kg/h; TT-201 begins to fall; AT-201 SO₂ begins to fall",
+      "style": "Normal"
+    },
+    {
+      "text": "▶  PHASE 2: FURNACE PURGE AND COOLING (90–240 minutes)",
+      "style": "Normal"
+    },
+    {
+      "text": "Step S.5   Continue K-301A air blower at 50% speed for air purge of furnace and converter. Minimum 30-minute air purge after sulfur cutoff.",
+      "style": "Normal"
+    },
+    {
+      "text": "✓ Verify: AT-201 (SO₂) < 1 vol% after 30 minutes of purge",
+      "style": "Normal"
+    },
+    {
+      "text": "⚠ CAUTION: Do NOT stop air blower until SO₂ < 1 vol% — residual SO₂ must be cleared before duct entry",
+      "style": "Normal"
+    },
+    {
+      "text": "Step S.6   Once TT-201 < 200°C, progressively reduce blower speed to 30% and maintain for natural cooling.",
+      "style": "Normal"
+    },
+    {
+      "text": "✓ Verify: TT-201 declining; TT-401 (converter) declining below 200°C",
+      "style": "Normal"
+    },
+    {
+      "text": "Step S.7   Maintain WHB BFW flow (LIC-201 in AUTO) until drum pressure PT-202 < 5 barg. Then close BFW isolation and drain steam circuit under Process Engineer supervision.",
+      "style": "Normal"
+    },
+    {
+      "text": "✓ Verify: PT-202 < 5 barg before BFW isolation; steam drum vented",
+      "style": "Normal"
+    },
+    {
+      "text": "⚠ CAUTION: Critical: BFW must remain on until pressure < 5 barg to prevent dry-fire during heat soak",
+      "style": "Normal"
+    },
+    {
+      "text": "▶  PHASE 3: ACID CIRCUIT DRAIN AND ISOLATION (240–360 minutes)",
+      "style": "Normal"
+    },
+    {
+      "text": "Step S.8   Transfer excess product acid from IPAT and FAT sumps to product storage tank TK-701. Confirm LT-701 < 80% (product tank).",
+      "style": "Normal"
+    },
+    {
+      "text": "✓ Verify: Transfer pump flow confirmed; LT-701 < 80%",
+      "style": "Normal"
+    },
+    {
+      "text": "Step S.9   Stop acid circulating pumps P-501A and P-502A. Close all acid isolation valves. Drain sumps to designated acid sump collection.",
+      "style": "Normal"
+    },
+    {
+      "text": "✓ Verify: No acid flow in absorption towers; all drain valves confirmed closed",
+      "style": "Normal"
+    },
+    {
+      "text": "Step S.10   Stop K-301A blower. Isolate air inlet. Complete shutdown log.",
+      "style": "Normal"
+    },
+    {
+      "text": "✓ Verify: K-301A stopped; all flows at zero; DCS confirms plant in \"shutdown\" state",
+      "style": "Normal"
+    },
+    {
+      "text": "NOTE: Post-shutdown: the plant remains a Major Hazard site even when shutdown. All entry to vessels or confined spaces requires a confined space entry permit, gas testing (O₂ > 19.5%; SO₂ < 0.5 ppm), and SCBA standby.",
+      "style": "Normal"
+    },
+    {
+      "text": "PROCEDURES — CONSISTENCY SUMMARY (Key Setpoints in Procedures vs Design Docs)",
+      "style": "Heading 1"
+    }
+  ],
+  "tables": [
+    {
+      "index": 0,
+      "rows": [
+        [
+          "Attribute",
+          "Value"
+        ],
+        [
+          "Document No.",
+          "PRJ-SA100-FEED-SOP-012"
+        ],
+        [
+          "Revision",
+          "A0 — Issued for Review"
+        ],
+        [
+          "Project",
+          "100 t/d H₂SO₄ Plant, DCDA Route"
+        ],
+        [
+          "Date",
+          "August 2026"
+        ],
+        [
+          "Status",
+          "FEED — Consistency-Checked Edition"
+        ]
+      ]
+    },
+    {
+      "index": 1,
+      "rows": [
+        [
+          "Pre-requisite",
+          "Confirmed By",
+          "Tag / Location",
+          "Acceptable Condition"
+        ],
+        [
+          "All maintenance isolations removed; blinds lifted",
+          "Shift Supervisor",
+          "Field",
+          "Confirmed via PTW close-out"
+        ],
+        [
+          "SIS system powered and healthy — no active trips",
+          "CRO",
+          "SIS Panel",
+          "All SIS OK lights green; trip log clear"
+        ],
+        [
+          "DCS in AUTO mode with all loops configured",
+          "CRO",
+          "DCS Workstation",
+          "All PID loops in AUTO with design setpoints"
+        ],
+        [
+          "Sulfur storage tank level > 30%",
+          "CRO",
+          "LT-101A",
+          "LT-101A reading > 30% on DCS"
+        ],
+        [
+          "WHB steam drum filled to 40–60% with BFW",
+          "CRO",
+          "LT-201",
+          "LT-201 reading 40–60%"
+        ],
+        [
+          "IPAT and FAT acid sumps at 40–60%, concentration 98.0–98.5 wt%",
+          "CRO",
+          "LT-501/502; AT-501/502",
+          "Both level and concentration in range"
+        ],
+        [
+          "Process air inlet filter clean (ΔP < 10 mbar)",
+          "Field Op.",
+          "PI-301 (local gauge)",
+          "ΔP < 10 mbar"
+        ],
+        [
+          "All ESD valves in auto / de-energised safe state",
+          "CRO",
+          "DCS status display",
+          "All SDV-E01, E02, E03, E05 position confirmed on DCS"
+        ],
+        [
+          "Cooling water supply available (30°C, 4.0 barg)",
+          "CRO",
+          "PT-901; TT-901",
+          "Within spec"
+        ],
+        [
+          "Instrument air available (≥7.0 barg, dew pt ≤−40°C)",
+          "CRO",
+          "PT-IA-001; AT-IA-001",
+          "Within spec"
+        ],
+        [
+          "Fire and gas detection system healthy",
+          "CRO",
+          "F&G panel",
+          "No active F&G alarms"
+        ],
+        [
+          "Operator SCBA kits confirmed charged and available",
+          "Shift Supervisor",
+          "Muster station",
+          "Confirmed"
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "rows": [
+        [
+          "Round Item",
+          "Location",
+          "Check",
+          "Accept Range",
+          "Action if Outside Range"
+        ],
+        [
+          "Sulfur spray gun condition",
+          "Furnace front",
+          "No sulfur solidification on nozzle; clean atomization",
+          "Visual — clean spray",
+          "Notify CRO; prepare spare gun; swap if blocked"
+        ],
+        [
+          "DT acid level and temperature",
+          "T-301 local",
+          "Level 40–60%; temperature 60–75°C",
+          "LT-301: 40–60%; TT-301: 60–75°C",
+          "Adjust make-up acid; check cooler CW flow"
+        ],
+        [
+          "IPAT and FAT acid sump levels",
+          "T-501, T-502",
+          "Level 45–55%",
+          "LT-501/502: 45–55%",
+          "Adjust level control valves LCV-501/502"
+        ],
+        [
+          "Converter body temperature",
+          "R-401 field",
+          "Uniform temperature on each pass (multipoint TT)",
+          "As per DCS TIC setpoints ± 15°C",
+          "Notify CRO if deviation > 15°C; check bypass valve position"
+        ],
+        [
+          "WHB drum water level (local sight glass)",
+          "WHB-201",
+          "Level at half-glass",
+          "40–60% of sight glass",
+          "Cross-check with LT-201 DCS reading; notify CRO if discrepancy"
+        ],
+        [
+          "Product acid cooler outlet temperature",
+          "E-701",
+          "Acid cool to 30–40°C",
+          "TT-701: 30–40°C",
+          "Check CW flow; inspect TCV-701 position"
+        ],
+        [
+          "Product tank level",
+          "TK-701",
+          "Both tanks: level and level agreement",
+          "LT-701 20–80%; within 5% of LT-702 reading",
+          "If difference > 5%: potential level transmitter fault; notify CRO; cross-check with manual dip"
+        ],
+        [
+          "Stack visual inspection",
+          "Stack base / observation",
+          "No visible acid mist plume; no unusual colour",
+          "Clear / pale white vapour only",
+          "If dense white plume: check AT-403 (stack SO₂) and WESP operation; notify HSE"
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "rows": [
+        [
+          "Action",
+          "Maximum Rate",
+          "Minimum Stabilisation Time Before Next Change",
+          "Monitor"
+        ],
+        [
+          "Load increase",
+          "5% per 10 minutes",
+          "15 minutes after each 5% increment",
+          "TT-402 < 610°C; AT-403 < 400 mg/Nm³; AIC-501/502 stable"
+        ],
+        [
+          "Load decrease",
+          "10% per 10 minutes",
+          "10 minutes after each 10% decrement",
+          "AT-403 trend; AIC-501/502 concentration; no alarms"
+        ],
+        [
+          "Surge to 110%",
+          "5% per 10 minutes from 100%",
+          "30 minutes monitoring at 110% before declaring stable",
+          "TT-402 ≤ 610°C critical; CW temperatures; steam export"
+        ],
+        [
+          "Return from 110% to 100%",
+          "5% per 5 minutes",
+          "10 minutes",
+          "Confirm P1 temp drops below 600°C within 5 min of load reduction"
+        ]
+      ]
+    },
+    {
+      "index": 4,
+      "rows": [
+        [
+          "Procedure Step",
+          "Setpoint Referenced",
+          "Design Doc Value",
+          "Consistent?"
+        ],
+        [
+          "Phase 3: AT-301 moisture check",
+          "0.15 g/Nm³ limit before ignition",
+          "BoD §1.3; II AT-301 alarm AAH 0.15",
+          "Yes"
+        ],
+        [
+          "Phase 4: Permissive check",
+          "All 12 permissives per C&E Doc 6",
+          "C&E Section 4 permissives P-01 to P-12",
+          "Yes"
+        ],
+        [
+          "Phase 5: TT-402 limit during ramp",
+          "610°C operator caution (before 620°C SIS trip)",
+          "C&E SIF-05 TSHH 620°C; II TT-402",
+          "Yes — 10°C operator buffer"
+        ],
+        [
+          "Phase 5: AT-403 normal target",
+          "< 300 mg/Nm³ at 100% load",
+          "BoD §1.6; Alarm List AAH 500 mg/Nm³",
+          "Yes"
+        ],
+        [
+          "Normal op: surge to 110%",
+          "TT-402 must remain ≤ 610°C",
+          "H&MB FAIL: actual surge value is 621°C — exceeds both the 610°C caution and 620°C SIS trip",
+          "CONFLICT: procedures cannot safely operate at 110% until Pass 1 temperature is resolved"
+        ],
+        [
+          "Shutdown S.7: BFW before <5 barg",
+          "BFW isolation only when PT-202 < 5 barg",
+          "WHB design; SIF-03 LSLL protection",
+          "Yes — explicit in procedure"
+        ],
+        [
+          "Shutdown S.5: SO₂ purge",
+          "AT-201 < 1 vol% before air purge complete",
+          "Alarm List AAL-201 8.5 vol% (process); 1 vol% is safe purge level",
+          "Yes — 1 vol% is conservative purge criterion"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1018 @@
+{
+  "filename": "DOC6_CE_Matrix 1.docx",
+  "metadata": {
+    "source_path": "data\\raw\\DOC6_CE_Matrix 1.docx",
+    "core_properties": {
+      "author": "Un-named",
+      "created": "2026-08-20T11:37:00+00:00",
+      "last_modified_by": "Srinivasan, Pratheep Kumar",
+      "modified": "2026-08-21T06:31:00+00:00",
+      "revision": 3
+    }
+  },
+  "headings": [
+    {
+      "text": "1. PROTECTION LAYER HIERARCHY VERIFICATION",
+      "level": 1
+    },
+    {
+      "text": "2. ESD TRIP MATRIX — CAUSE AND EFFECT",
+      "level": 1
+    },
+    {
+      "text": "3. FAIL-SAFE VALVE POSITION CONSISTENCY CHECK",
+      "level": 1
+    },
+    {
+      "text": "4. START-UP PERMISSIVE MATRIX — CONSISTENCY CHECK",
+      "level": 1
+    }
+  ],
+  "sections": [
+    {
+      "heading": null,
+      "level": 0,
+      "paragraphs": [
+        {
+          "text": "FRONT-END ENGINEERING DESIGN (FEED)",
+          "style": "Normal"
+        },
+        {
+          "text": "100 t/d Sulfuric Acid Plant — DCDA / Elemental Sulfur",
+          "style": "Normal"
+        },
+        {
+          "text": "CAUSE AND EFFECT (C&E) MATRIX",
+          "style": "Normal"
+        },
+        {
+          "text": "Safety Instrumented Function Logic — Setpoint & SIL Consistency Verified",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 0,
+          "rows": [
+            [
+              "Attribute",
+              "Value"
+            ],
+            [
+              "Document No.",
+              "PRJ-SA100-FEED-CE-006"
+            ],
+            [
+              "Revision",
+              "A0 — Issued for Review"
+            ],
+            [
+              "Project",
+              "100 t/d H₂SO₄ Plant, DCDA Route"
+            ],
+            [
+              "Date",
+              "August 2026"
+            ],
+            [
+              "Status",
+              "FEED — Consistency-Checked Edition"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "1. PROTECTION LAYER HIERARCHY VERIFICATION",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [
+        {
+          "text": "For each SIF, the following hierarchy must hold: Normal Operating Value (NOV) < DCS Alarm < SIS Trip. A violation (where the trip setpoint is at or below the alarm setpoint, or the alarm setpoint is at or below NOV) represents a protection layer conflict.",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 1,
+          "rows": [
+            [
+              "SIF ID",
+              "Service",
+              "NOV",
+              "DCS Alarm (HIGH)",
+              "SIS Trip Setpoint"
+            ],
+            [
+              "SIF-01",
+              "Furnace Temperature High-High",
+              "1,050°C",
+              "TAH 1,100°C",
+              "TSHH 1,150°C"
+            ],
+            [
+              "SIF-02",
+              "Furnace Pressure High-High",
+              "−15 mbar",
+              "PAH 250 mbar",
+              "PSHH 300 mbar"
+            ],
+            [
+              "SIF-03",
+              "WHB Steam Drum Level Low-Low",
+              "50%",
+              "LAL 30%",
+              "LSLL 20%"
+            ],
+            [
+              "SIF-04",
+              "WHB Steam Drum Pressure High-High",
+              "40 barg",
+              "PAH 43 barg",
+              "PAHH 46 barg"
+            ],
+            [
+              "SIF-05",
+              "Converter Pass 1 Temp High-High",
+              "600°C",
+              "TAH 600°C",
+              "TSHH 620°C"
+            ],
+            [
+              "SIF-06",
+              "Stack SO₂ High-High (Environmental)",
+              "250 mg/Nm³",
+              "AAH 500",
+              "AAHH 600"
+            ],
+            [
+              "SIF-07",
+              "Product Tank Level High-High",
+              "50%",
+              "LAH 80%",
+              "LSHH 90%"
+            ],
+            [
+              "SIF-08",
+              "Area SO₂ Monitor (F&G)",
+              "0 ppm",
+              "AAH 5 ppm",
+              "AAHH 25 ppm"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "2. ESD TRIP MATRIX — CAUSE AND EFFECT",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [
+        {
+          "text": "Legend: ● = Trip output ACTUATED  ○ = No action  FC = Fail-Closed  FO = Fail-Open",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 2,
+          "rows": [
+            [
+              "Initiator Tag",
+              "Initiating Condition",
+              "SIF ID",
+              "SIL",
+              "Voting",
+              "SDV-E01 Sulfur Block (FC)",
+              "SDV-E02 Air Block (FO)",
+              "SDV-E03 WHB BFW (FO)",
+              "XV-E04 Stack Damper",
+              "SDV-E05 Product Block (FC)",
+              "SV-E06 WHB Steam Trip",
+              "F&G PA Evacuation"
+            ],
+            [
+              "TSHH-201",
+              "Furnace T > 1,150°C",
+              "SIF-01",
+              "SIL 2",
+              "1oo2 (dual TC)",
+              "●",
+              "○",
+              "●",
+              "●",
+              "○",
+              "○",
+              "○"
+            ],
+            [
+              "PSHH-201",
+              "Furnace P > 300 mbar",
+              "SIF-02",
+              "SIL 2",
+              "1oo1",
+              "●",
+              "●",
+              "○",
+              "●",
+              "○",
+              "○",
+              "○"
+            ],
+            [
+              "LSLL-201",
+              "WHB Level < 20%",
+              "SIF-03",
+              "SIL 1",
+              "1oo1",
+              "●",
+              "○",
+              "○",
+              "○",
+              "○",
+              "●",
+              "○"
+            ],
+            [
+              "PAHH-202",
+              "WHB Steam P > 46 barg",
+              "SIF-04",
+              "SIL 2",
+              "1oo1",
+              "●",
+              "○",
+              "●",
+              "●",
+              "○",
+              "●",
+              "○"
+            ],
+            [
+              "TSHH-401",
+              "Conv. P1 T > 620°C",
+              "SIF-05",
+              "SIL 2",
+              "1oo2",
+              "●",
+              "●",
+              "○",
+              "○",
+              "○",
+              "○",
+              "○"
+            ],
+            [
+              "AT-403-HH",
+              "Stack SO₂ > 600 mg/Nm³",
+              "SIF-06",
+              "SIL 1 (Env)",
+              "1oo1 + 5 min delay",
+              "●",
+              "○",
+              "○",
+              "●",
+              "○",
+              "○",
+              "○"
+            ],
+            [
+              "LSHH-701",
+              "Product Tank > 90%",
+              "SIF-07",
+              "SIL 2",
+              "1oo2",
+              "○",
+              "○",
+              "○",
+              "○",
+              "●",
+              "○",
+              "○"
+            ],
+            [
+              "Manual ESD",
+              "Panel/Field ESD button",
+              "—",
+              "—",
+              "Manual (latching)",
+              "●",
+              "●",
+              "○",
+              "●",
+              "●",
+              "○",
+              "●"
+            ],
+            [
+              "AA-901-HH",
+              "Area SO₂ > 25 ppm (F&G)",
+              "SIF-08",
+              "F&G",
+              "1oo1",
+              "●",
+              "●",
+              "○",
+              "○",
+              "○",
+              "○",
+              "●"
+            ],
+            [
+              "IA Failure",
+              "IA Pressure < 5 barg",
+              "Utility",
+              "—",
+              "1oo1",
+              "● (FC spring)",
+              "— (FO spring)",
+              "— (FO spring)",
+              "—",
+              "● (FC spring)",
+              "—",
+              "—"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "3. FAIL-SAFE VALVE POSITION CONSISTENCY CHECK",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [
+        {
+          "text": "Every ESD valve fail-safe position must be consistent with the process safe state. The check below confirms the fail-safe position is correctly defined and consistent across the C&E matrix, P&ID (to be issued), and valve datasheets.",
+          "style": "Normal"
+        }
+      ],
+      "tables": [
+        {
+          "index": 3,
+          "rows": [
+            [
+              "Valve Tag",
+              "Service",
+              "Fail-Safe Position",
+              "Process Safe State Required"
+            ],
+            [
+              "SDV-E01",
+              "Sulfur Block Valve",
+              "Fail Closed (FC)",
+              "Isolate fuel supply — FC correct"
+            ],
+            [
+              "SDV-E02",
+              "Air Block Valve",
+              "Fail Open (FO)",
+              "Maintain air purge on ESD — FO correct"
+            ],
+            [
+              "SDV-E03",
+              "WHB BFW Block Valve",
+              "Fail Open (FO)",
+              "Protect WHB from dry-fire on IA loss — FO"
+            ],
+            [
+              "XV-E04",
+              "Stack Gas Damper (isolation)",
+              "Fail Closed (FC)",
+              "Open on ESD for emergency vent — should be FO"
+            ],
+            [
+              "SDV-E05",
+              "Product Block Valve",
+              "Fail Closed (FC)",
+              "Contain product on shutdown — FC correct"
+            ],
+            [
+              "SV-E06",
+              "WHB Steam Trip Valve",
+              "Fail Closed (FC)",
+              "Isolate steam on WHB dry-fire trip — FC correct"
+            ],
+            [
+              "FCV-101",
+              "Sulfur Feed Control Valve",
+              "Fail Closed (FC)",
+              "BPCS: isolate fuel on control failure — FC"
+            ],
+            [
+              "FCV-201",
+              "Air Blower VFD control",
+              "Fail at last then zero",
+              "BPCS: maintain air flow stability — correct"
+            ],
+            [
+              "FCV-501",
+              "Dilution Water Valve",
+              "Fail Closed (FC)",
+              "BPCS: prevent excess dilution on IA failure — FC"
+            ],
+            [
+              "LCV-201",
+              "WHB BFW Control Valve",
+              "Fail Open (FO)",
+              "BPCS: maximum cooling protection — FO correct"
+            ],
+            [
+              "TCV-501",
+              "IPAT CW Control Valve",
+              "Fail Open (FO)",
+              "BPCS: maximum cooling on failure — FO correct"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "text": "4. START-UP PERMISSIVE MATRIX — CONSISTENCY CHECK",
+        "level": 1
+      },
+      "level": 1,
+      "paragraphs": [],
+      "tables": [
+        {
+          "index": 4,
+          "rows": [
+            [
+              "Permissive ID",
+              "Tag",
+              "Condition",
+              "Linked to DCS?",
+              "Linked to Instrument Index?"
+            ],
+            [
+              "P-01",
+              "TT-201",
+              "Furnace T < 600°C (cold start)",
+              "Yes",
+              "Yes — TT-201 range 500–1,200°C"
+            ],
+            [
+              "P-02",
+              "AT-301",
+              "Air moisture < 0.15 g/Nm³",
+              "Yes",
+              "Yes — AT-301 range 0–0.5 g/Nm³"
+            ],
+            [
+              "P-03",
+              "LT-201",
+              "WHB drum level 40–70%",
+              "Yes",
+              "Yes — LT-201 range 0–100%"
+            ],
+            [
+              "P-04",
+              "PT-201",
+              "Furnace P < 50 mbar",
+              "Yes",
+              "Yes — PT-201 range −50 to +500"
+            ],
+            [
+              "P-05",
+              "LT-501",
+              "IPAT sump level 40–60%",
+              "Yes",
+              "Yes — LT-501 range 0–100%"
+            ],
+            [
+              "P-06",
+              "LT-502",
+              "FAT sump level 40–60%",
+              "Yes",
+              "Yes — LT-502 range 0–100%"
+            ],
+            [
+              "P-07",
+              "AT-501",
+              "IPAT acid 98.0–98.5 wt%",
+              "Yes",
+              "Yes — AT-501 range 96–99 wt%"
+            ],
+            [
+              "P-08",
+              "AT-502",
+              "FAT acid 98.0–98.5 wt%",
+              "Yes",
+              "Yes — AT-502 range 96–99 wt%"
+            ],
+            [
+              "P-09",
+              "FT-201",
+              "Air flow > 3,000 Nm³/h",
+              "Yes",
+              "Yes — FT-201 range 0–15,000"
+            ],
+            [
+              "P-10",
+              "LT-101",
+              "Sulfur tank level > 30%",
+              "Yes",
+              "Yes — LT-101 range 0–100%"
+            ],
+            [
+              "P-11",
+              "—",
+              "ESD system healthy",
+              "Yes — SIS readback",
+              "SIS to DCS hardwired"
+            ],
+            [
+              "P-12",
+              "—",
+              "DCS in AUTO mode",
+              "Yes — operator confirm",
+              "N/A"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "text": "FRONT-END ENGINEERING DESIGN (FEED)",
+      "style": "Normal"
+    },
+    {
+      "text": "100 t/d Sulfuric Acid Plant — DCDA / Elemental Sulfur",
+      "style": "Normal"
+    },
+    {
+      "text": "CAUSE AND EFFECT (C&E) MATRIX",
+      "style": "Normal"
+    },
+    {
+      "text": "Safety Instrumented Function Logic — Setpoint & SIL Consistency Verified",
+      "style": "Normal"
+    },
+    {
+      "text": "1. PROTECTION LAYER HIERARCHY VERIFICATION",
+      "style": "Heading 1"
+    },
+    {
+      "text": "For each SIF, the following hierarchy must hold: Normal Operating Value (NOV) < DCS Alarm < SIS Trip. A violation (where the trip setpoint is at or below the alarm setpoint, or the alarm setpoint is at or below NOV) represents a protection layer conflict.",
+      "style": "Normal"
+    },
+    {
+      "text": "2. ESD TRIP MATRIX — CAUSE AND EFFECT",
+      "style": "Heading 1"
+    },
+    {
+      "text": "Legend: ● = Trip output ACTUATED  ○ = No action  FC = Fail-Closed  FO = Fail-Open",
+      "style": "Normal"
+    },
+    {
+      "text": "3. FAIL-SAFE VALVE POSITION CONSISTENCY CHECK",
+      "style": "Heading 1"
+    },
+    {
+      "text": "Every ESD valve fail-safe position must be consistent with the process safe state. The check below confirms the fail-safe position is correctly defined and consistent across the C&E matrix, P&ID (to be issued), and valve datasheets.",
+      "style": "Normal"
+    },
+    {
+      "text": "4. START-UP PERMISSIVE MATRIX — CONSISTENCY CHECK",
+      "style": "Heading 1"
+    }
+  ],
+  "tables": [
+    {
+      "index": 0,
+      "rows": [
+        [
+          "Attribute",
+          "Value"
+        ],
+        [
+          "Document No.",
+          "PRJ-SA100-FEED-CE-006"
+        ],
+        [
+          "Revision",
+          "A0 — Issued for Review"
+        ],
+        [
+          "Project",
+          "100 t/d H₂SO₄ Plant, DCDA Route"
+        ],
+        [
+          "Date",
+          "August 2026"
+        ],
+        [
+          "Status",
+          "FEED — Consistency-Checked Edition"
+        ]
+      ]
+    },
+    {
+      "index": 1,
+      "rows": [
+        [
+          "SIF ID",
+          "Service",
+          "NOV",
+          "DCS Alarm (HIGH)",
+          "SIS Trip Setpoint"
+        ],
+        [
+          "SIF-01",
+          "Furnace Temperature High-High",
+          "1,050°C",
+          "TAH 1,100°C",
+          "TSHH 1,150°C"
+        ],
+        [
+          "SIF-02",
+          "Furnace Pressure High-High",
+          "−15 mbar",
+          "PAH 250 mbar",
+          "PSHH 300 mbar"
+        ],
+        [
+          "SIF-03",
+          "WHB Steam Drum Level Low-Low",
+          "50%",
+          "LAL 30%",
+          "LSLL 20%"
+        ],
+        [
+          "SIF-04",
+          "WHB Steam Drum Pressure High-High",
+          "40 barg",
+          "PAH 43 barg",
+          "PAHH 46 barg"
+        ],
+        [
+          "SIF-05",
+          "Converter Pass 1 Temp High-High",
+          "600°C",
+          "TAH 600°C",
+          "TSHH 620°C"
+        ],
+        [
+          "SIF-06",
+          "Stack SO₂ High-High (Environmental)",
+          "250 mg/Nm³",
+          "AAH 500",
+          "AAHH 600"
+        ],
+        [
+          "SIF-07",
+          "Product Tank Level High-High",
+          "50%",
+          "LAH 80%",
+          "LSHH 90%"
+        ],
+        [
+          "SIF-08",
+          "Area SO₂ Monitor (F&G)",
+          "0 ppm",
+          "AAH 5 ppm",
+          "AAHH 25 ppm"
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "rows": [
+        [
+          "Initiator Tag",
+          "Initiating Condition",
+          "SIF ID",
+          "SIL",
+          "Voting",
+          "SDV-E01 Sulfur Block (FC)",
+          "SDV-E02 Air Block (FO)",
+          "SDV-E03 WHB BFW (FO)",
+          "XV-E04 Stack Damper",
+          "SDV-E05 Product Block (FC)",
+          "SV-E06 WHB Steam Trip",
+          "F&G PA Evacuation"
+        ],
+        [
+          "TSHH-201",
+          "Furnace T > 1,150°C",
+          "SIF-01",
+          "SIL 2",
+          "1oo2 (dual TC)",
+          "●",
+          "○",
+          "●",
+          "●",
+          "○",
+          "○",
+          "○"
+        ],
+        [
+          "PSHH-201",
+          "Furnace P > 300 mbar",
+          "SIF-02",
+          "SIL 2",
+          "1oo1",
+          "●",
+          "●",
+          "○",
+          "●",
+          "○",
+          "○",
+          "○"
+        ],
+        [
+          "LSLL-201",
+          "WHB Level < 20%",
+          "SIF-03",
+          "SIL 1",
+          "1oo1",
+          "●",
+          "○",
+          "○",
+          "○",
+          "○",
+          "●",
+          "○"
+        ],
+        [
+          "PAHH-202",
+          "WHB Steam P > 46 barg",
+          "SIF-04",
+          "SIL 2",
+          "1oo1",
+          "●",
+          "○",
+          "●",
+          "●",
+          "○",
+          "●",
+          "○"
+        ],
+        [
+          "TSHH-401",
+          "Conv. P1 T > 620°C",
+          "SIF-05",
+          "SIL 2",
+          "1oo2",
+          "●",
+          "●",
+          "○",
+          "○",
+          "○",
+          "○",
+          "○"
+        ],
+        [
+          "AT-403-HH",
+          "Stack SO₂ > 600 mg/Nm³",
+          "SIF-06",
+          "SIL 1 (Env)",
+          "1oo1 + 5 min delay",
+          "●",
+          "○",
+          "○",
+          "●",
+          "○",
+          "○",
+          "○"
+        ],
+        [
+          "LSHH-701",
+          "Product Tank > 90%",
+          "SIF-07",
+          "SIL 2",
+          "1oo2",
+          "○",
+          "○",
+          "○",
+          "○",
+          "●",
+          "○",
+          "○"
+        ],
+        [
+          "Manual ESD",
+          "Panel/Field ESD button",
+          "—",
+          "—",
+          "Manual (latching)",
+          "●",
+          "●",
+          "○",
+          "●",
+          "●",
+          "○",
+          "●"
+        ],
+        [
+          "AA-901-HH",
+          "Area SO₂ > 25 ppm (F&G)",
+          "SIF-08",
+          "F&G",
+          "1oo1",
+          "●",
+          "●",
+          "○",
+          "○",
+          "○",
+          "○",
+          "●"
+        ],
+        [
+          "IA Failure",
+          "IA Pressure < 5 barg",
+          "Utility",
+          "—",
+          "1oo1",
+          "● (FC spring)",
+          "— (FO spring)",
+          "— (FO spring)",
+          "—",
+          "● (FC spring)",
+          "—",
+          "—"
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "rows": [
+        [
+          "Valve Tag",
+          "Service",
+          "Fail-Safe Position",
+          "Process Safe State Required"
+        ],
+        [
+          "SDV-E01",
+          "Sulfur Block Valve",
+          "Fail Closed (FC)",
+          "Isolate fuel supply — FC correct"
+        ],
+        [
+          "SDV-E02",
+          "Air Block Valve",
+          "Fail Open (FO)",
+          "Maintain air purge on ESD — FO correct"
+        ],
+        [
+          "SDV-E03",
+          "WHB BFW Block Valve",
+          "Fail Open (FO)",
+          "Protect WHB from dry-fire on IA loss — FO"
+        ],
+        [
+          "XV-E04",
+          "Stack Gas Damper (isolation)",
+          "Fail Closed (FC)",
+          "Open on ESD for emergency vent — should be FO"
+        ],
+        [
+          "SDV-E05",
+          "Product Block Valve",
+          "Fail Closed (FC)",
+          "Contain product on shutdown — FC correct"
+        ],
+        [
+          "SV-E06",
+          "WHB Steam Trip Valve",
+          "Fail Closed (FC)",
+          "Isolate steam on WHB dry-fire trip — FC correct"
+        ],
+        [
+          "FCV-101",
+          "Sulfur Feed Control Valve",
+          "Fail Closed (FC)",
+          "BPCS: isolate fuel on control failure — FC"
+        ],
+        [
+          "FCV-201",
+          "Air Blower VFD control",
+          "Fail at last then zero",
+          "BPCS: maintain air flow stability — correct"
+        ],
+        [
+          "FCV-501",
+          "Dilution Water Valve",
+          "Fail Closed (FC)",
+          "BPCS: prevent excess dilution on IA failure — FC"
+        ],
+        [
+          "LCV-201",
+          "WHB BFW Control Valve",
+          "Fail Open (FO)",
+          "BPCS: maximum cooling protection — FO correct"
+        ],
+        [
+          "TCV-501",
+          "IPAT CW Control Valve",
+          "Fail Open (FO)",
+          "BPCS: maximum cooling on failure — FO correct"
+        ]
+      ]
+    },
+    {
+      "index": 4,
+      "rows": [
+        [
+          "Permissive ID",
+          "Tag",
+          "Condition",
+          "Linked to DCS?",
+          "Linked to Instrument Index?"
+        ],
+        [
+          "P-01",
+          "TT-201",
+          "Furnace T < 600°C (cold start)",
+          "Yes",
+          "Yes — TT-201 range 500–1,200°C"
+        ],
+        [
+          "P-02",
+          "AT-301",
+          "Air moisture < 0.15 g/Nm³",
+          "Yes",
+          "Yes — AT-301 range 0–0.5 g/Nm³"
+        ],
+        [
+          "P-03",
+          "LT-201",
+          "WHB drum level 40–70%",
+          "Yes",
+          "Yes — LT-201 range 0–100%"
+        ],
+        [
+          "P-04",
+          "PT-201",
+          "Furnace P < 50 mbar",
+          "Yes",
+          "Yes — PT-201 range −50 to +500"
+        ],
+        [
+          "P-05",
+          "LT-501",
+          "IPAT sump level 40–60%",
+          "Yes",
+          "Yes — LT-501 range 0–100%"
+        ],
+        [
+          "P-06",
+          "LT-502",
+          "FAT sump level 40–60%",
+          "Yes",
+          "Yes — LT-502 range 0–100%"
+        ],
+        [
+          "P-07",
+          "AT-501",
+          "IPAT acid 98.0–98.5 wt%",
+          "Yes",
+          "Yes — AT-501 range 96–99 wt%"
+        ],
+        [
+          "P-08",
+          "AT-502",
+          "FAT acid 98.0–98.5 wt%",
+          "Yes",
+          "Yes — AT-502 range 96–99 wt%"
+        ],
+        [
+          "P-09",
+          "FT-201",
+          "Air flow > 3,000 Nm³/h",
+          "Yes",
+          "Yes — FT-201 range 0–15,000"
+        ],
+        [
+          "P-10",
+          "LT-101",
+          "Sulfur tank level > 30%",
+          "Yes",
+          "Yes — LT-101 range 0–100%"
+        ],
+        [
+          "P-11",
+          "—",
+          "ESD system healthy",
+          "Yes — SIS readback",
+          "SIS to DCS hardwired"
+        ],
+        [
+          "P-12",
+          "—",
+          "DCS in AUTO mode",
+          "Yes — operator confirm",
+          "N/A"
+        ]
+      ]
+    }
+  ]
+}
